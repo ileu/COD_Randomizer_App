@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
+using System.Linq;
 using System.Windows.Input;
 using MvvmHelpers;
 using MvvmHelpers.Commands;
@@ -13,13 +15,8 @@ namespace COD_Randomizer_App
 
         Random rng = new Random();
 
-        int primgren = 8;
-        int sekgran = 8;
-
-        int p = 6;
-        int over = 3;
-
-        int count = 1;
+        int p = 4;
+        int over = 2;
 
         // Black ops Sturmgwehr
 
@@ -145,20 +142,87 @@ namespace COD_Randomizer_App
         Dictionary<string, Dictionary<string, int>> mp_dict;
         Dictionary<string, Dictionary<string, int>> shotgun_dict;
         Dictionary<string, Dictionary<string, int>> lmg_dict;
+        Dictionary<string, Dictionary<string, int>> taktikgewehr_dict;
+        Dictionary<string, Dictionary<string, int>> dmr_dict;
         Dictionary<string, Dictionary<string, int>> sniper_dict;
         Dictionary<string, Dictionary<string, int>> pistole_dict;
 
         List<string> werfer_dict = new List<string> { "RPG MW", "PILA", "JOKR", "Strela-P", "RPG Black Ops", "Cigma", "M79", "Messer" };
 
         List<string> primary_weapons = new List<string> { "Sturmgewehr", "MP", "Shotgun", "LMG", "Taktikgewehr", "DMR", "Sniper" };
-        List<string> secondary_weapons = new List<string> {"Pistole", "Werfer" };
+        List<string> secondary_weapons = new List<string> { "Pistole", "Werfer" };
 
-        string slot1;
-        public string Slot1
+        List<string> perk1_list = new List<string> { "Double Time", "E.O.D", "Scavenger", "Cold-Blooded", "Kill Chain", "Quick Fix" };
+        List<string> perk2_list = new List<string> { "Restock", "Hardline", "Overkill", "High Alert", "Ghost", "Pointman" };
+        List<string> perk3_list = new List<string> { "Tune Up", "Amped", "Shrapnel", "Battle Hardened", "Spotter", "Tracker" };
+
+        List<string> prim_gren = new List<string> { "Claymore", "Frag Grenade", "Molotov Cokctail", "C4", "Semtex", "Throwing Knife", "Proximity Mine", "Thermite" };
+        List<string> sec_gren = new List<string> { "Flash Grenade", "Stun Grenade", "Smoke Grenade", "Snapshot Grenade", "Hearbeat Sensor", "Gas Grenade", "Stim", "Decoy Grenade"};
+
+        #region Bindings
+        string slot1_weapon;
+        public string Slot1_weapon
         {
-            get => slot1;
-            set => SetProperty(ref slot1, value);
+            get => slot1_weapon;
+            set => SetProperty(ref slot1_weapon, value);
         }
+
+        string slot1_att;
+        public string Slot1_att
+        {
+            get => slot1_att;
+            set => SetProperty(ref slot1_att, value);
+        }
+
+        string slot2_weapon;
+        public string Slot2_weapon
+        {
+            get => slot2_weapon;
+            set => SetProperty(ref slot2_weapon, value);
+        }
+
+        string slot2_att;
+        public string Slot2_att
+        {
+            get => slot2_att;
+            set => SetProperty(ref slot2_att, value);
+        }
+
+        string perk1;
+        public string Perk1
+        {
+            get => perk1;
+            set => SetProperty(ref perk1, value);
+        }
+
+        string perk2;
+        public string Perk2
+        {
+            get => perk2;
+            set => SetProperty(ref perk2, value);
+        }
+
+        string perk3;
+        public string Perk3
+        {
+            get => perk3;
+            set => SetProperty(ref perk3, value);
+        }
+
+        string gren1;
+        public string Gren1
+        {
+            get => gren1;
+            set => SetProperty(ref gren1, value);
+        }
+
+        string gren2;
+        public string Gren2
+        {
+            get => gren2;
+            set => SetProperty(ref gren2, value);
+        }
+        #endregion
 
         public MainPageViewModel()
         {
@@ -175,21 +239,109 @@ namespace COD_Randomizer_App
             lmg_dict = new Dictionary<string, Dictionary<string, int>> { { "M60", m60 }, { "Stoner", stoner }, { "RPD", rpd }, { "PKM", pkm }, { "Sar87", sar87 }, { "Finn LMG", finn }, { "M91", m91 }, { "MG34", mg34 },
                 { "Holger", holger }, { "Bruen", bruen } };
 
+            taktikgewehr_dict = new Dictionary<string, Dictionary<string, int>> { { "DMR 14", dmr14 }, { "Type 63", type63 }, { "M16", m16 }, { "Aug Black ops", aug_black }, { "CARV.2", carv } };
+
+            dmr_dict = new Dictionary<string, Dictionary<string, int>> { { "MK 2", mk2 }, { "EBR 14", ebr }, { "SKS", sks }, { "SPR", spr }, { "Armbrust", armbrust }, { "Kar", kar } };
+
             sniper_dict = new Dictionary<string, Dictionary<string, int>> { { "Rytec", rytec }, { "HDR", hdr }, { "AX 50", ax50 }, { "Dragunov", dragunov }, { "LW 3 Tundra", tundra }, { "Pellington703", pellington },
                 { "ZRG 20mm", zrg }, { "Swiss", swiss }, { "M82", m82 } };
 
             pistole_dict = new Dictionary<string, Dictionary<string, int>> { { "X16", x16 }, { "1911 MW", mw_1911 }, { ".357 Magnum MW", magnum }, { ".50 GS Desert Eagle", deagle }, { "M19", m19 }, { "Renetti", renetti },
                 { "Sykov", sykov }, { "1911 Black ops", bo_1911 }, { "Magnum Black ops", bo_magnum }, { "Diamatti", diamatti } };
 
+            Slot1_weapon = "COD";
+            Slot2_weapon = "GUGUS";
+
+            Slot1_att = "test\n";
+            Slot2_att = "AAAAHHHHHHHHHHHHHHHH\n";
+
+            Perk1 = "Figg";
+            Perk2 = "Dini";
+            Perk3 = "Muetter";
+
+            Gren1 = "Primärgranate";
+            Gren2 = "Sekundärgranate";
+
             GenerateCommand = new Command(OnGenerate);
+        }
+
+        private KeyValuePair<string, Dictionary<string, int>> get_Weapon(string weapon_class)
+        {
+            KeyValuePair<string, Dictionary<string, int>> weapon = new KeyValuePair<string, Dictionary<string, int>>();
+
+            if (weapon_class == "Sturmgewehr")
+                weapon = sturmgewehr_dict.ElementAt(rng.Next(sturmgewehr_dict.Count));
+            else if (weapon_class == "MP")
+                weapon = mp_dict.ElementAt(rng.Next(mp_dict.Count));
+            else if (weapon_class == "Shotgun")
+                weapon = shotgun_dict.ElementAt(rng.Next(shotgun_dict.Count));
+            else if (weapon_class == "LMG")
+                weapon = lmg_dict.ElementAt(rng.Next(lmg_dict.Count));
+            else if (weapon_class == "Taktikgewehr")
+                weapon = taktikgewehr_dict.ElementAt(rng.Next(taktikgewehr_dict.Count));
+            else if (weapon_class == "DMR")
+                weapon = dmr_dict.ElementAt(rng.Next(dmr_dict.Count));
+            else if (weapon_class == "Sniper")
+                weapon = sniper_dict.ElementAt(rng.Next(sniper_dict.Count));
+            else if (weapon_class == "Pistole")
+                weapon = pistole_dict.ElementAt(rng.Next(pistole_dict.Count));
+            else if (weapon_class == "Werfer")
+                weapon = new KeyValuePair<string, Dictionary<string, int>>(werfer_dict[rng.Next(werfer_dict.Count)], null);
+
+
+            return weapon;
+        }
+
+        private string get_Att(Dictionary<string, int> weapon)
+        {
+            if (weapon == null)
+                return "Keine Aufsätze verfügbar\n";
+
+            List<string> temp = new List<string>();
+            List<string> rand_pos = weapon.Keys.OrderBy(x => rng.Next()).Take(5).ToList();
+
+            foreach (string att in rand_pos)
+            {
+                temp.Add(att + ": " + (rng.Next(weapon[att]) + 1));
+            }
+            string output = String.Join(", ", temp.Take(3));
+            output += "\n" +  temp[3] + ", " + temp[4];
+            return output;
         }
 
         private void OnGenerate(object obj)
         {
-            int p2 = rng.Next(10) + 1;
+            int p2 = rng.Next(perk2_list.Count + p);
 
-            Slot1 = count.ToString();
-            count++;
+            string weapon_class1 = primary_weapons[rng.Next(primary_weapons.Count)];
+            KeyValuePair<string, Dictionary<string, int>> weapon1 = get_Weapon(weapon_class1);
+
+            string weapon_class2;
+
+            if ((p2 == over) || (p2 >= 6))
+            {
+                p2 = over;
+                weapon_class2 = primary_weapons[rng.Next(primary_weapons.Count)];
+            }
+            else
+            {
+                weapon_class2 = secondary_weapons[rng.Next(secondary_weapons.Count)];
+            }
+
+            KeyValuePair<string, Dictionary<string, int>> weapon2 = get_Weapon(weapon_class2);
+
+            Slot1_weapon = weapon_class1 + ": " + weapon1.Key;
+            Slot1_att = get_Att(weapon1.Value);
+
+            Slot2_weapon = weapon_class2 + ": " + weapon2.Key;
+            Slot2_att = get_Att(weapon2.Value);
+
+            Perk1 = "Perk 1: " + perk1_list[rng.Next(perk1_list.Count)];
+            Perk2 = "Perk 2: " + perk2_list[p2];
+            Perk3 = "Perk 3: " + perk3_list[(rng.Next(perk3_list.Count))];
+
+            Gren1 = "Primärgranate: " + prim_gren[rng.Next(prim_gren.Count)];
+            Gren2 = "Sekundärgranate: " + sec_gren[rng.Next(sec_gren.Count)];
         }
     }
 }

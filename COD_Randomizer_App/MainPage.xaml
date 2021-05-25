@@ -8,17 +8,98 @@
         <local:MainPageViewModel />
     </ContentPage.BindingContext>
 
-    <StackLayout VerticalOptions="CenterAndExpand">
-        <Frame Margin="10,5"
-               CornerRadius="15">
-            <Label Text="{Binding Slot1}"
-                   FontSize="Large"
-                   HorizontalOptions="Center" />
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,*,Auto,*"
+          RowSpacing="4">
+        <Frame Margin="10,10,10,0"
+               Padding="15,10"
+               CornerRadius="15"
+               Grid.Row="0">
+            <Grid RowDefinitions="Auto,Auto,*"
+                  RowSpacing="0">
+                <Label Text="Waffe 1:"
+                       FontSize="Small"
+                       HorizontalOptions="Start"
+                       Grid.Row="0"/>
+                <Label Text="{Binding Slot1_weapon}"
+                       FontSize="Large"
+                       HorizontalOptions="Start"
+                       Grid.Row="1" />
+                <Label Text="{Binding Slot1_att}"
+                       Padding="0"
+                       Margin="0"
+                       FontSize="Medium"
+                       HorizontalOptions="Start"
+                       Grid.Row="2" 
+                       VerticalOptions="Start"/>
+            </Grid>
+            
         </Frame>
-        
 
+        <Frame Margin="10,5,10,0"
+               Padding="15,10"
+               CornerRadius="15"
+               Grid.Row="1">
+            <Grid RowDefinitions="Auto,Auto,*"
+                  RowSpacing="0">
+                <Label Text="Waffe 2:"
+                       FontSize="Small"
+                       HorizontalOptions="Start"
+                       Grid.Row="0" />
+                <Label Text="{Binding Slot2_weapon}"
+                       FontSize="Large"
+                       HorizontalOptions="Start"
+                       Grid.Row="1" />
+                <Label Text="{Binding Slot2_att}"
+                       FontSize="Medium"
+                       HorizontalOptions="Start"
+                       Grid.Row="2" />
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10,5,10,0"
+               Padding="15,10"
+               CornerRadius="15"
+               Grid.Row="2">
+            <StackLayout>
+                <Label Text="{Binding Perk1}"
+                       FontSize="Large"
+                       HorizontalOptions="Start" />
+                <Label Text="{Binding Perk2}"
+                       FontSize="Large"
+                       HorizontalOptions="Start" />
+                <Label Text="{Binding Perk3}"
+                       FontSize="Large"
+                       HorizontalOptions="Start" />
+            </StackLayout>
+        </Frame>
+
+        <Frame Margin="10,5,10,0"
+               Padding="15,10"
+               CornerRadius="15"
+               Grid.Row="3">
+            <Label Text="{Binding Gren1}"
+                   FontSize="Large"
+                   HorizontalOptions="Start" />
+        </Frame>
+
+        <Frame Margin="10,5,10,0"
+               Padding="15,10"
+               CornerRadius="15"
+               Grid.Row="4">
+            <Label Text="{Binding Gren2}"
+                   FontSize="Large"
+                   HorizontalOptions="Start" />
+        </Frame>
+
+        
         <Button Text="Generate"
-                Command="{Binding GenerateCommand}" />
-    </StackLayout>
+                Command="{Binding GenerateCommand}"
+                CornerRadius="15"
+                Margin="10,5"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Grid.Row="6" 
+                TextColor="White"/>
+    </Grid>
 
 </ContentPage>
