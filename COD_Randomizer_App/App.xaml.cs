@@ -10,7 +10,7 @@ namespace COD_Randomizer_App
         {
             InitializeComponent();
 
-            MainPage = new MediaPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

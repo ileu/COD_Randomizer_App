@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
 using System.Linq;
 using System.Windows.Input;
 using MvvmHelpers;
@@ -18,8 +16,9 @@ namespace COD_Randomizer_App
         int p = 4;
         int over = 2;
 
-        // Black ops Sturmgwehr
+        #region Dictionaries
 
+        // Black ops Sturmgwehr
         Dictionary<string, int> qbz = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
         Dictionary<string, int> fara = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
         Dictionary<string, int> xm4 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
@@ -44,7 +43,6 @@ namespace COD_Randomizer_App
         Dictionary<string, int> m4 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 5 }, { "Laser", 3 }, { "Visier", 20 }, { "Schaft", 4 }, { "Unterlauf", 13 }, { "Munition", 4 }, { "Griff", 3 }, { "Extra", 11 } };
 
         // Black ops MP
-
         Dictionary<string, int> mac = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
         Dictionary<string, int> milano = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
         Dictionary<string, int> lc10 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
@@ -111,7 +109,6 @@ namespace COD_Randomizer_App
         Dictionary<string, int> kar = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 20 }, { "Schaft", 3 }, { "Unterlauf", 1 }, { "Griff", 3 }, { "Extra", 11 } };
 
         // MW Sniper
-
         Dictionary<string, int> rytec = new Dictionary<string, int> { { "Mündung", 2 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 7 }, { "Schaft", 3 }, { "Unterlauf", 1 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 11 } };
         Dictionary<string, int> hdr = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 7 }, { "Schaft", 4 }, { "Unterlauf", 1 }, { "Munition", 2 }, { "Extra", 11 } };
         Dictionary<string, int> ax50 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 7 }, { "Schaft", 3 }, { "Unterlauf", 1 }, { "Munition", 2 }, { "Griff", 2 }, { "Extra", 11 } };
@@ -152,12 +149,14 @@ namespace COD_Randomizer_App
         List<string> primary_weapons = new List<string> { "Sturmgewehr", "MP", "Shotgun", "LMG", "Taktikgewehr", "DMR", "Sniper" };
         List<string> secondary_weapons = new List<string> { "Pistole", "Werfer" };
 
-        List<string> perk1_list = new List<string> { "Double Time", "E.O.D", "Scavenger", "Cold-Blooded", "Kill Chain", "Quick Fix" };
+        List<string> perk1_list = new List<string> { "Double Time", "E.O.D.", "Scavenger", "Cold-Blooded", "Kill Chain", "Quick Fix" };
         List<string> perk2_list = new List<string> { "Restock", "Hardline", "Overkill", "High Alert", "Ghost", "Pointman" };
         List<string> perk3_list = new List<string> { "Tune Up", "Amped", "Shrapnel", "Battle Hardened", "Spotter", "Tracker" };
 
         List<string> prim_gren = new List<string> { "Claymore", "Frag Grenade", "Molotov Cokctail", "C4", "Semtex", "Throwing Knife", "Proximity Mine", "Thermite" };
         List<string> sec_gren = new List<string> { "Flash Grenade", "Stun Grenade", "Smoke Grenade", "Snapshot Grenade", "Hearbeat Sensor", "Gas Grenade", "Stim", "Decoy Grenade"};
+
+        #endregion
 
         #region Bindings
         string slot1_weapon;
@@ -226,7 +225,7 @@ namespace COD_Randomizer_App
 
         public MainPageViewModel()
         {
-            sturmgewehr_dict = new Dictionary<string, Dictionary<string, int>> {  {"QBZ", qbz },{ "Fara", fara },{ "XM4" , xm4},{ "AK-47 Black ops",ak47_black},
+            sturmgewehr_dict = new Dictionary<string, Dictionary<string, int>> { {"QBZ", qbz },{ "Fara", fara },{ "XM4" , xm4},{ "AK-47 Black ops",ak47_black},
             { "Krig 6",krig},{ "FFAR",ffar},{ "Groza",groza},{ "Oden",oden},{ "FAL",fal},{ "FR 5.56",fr556},{ "Scar",scar},{ "AS Val",asval},{ "AK 47 MW",ak47_mw},{ "CR 56 Amax",amax},{ "Kilo",kilo},
             { "AN94",an94},{ "M13",m13},{ "Ram 7",ram7},{ "Grau",grau},{ "M4A1",m4}};
 
@@ -304,6 +303,7 @@ namespace COD_Randomizer_App
             {
                 temp.Add(att + ": " + (rng.Next(weapon[att]) + 1));
             }
+
             string output = String.Join(", ", temp.Take(3));
             output += "\n" +  temp[3] + ", " + temp[4];
             return output;
@@ -338,7 +338,7 @@ namespace COD_Randomizer_App
 
             Perk1 = "Perk 1: " + perk1_list[rng.Next(perk1_list.Count)];
             Perk2 = "Perk 2: " + perk2_list[p2];
-            Perk3 = "Perk 3: " + perk3_list[(rng.Next(perk3_list.Count))];
+            Perk3 = "Perk 3: " + perk3_list[rng.Next(perk3_list.Count)];
 
             Gren1 = "Primärgranate: " + prim_gren[rng.Next(prim_gren.Count)];
             Gren2 = "Sekundärgranate: " + sec_gren[rng.Next(sec_gren.Count)];
