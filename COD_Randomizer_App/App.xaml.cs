@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using COD_Randomizer_App.Views;
 
 namespace COD_Randomizer_App
 {

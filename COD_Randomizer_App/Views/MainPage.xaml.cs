@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace Random_class_generator
+namespace COD_Randomizer_App.Views
 {
     public partial class MainPage : ContentPage
     {
@@ -10,7 +10,6 @@ namespace Random_class_generator
         {
             InitializeComponent();
             intialize_dicts();
-
         }
 
 
