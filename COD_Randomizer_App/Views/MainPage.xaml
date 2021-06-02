@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Random_class_generator.MainPage"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="200, 200, 100, 100, *, Auto">
+
+        <Label x:Name="weapon1box"
+               Grid.Row="0"
+               Text="Weapon 1: &#10;Attachements:"
+               FontSize="18"/>
+        <Label x:Name="weapon2box"
+               Grid.Row="1"
+               Text="Weapon 2: &#10;Attachements"
+               FontSize="18"/>
+        <Label x:Name="perksbox"
+               Grid.Row="2"
+               Text="Perk 1: &#10;Perk 2: &#10;Perk 3:"
+               FontSize="18"/>
+        <Label x:Name="grenadebox"
+               Grid.Row="3"
+               Text="Primary Grenade: &#10;Secondary Grenade:"
+               FontSize="18"/>
+        <Button x:Name="generator"
+                Text="Generate class!"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="generator_Clicked"
+                Grid.Row="5"/>
+
+
+
+    </Grid>
+
+
+</ContentPage>
