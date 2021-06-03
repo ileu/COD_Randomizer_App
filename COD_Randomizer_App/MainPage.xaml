@@ -8,7 +8,7 @@
         <local:MainPageViewModel />
     </ContentPage.BindingContext>
 
-    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,*,Auto,*"
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,*,Auto,0.2*"
           RowSpacing="4">
         <Frame Margin="10,10,10,0"
                Padding="15,10"
@@ -16,10 +16,10 @@
                Grid.Row="0">
             <Grid RowDefinitions="Auto,Auto,*"
                   RowSpacing="0">
-                <Label Text="Waffe 1:"
+                <Label Text="Weapon 1:"
                        FontSize="Small"
                        HorizontalOptions="Start"
-                       Grid.Row="0"/>
+                       Grid.Row="0" />
                 <Label Text="{Binding Slot1_weapon}"
                        FontSize="Large"
                        HorizontalOptions="Start"
@@ -29,10 +29,9 @@
                        Margin="0"
                        FontSize="Medium"
                        HorizontalOptions="Start"
-                       Grid.Row="2" 
-                       VerticalOptions="Start"/>
+                       Grid.Row="2"
+                       VerticalOptions="Start" />
             </Grid>
-            
         </Frame>
 
         <Frame Margin="10,5,10,0"
@@ -41,7 +40,7 @@
                Grid.Row="1">
             <Grid RowDefinitions="Auto,Auto,*"
                   RowSpacing="0">
-                <Label Text="Waffe 2:"
+                <Label Text="Weapon 2:"
                        FontSize="Small"
                        HorizontalOptions="Start"
                        Grid.Row="0" />
@@ -99,7 +98,7 @@
                 FontSize="Large"
                 FontAttributes="Bold"
                 Grid.Row="6" 
-                TextColor="White"/>
+                TextColor="Black"/>
     </Grid>
 
 </ContentPage>

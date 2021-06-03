@@ -19,121 +19,121 @@ namespace COD_Randomizer_App
         #region Dictionaries
 
         // Black ops Sturmgwehr
-        Dictionary<string, int> qbz = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> fara = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> xm4 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> ak47_black = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> krig = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> ffar = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> groza = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
+        Dictionary<string, int> qbz = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> fara = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> xm4 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> ak47_black = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> krig = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> ffar = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> groza = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
 
         // MW Sturmgewher
-        Dictionary<string, int> oden = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 20 }, { "Schaft", 3 }, { "Unterlauf", 13 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> fal = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 21 }, { "Schaft", 4 }, { "Unterlauf", 13 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> fr556 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 21 }, { "Schaft", 3 }, { "Unterlauf", 13 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> scar = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 21 }, { "Schaft", 4 }, { "Unterlauf", 12 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> asval = new Dictionary<string, int> { { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 21 }, { "Schaft", 4 }, { "Unterlauf", 6 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> ak47_mw = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 4 }, { "Laser", 3 }, { "Visier", 19 }, { "Schaft", 5 }, { "Unterlauf", 13 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> amax = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 21 }, { "Schaft", 6 }, { "Unterlauf", 13 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> kilo = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 21 }, { "Schaft", 4 }, { "Unterlauf", 13 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> an94 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 22 }, { "Schaft", 5 }, { "Unterlauf", 13 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> m13 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 21 }, { "Schaft", 4 }, { "Unterlauf", 13 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> ram7 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 20 }, { "Schaft", 3 }, { "Unterlauf", 12 }, { "Munition", 1 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> grau = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 5 }, { "Laser", 3 }, { "Visier", 20 }, { "Schaft", 3 }, { "Unterlauf", 12 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> m4 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 5 }, { "Laser", 3 }, { "Visier", 20 }, { "Schaft", 4 }, { "Unterlauf", 13 }, { "Munition", 4 }, { "Griff", 3 }, { "Extra", 11 } };
+        Dictionary<string, int> oden = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 20 }, { "Stock", 3 }, { "Underbarrel", 13 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> fal = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 21 }, { "Stock", 4 }, { "Underbarrel", 13 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> fr556 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 21 }, { "Stock", 3 }, { "Underbarrel", 13 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> scar = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 21 }, { "Stock", 4 }, { "Underbarrel", 12 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> asval = new Dictionary<string, int> { { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 21 }, { "Stock", 4 }, { "Underbarrel", 6 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> ak47_mw = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 4 }, { "Laser", 3 }, { "Optic", 19 }, { "Stock", 5 }, { "Underbarrel", 13 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> amax = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 21 }, { "Stock", 6 }, { "Underbarrel", 13 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> kilo = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 21 }, { "Stock", 4 }, { "Underbarrel", 13 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> an94 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 22 }, { "Stock", 5 }, { "Underbarrel", 13 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> m13 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 21 }, { "Stock", 4 }, { "Underbarrel", 13 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> ram7 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 20 }, { "Stock", 3 }, { "Underbarrel", 12 }, { "Ammunition", 1 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> grau = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 5 }, { "Laser", 3 }, { "Optic", 20 }, { "Stock", 3 }, { "Underbarrel", 12 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> m4 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 5 }, { "Laser", 3 }, { "Optic", 20 }, { "Stock", 4 }, { "Underbarrel", 13 }, { "Ammunition", 4 }, { "Rear Grip", 3 }, { "Perk", 11 } };
 
         // Black ops MP
-        Dictionary<string, int> mac = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> milano = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> lc10 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> ksp = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> ak74 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> ppsh = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> mp5_black = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> bullfrog = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
+        Dictionary<string, int> mac = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> milano = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> lc10 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> ksp = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> ak74 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> ppsh = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> mp5_black = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> bullfrog = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
 
         // MW MP 
-        Dictionary<string, int> aug_mw = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 19 }, { "Schaft", 3 }, { "Unterlauf", 5 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> striker = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 19 }, { "Schaft", 3 }, { "Unterlauf", 5 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> fennek = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 2 }, { "Laser", 3 }, { "Visier", 18 }, { "Schaft", 4 }, { "Unterlauf", 5 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> pp19 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 18 }, { "Schaft", 4 }, { "Munition", 1 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> mp7 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 17 }, { "Schaft", 4 }, { "Unterlauf", 5 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> p90 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 2 }, { "Laser", 3 }, { "Visier", 19 }, { "Schaft", 3 }, { "Unterlauf", 5 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> mp5_mw = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 4 }, { "Laser", 3 }, { "Visier", 18 }, { "Schaft", 4 }, { "Unterlauf", 5 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> uzi = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 4 }, { "Laser", 3 }, { "Visier", 18 }, { "Schaft", 3 }, { "Unterlauf", 5 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> iso = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 19 }, { "Schaft", 4 }, { "Unterlauf", 5 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 10 } };
+        Dictionary<string, int> aug_mw = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 19 }, { "Stock", 3 }, { "Underbarrel", 5 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> striker = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 19 }, { "Stock", 3 }, { "Underbarrel", 5 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> fennek = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 2 }, { "Laser", 3 }, { "Optic", 18 }, { "Stock", 4 }, { "Underbarrel", 5 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> pp19 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 18 }, { "Stock", 4 }, { "Ammunition", 1 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> mp7 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 17 }, { "Stock", 4 }, { "Underbarrel", 5 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> p90 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 2 }, { "Laser", 3 }, { "Optic", 19 }, { "Stock", 3 }, { "Underbarrel", 5 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> mp5_mw = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 4 }, { "Laser", 3 }, { "Optic", 18 }, { "Stock", 4 }, { "Underbarrel", 5 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> uzi = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 4 }, { "Laser", 3 }, { "Optic", 18 }, { "Stock", 3 }, { "Underbarrel", 5 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> iso = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 19 }, { "Stock", 4 }, { "Underbarrel", 5 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 10 } };
 
         // Blackops shotgun
-        Dictionary<string, int> strassenfeger = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 3 }, { "Schaft", 6 }, { "Munition", 2 }, { "Griff", 6 } };
-        Dictionary<string, int> gallo = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 3 }, { "Schaft", 6 }, { "Munition", 2 }, { "Griff", 6 } };
-        Dictionary<string, int> hauer = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 3 }, { "Schaft", 6 }, { "Munition", 2 }, { "Griff", 6 } };
+        Dictionary<string, int> strassenfeger = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 3 }, { "Stock", 6 }, { "Ammunition", 2 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> gallo = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 3 }, { "Stock", 6 }, { "Ammunition", 2 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> hauer = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 3 }, { "Stock", 6 }, { "Ammunition", 2 }, { "Rear Grip", 6 } };
 
         // MW Shotgun
-        Dictionary<string, int> model680 = new Dictionary<string, int> { { "Mündung", 8 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 14 }, { "Schaft", 5 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Extra", 8 } };
-        Dictionary<string, int> jak = new Dictionary<string, int> { { "Mündung", 8 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 14 }, { "Schaft", 3 }, { "Unterlauf", 5 }, { "Munition", 5 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> origin = new Dictionary<string, int> { { "Mündung", 8 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 14 }, { "Schaft", 4 }, { "Unterlauf", 2 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> r9 = new Dictionary<string, int> { { "Mündung", 8 }, { "Lauf", 2 }, { "Laser", 3 }, { "Visier", 14 }, { "Pumps", 3 }, { "Unterlauf", 3 }, { "Munition", 3 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> vlk = new Dictionary<string, int> { { "Mündung", 8 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 14 }, { "Schaft", 4 }, { "Vorderschaft-Griff", 3 }, { "Munition", 4 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> seven25 = new Dictionary<string, int> { { "Mündung", 8 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 15 }, { "Schaft", 4 }, { "Unterlauf", 5 }, { "Munition", 1 }, { "Handschutz", 3 }, { "Extra", 9 } };
+        Dictionary<string, int> model680 = new Dictionary<string, int> { { "Muzzle", 8 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 14 }, { "Stock", 5 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Perk", 8 } };
+        Dictionary<string, int> jak = new Dictionary<string, int> { { "Muzzle", 8 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 14 }, { "Stock", 3 }, { "Underbarrel", 5 }, { "Ammunition", 5 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> origin = new Dictionary<string, int> { { "Muzzle", 8 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 14 }, { "Stock", 4 }, { "Underbarrel", 2 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> r9 = new Dictionary<string, int> { { "Muzzle", 8 }, { "Barrel", 2 }, { "Laser", 3 }, { "Optic", 14 }, { "Pumps", 3 }, { "Underbarrel", 3 }, { "Ammunition", 3 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> vlk = new Dictionary<string, int> { { "Muzzle", 8 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 14 }, { "Stock", 4 }, { "Pump", 3 }, { "Ammunition", 4 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> seven25 = new Dictionary<string, int> { { "Muzzle", 8 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 15 }, { "Stock", 4 }, { "Underbarrel", 5 }, { "Ammunition", 1 }, { "Guard", 3 }, { "Perk", 9 } };
 
 
         //Black ops LMG
-        Dictionary<string, int> m60 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> stoner = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> rpd = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
+        Dictionary<string, int> m60 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> stoner = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> rpd = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
 
         // MW LMG
-        Dictionary<string, int> pkm = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 19 }, { "Schaft", 4 }, { "Unterlauf", 6 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> sar87 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 19 }, { "Schaft", 3 }, { "Unterlauf", 6 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> finn = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 7 }, { "Laser", 1 }, { "Visier", 20 }, { "Schaft", 4 }, { "Unterlauf", 6 }, { "Munition", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> m91 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 20 }, { "Schaft", 4 }, { "Unterlauf", 6 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> mg34 = new Dictionary<string, int> { { "Mündung", 7 }, { "Laser", 3 }, { "Visier", 19 }, { "Schaft", 4 }, { "Unterlauf", 6 }, { "Munition", 2 }, { "Extra", 9 } };
-        Dictionary<string, int> holger = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 17 }, { "Schaft", 4 }, { "Unterlauf", 6 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 9 } };
-        Dictionary<string, int> bruen = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 20 }, { "Schaft", 5 }, { "Unterlauf", 6 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 9 } };
+        Dictionary<string, int> pkm = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 19 }, { "Stock", 4 }, { "Underbarrel", 6 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> sar87 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 19 }, { "Stock", 3 }, { "Underbarrel", 6 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> finn = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 7 }, { "Laser", 1 }, { "Optic", 20 }, { "Stock", 4 }, { "Underbarrel", 6 }, { "Ammunition", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> m91 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 20 }, { "Stock", 4 }, { "Underbarrel", 6 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> mg34 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Laser", 3 }, { "Optic", 19 }, { "Stock", 4 }, { "Underbarrel", 6 }, { "Ammunition", 2 }, { "Perk", 9 } };
+        Dictionary<string, int> holger = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 17 }, { "Stock", 4 }, { "Underbarrel", 6 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 9 } };
+        Dictionary<string, int> bruen = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 20 }, { "Stock", 5 }, { "Underbarrel", 6 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 9 } };
 
 
 
         //Taktikgewehr
-        Dictionary<string, int> dmr14 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> type63 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> m16 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> aug_black = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> carv = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
+        Dictionary<string, int> dmr14 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> type63 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> m16 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> aug_black = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> carv = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
 
         //DMR
-        Dictionary<string, int> mk2 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 20 }, { "Schaft", 4 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> ebr = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 20 }, { "Schaft", 4 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> sks = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 19 }, { "Schaft", 3 }, { "Unterlauf", 6 }, { "Munition", 2 }, { "Extra", 11 } };
-        Dictionary<string, int> spr = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 4 }, { "Laser", 1 }, { "Visier", 16 }, { "Schaft", 4 }, { "Unterlauf", 6 }, { "Munition", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> armbrust = new Dictionary<string, int> { { "Mündung", 2 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 17 }, { "Schaft", 3 }, { "Unterlauf", 3 }, { "Munition", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> kar = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 20 }, { "Schaft", 3 }, { "Unterlauf", 1 }, { "Griff", 3 }, { "Extra", 11 } };
+        Dictionary<string, int> mk2 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 1 }, { "Optic", 20 }, { "Stock", 4 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> ebr = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 1 }, { "Optic", 20 }, { "Stock", 4 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> sks = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 1 }, { "Optic", 19 }, { "Stock", 3 }, { "Underbarrel", 6 }, { "Ammunition", 2 }, { "Perk", 11 } };
+        Dictionary<string, int> spr = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 4 }, { "Laser", 1 }, { "Optic", 16 }, { "Stock", 4 }, { "Underbarrel", 6 }, { "Ammunition", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> armbrust = new Dictionary<string, int> { { "Muzzle", 2 }, { "Barrel", 3 }, { "Laser", 1 }, { "Optic", 17 }, { "Stock", 3 }, { "Underbarrel", 3 }, { "Ammunition", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> kar = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 1 }, { "Optic", 20 }, { "Stock", 3 }, { "Underbarrel", 1 }, { "Rear Grip", 3 }, { "Perk", 11 } };
 
         // MW Sniper
-        Dictionary<string, int> rytec = new Dictionary<string, int> { { "Mündung", 2 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 7 }, { "Schaft", 3 }, { "Unterlauf", 1 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 11 } };
-        Dictionary<string, int> hdr = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 7 }, { "Schaft", 4 }, { "Unterlauf", 1 }, { "Munition", 2 }, { "Extra", 11 } };
-        Dictionary<string, int> ax50 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 1 }, { "Visier", 7 }, { "Schaft", 3 }, { "Unterlauf", 1 }, { "Munition", 2 }, { "Griff", 2 }, { "Extra", 11 } };
-        Dictionary<string, int> dragunov = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 2 }, { "Laser", 1 }, { "Visier", 7 }, { "Schaft", 4 }, { "Unterlauf", 1 }, { "Munition", 2 }, { "Extra", 11 } };
+        Dictionary<string, int> rytec = new Dictionary<string, int> { { "Muzzle", 2 }, { "Barrel", 3 }, { "Laser", 1 }, { "Optic", 7 }, { "Stock", 3 }, { "Underbarrel", 1 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 11 } };
+        Dictionary<string, int> hdr = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 1 }, { "Optic", 7 }, { "Stock", 4 }, { "Underbarrel", 1 }, { "Ammunition", 2 }, { "Perk", 11 } };
+        Dictionary<string, int> ax50 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 1 }, { "Optic", 7 }, { "Stock", 3 }, { "Underbarrel", 1 }, { "Ammunition", 2 }, { "Rear Grip", 2 }, { "Perk", 11 } };
+        Dictionary<string, int> dragunov = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 2 }, { "Laser", 1 }, { "Optic", 7 }, { "Stock", 4 }, { "Underbarrel", 1 }, { "Ammunition", 2 }, { "Perk", 11 } };
 
         // Black ops Sniper
-        Dictionary<string, int> tundra = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> pellington = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> zrg = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> swiss = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> m82 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 12 }, { "Schaft", 6 }, { "Unterlauf", 6 }, { "Munition", 6 }, { "Griff", 6 } };
+        Dictionary<string, int> tundra = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> pellington = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> zrg = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> swiss = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> m82 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
 
         // MW pistole stimmt noch nicht
-        Dictionary<string, int> x16 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 3 }, { "Schaft", 4 }, { "Abzug", 3 }, { "Munition", 2 }, { "Griff", 4 }, { "Extra", 10 } };
-        Dictionary<string, int> mw_1911 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 3 }, { "Abzug", 3 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> magnum = new Dictionary<string, int> { { "Mündung", 3 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 13 }, { "Abzug", 3 }, { "Munition", 1 }, { "Griff", 5 }, { "Extra", 10 } };
-        Dictionary<string, int> deagle = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 2 }, { "Laser", 3 }, { "Visier", 12 }, { "Abzug", 3 }, { "Munition", 2 }, { "Griff", 4 }, { "Extra", 10 } };
-        Dictionary<string, int> m19 = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 3 }, { "Abzug", 3 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 10 } };
-        Dictionary<string, int> renetti = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 13 }, { "Schaft", 3 }, { "Abzug", 3 }, { "Munition", 2 }, { "Griff", 2 }, { "Extra", 10 } };
-        Dictionary<string, int> sykov = new Dictionary<string, int> { { "Mündung", 7 }, { "Lauf", 3 }, { "Laser", 3 }, { "Visier", 7 }, { "Schaft", 2 }, { "Abzug", 3 }, { "Munition", 2 }, { "Griff", 3 }, { "Extra", 10 } };
+        Dictionary<string, int> x16 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 3 }, { "Stock", 4 }, { "Trigger Action", 3 }, { "Ammunition", 2 }, { "Rear Grip", 4 }, { "Perk", 10 } };
+        Dictionary<string, int> mw_1911 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 3 }, { "Trigger Action", 3 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> magnum = new Dictionary<string, int> { { "Muzzle", 3 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 13 }, { "Trigger Action", 3 }, { "Ammunition", 1 }, { "Rear Grip", 5 }, { "Perk", 10 } };
+        Dictionary<string, int> deagle = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 2 }, { "Laser", 3 }, { "Optic", 12 }, { "Trigger Action", 3 }, { "Ammunition", 2 }, { "Rear Grip", 4 }, { "Perk", 10 } };
+        Dictionary<string, int> m19 = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 3 }, { "Trigger Action", 3 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 10 } };
+        Dictionary<string, int> renetti = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 13 }, { "Stock", 3 }, { "Trigger Action", 3 }, { "Ammunition", 2 }, { "Rear Grip", 2 }, { "Perk", 10 } };
+        Dictionary<string, int> sykov = new Dictionary<string, int> { { "Muzzle", 7 }, { "Barrel", 3 }, { "Laser", 3 }, { "Optic", 7 }, { "Stock", 2 }, { "Trigger Action", 3 }, { "Ammunition", 2 }, { "Rear Grip", 3 }, { "Perk", 10 } };
 
         // Cold war Pistole
-        Dictionary<string, int> bo_1911 = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 3 }, { "Schaft", 1 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> bo_magnum = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 3 }, { "Munition", 6 }, { "Griff", 6 } };
-        Dictionary<string, int> diamatti = new Dictionary<string, int> { { "Mündung", 6 }, { "Lauf", 6 }, { "Laser", 6 }, { "Visier", 3 }, { "Munition", 6 }, { "Griff", 6 } };
+        Dictionary<string, int> bo_1911 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 3 }, { "Stock", 1 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> bo_magnum = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 3 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        Dictionary<string, int> diamatti = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 3 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
 
         Dictionary<string, Dictionary<string, int>> sturmgewehr_dict;
         Dictionary<string, Dictionary<string, int>> mp_dict;
@@ -144,10 +144,10 @@ namespace COD_Randomizer_App
         Dictionary<string, Dictionary<string, int>> sniper_dict;
         Dictionary<string, Dictionary<string, int>> pistole_dict;
 
-        List<string> werfer_dict = new List<string> { "RPG MW", "PILA", "JOKR", "Strela-P", "RPG Black Ops", "Cigma", "M79", "Messer" };
+        List<string> werfer_dict = new List<string> { "RPG MW", "PILA", "JOKR", "Strela-P", "RPG Black Ops", "Cigma", "M79", "Melee" };
 
-        List<string> primary_weapons = new List<string> { "Sturmgewehr", "MP", "Shotgun", "LMG", "Taktikgewehr", "DMR", "Sniper" };
-        List<string> secondary_weapons = new List<string> { "Pistole", "Werfer" };
+        List<string> primary_weapons = new List<string> { "Assault Rifle", "SMG", "Shotgun", "LMG", "Tactical Rifle", "Marksman Rifle", "Sniper" };
+        List<string> secondary_weapons = new List<string> { "Handgun", "Launcher" };
 
         List<string> perk1_list = new List<string> { "Double Time", "E.O.D.", "Scavenger", "Cold-Blooded", "Kill Chain", "Quick Fix" };
         List<string> perk2_list = new List<string> { "Restock", "Hardline", "Overkill", "High Alert", "Ghost", "Pointman" };
@@ -248,18 +248,18 @@ namespace COD_Randomizer_App
             pistole_dict = new Dictionary<string, Dictionary<string, int>> { { "X16", x16 }, { "1911 MW", mw_1911 }, { ".357 Magnum MW", magnum }, { ".50 GS Desert Eagle", deagle }, { "M19", m19 }, { "Renetti", renetti },
                 { "Sykov", sykov }, { "1911 Black ops", bo_1911 }, { "Magnum Black ops", bo_magnum }, { "Diamatti", diamatti } };
 
-            Slot1_weapon = "COD";
-            Slot2_weapon = "GUGUS";
+            Slot1_weapon = "";
+            Slot2_weapon = "";
 
-            Slot1_att = "test\n";
-            Slot2_att = "AAAAHHHHHHHHHHHHHHHH\n";
+            Slot1_att = "\n";
+            Slot2_att = "\n";
 
-            Perk1 = "Figg";
-            Perk2 = "Dini";
-            Perk3 = "Muetter";
+            Perk1 = "Perk 1:";
+            Perk2 = "Perk 2:";
+            Perk3 = "Perk 3:";
 
-            Gren1 = "Primärgranate";
-            Gren2 = "Sekundärgranate";
+            Gren1 = "Lethal";
+            Gren2 = "Tactical";
 
             GenerateCommand = new Command(OnGenerate);
         }
@@ -268,23 +268,23 @@ namespace COD_Randomizer_App
         {
             KeyValuePair<string, Dictionary<string, int>> weapon = new KeyValuePair<string, Dictionary<string, int>>();
 
-            if (weapon_class == "Sturmgewehr")
+            if (weapon_class == "Assault Rifle")
                 weapon = sturmgewehr_dict.ElementAt(rng.Next(sturmgewehr_dict.Count));
-            else if (weapon_class == "MP")
+            else if (weapon_class == "SMG")
                 weapon = mp_dict.ElementAt(rng.Next(mp_dict.Count));
             else if (weapon_class == "Shotgun")
                 weapon = shotgun_dict.ElementAt(rng.Next(shotgun_dict.Count));
             else if (weapon_class == "LMG")
                 weapon = lmg_dict.ElementAt(rng.Next(lmg_dict.Count));
-            else if (weapon_class == "Taktikgewehr")
+            else if (weapon_class == "Tactical Rifle")
                 weapon = taktikgewehr_dict.ElementAt(rng.Next(taktikgewehr_dict.Count));
-            else if (weapon_class == "DMR")
+            else if (weapon_class == "Marksman Rifle")
                 weapon = dmr_dict.ElementAt(rng.Next(dmr_dict.Count));
             else if (weapon_class == "Sniper")
                 weapon = sniper_dict.ElementAt(rng.Next(sniper_dict.Count));
-            else if (weapon_class == "Pistole")
+            else if (weapon_class == "Handgun")
                 weapon = pistole_dict.ElementAt(rng.Next(pistole_dict.Count));
-            else if (weapon_class == "Werfer")
+            else if (weapon_class == "Launcher")
                 weapon = new KeyValuePair<string, Dictionary<string, int>>(werfer_dict[rng.Next(werfer_dict.Count)], null);
 
 
@@ -294,7 +294,7 @@ namespace COD_Randomizer_App
         private string get_Att(Dictionary<string, int> weapon)
         {
             if (weapon == null)
-                return "Keine Aufsätze verfügbar\n";
+                return "No attachments available\n";
 
             List<string> temp = new List<string>();
             List<string> rand_pos = weapon.Keys.OrderBy(x => rng.Next()).Take(5).ToList();
@@ -340,8 +340,8 @@ namespace COD_Randomizer_App
             Perk2 = "Perk 2: " + perk2_list[p2];
             Perk3 = "Perk 3: " + perk3_list[rng.Next(perk3_list.Count)];
 
-            Gren1 = "Primärgranate: " + prim_gren[rng.Next(prim_gren.Count)];
-            Gren2 = "Sekundärgranate: " + sec_gren[rng.Next(sec_gren.Count)];
+            Gren1 = "Lethal: " + prim_gren[rng.Next(prim_gren.Count)];
+            Gren2 = "Tactical: " + sec_gren[rng.Next(sec_gren.Count)];
         }
     }
 }
