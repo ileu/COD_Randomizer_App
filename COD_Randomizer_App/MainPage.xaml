@@ -8,96 +8,100 @@
         <local:MainPageViewModel />
     </ContentPage.BindingContext>
 
-    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,*,Auto,0.2*"
+    <Grid RowDefinitions="*,0.01*,Auto,0.03*"
           RowSpacing="4">
-        <Frame Margin="10,10,10,0"
+        <ScrollView Orientation="Vertical" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" >
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto, Auto"
+          RowSpacing="4">
+                <Frame Margin="10,10,10,0"
                Padding="15,10"
                CornerRadius="15"
                Grid.Row="0">
-            <Grid RowDefinitions="Auto,Auto,*"
+                    <Grid RowDefinitions="Auto,Auto,*"
                   RowSpacing="0">
-                <Label Text="Weapon 1:"
+                        <Label Text="Weapon 1:"
                        FontSize="Small"
                        HorizontalOptions="Start"
                        Grid.Row="0" />
-                <Label Text="{Binding Slot1_weapon}"
+                        <Label Text="{Binding Slot1_weapon}"
                        FontSize="Large"
                        HorizontalOptions="Start"
                        Grid.Row="1" />
-                <Label Text="{Binding Slot1_att}"
+                        <Label Text="{Binding Slot1_att}"
                        Padding="0"
                        Margin="0"
                        FontSize="Medium"
                        HorizontalOptions="Start"
                        Grid.Row="2"
                        VerticalOptions="Start" />
-            </Grid>
-        </Frame>
+                    </Grid>
+                </Frame>
 
-        <Frame Margin="10,5,10,0"
+                <Frame Margin="10,5,10,0"
                Padding="15,10"
                CornerRadius="15"
                Grid.Row="1">
-            <Grid RowDefinitions="Auto,Auto,*"
+                    <Grid RowDefinitions="Auto,Auto,*"
                   RowSpacing="0">
-                <Label Text="Weapon 2:"
+                        <Label Text="Weapon 2:"
                        FontSize="Small"
                        HorizontalOptions="Start"
                        Grid.Row="0" />
-                <Label Text="{Binding Slot2_weapon}"
+                        <Label Text="{Binding Slot2_weapon}"
                        FontSize="Large"
                        HorizontalOptions="Start"
                        Grid.Row="1" />
-                <Label Text="{Binding Slot2_att}"
+                        <Label Text="{Binding Slot2_att}"
                        FontSize="Medium"
                        HorizontalOptions="Start"
                        Grid.Row="2" />
-            </Grid>
-        </Frame>
+                    </Grid>
+                </Frame>
 
-        <Frame Margin="10,5,10,0"
+                <Frame Margin="10,5,10,0"
                Padding="15,10"
                CornerRadius="15"
                Grid.Row="2">
-            <StackLayout>
-                <Label Text="{Binding Perk1}"
+                    <StackLayout>
+                        <Label Text="{Binding Perk1}"
                        FontSize="Large"
                        HorizontalOptions="Start" />
-                <Label Text="{Binding Perk2}"
+                        <Label Text="{Binding Perk2}"
                        FontSize="Large"
                        HorizontalOptions="Start" />
-                <Label Text="{Binding Perk3}"
+                        <Label Text="{Binding Perk3}"
                        FontSize="Large"
                        HorizontalOptions="Start" />
-            </StackLayout>
-        </Frame>
+                    </StackLayout>
+                </Frame>
 
-        <Frame Margin="10,5,10,0"
+                <Frame Margin="10,5,10,0"
                Padding="15,10"
                CornerRadius="15"
                Grid.Row="3">
-            <Label Text="{Binding Gren1}"
+                    <Label Text="{Binding Gren1}"
                    FontSize="Large"
                    HorizontalOptions="Start" />
-        </Frame>
+                </Frame>
 
-        <Frame Margin="10,5,10,0"
+                <Frame Margin="10,5,10,0"
                Padding="15,10"
                CornerRadius="15"
                Grid.Row="4">
-            <Label Text="{Binding Gren2}"
+                    <Label Text="{Binding Gren2}"
                    FontSize="Large"
                    HorizontalOptions="Start" />
-        </Frame>
+                </Frame>
+            </Grid>
+        </ScrollView>
 
-        
         <Button Text="Generate"
                 Command="{Binding GenerateCommand}"
                 CornerRadius="15"
                 Margin="10,5"
                 FontSize="Large"
                 FontAttributes="Bold"
-                Grid.Row="6" 
+                Grid.Row="2" 
                 TextColor="Black"/>
     </Grid>
 
