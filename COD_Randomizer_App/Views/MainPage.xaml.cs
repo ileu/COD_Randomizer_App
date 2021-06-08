@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace COD_Randomizer_App
+namespace COD_Randomizer_App.Views
 {
     public partial class MainPage : ContentPage
     {

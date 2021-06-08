@@ -1,0 +1,16 @@
+{
+  "Name": "THISE WEAPON",
+  "Visible": true,
+  "Slots": [
+    {
+      "Name": "THISE SLOT",
+      "Visible": true,
+      "Attachements": [
+        {
+          "Name": "THISE ATTACHEMENT",
+          "Visible": true
+        }
+      ]
+    }
+  ]
+}
