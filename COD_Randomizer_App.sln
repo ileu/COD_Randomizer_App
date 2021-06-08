@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COD_Randomizer_App.Android"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COD_Randomizer_App.iOS", "COD_Randomizer_App.iOS\COD_Randomizer_App.iOS.csproj", "{72F8CBA9-1DA0-436D-A6C5-E6E67D032B0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COD_Randomizer_App", "COD_Randomizer_App\COD_Randomizer_App.csproj", "{46F3CEA7-6C61-4451-A797-3B3638DBA4CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COD_Randomizer_App", "COD_Randomizer_App\COD_Randomizer_App.csproj", "{46F3CEA7-6C61-4451-A797-3B3638DBA4CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,7 +38,6 @@ Global
 		{3813E42C-72CB-45A6-AD23-241EC5B6E3A1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{3813E42C-72CB-45A6-AD23-241EC5B6E3A1}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{72F8CBA9-1DA0-436D-A6C5-E6E67D032B0C}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{72F8CBA9-1DA0-436D-A6C5-E6E67D032B0C}.Debug|Any CPU.Build.0 = Debug|iPhone
 		{72F8CBA9-1DA0-436D-A6C5-E6E67D032B0C}.Debug|Any CPU.Deploy.0 = Debug|iPhone
 		{72F8CBA9-1DA0-436D-A6C5-E6E67D032B0C}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{72F8CBA9-1DA0-436D-A6C5-E6E67D032B0C}.Debug|iPhone.Build.0 = Debug|iPhone
