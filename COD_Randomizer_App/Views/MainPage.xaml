@@ -28,7 +28,7 @@
                                Margin="0,0,0,0" />
                         <FlexLayout Wrap="Wrap"
                                     JustifyContent="Start"
-                                    BindableLayout.ItemsSource="{Binding Slot1_attList}"
+                                    BindableLayout.ItemsSource="{Binding Slot1_att}"
                                     VerticalOptions="FillAndExpand"
                                     Margin="0,0,0,0"
                                     Grid.Row="0">
@@ -47,21 +47,28 @@
                 <Frame Margin="10,5,10,0"
                        Padding="15,10"
                        CornerRadius="15">
-                    <Grid RowDefinitions="Auto,Auto,*"
-                          RowSpacing="0">
+                    <StackLayout Spacing="0">
                         <Label Text="Weapon 2:"
                                FontSize="Small"
-                               HorizontalOptions="Start"
-                               Grid.Row="0" />
+                               HorizontalOptions="Start" />
                         <Label Text="{Binding Slot2_weapon}"
                                FontSize="Large"
-                               HorizontalOptions="Start"
-                               Grid.Row="1" />
-                        <Label Text="{Binding Slot2_att}"
-                               FontSize="Medium"
-                               HorizontalOptions="Start"
-                               Grid.Row="2" />
-                    </Grid>
+                               HorizontalOptions="Start"/>
+                        <FlexLayout Wrap="Wrap"
+                                    JustifyContent="Start"
+                                    BindableLayout.ItemsSource="{Binding Slot1_att}"
+                                    VerticalOptions="FillAndExpand"
+                                    Margin="0,0,0,0">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <Label Text="{Binding .}"
+                                           Padding="0,0,6,0"
+                                           Margin="0"
+                                           FontSize="Medium" />
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </FlexLayout>
+                    </StackLayout>
                 </Frame>
 
                 <Frame Margin="10,5,10,0"

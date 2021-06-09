@@ -31,18 +31,11 @@ namespace COD_Randomizer_App.ViewModels
             set => SetProperty(ref slot1_weapon, value);
         }
 
-        string slot1_att;
-        public string Slot1_att
+        List<string> slot1_att;
+        public List<string> Slot1_att
         {
             get => slot1_att;
             set => SetProperty(ref slot1_att, value);
-        }
-
-        List<string> slot1_attList;
-        public List<string> Slot1_attList
-        {
-            get => slot1_attList;
-            set => SetProperty(ref slot1_attList, value);
         }
 
         string slot2_weapon;
@@ -52,8 +45,8 @@ namespace COD_Randomizer_App.ViewModels
             set => SetProperty(ref slot2_weapon, value);
         }
 
-        string slot2_att;
-        public string Slot2_att
+        List<string> slot2_att;
+        public List<string> Slot2_att
         {
             get => slot2_att;
             set => SetProperty(ref slot2_att, value);
@@ -100,9 +93,8 @@ namespace COD_Randomizer_App.ViewModels
             Slot1_weapon = "";
             Slot2_weapon = "";
 
-            Slot1_att = "\n";
-            Slot2_att = "\n";
-            Slot1_attList = new List<string> { "\n" };
+            Slot1_att = new List<string> { "\n" };
+            Slot2_att = new List<string> { "\n" };
             
             Perk1 = "Perk 1:";
             Perk2 = "Perk 2:";
@@ -117,15 +109,13 @@ namespace COD_Randomizer_App.ViewModels
 
             AttachementFactory.AddAttachmentToGroup("THISE ATTACHEMENT", 999);
 
-            Weapon test = UnitFactory.CreateWeapon("THISE WEAPON", new Dictionary<string, int>() { { "THISE SLOT", 999 } });
+            Weapon test = WeaponFactory.CreateWeapon("THISE WEAPON", new Dictionary<string, int>() { { "THISE SLOT", 999 } });
 
             string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.json");
             string testText = JsonConvert.SerializeObject(test, Formatting.Indented);
             File.WriteAllText(fileName, testText);
 
             Weapon testCopy = JsonLoaderExample();
-
-            bool testWeaponEquality = test == testCopy;
 
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(MainPageViewModel)).Assembly;
             Stream stream = assembly.GetManifestResourceStream("COD_Randomizer_App.Resources.TestFile.txt");
@@ -179,27 +169,9 @@ namespace COD_Randomizer_App.ViewModels
             return weapon;
         }
 
-        private string get_Att(Dictionary<string, int> weapon)
+        private List<string> get_Att(Dictionary<string, int> weapon)
         {
-            if (weapon == null)
-                return "No attachments available\n";
-
-            List<string> temp = new List<string>();
-            List<string> rand_pos = weapon.Keys.OrderBy(x => rng.Next()).Take(5).ToList();
-
-            foreach (string att in rand_pos)
-            {
-                temp.Add(att + ": " + (rng.Next(weapon[att]) + 1));
-            }
-
-            string output = String.Join(", ", temp.Take(3));
-            output += "\n" +  temp[3] + ", " + temp[4];
-            return output;
-        }
-
-        private List<string> get_AttList(Dictionary<string, int> weapon)
-        {
-            if (weapon == null)
+            if(weapon == null)
                 return new List<string> { "No attachments available\n" };
 
             List<string> temp = new List<string>();
@@ -207,8 +179,10 @@ namespace COD_Randomizer_App.ViewModels
 
             foreach (string att in rand_pos)
             {
-                temp.Add(att + ": " + (rng.Next(weapon[att]) + 1));
+                temp.Add(att + ": " + (rng.Next(weapon[att]) + 1)+",");
             }
+
+            temp.Last().Remove(temp.Last().Count() - 1);
 
             return temp;
         }
@@ -236,7 +210,6 @@ namespace COD_Randomizer_App.ViewModels
 
             Slot1_weapon = weapon_class1 + ": " + weapon1.Key;
             Slot1_att = get_Att(weapon1.Value);
-            Slot1_attList = get_AttList(weapon1.Value);
 
             Slot2_weapon = weapon_class2 + ": " + weapon2.Key;
             Slot2_att = get_Att(weapon2.Value);

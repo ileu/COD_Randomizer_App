@@ -4,7 +4,7 @@ using System.Text;
 
 namespace COD_Randomizer_App.Models
 {
-    public class LoadoutModel
+    public class Loadout
     {
         public string Name;
 

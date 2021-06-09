@@ -7,17 +7,19 @@ namespace COD_Randomizer_App.Helpers
 {
     static class AttachementFactory
     {
-        public enum AttachGroup
+        private static readonly Dictionary<int, List<Attachment>> attachementGroups = new Dictionary<int, List<Attachment>>();
+
+        public static List<Attachment> GetAttachmentGroup(int id)
         {
-            AssaultMuzzle = 101,
-            SMGMuzzle = 201,
+            if (attachementGroups.TryGetValue(id, out List<Attachment> output))
+                return output;
+            else
+                return null;
         }
 
-        private static readonly Dictionary<int, List<Attachement>> attachementGroups = new Dictionary<int, List<Attachement>>();
-
-        public static List<Attachement> GetAttachmentGroup(int id)
+        public static List<Attachment> GetAttachmentGroup(AttachGroup id)
         {
-            if (attachementGroups.TryGetValue(id, out List<Attachement> output))
+            if (attachementGroups.TryGetValue((int)id, out List<Attachment> output))
                 return output;
             else
                 return null;
@@ -26,10 +28,19 @@ namespace COD_Randomizer_App.Helpers
         public static void AddAttachmentToGroup(string name, int id)
         {
             if(attachementGroups.ContainsKey(id))
-               attachementGroups[id].Add(new Attachement(name));
+               attachementGroups[id].Add(new Attachment(name));
             else
-                attachementGroups.Add(id, new List<Attachement>() { new Attachement(name) });
+                attachementGroups.Add(id, new List<Attachment>() { new Attachment(name) });
         }
+
+        public static void AddAttachmentToGroup(Attachment attachement, int id)
+        {
+            if (attachementGroups.ContainsKey(id))
+                attachementGroups[id].Add(attachement);
+            else
+                attachementGroups.Add(id, new List<Attachment>() { attachement });
+        }
+
 
         public static void AddAttachmentToGroup(string name, List<int> ids)
         {

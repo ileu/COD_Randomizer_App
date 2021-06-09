@@ -18,7 +18,7 @@ namespace COD_Randomizer_App.Models
 
         public BaseUnit(string name)
         {
-            name = name;
+            this.name = name;
         }
 
         public void ChangeVisibiliy()
@@ -61,88 +61,6 @@ namespace COD_Randomizer_App.Models
             } while (selection.Count < n);
 
             return selection;
-        }
-    }
-
-    public class WeaponClass : Unit<Weapon>
-    {
-        public WeaponClass(string name) : base(name)
-        {
-
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Weapon : Unit<Slot>
-    {
-
-        public List<Slot> Slots { get => units; set => units = value; }
-
-        public bool Primary { get; set; }
-
-        public Weapon(string name) : base(name) { }
-
-        public void AddSlot(string name, int id)
-        {
-            units.Add(new Slot(name, id));
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Slot : Unit<Attachement>
-    {
-        public List<Attachement> Attachements { get => units; set => units = value; }
-        
-        [JsonConstructor]
-        public Slot(string name) : base(name)
-        {
-
-        }
-
-        public Slot(string name, int id) : base(name)
-        {
-            Attachements = AttachementFactory.GetAttachmentGroup(id);
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Attachement : BaseUnit
-    {
-        public Attachement(string name) : base(name)
-        {
-
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Grenade : BaseUnit
-    {
-        public bool Primary { get; set; }
-
-        public Grenade(string name, bool primary) : base(name)
-        {
-            Primary = primary;
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
         }
     }
 }

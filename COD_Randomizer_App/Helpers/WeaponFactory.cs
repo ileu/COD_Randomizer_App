@@ -9,14 +9,8 @@ using System.Reflection;
 
 namespace COD_Randomizer_App.Helpers
 {
-    public static class UnitFactory
+    public static class WeaponFactory
     {
-
-        static UnitFactory()
-        {
-
-        }
-
         public static Weapon CreateWeapon(string name, Dictionary<string, int> dic = null)
         {
             Weapon output = new Weapon(name);
