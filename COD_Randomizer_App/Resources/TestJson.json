@@ -1,16 +1,276 @@
 {
-  "Name": "THISE WEAPON",
-  "Visible": true,
   "Slots": [
     {
-      "Name": "THISE SLOT",
-      "Visible": true,
       "Attachements": [
         {
-          "Name": "THISE ATTACHEMENT",
+          "Name": "Flash Guard",
+          "Visible": true
+        },
+        {
+          "Name": "Tactical Suppressor",
+          "Visible": true
+        },
+        {
+          "Name": "Breacher Device",
+          "Visible": true
+        },
+        {
+          "Name": "Muzzle Brake",
+          "Visible": true
+        },
+        {
+          "Name": "Lightweight Suppressor",
+          "Visible": true
+        },
+        {
+          "Name": "Compensator",
+          "Visible": true
+        },
+        {
+          "Name": "Monolithic Suppressor",
           "Visible": true
         }
-      ]
+      ],
+      "Name": "Muzzle",
+      "Visible": true
+    },
+    {
+      "Attachements": null,
+      "Name": "Barrel",
+      "Visible": true
+    },
+    {
+      "Attachements": [
+        {
+          "Name": "1mW Laser",
+          "Visible": true
+        },
+        {
+          "Name": "5mW Laser",
+          "Visible": true
+        },
+        {
+          "Name": "Tac Laser",
+          "Visible": true
+        }
+      ],
+      "Name": "Laser",
+      "Visible": true
+    },
+    {
+      "Attachements": [
+        {
+          "Name": "4.0x Flip Hybrid",
+          "Visible": true
+        },
+        {
+          "Name": "Aim-Op Reflex Sight",
+          "Visible": true
+        },
+        {
+          "Name": "APX5 Holographic Sight",
+          "Visible": true
+        },
+        {
+          "Name": "Canted Hybrid",
+          "Visible": true
+        },
+        {
+          "Name": "Corp Combat Holo Sight",
+          "Visible": true
+        },
+        {
+          "Name": "Cronen C480 Pro Optic",
+          "Visible": true
+        },
+        {
+          "Name": "Cronen LP945 Mini Reflex",
+          "Visible": true
+        },
+        {
+          "Name": "Operator Reflex Sight",
+          "Visible": true
+        },
+        {
+          "Name": "G.I Mini Reflex",
+          "Visible": true
+        },
+        {
+          "Name": "Scout Combat Optic",
+          "Visible": true
+        },
+        {
+          "Name": "VLK 3.0x Optic",
+          "Visible": true
+        },
+        {
+          "Name": "Integral Hybrid",
+          "Visible": true
+        },
+        {
+          "Name": "Viper Reflex Sight",
+          "Visible": true
+        },
+        {
+          "Name": "Solozero NVG Enhanced",
+          "Visible": true
+        },
+        {
+          "Name": "Monocle Reflex Sight",
+          "Visible": true
+        },
+        {
+          "Name": "Sniper Scope",
+          "Visible": true
+        },
+        {
+          "Name": "Merc Thermal Optic",
+          "Visible": true
+        },
+        {
+          "Name": "PBX Holo 7 Sight",
+          "Visible": true
+        },
+        {
+          "Name": "Thermal Hybrid",
+          "Visible": true
+        },
+        {
+          "Name": "Solozero Optics Mini Reflex",
+          "Visible": true
+        },
+        {
+          "Name": "Variable Zoom Scope",
+          "Visible": true
+        }
+      ],
+      "Name": "Optic",
+      "Visible": true
+    },
+    {
+      "Attachements": null,
+      "Name": "Stock",
+      "Visible": true
+    },
+    {
+      "Attachements": [
+        {
+          "Name": "Commando Foregrip",
+          "Visible": true
+        },
+        {
+          "Name": "M203 40mm Concussive",
+          "Visible": true
+        },
+        {
+          "Name": "Merc Foregrip",
+          "Visible": true
+        },
+        {
+          "Name": "M203 40mm Smokescreen",
+          "Visible": true
+        },
+        {
+          "Name": "12 Gauge Deputy",
+          "Visible": true
+        },
+        {
+          "Name": "M203 40mm Recon",
+          "Visible": true
+        },
+        {
+          "Name": "M203 40mm Highexplosive",
+          "Visible": true
+        },
+        {
+          "Name": "M203 40mm Flash",
+          "Visible": true
+        },
+        {
+          "Name": "Tactical Foregrip",
+          "Visible": true
+        },
+        {
+          "Name": "M203 40mm Incendiary",
+          "Visible": true
+        },
+        {
+          "Name": "Operator Foregrip",
+          "Visible": true
+        },
+        {
+          "Name": "Ranger Foregrip",
+          "Visible": true
+        },
+        {
+          "Name": "Bipod",
+          "Visible": true
+        }
+      ],
+      "Name": "Underbarrel",
+      "Visible": true
+    },
+    {
+      "Attachements": null,
+      "Name": "Ammunition",
+      "Visible": true
+    },
+    {
+      "Attachements": null,
+      "Name": "Rear Grip",
+      "Visible": true
+    },
+    {
+      "Attachements": [
+        {
+          "Name": "FMJ",
+          "Visible": true
+        },
+        {
+          "Name": "Heavy Hitter",
+          "Visible": true
+        },
+        {
+          "Name": "Recon",
+          "Visible": true
+        },
+        {
+          "Name": "Frangible - Wounding",
+          "Visible": true
+        },
+        {
+          "Name": "Mo' Money",
+          "Visible": true
+        },
+        {
+          "Name": "Fully Loaded",
+          "Visible": true
+        },
+        {
+          "Name": "Sleight of Hand",
+          "Visible": true
+        },
+        {
+          "Name": "Fast Melee",
+          "Visible": true
+        },
+        {
+          "Name": "Burst",
+          "Visible": true
+        },
+        {
+          "Name": "Frangible - Disabling",
+          "Visible": true
+        },
+        {
+          "Name": "Presence of Mind",
+          "Visible": true
+        }
+      ],
+      "Name": "Perk",
+      "Visible": true
     }
-  ]
+  ],
+  "Name": "Kilo",
+  "Visible": true
 }
