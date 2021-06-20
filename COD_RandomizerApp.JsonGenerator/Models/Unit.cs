@@ -6,11 +6,11 @@ using System.Linq;
 namespace COD_Randomizer_App.JsonGenerator.Models
 {
     public abstract class BaseUnit
-    { 
+    {
         protected string name;
         public string Name { get => name; }
 
-        protected bool visible  = true;
+        protected bool visible = true;
         public bool Visible { get => visible; set => visible = value; }
 
         public BaseUnit(string name)
@@ -49,7 +49,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         public List<T> GetRandom(int n = 1)
         {
             if (n < 1)
-                throw new ArgumentException("Bisch du dumm oder so?", "GetRandom Draws n is smaller than 1");
+                throw new ArgumentException("Bisch du dumm oder so?", "GetRandom Draws: n is smaller than 1");
 
             List<T> draw = units.Where(unit => unit.Visible).ToList();
             T lot;

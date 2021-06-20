@@ -19,6 +19,13 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Lightweight Suppressor", Id.MuzzleAssault);
             Factory.AddToGroup("Compensator", Id.MuzzleAssault);
             Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleAssault);
+
+            Factory.AddToGroup("Muzzle Brake 5.56", Id.MuzzleWest);
+            Factory.AddToGroup("Flashguard 5.56", Id.MuzzleWest);
+            Factory.AddToGroup("Suppressor", Id.MuzzleWest);
+            Factory.AddToGroup("Infantry Compensator", Id.MuzzleWest);
+            Factory.AddToGroup("SOCOM Eliminator", Id.MuzzleWest);
+            Factory.AddToGroup("Agency Suppressor", Id.MuzzleWest);
         }
     }
 }

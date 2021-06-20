@@ -10,10 +10,5 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         {
 
         }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

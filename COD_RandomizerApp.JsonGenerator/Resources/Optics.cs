@@ -33,6 +33,21 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Thermal Hybrid", Id.OpticMW);
             Factory.AddToGroup("Solozero Optics Mini Reflex", Id.OpticMW);
             Factory.AddToGroup("Variable Zoom Scope", Id.OpticMW);
+
+            Factory.AddToGroup("Millstop Reflex", Id.OpticWest);
+            Factory.AddToGroup("Visiontech 2x", Id.OpticWest);
+            Factory.AddToGroup("Kobra Red Dot", Id.OpticWest);
+            Factory.AddToGroup("Quickdot LED", Id.OpticWest);
+            Factory.AddToGroup("Axial Arms 3x", Id.OpticWest);
+            Factory.AddToGroup("Sillix Holoscout", Id.OpticWest);
+            Factory.AddToGroup("Microflex LED", Id.OpticWest);
+            Factory.AddToGroup("Hawksmoor", Id.OpticWest);
+            Factory.AddToGroup("Royal & Kross 4x", Id.OpticWest);
+            Factory.AddToGroup("SUSAT Multizoom", Id.OpticWest);
+            Factory.AddToGroup("Diamondback Reflex", Id.OpticWest);
+            Factory.AddToGroup("AN/PVS-4 Thermal", Id.OpticWest);
+
+
         }
     }
 }
