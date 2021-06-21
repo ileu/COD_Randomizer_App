@@ -18,7 +18,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
             output += " Slots:\n";
             foreach (Slot slot in Slots)
             {
-                output += "  " + slot.Name + ": ";
+                output += "  " + slot.Name + ":\n";
                 if (slot.Attachements == null)
                 {
                     output += "null\n";
@@ -26,10 +26,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
                 }
                 foreach (Attachment attachement in slot.Attachements)
                 {
-                    output += attachement.Name + ", ";
+                    output += "      " + attachement.Name + "\n";
                 }
-                output = output.Remove(output.Length - 2);
-                output += "\n";
             }
 
             return output;

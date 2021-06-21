@@ -25,6 +25,18 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Operator Foregrip", Id.UnderbarrelAssault);
             Factory.AddToGroup("Ranger Foregrip", Id.UnderbarrelAssault);
             Factory.AddToGroup("Bipod", Id.UnderbarrelAssault);
+
+            Factory.AddToGroup("Foregrip", Id.UnderbarrelWest, Id.UnderbarrelEast);
+            Factory.AddToGroup("Infiltrator Grip", Id.UnderbarrelWest, Id.UnderbarrelEast);
+            Factory.AddToGroup("Bruiser Grip", Id.UnderbarrelWest, Id.UnderbarrelEast);
+
+            Factory.AddToGroup("Field Agent Grip", Id.UnderbarrelWest);
+            Factory.AddToGroup("Spetsnaz Grip", Id.UnderbarrelEast);
+
+            Factory.AddToGroup("Patrol Grip", Id.UnderbarrelWest, Id.UnderbarrelEast);
+
+            Factory.AddToGroup("SFOD Speedgrip", Id.UnderbarrelWest);
+            Factory.AddToGroup("Spetsnaz Speedgrip", Id.UnderbarrelEast);
         }
     }
 }

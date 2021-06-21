@@ -59,9 +59,13 @@
     <Compile Include="Models\Slot.cs" />
     <Compile Include="Models\Unit.cs" />
     <Compile Include="Models\Weapon.cs" />
+    <Compile Include="Resources\Magazins.cs" />
+    <Compile Include="Resources\Barrels.cs" />
     <Compile Include="Resources\Muzzles.cs" />
     <Compile Include="Resources\Optics.cs" />
     <Compile Include="Resources\Perks.cs" />
+    <Compile Include="Resources\RearGrips.cs" />
+    <Compile Include="Resources\Stocks.cs" />
     <Compile Include="Resources\Underbarrel.cs" />
     <Compile Include="Resources\WeaponDictionaries.cs" />
     <Compile Include="Program.cs" />

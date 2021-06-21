@@ -19,13 +19,11 @@ namespace COD_Randomizer_App.JsonGenerator
         {
             MotherLoadout MotherLoadout = new MotherLoadout();
             string filepath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\COD_Randomizer_App\\Resources\\TestJson.json";
-            // var testContent = File.ReadAllText(filepath);
+            var testContent = File.ReadAllText(filepath);
 
-            Weapon kilo = Factory.CreateWeapon("Kilo", WeaponDictionaries.kilotest);
+            Weapon tes_weapon = Factory.CreateWeapon("Test", WeaponDictionaries.c58);
 
-            MotherLoadout.Primaries.Add(kilo);
-
-            var test = JsonConvert.SerializeObject(kilo, Formatting.Indented);
+            var test = JsonConvert.SerializeObject(tes_weapon, Formatting.Indented);
 
             /*
             foreach(KeyValuePair<string, Dictionary<string, int>> key in WeaponDictionaries.sturmgewehr_dict)
@@ -34,9 +32,9 @@ namespace COD_Randomizer_App.JsonGenerator
             }
             */
 
-            File.WriteAllText(filepath, test);
+            //File.WriteAllText(filepath, test);
 
-            Console.WriteLine(kilo.Display());
+            Console.WriteLine(tes_weapon.Display());
             Console.WriteLine();
             Console.ReadLine();
         }

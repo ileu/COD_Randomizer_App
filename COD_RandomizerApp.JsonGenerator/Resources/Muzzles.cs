@@ -12,20 +12,34 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("Flash Guard", Id.MuzzleAssault);
-            Factory.AddToGroup("Tactical Suppressor", Id.MuzzleAssault);
+            Factory.AddToGroup("Flash Guard", Id.MuzzleAssault, Id.MuzzleOden);
+            Factory.AddToGroup("Tactical Suppressor", Id.MuzzleAssault, Id.MuzzleOden);
             Factory.AddToGroup("Breacher Device", Id.MuzzleAssault);
-            Factory.AddToGroup("Muzzle Brake", Id.MuzzleAssault);
+            Factory.AddToGroup("Muzzle Brake", Id.MuzzleAssault, Id.MuzzleOden);
             Factory.AddToGroup("Lightweight Suppressor", Id.MuzzleAssault);
+
             Factory.AddToGroup("Compensator", Id.MuzzleAssault);
             Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleAssault);
 
-            Factory.AddToGroup("Muzzle Brake 5.56", Id.MuzzleWest);
-            Factory.AddToGroup("Flashguard 5.56", Id.MuzzleWest);
-            Factory.AddToGroup("Suppressor", Id.MuzzleWest);
-            Factory.AddToGroup("Infantry Compensator", Id.MuzzleWest);
-            Factory.AddToGroup("SOCOM Eliminator", Id.MuzzleWest);
-            Factory.AddToGroup("Agency Suppressor", Id.MuzzleWest);
+            Factory.AddToGroup("Compensator", Id.MuzzleAssault, Id.MuzzleOden);
+            Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleAssault, Id.MuzzleOden);
+            Factory.AddToGroup("CQB Breacher Device", Id.MuzzleOden);
+            Factory.AddToGroup("Collosus Suppressor", Id.MuzzleOden);
+
+            Factory.AddToGroup("Muzzle Brake 5.56", Id.MuzzleWest, Id.MuzzleEast5);
+            Factory.AddToGroup("Flashguard 5.56", Id.MuzzleWest, Id.MuzzleEast5);
+
+            Factory.AddToGroup("Muzzle Brake 7.62", Id.MuzzleEast, Id.MuzzleWest7);
+            Factory.AddToGroup("Flashguard 7.62", Id.MuzzleEast, Id.MuzzleWest7);
+
+            Factory.AddToGroup("Suppressor", Id.MuzzleWest, Id.MuzzleEast, Id.MuzzleEast5, Id.MuzzleWest7);
+            Factory.AddToGroup("Infantry Compensator", Id.MuzzleWest, Id.MuzzleWest7);
+            Factory.AddToGroup("SOCOM Eliminator", Id.MuzzleWest, Id.MuzzleWest7);
+            Factory.AddToGroup("Agency Suppressor", Id.MuzzleWest, Id.MuzzleWest7);
+
+            Factory.AddToGroup("Spetsnaz Compensator", Id.MuzzleEast, Id.MuzzleEast5);
+            Factory.AddToGroup("KGB Eliminator", Id.MuzzleEast, Id.MuzzleEast5);
+            Factory.AddToGroup("GRU Suppressor", Id.MuzzleEast, Id.MuzzleEast5);
         }
     }
 }

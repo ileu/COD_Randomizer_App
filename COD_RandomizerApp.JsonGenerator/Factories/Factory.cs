@@ -34,16 +34,31 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
 
         static Factory()
         {
+            Barrels.Create();
             Lasers.Create();
+            Magazins.Create();
             Optics.Create();
             Muzzles.Create();
             Perks.Create();
             Underbarrel.Create();
+            RearGrips.Create();
+            Stocks.Create();
         }
 
         public static Dictionary<Id, List<Attachment>> GetGroups()
         {
             return Groups;
+        }
+
+        public static string PrintGroup()
+        {
+            string temp = "";
+            foreach (KeyValuePair<Id, List<Attachment>> key in Groups)
+            {
+                temp += key.Key.ToString() + ": " + key.Value.Count + "\n";
+            }
+
+            return temp;
         }
 
         public static List<Attachment> GetAttachmentGroup(Id id)
@@ -100,5 +115,14 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
                 AddToGroup(name, id);
             }
         }
+
+        public static void AddToGroup(string name, params Id[] ids)
+        {
+            foreach (Id id in ids)
+            {
+                AddToGroup(name, id);
+            }
+        }
+
     }
 }
