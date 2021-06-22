@@ -12,17 +12,14 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("Flash Guard", Id.MuzzleAssault, Id.MuzzleOden);
-            Factory.AddToGroup("Tactical Suppressor", Id.MuzzleAssault, Id.MuzzleOden);
+            Factory.AddToGroup("Flash Guard", Id.MuzzleAssault, Id.MuzzleOden, Id.MuzzleFAL);
+            Factory.AddToGroup("Tactical Suppressor", Id.MuzzleAssault, Id.MuzzleOden, Id.MuzzleFAL);
             Factory.AddToGroup("Breacher Device", Id.MuzzleAssault);
-            Factory.AddToGroup("Muzzle Brake", Id.MuzzleAssault, Id.MuzzleOden);
-            Factory.AddToGroup("Lightweight Suppressor", Id.MuzzleAssault);
+            Factory.AddToGroup("Muzzle Brake", Id.MuzzleAssault, Id.MuzzleOden, Id.MuzzleFAL);
+            Factory.AddToGroup("Lightweight Suppressor", Id.MuzzleAssault, Id.MuzzleFAL);
 
-            Factory.AddToGroup("Compensator", Id.MuzzleAssault);
-            Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleAssault);
-
-            Factory.AddToGroup("Compensator", Id.MuzzleAssault, Id.MuzzleOden);
-            Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleAssault, Id.MuzzleOden);
+            Factory.AddToGroup("Compensator", Id.MuzzleAssault, Id.MuzzleOden, Id.MuzzleFAL);
+            Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleAssault, Id.MuzzleOden, Id.MuzzleFAL);
             Factory.AddToGroup("CQB Breacher Device", Id.MuzzleOden);
             Factory.AddToGroup("Collosus Suppressor", Id.MuzzleOden);
 

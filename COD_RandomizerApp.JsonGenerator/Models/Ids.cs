@@ -30,6 +30,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         10 - Kilo specific
         11 - Oden specific
         12 - M4A1 specific
+        13 - M13 specific
+        14 - FAL
 
          */
 
@@ -38,6 +40,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
 
         MuzzleAssault = 501,
         MuzzleOden = 511,
+        MuzzleFAL = 514,
         MuzzleWest = 550,
         MuzzleEast = 551,
         MuzzleEast5 = 552,
@@ -46,6 +49,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         BarrelKilo = 110,
         BarrelOden = 111,
         BarrelM4A1 = 112,
+        BarrelM13 = 113,
+        BarrelFAL = 114,
         BarrelXM4 = 150,
         BarrelAk47 = 151,
         BarrelKrig = 152,
@@ -68,6 +73,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         StockKilo = 1010,
         StockOden = 1011,
         StockM4A1 = 1012,
+        StockM13 = 1013,
+        StockFAL = 1014,
         StockKrig = 1050,
         StockAK47 = 1051,
         StockXM4 = 1052,
@@ -84,6 +91,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MagazinKilo = 410,
         MagazinOden = 411,
         MagazinM4A1 = 412,
+        MagazinM13 = 413,
+        MagazinFAL = 414,
         MagazinWest = 450,
         MagazinEast = 451,
         MagazinWestSmall = 452,

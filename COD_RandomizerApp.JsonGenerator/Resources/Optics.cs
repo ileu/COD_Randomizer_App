@@ -31,7 +31,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Merc Thermal Optic", Id.OpticMW, Id.OpticOden, Id.OpticM4A1);
             Factory.AddToGroup("PBX Holo 7 Sight", Id.OpticMW, Id.OpticOden, Id.OpticM4A1);
             Factory.AddToGroup("Thermal Hybrid", Id.OpticMW, Id.OpticOden, Id.OpticM4A1);
-            Factory.AddToGroup("Solozero Optics Mini Reflex", Id.OpticMW, Id.OpticOden, Id.OpticM4A1);
+            Factory.AddToGroup("Solozero Optics Mini Reflex", Id.OpticMW, Id.OpticOden);
             Factory.AddToGroup("Variable Zoom Scope", Id.OpticMW, Id.OpticOden, Id.OpticM4A1);
 
             Factory.AddToGroup("Millstop Reflex", Id.OpticWest, Id.OpticEast);

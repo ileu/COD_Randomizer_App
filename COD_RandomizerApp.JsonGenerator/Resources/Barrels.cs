@@ -24,6 +24,12 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("FFS 14.5 Tac Lite", Id.BarrelM4A1);
             Factory.AddToGroup("Corvus Custom Marksman", Id.BarrelM4A1);
             Factory.AddToGroup("FFS 12.4 Predator", Id.BarrelM4A1);
+            Factory.AddToGroup("Tempus Mini", Id.BarrelM13);
+            Factory.AddToGroup("Tempus Cyclone", Id.BarrelM13);
+            Factory.AddToGroup("18.0\" Ultralight", Id.BarrelFAL);
+            Factory.AddToGroup("XRK Marksman", Id.BarrelFAL);
+            Factory.AddToGroup("13.0\" OSW Para", Id.BarrelFAL);
+
 
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);
             Factory.AddToGroup("12.5\" Cavalry Lancer", Id.BarrelXM4);
