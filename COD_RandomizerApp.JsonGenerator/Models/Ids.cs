@@ -32,6 +32,9 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         12 - M4A1 specific
         13 - M13 specific
         14 - FAL
+        15 - Scar
+        16 - FR 5.56
+        17 - AK 47 MW
 
          */
 
@@ -41,6 +44,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MuzzleAssault = 501,
         MuzzleOden = 511,
         MuzzleFAL = 514,
+        MuzzleFR556 = 516,
+        MuzzleAK47MW = 517,
         MuzzleWest = 550,
         MuzzleEast = 551,
         MuzzleEast5 = 552,
@@ -51,6 +56,9 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         BarrelM4A1 = 112,
         BarrelM13 = 113,
         BarrelFAL = 114,
+        BarrelScar = 115,
+        BarrelFR556 = 116,
+        BarrelAK47MW = 117,
         BarrelXM4 = 150,
         BarrelAk47 = 151,
         BarrelKrig = 152,
@@ -67,6 +75,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         OpticMW = 601,
         OpticOden = 611,
         OpticM4A1 = 612,
+        OpticAK47MW = 617,
         OpticWest = 650,
         OpticEast = 651,
 
@@ -75,6 +84,9 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         StockM4A1 = 1012,
         StockM13 = 1013,
         StockFAL = 1014,
+        StockScar = 1015,
+        StockFR556 = 1016,
+        StockAK47MW = 1017,
         StockKrig = 1050,
         StockAK47 = 1051,
         StockXM4 = 1052,
@@ -85,6 +97,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         StockFFAR = 1057,
 
         UnderbarrelAssault = 1201,
+        UnderbarrelScar = 1215,
+        UnderbarrelAK47MW = 1217,
         UnderbarrelWest = 1250,
         UnderbarrelEast = 1251,
 
@@ -93,6 +107,9 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MagazinM4A1 = 412,
         MagazinM13 = 413,
         MagazinFAL = 414,
+        MagazinScar = 415,
+        MagazinFR556 = 416,
+        MagazinAK47MW = 417,
         MagazinWest = 450,
         MagazinEast = 451,
         MagazinWestSmall = 452,
@@ -107,5 +124,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         RearGripEast = 951,
 
         PerksMW = 701,
+        PerksScar = 715, 
+        PerksFR556 = 716
     }
 }

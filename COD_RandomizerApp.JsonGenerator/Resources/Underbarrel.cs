@@ -12,19 +12,27 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("Commando Foregrip", Id.UnderbarrelAssault);
-            Factory.AddToGroup("M203 40mm Concussive", Id.UnderbarrelAssault);
-            Factory.AddToGroup("Merc Foregrip", Id.UnderbarrelAssault);
-            Factory.AddToGroup("M203 40mm Smokescreen", Id.UnderbarrelAssault);
-            Factory.AddToGroup("12 Gauge Deputy", Id.UnderbarrelAssault);
-            Factory.AddToGroup("M203 40mm Recon", Id.UnderbarrelAssault);
-            Factory.AddToGroup("M203 40mm Highexplosive", Id.UnderbarrelAssault);
-            Factory.AddToGroup("M203 40mm Flash", Id.UnderbarrelAssault);
-            Factory.AddToGroup("Tactical Foregrip", Id.UnderbarrelAssault);
-            Factory.AddToGroup("M203 40mm Incendiary", Id.UnderbarrelAssault);
-            Factory.AddToGroup("Operator Foregrip", Id.UnderbarrelAssault);
-            Factory.AddToGroup("Ranger Foregrip", Id.UnderbarrelAssault);
-            Factory.AddToGroup("Bipod", Id.UnderbarrelAssault);
+            Factory.AddToGroup("Commando Foregrip", Id.UnderbarrelAssault, Id.UnderbarrelScar, Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("M203 40mm Concussive", Id.UnderbarrelAssault, Id.UnderbarrelScar);
+            Factory.AddToGroup("Merc Foregrip", Id.UnderbarrelAssault, Id.UnderbarrelScar, Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("M203 40mm Smokescreen", Id.UnderbarrelAssault, Id.UnderbarrelScar);
+            Factory.AddToGroup("12 Gauge Deputy", Id.UnderbarrelAssault, Id.UnderbarrelScar, Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("M203 40mm Recon", Id.UnderbarrelAssault, Id.UnderbarrelScar);
+            Factory.AddToGroup("M203 40mm High-explosive", Id.UnderbarrelAssault, Id.UnderbarrelScar);
+            Factory.AddToGroup("M203 40mm Flash", Id.UnderbarrelAssault, Id.UnderbarrelScar);
+            Factory.AddToGroup("Tactical Foregrip", Id.UnderbarrelAssault, Id.UnderbarrelScar, Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("M203 40mm Incendiary", Id.UnderbarrelAssault, Id.UnderbarrelScar);
+            Factory.AddToGroup("Operator Foregrip", Id.UnderbarrelAssault, Id.UnderbarrelScar, Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("Ranger Foregrip", Id.UnderbarrelAssault, Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("Bipod", Id.UnderbarrelAssault, Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("Bipod Foregrip", Id.UnderbarrelScar);
+
+            Factory.AddToGroup("GP25 40mm High-explosive", Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("GP25 40mm Smokescreen", Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("GP25 40mm Incendiary", Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("GP25 40mm Concussive", Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("GP25 40mm Flash", Id.UnderbarrelAK47MW);
+            Factory.AddToGroup("GP25 40mm Recon", Id.UnderbarrelAK47MW);
 
             Factory.AddToGroup("Foregrip", Id.UnderbarrelWest, Id.UnderbarrelEast);
             Factory.AddToGroup("Infiltrator Grip", Id.UnderbarrelWest, Id.UnderbarrelEast);

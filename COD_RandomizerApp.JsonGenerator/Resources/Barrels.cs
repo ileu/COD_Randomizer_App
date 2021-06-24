@@ -29,6 +29,16 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("18.0\" Ultralight", Id.BarrelFAL);
             Factory.AddToGroup("XRK Marksman", Id.BarrelFAL);
             Factory.AddToGroup("13.0\" OSW Para", Id.BarrelFAL);
+            Factory.AddToGroup("FORGE TAC 17.2\" LB", Id.BarrelScar);
+            Factory.AddToGroup("FORGE TAC 20.0\" LB", Id.BarrelScar);
+            Factory.AddToGroup("FORGE TAC CQC Pro", Id.BarrelScar);
+            Factory.AddToGroup("FR 15.9\" Commando", Id.BarrelFR556);
+            Factory.AddToGroup("FR 24.4\" Sniper", Id.BarrelFR556);
+            Factory.AddToGroup("TAC FORGE Ultralight", Id.BarrelFR556);
+            Factory.AddToGroup("Spetsnaz Elite", Id.BarrelAK47MW);
+            Factory.AddToGroup("23.0\" RPK Barrel", Id.BarrelAK47MW);
+            Factory.AddToGroup("8.1\" Compact Barrel", Id.BarrelAK47MW);
+            Factory.AddToGroup("23.0\" Romanian", Id.BarrelAK47MW);
 
 
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);

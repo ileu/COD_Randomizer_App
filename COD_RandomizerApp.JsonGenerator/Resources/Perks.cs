@@ -12,17 +12,17 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("FMJ", Id.PerksMW);
-            Factory.AddToGroup("Heavy Hitter", Id.PerksMW);
-            Factory.AddToGroup("Recon", Id.PerksMW);
-            Factory.AddToGroup("Frangible - Wounding", Id.PerksMW);
-            Factory.AddToGroup("Mo' Money", Id.PerksMW);
-            Factory.AddToGroup("Fully Loaded", Id.PerksMW);
-            Factory.AddToGroup("Sleight of Hand", Id.PerksMW);
-            Factory.AddToGroup("Fast Melee", Id.PerksMW);
+            Factory.AddToGroup("FMJ", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
+            Factory.AddToGroup("Heavy Hitter", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
+            Factory.AddToGroup("Recon", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
+            Factory.AddToGroup("Frangible - Wounding", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
+            Factory.AddToGroup("Mo' Money", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
+            Factory.AddToGroup("Fully Loaded", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
+            Factory.AddToGroup("Sleight of Hand", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
+            Factory.AddToGroup("Fast Melee", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
             Factory.AddToGroup("Burst", Id.PerksMW);
-            Factory.AddToGroup("Frangible - Disabling", Id.PerksMW);
-            Factory.AddToGroup("Presence of Mind", Id.PerksMW);
+            Factory.AddToGroup("Frangible - Disabling", Id.PerksMW, Id.PerksScar, Id.PerksFR556);
+            Factory.AddToGroup("Presence of Mind", Id.PerksMW, Id.PerksFR556);
         }
     }
 }
