@@ -12,10 +12,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("FORGE TAC Ultralight", Id.StockKilo, Id.StockAK47MW);
+            Factory.AddToGroup("FORGE TAC Ultralight", Id.StockKilo, Id.StockAK47MW, Id.StockAn94);
             Factory.AddToGroup("Singuard Arms Sniper Pro", Id.StockKilo);
-            Factory.AddToGroup("No Stock", Id.StockKilo, Id.StockM4A1, Id.StockM13, Id.StockFAL, Id.StockAK47MW);
-            Factory.AddToGroup("FSS Close Quarters Stock", Id.StockKilo, Id.StockFAL, Id.StockScar, Id.StockAK47MW);
+            Factory.AddToGroup("No Stock", Id.StockKilo, Id.StockM4A1, Id.StockM13, Id.StockFAL, Id.StockAK47MW, Id.StockGrau, Id.StockAmax);
+            Factory.AddToGroup("FSS Close Quarters Stock", Id.StockKilo, Id.StockFAL, Id.StockScar, Id.StockAK47MW, Id.StockAmax, Id.StockAn94);
 
             Factory.AddToGroup("FORGE TAC Ballast Pack", Id.StockOden);
             Factory.AddToGroup("Oden Ultralight Hollow", Id.StockOden);
@@ -30,7 +30,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("M13 Skeleton Stock", Id.StockM13);
 
             Factory.AddToGroup("Factory 18\" Aluminum", Id.StockFAL);
-            Factory.AddToGroup("FTAC Hunter", Id.StockScar);
+            Factory.AddToGroup("FTAC Hunter", Id.StockScar, Id.StockAmax);
             Factory.AddToGroup("FTAC Collapsible Stock", Id.StockScar);
             Factory.AddToGroup("XRK Obelisk Pro", Id.StockScar);
 
@@ -39,7 +39,27 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("FSS Tac-Wrap", Id.StockFR556);
 
             Factory.AddToGroup("Field LMG Stock", Id.StockAK47MW); 
-            Factory.AddToGroup("Skeleton Stock", Id.StockAK47MW); 
+            Factory.AddToGroup("Skeleton Stock", Id.StockAK47MW);
+
+            Factory.AddToGroup("FTAC Equilibrium", Id.StockRam7);
+            Factory.AddToGroup("XRK Ultralight Hollow", Id.StockRam7);
+            Factory.AddToGroup("XRK Close Quarters Stock", Id.StockRam7);
+
+            Factory.AddToGroup("FSS Blackjack", Id.StockGrau);
+            Factory.AddToGroup("XRK StrikeLite III", Id.StockGrau);
+
+            Factory.AddToGroup("FTAC Spartan", Id.StockAmax);
+            Factory.AddToGroup("XRK Gatekeeper", Id.StockAmax);
+            Factory.AddToGroup("CR-56 EXO", Id.StockAmax);
+
+            Factory.AddToGroup("AN-94 Factory Heavy", Id.StockAn94);
+            Factory.AddToGroup("Folded Stock", Id.StockAn94);
+            Factory.AddToGroup("VLK PX-9 Pero", Id.StockAn94);
+
+            Factory.AddToGroup("VLK Vintazh", Id.StockVal);
+            Factory.AddToGroup("FSS Intl. Gen 4 GRU	", Id.StockVal);
+            Factory.AddToGroup("Stovl 6P30 Skelet", Id.StockVal);
+            Factory.AddToGroup("VLK Strelok", Id.StockVal);
 
 
             Factory.AddToGroup("Tactical Stock", Id.StockKrig,Id.StockXM4, Id.StockQBZ, Id.StockFara, Id.StockAK47, Id.StockC58, Id.StockFFAR, Id.StockGroza);

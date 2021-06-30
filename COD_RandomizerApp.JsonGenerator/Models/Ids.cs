@@ -26,7 +26,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         
         The last two digits are as following:
         smaller tahn 50: MW weapon attachements
-        01 - standard
+        01 - standard Assault
         10 - Kilo specific
         11 - Oden specific
         12 - M4A1 specific
@@ -35,6 +35,11 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         15 - Scar
         16 - FR 5.56
         17 - AK 47 MW
+        18 - Ram-7
+        19 - Grau 5.56
+        20 - CR-56 Amax
+        21 - AN-94
+        22 - AS VAL
 
          */
 
@@ -46,6 +51,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MuzzleFAL = 514,
         MuzzleFR556 = 516,
         MuzzleAK47MW = 517,
+        MuzzleAmax = 520,
+        MuzzleAn94 = 521,
         MuzzleWest = 550,
         MuzzleEast = 551,
         MuzzleEast5 = 552,
@@ -59,6 +66,11 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         BarrelScar = 115,
         BarrelFR556 = 116,
         BarrelAK47MW = 117,
+        BarrelRam7 = 118,
+        BarrelGrau = 119,
+        BarrelAmax = 120,
+        BarrelAn94 = 121,
+        BarrelVal = 122,
         BarrelXM4 = 150,
         BarrelAk47 = 151,
         BarrelKrig = 152,
@@ -76,6 +88,9 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         OpticOden = 611,
         OpticM4A1 = 612,
         OpticAK47MW = 617,
+        OpticRam7 = 618,
+        OpticAn94 = 621,
+        OpticVal = 622,
         OpticWest = 650,
         OpticEast = 651,
 
@@ -87,6 +102,11 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         StockScar = 1015,
         StockFR556 = 1016,
         StockAK47MW = 1017,
+        StockRam7 = 1018,
+        StockGrau = 1019,
+        StockAmax = 1020,
+        StockAn94 = 1021,
+        StockVal = 1022,
         StockKrig = 1050,
         StockAK47 = 1051,
         StockXM4 = 1052,
@@ -99,6 +119,9 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         UnderbarrelAssault = 1201,
         UnderbarrelScar = 1215,
         UnderbarrelAK47MW = 1217,
+        UnderbarrelRam7 = 1218,
+        UnderbarrelGrau = 1219,
+        UnderbarrelVal = 1222,
         UnderbarrelWest = 1250,
         UnderbarrelEast = 1251,
 
@@ -110,6 +133,10 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MagazinScar = 415,
         MagazinFR556 = 416,
         MagazinAK47MW = 417,
+        MagazinRam7 = 418,
+        MagazinAmax = 420,
+        MagazinAn94 = 421,
+        MagazinVal = 422,
         MagazinWest = 450,
         MagazinEast = 451,
         MagazinWestSmall = 452,
@@ -120,11 +147,13 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MagazinC58 = 457,
 
         RearGripAssault = 901,
+        RearGripGrau = 919,
+        RearGripAmax = 920,
         RearGripWest = 950,
         RearGripEast = 951,
 
         PerksMW = 701,
         PerksScar = 715, 
-        PerksFR556 = 716
+        PerksNoBurst = 716
     }
 }

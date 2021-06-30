@@ -39,7 +39,23 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("23.0\" RPK Barrel", Id.BarrelAK47MW);
             Factory.AddToGroup("8.1\" Compact Barrel", Id.BarrelAK47MW);
             Factory.AddToGroup("23.0\" Romanian", Id.BarrelAK47MW);
-
+            Factory.AddToGroup("FTAC 13.5\" Compact", Id.BarrelRam7);
+            Factory.AddToGroup("FORGE TAC Eclipse", Id.BarrelRam7);
+            Factory.AddToGroup("FSS Ranger", Id.BarrelRam7);
+            Factory.AddToGroup("ZLR Drifter A-08", Id.BarrelGrau);
+            Factory.AddToGroup("Tempus 26.4\" Archangel", Id.BarrelGrau);
+            Factory.AddToGroup("XRK CZEN mk2", Id.BarrelGrau);
+            Factory.AddToGroup("FSS 20.8\" Nexus", Id.BarrelGrau);
+            Factory.AddToGroup("FSS 11.8\" Squall", Id.BarrelGrau);
+            Factory.AddToGroup("FSS 8.3\" Intruder", Id.BarrelAmax);
+            Factory.AddToGroup("XRK Zodiac S440", Id.BarrelAmax);
+            Factory.AddToGroup("FSS 11.8\" Squall", Id.BarrelAmax);
+            Factory.AddToGroup("AN-94 Factory 330mm", Id.BarrelAn94);
+            Factory.AddToGroup("AN-94 Factory X-438mm", Id.BarrelAn94);
+            Factory.AddToGroup("VLK AN-94 Sila", Id.BarrelAn94);
+            Factory.AddToGroup("VLK 105mm Sova", Id.BarrelVal);
+            Factory.AddToGroup("Stovl SOF", Id.BarrelVal);
+            Factory.AddToGroup("VLK 200mm Osa", Id.BarrelVal);
 
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);
             Factory.AddToGroup("12.5\" Cavalry Lancer", Id.BarrelXM4);
