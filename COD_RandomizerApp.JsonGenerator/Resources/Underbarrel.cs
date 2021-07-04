@@ -36,17 +36,19 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("GP25 40mm Flash", Id.UnderbarrelAK47MW);
             Factory.AddToGroup("GP25 40mm Recon", Id.UnderbarrelAK47MW);
 
-            Factory.AddToGroup("Foregrip", Id.UnderbarrelWest, Id.UnderbarrelEast);
+            Factory.AddToGroup("Foregrip", Id.UnderbarrelWest, Id.UnderbarrelEast, Id.UnderbarrelEastMP, Id.UnderbarrelWestMP);
             Factory.AddToGroup("Infiltrator Grip", Id.UnderbarrelWest, Id.UnderbarrelEast);
-            Factory.AddToGroup("Bruiser Grip", Id.UnderbarrelWest, Id.UnderbarrelEast);
+            Factory.AddToGroup("Bruiser Grip", Id.UnderbarrelWest, Id.UnderbarrelEast, Id.UnderbarrelEastMP, Id.UnderbarrelWestMP);
 
-            Factory.AddToGroup("Field Agent Grip", Id.UnderbarrelWest);
-            Factory.AddToGroup("Spetsnaz Grip", Id.UnderbarrelEast);
+            Factory.AddToGroup("Red Cell Foregrip", Id.UnderbarrelEastMP, Id.UnderbarrelWestMP);
 
-            Factory.AddToGroup("Patrol Grip", Id.UnderbarrelWest, Id.UnderbarrelEast);
+            Factory.AddToGroup("Field Agent Grip", Id.UnderbarrelWest, Id.UnderbarrelWestMP);
+            Factory.AddToGroup("Spetsnaz Grip", Id.UnderbarrelEast, Id.UnderbarrelEastMP);
 
-            Factory.AddToGroup("SFOD Speedgrip", Id.UnderbarrelWest);
-            Factory.AddToGroup("Spetsnaz Speedgrip", Id.UnderbarrelEast);
+            Factory.AddToGroup("Patrol Grip", Id.UnderbarrelWest, Id.UnderbarrelEast, Id.UnderbarrelEastMP, Id.UnderbarrelWestMP);
+
+            Factory.AddToGroup("SFOD Speedgrip", Id.UnderbarrelWest, Id.UnderbarrelWestMP);
+            Factory.AddToGroup("Spetsnaz Speedgrip", Id.UnderbarrelEast, Id.UnderbarrelEastMP);
         }
     }
 }

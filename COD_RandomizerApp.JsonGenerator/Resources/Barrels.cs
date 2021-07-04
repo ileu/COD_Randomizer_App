@@ -57,6 +57,8 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Stovl SOF", Id.BarrelVal);
             Factory.AddToGroup("VLK 200mm Osa", Id.BarrelVal);
 
+            // ********* Cold War *********
+
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);
             Factory.AddToGroup("12.5\" Cavalry Lancer", Id.BarrelXM4);
             Factory.AddToGroup("13.5\" Reinforced Heavy", Id.BarrelXM4);
@@ -111,9 +113,63 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("19.5\" Reinforced Heavy", Id.BarrelFFAR);
             Factory.AddToGroup("21.2\" Ranger", Id.BarrelFFAR);
             Factory.AddToGroup("20.3\" Takedown", Id.BarrelFFAR);
-            Factory.AddToGroup("19.5\" Task Force", Id.BarrelFFAR);
+            Factory.AddToGroup("19.5\" Task Force", Id.BarrelFFAR); 
+            
+            Factory.AddToGroup("7.1\" Extended", Id.BarrelBullfrog);
+            Factory.AddToGroup("7\" Cavalry Lancer", Id.BarrelBullfrog);
+            Factory.AddToGroup("6.7\" VDV Reinforced", Id.BarrelBullfrog);
+            Factory.AddToGroup("8.1\" Liberator", Id.BarrelBullfrog);
+            Factory.AddToGroup("7.6\" Rifled", Id.BarrelBullfrog);
+            Factory.AddToGroup("7.4\" Task Force", Id.BarrelBullfrog);
+            
+            Factory.AddToGroup("8.9\" Extended", Id.BarrelMilano);
+            Factory.AddToGroup("9.5\" Cavalry Lancer", Id.BarrelMilano);
+            Factory.AddToGroup("10.1\" Reinforced Heavy", Id.BarrelMilano);
+            Factory.AddToGroup("10.5\" Ranger", Id.BarrelMilano);
+            Factory.AddToGroup("9.5\" Rifled", Id.BarrelMilano);
+            Factory.AddToGroup("10.6\" Task Force", Id.BarrelMilano);
+            
+            Factory.AddToGroup("12.5\" Extended", Id.BarrelLC10);
+            Factory.AddToGroup("11.4\" Cavalry Lancer", Id.BarrelLC10);
+            Factory.AddToGroup("11.9\" Reinforced Heavy", Id.BarrelLC10);
+            Factory.AddToGroup("14.5\" Ranger", Id.BarrelLC10);
+            Factory.AddToGroup("13.2\" Rifled", Id.BarrelLC10);
+            Factory.AddToGroup("13.9\" Task Force", Id.BarrelLC10);
+            
+            Factory.AddToGroup("8.9\" Extended", Id.BarrelKSP);
+            Factory.AddToGroup("9.6\" Cavalry Lancer", Id.BarrelKSP);
+            Factory.AddToGroup("10.5\" Reinforced Heavy", Id.BarrelKSP);
+            Factory.AddToGroup("9.5\" Ranger", Id.BarrelKSP);
+            Factory.AddToGroup("10.2\" Rifled", Id.BarrelKSP);
+            Factory.AddToGroup("10.5\" Task Force", Id.BarrelKSP);
 
+            Factory.AddToGroup("9.3\" Extended", Id.BarrelAk74u);
+            Factory.AddToGroup("8.4\" Cavalry Lancer", Id.BarrelAk74u);
+            Factory.AddToGroup("9.3\" VDV Reinforced", Id.BarrelAk74u);
+            Factory.AddToGroup("10.3\" Liberator", Id.BarrelAk74u);
+            Factory.AddToGroup("8.4\" Rifled", Id.BarrelAk74u);
+            Factory.AddToGroup("10.3\" Task Force", Id.BarrelAk74u);
 
+            Factory.AddToGroup("14.3\" Extended", Id.BarrelPPSh);
+            Factory.AddToGroup("12.7\" Cavalry Lancer", Id.BarrelPPSh);
+            Factory.AddToGroup("14.9\" Reinforced Heavy", Id.BarrelPPSh);
+            Factory.AddToGroup("14.9\" Ranger", Id.BarrelPPSh);
+            Factory.AddToGroup("14.9\" Rifled", Id.BarrelPPSh);
+            Factory.AddToGroup("15.7\" Task Force", Id.BarrelPPSh);
+
+            Factory.AddToGroup("9.5\" Extended", Id.BarrelMP9CW);
+            Factory.AddToGroup("10.1\" Cavalry Lancer", Id.BarrelMP9CW);
+            Factory.AddToGroup("9.5\" Reinforced Heavy", Id.BarrelMP9CW);
+            Factory.AddToGroup("9.5\" Ranger", Id.BarrelMP9CW);
+            Factory.AddToGroup("9.1\" Rifled", Id.BarrelMP9CW);
+            Factory.AddToGroup("9.5\" Task Force", Id.BarrelMP9CW);
+
+            Factory.AddToGroup("5.3\" Extended", Id.BarrelMac);
+            Factory.AddToGroup("6.5\" Cavalry Lancer", Id.BarrelMac);
+            Factory.AddToGroup("6.1\" Reinforced Heavy", Id.BarrelMac);
+            Factory.AddToGroup("5.3\" Ranger", Id.BarrelMac);
+            Factory.AddToGroup("6.5\" Rifled", Id.BarrelMac);
+            Factory.AddToGroup("5.9\" Task Force", Id.BarrelMac);
         }
     }
 }
