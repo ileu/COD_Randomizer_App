@@ -170,6 +170,27 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("5.3\" Ranger", Id.BarrelMac);
             Factory.AddToGroup("6.5\" Rifled", Id.BarrelMac);
             Factory.AddToGroup("5.9\" Task Force", Id.BarrelMac);
+
+            Factory.AddToGroup("13.7\" Extended", Id.BarrelStreetsweeper);
+            Factory.AddToGroup("14.6\" Cavalry Lancer", Id.BarrelStreetsweeper);
+            Factory.AddToGroup("13.3\" Reinforced Heavy", Id.BarrelStreetsweeper);
+            Factory.AddToGroup("14.6\" Ranger", Id.BarrelStreetsweeper);
+            Factory.AddToGroup("13.3\" Hammer Forged", Id.BarrelStreetsweeper);
+            Factory.AddToGroup("14.4\" Task Force", Id.BarrelStreetsweeper);
+
+            Factory.AddToGroup("22.7\" Extended", Id.BarrelGallo);
+            Factory.AddToGroup("23.5\" Cavalry Lancer", Id.BarrelGallo);
+            Factory.AddToGroup("21.4\" Reinforced Heavy", Id.BarrelGallo);
+            Factory.AddToGroup("24.6\" Ranger", Id.BarrelGallo);
+            Factory.AddToGroup("20.3\" Hammer Forged", Id.BarrelGallo);
+            Factory.AddToGroup("24.8\" Task Force", Id.BarrelGallo);
+
+            Factory.AddToGroup("22\" Extended", Id.BarrelHauer);
+            Factory.AddToGroup("20.4\" Cavalry Lancer", Id.BarrelHauer);
+            Factory.AddToGroup("21.6\" Reinforced Heavy", Id.BarrelHauer);
+            Factory.AddToGroup("24.1\" Ranger", Id.BarrelHauer);
+            Factory.AddToGroup("19.3\" Hammer Forged", Id.BarrelHauer);
+            Factory.AddToGroup("25.2\" Task Force", Id.BarrelHauer);
         }
     }
 }

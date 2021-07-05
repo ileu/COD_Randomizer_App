@@ -62,6 +62,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MuzzleEast45 = 556,
         MuzzleWest45 = 557,
         MuzzleEast545 = 558,
+        MuzzleStreetsweeper = 559,
+        MuzzleGallo = 560,
 
         BarrelKilo = 110,
         BarrelOden = 111,
@@ -92,6 +94,10 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         BarrelPPSh = 163,
         BarrelMP9CW = 164,
         BarrelMac = 165,
+        BarrelStreetsweeper = 166,
+        BarrelGallo = 167,
+        BarrelHauer = 168,
+
 
         LaserMW = 301,
         LaserWest = 350,
@@ -107,6 +113,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         OpticWest = 650,
         OpticEast = 651,
         OpticMPCW = 652,
+        OpticSGCW = 653,
 
         StockKilo = 1010,
         StockOden = 1011,
@@ -132,6 +139,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         StockMP9CW = 1058,
         StockMilano = 1059,
         StockPPSh = 1060,
+        StockSGCW = 1061,
+        StockHauer = 1062,
 
         UnderbarrelAssault = 1201,
         UnderbarrelScar = 1215,
@@ -172,6 +181,9 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MagazinPPSh = 463,
         MagazinMP9CW = 464,
         MagazinMac = 465,
+        MagazinStreetsweeper = 466,
+        MagazinGallo = 467,
+        MagazinHauer = 468,
 
         RearGripAssault = 901,
         RearGripGrau = 919,
@@ -182,6 +194,5 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         PerksMW = 701,
         PerksScar = 715, 
         PerksNoBurst = 716,
-        
     }
 }

@@ -42,7 +42,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Flashguard 5.45", Id.MuzzleEast545);
 
             Factory.AddToGroup("Suppressor", Id.MuzzleWest556, Id.MuzzleEast, Id.MuzzleEast556, Id.MuzzleWest762);
-            Factory.AddToGroup("Sound Suppressor", Id.MuzzleEast9, Id.MuzzleWest9, Id.MuzzleEast45, Id.MuzzleWest45, Id.MuzzleEast545);
+            Factory.AddToGroup("Sound Suppressor", Id.MuzzleEast9, Id.MuzzleWest9, Id.MuzzleEast45, Id.MuzzleWest45, Id.MuzzleEast545, Id.MuzzleStreetsweeper, Id.MuzzleGallo);
 
             Factory.AddToGroup("Infantry Compensator", Id.MuzzleWest556, Id.MuzzleWest762, Id.MuzzleWest9, Id.MuzzleWest45);
             Factory.AddToGroup("SOCOM Eliminator", Id.MuzzleWest556, Id.MuzzleWest762, Id.MuzzleWest9, Id.MuzzleWest45);
@@ -51,6 +51,14 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Spetsnaz Compensator", Id.MuzzleEast, Id.MuzzleEast556, Id.MuzzleEast9, Id.MuzzleEast45, Id.MuzzleEast545);
             Factory.AddToGroup("KGB Eliminator", Id.MuzzleEast, Id.MuzzleEast556, Id.MuzzleEast9, Id.MuzzleEast45, Id.MuzzleEast545);
             Factory.AddToGroup("GRU Suppressor", Id.MuzzleEast, Id.MuzzleEast556, Id.MuzzleEast9, Id.MuzzleEast45, Id.MuzzleEast545);
+
+            Factory.AddToGroup("Duckbill Choke", Id.MuzzleStreetsweeper, Id.MuzzleGallo);
+            Factory.AddToGroup("Regulator", Id.MuzzleStreetsweeper);
+            Factory.AddToGroup("Flash Cone 12 Ga", Id.MuzzleGallo);
+            Factory.AddToGroup("Infantry V-Choke", Id.MuzzleStreetsweeper, Id.MuzzleGallo);
+
+            Factory.AddToGroup("SOCOM Blast Mitigator", Id.MuzzleStreetsweeper, Id.MuzzleGallo);
+            Factory.AddToGroup("Agency Choke", Id.MuzzleStreetsweeper, Id.MuzzleGallo);
         }
     }
 }

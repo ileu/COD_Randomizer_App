@@ -44,6 +44,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("45 Rnd Drum", Id.MagazinWestDrum, Id.MagazinEastDrum, Id.MagazinC58, Id.MagazinMilano);
             Factory.AddToGroup("40 Rnd Drum", Id.MagazinAk74u, Id.MagazinMP9CW);
             Factory.AddToGroup("55 Rnd Drum", Id.MagazinPPSh);
+            Factory.AddToGroup("15 RND Tube", Id.MagazinStreetsweeper);
+            Factory.AddToGroup("9 Rnd Tube", Id.MagazinGallo);
+            Factory.AddToGroup("7 Rnd Tube", Id.MagazinHauer);
 
             Factory.AddToGroup("Jungle-Style Mags", Id.MagazinWest, Id.MagazinWestDrum, Id.MagazinFFAR, Id.MagazinC58, Id.MagazinMP9CW);
             Factory.AddToGroup("Taped Mags", Id.MagazinEast, Id.MagazinAkBO, Id.MagazinEastDrum, Id.MagazinAk74u);
@@ -67,6 +70,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("STANAG 55 Rnd", Id.MagazinC58, Id.MagazinLC10);
             Factory.AddToGroup("STANAG 85 Rnd", Id.MagazinBullfrog);
             Factory.AddToGroup("STANAG 48 Rnd", Id.MagazinKSP);
+            Factory.AddToGroup("STANAG 18 RND", Id.MagazinStreetsweeper);
+            Factory.AddToGroup("STANAG 12 Rnd Tube", Id.MagazinGallo);
+            Factory.AddToGroup("STANAG 9 Rnd Tube", Id.MagazinHauer);
             Factory.AddToGroup("STANAG 60 Rnd Drum", Id.MagazinWestDrum);
             Factory.AddToGroup("STANAG 55 Rnd Drum", Id.MagazinMilano);
             Factory.AddToGroup("STANAG 53 Rnd Drum", Id.MagazinMac);
