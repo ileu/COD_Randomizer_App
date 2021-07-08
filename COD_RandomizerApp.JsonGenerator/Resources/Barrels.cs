@@ -215,7 +215,35 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("21.6\" Reinforced Heavy", Id.BarrelHauer);
             Factory.AddToGroup("24.1\" Ranger", Id.BarrelHauer);
             Factory.AddToGroup("19.3\" Hammer Forged", Id.BarrelHauer);
-            Factory.AddToGroup("25.2\" Task Force", Id.BarrelHauer);
+            Factory.AddToGroup("25.2\" Task Force", Id.BarrelHauer); 
+            
+            Factory.AddToGroup("18\" Cut Down", Id.BarrelM60);
+            Factory.AddToGroup("18.9\" Cavalry Lancer", Id.BarrelM60);
+            Factory.AddToGroup("18.9\" Division", Id.BarrelM60);
+            Factory.AddToGroup("17.5\" SOR Cut Down", Id.BarrelM60);
+            Factory.AddToGroup("22.8\" Match Grade", Id.BarrelM60);
+            Factory.AddToGroup("22.8\" Task Force", Id.BarrelM60);
+            
+            Factory.AddToGroup("16\" Cut Down", Id.BarrelStoner);
+            Factory.AddToGroup("17.8\" Cavalry Lancer", Id.BarrelStoner);
+            Factory.AddToGroup("18.6\" Division", Id.BarrelStoner);
+            Factory.AddToGroup("16\" SOR Cut Down", Id.BarrelStoner);
+            Factory.AddToGroup("20.7\" Match Grade", Id.BarrelStoner);
+            Factory.AddToGroup("21.8\" Task Force", Id.BarrelStoner);
+            
+            Factory.AddToGroup("16.5\" Cut Down", Id.BarrelRPD);
+            Factory.AddToGroup("16.5\" Spetsnaz RPK Barrel", Id.BarrelRPD);
+            Factory.AddToGroup("16.5\" Division", Id.BarrelRPD);
+            Factory.AddToGroup("14.7\" GRU Cut Down", Id.BarrelRPD);
+            Factory.AddToGroup("20.3\" Match Grade", Id.BarrelRPD);
+            Factory.AddToGroup("20.3\" Task Force", Id.BarrelRPD);
+
+            Factory.AddToGroup("14.7\" Cut Down", Id.BarrelMG82);
+            Factory.AddToGroup("17.5\" Cavalry Lancer", Id.BarrelMG82);
+            Factory.AddToGroup("14.5\" Division", Id.BarrelMG82);
+            Factory.AddToGroup("13.4\" SOR Cut Down", Id.BarrelMG82);
+            Factory.AddToGroup("17.1\" Match Grade", Id.BarrelMG82);
+            Factory.AddToGroup("16.4\" Task Force", Id.BarrelMG82);
         }
     }
 }

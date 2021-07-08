@@ -45,7 +45,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 
         public static readonly Dictionary<string, Id> xm4 = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleWest556 }, { "Barrel", Id.BarrelXM4 }, { "Laser", Id.LaserWest }, { "Optic", Id.OpticWest },
             { "Stock", Id.StockXM4 }, { "Underbarrel", Id.UnderbarrelWest }, { "Ammunition", Id.MagazinWest }, { "Rear Grip", Id.RearGripWest } };
-        public static readonly Dictionary<string, Id> ak47_black = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleEast }, { "Barrel", Id.BarrelAk47 }, { "Laser", Id.LaserEast }, { "Optic", Id.OpticEast },
+        public static readonly Dictionary<string, Id> ak47_black = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleEast762 }, { "Barrel", Id.BarrelAk47 }, { "Laser", Id.LaserEast }, { "Optic", Id.OpticEast },
             { "Stock", Id.StockAK47CW }, { "Underbarrel", Id.UnderbarrelEast }, { "Ammunition", Id.MagazinEast }, { "Rear Grip", Id.RearGripEast } };
         public static readonly Dictionary<string, Id> krig = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleWest556 }, { "Barrel", Id.BarrelKrig }, { "Laser", Id.LaserWest }, { "Optic", Id.OpticWest },
             { "Stock", Id.StockKrig }, { "Underbarrel", Id.UnderbarrelWest }, { "Ammunition", Id.MagazinWest }, { "Rear Grip", Id.RearGripWest } };
@@ -55,7 +55,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             { "Stock", Id.StockFara }, { "Underbarrel", Id.UnderbarrelEast }, { "Ammunition", Id.MagazinEast}, { "Rear Grip", Id.RearGripEast } };
         public static readonly Dictionary<string, Id> qbz = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleWest556 }, { "Barrel", Id.BarrelQBZ }, { "Laser", Id.LaserWest }, { "Optic", Id.OpticWest },
             { "Stock", Id.StockQBZ }, { "Underbarrel", Id.UnderbarrelWest }, { "Ammunition", Id.MagazinWestDrum }, { "Rear Grip", Id.RearGripWest } };
-        public static readonly Dictionary<string, Id> groza = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleEast }, { "Barrel", Id.BarrelGroza }, { "Laser", Id.LaserEast }, { "Optic", Id.OpticEast },
+        public static readonly Dictionary<string, Id> groza = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleEast762 }, { "Barrel", Id.BarrelGroza }, { "Laser", Id.LaserEast }, { "Optic", Id.OpticEast },
             { "Stock", Id.StockGroza }, { "Underbarrel", Id.UnderbarrelEast }, { "Ammunition", Id.MagazinEastDrum }, { "Rear Grip", Id.RearGripEast } };   
         public static readonly Dictionary<string, Id> c58 = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleWest556 }, { "Barrel", Id.BarrelC58 }, { "Laser", Id.LaserWest }, { "Optic", Id.OpticWest },
             { "Stock", Id.StockC58 }, { "Underbarrel", Id.UnderbarrelWest }, { "Ammunition", Id.MagazinWestDrum }, { "Rear Grip", Id.RearGripWest } };
@@ -84,6 +84,16 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
         public static readonly Dictionary<string, Id> hauer = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleGallo}, { "Barrel", Id.BarrelHauer }, { "Laser", Id.LaserWest }, { "Optic", Id.OpticSGCW },
             { "Stock", Id.StockHauer }, { "Ammunition", Id.MagazinHauer }, { "Rear Grip", Id.RearGripWest } };
 
+        public static readonly Dictionary<string, Id> m60 = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleWest762 }, { "Barrel", Id.BarrelM60 }, { "Laser", Id.LaserWest }, { "Optic", Id.OpticWestLMG },
+            { "Stock", Id.StockM60 }, { "Underbarrel", Id.UnderbarrelWest }, { "Ammunition", Id.MagazinM60 }, { "Rear Grip", Id.RearGripWest } };
+        public static readonly Dictionary<string, Id> stoner = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleWest556 }, { "Barrel", Id.BarrelStoner }, { "Laser", Id.LaserWest }, { "Optic", Id.OpticWestLMG },
+            { "Stock", Id.StockStoner }, { "Underbarrel", Id.UnderbarrelWest }, { "Ammunition", Id.MagazinStoner }, { "Rear Grip", Id.RearGripWest } };
+        public static readonly Dictionary<string, Id> rpd = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleEast762 }, { "Barrel", Id.BarrelRPD }, { "Laser", Id.LaserEast }, { "Optic", Id.OpticEastLMG },
+            { "Stock", Id.StockRPK }, { "Underbarrel", Id.UnderbarrelEast }, { "Ammunition", Id.MagazinRPK }, { "Rear Grip", Id.RearGripEast } };
+        public static readonly Dictionary<string, Id> mg82 = new Dictionary<string, Id> { { "Muzzle", Id.MuzzleWest556 }, { "Barrel", Id.BarrelMG82 }, { "Laser", Id.LaserWest }, { "Optic", Id.OpticWestLMG },
+            { "Stock", Id.StockM60 }, { "Underbarrel", Id.UnderbarrelWest }, { "Ammunition", Id.MagazinMG82 }, { "Rear Grip", Id.RearGripWest } }; // stock mg82 == stock m60
+
+
 
         // BO waffen \/
 
@@ -109,9 +119,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
         //public static readonly Dictionary<string, int> gallo = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 3 }, { "Stock", 6 }, { "Ammunition", 2 }, { "Rear Grip", 6 } };
         //public static readonly Dictionary<string, int> hauer = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 3 }, { "Stock", 6 }, { "Ammunition", 2 }, { "Rear Grip", 6 } };
 
-        public static readonly Dictionary<string, int> m60 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
-        public static readonly Dictionary<string, int> stoner = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
-        public static readonly Dictionary<string, int> rpd = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        //public static readonly Dictionary<string, int> m60 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        //public static readonly Dictionary<string, int> stoner = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
+        //public static readonly Dictionary<string, int> rpd = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
 
         public static readonly Dictionary<string, int> dmr14 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
         public static readonly Dictionary<string, int> type63 = new Dictionary<string, int> { { "Muzzle", 6 }, { "Barrel", 6 }, { "Laser", 6 }, { "Optic", 12 }, { "Stock", 6 }, { "Underbarrel", 6 }, { "Ammunition", 6 }, { "Rear Grip", 6 } };
@@ -192,9 +202,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 
         /*
         public static readonly Dictionary<string, Dictionary<string, int>> sturmgewehr_dict = new Dictionary<string, Dictionary<string, int>> { { "QBZ", qbz }, { "Fara", fara }, { "XM4", xm4 }, { "AK-47 Cold War", ak47_black }, { "Krig 6", krig }, { "FFAR", ffar }, { "Groza", groza }, { "Oden", oden }, { "FAL", fal }, { "FR 5.56", fr556 }, { "FN SCAR 17", scar }, { "AS Val", asval }, { "AK 47 MW", ak47_mw }, { "CR-56 Amax", amax }, { "Kilo 141", kilo }, { "AN-94", an94 }, { "M13", m13 }, { "Ram-7", ram7 }, { "Grau 5.56", grau }, { "M4A1", m4a1 }, { "C58", c58 } };
-        public static readonly Dictionary<string, Dictionary<string, int>> mp_dict = new Dictionary<string, Dictionary<string, int>> { { "Mac 10", mac }, { "Milano", milano }, { "LC-10", lc10 }, { "KSP", ksp }, { "AK-74u", ak74 }, { "Ppsh", ppsh }, { "MP5 Cold War", mp5_black }, { "Bullfrog", bullfrog }, { "AUG MW", aug_mw }, { "Striker 45", striker }, { "Fennek", fennek }, { "PP 19", pp19 }, { "MP7", mp7 }, { " P90", p90 }, { "MP5 MW", mp5_mw }, { "Uzi", uzi }, { "ISO", iso } };
-        public static readonly Dictionary<string, Dictionary<string, int>> shotgun_dict = new Dictionary<string, Dictionary<string, int>> { { "Strassenfeger", strassenfeger }, { "Gallo", gallo }, { "Hauer 77", hauer }, { "Model 680", model680 }, { "Jak 12", jak }, { "Origin", origin }, { "R9-0", r9 }, { "VLK Rogue", vlk }, { "725", seven25 } };
-        public static readonly Dictionary<string, Dictionary<string, int>> lmg_dict = new Dictionary<string, Dictionary<string, int>> { { "M60", m60 }, { "Stoner", stoner }, { "RPD", rpd }, { "PKM", pkm }, { "SA87", sa87 }, { "Finn LMG", finn }, { "M91", m91 }, { "MG34", mg34 }, { "Holger", holger }, { "Bruen", bruen } };
+        public static readonly Dictionary<string, Dictionary<string, int>> mp_dict = new Dictionary<string, Dictionary<string, int>> { { "Mac 10", mac }, { "Milano", milano }, { "LC-10", lc10 }, { "KSP", ksp }, { "AK-74u", ak74 }, { "Ppsh", ppsh }, { "MP5 Cold War", mp5_black }, { "Bullfrog", bullfrog }, { "Aug MW", aug_mw }, { "Striker", striker }, { "Fennek", fennek }, { "PP 19", pp19 }, { "MP7", mp7 }, { " P90", p90 }, { "MP5 MW", mp5_mw }, { "Uzi", uzi }, { "Iso", iso } };
+        public static readonly Dictionary<string, Dictionary<string, int>> shotgun_dict = new Dictionary<string, Dictionary<string, int>> { { "Streetsweeper", strassenfeger }, { "Gallo", gallo }, { "Hauer 77", hauer }, { "Model 680", model680 }, { "Jak 12", jak }, { "Origin", origin }, { "R9-0", r9 }, { "VLK Rogue", vlk }, { "725", seven25 } };
+        public static readonly Dictionary<string, Dictionary<string, int>> lmg_dict = new Dictionary<string, Dictionary<string, int>> { { "MG 82 ", mg82 }, { "M60", m60 }, { "Stoner", stoner }, { "RPD", rpd }, { "PKM", pkm }, { "SA87", sa87 }, { "Finn LMG", finn }, { "M91", m91 }, { "MG34", mg34 }, { "Holger", holger }, { "Bruen", bruen } };
         public static readonly Dictionary<string, Dictionary<string, int>> taktikgewehr_dict = new Dictionary<string, Dictionary<string, int>> { { "DMR 14", dmr14 }, { "Type 63", type63 }, { "M16", m16 }, { "Aug Cold War", aug_black }, { "CARV.2", carv } };
         public static readonly Dictionary<string, Dictionary<string, int>> dmr_dict = new Dictionary<string, Dictionary<string, int>> { { "MK 2", mk2 }, { "EBR 14", ebr }, { "SKS", sks }, { "SPR", spr }, { "Crossbow", armbrust }, { "Kar", kar } };
         public static readonly Dictionary<string, Dictionary<string, int>> sniper_dict = new Dictionary<string, Dictionary<string, int>> { { "Rytec", rytec }, { "HDR", hdr }, { "AX 50", ax50 }, { "Dragunov", dragunov }, { "LW 3 Tundra", tundra }, { "Pellington703", pellington }, { "ZRG 20mm", zrg }, { "Swiss", swiss }, { "M82", m82 } };
