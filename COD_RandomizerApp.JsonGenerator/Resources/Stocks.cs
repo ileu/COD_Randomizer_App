@@ -63,27 +63,33 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 
 
             Factory.AddToGroup("Tactical Stock", Id.StockKrig,Id.StockXM4, Id.StockQBZ, Id.StockFara, Id.StockAK47CW, Id.StockC58, Id.StockFFAR,
-                Id.StockGroza, Id.StockMilano, Id.StockPPSh, Id.StockMP9CW, Id.StockSGCW, Id.StockHauer);
+                Id.StockGroza, Id.StockMilano, Id.StockPPSh, Id.StockMP9CW, Id.StockSGCW, Id.StockHauer, Id.StockM60, Id.StockStoner, Id.StockRPK);
 
             Factory.AddToGroup("Shotgun Stock", Id.StockHauer);
-            Factory.AddToGroup("Wire Stock", Id.StockKrig, Id.StockAK47CW, Id.StockXM4, Id.StockFara, Id.StockMilano, Id.StockSGCW);
-            Factory.AddToGroup("Marathon Stock", Id.StockQBZ, Id.StockC58, Id.StockFFAR, Id.StockGroza, Id.StockMilano, Id.StockPPSh, Id.StockSGCW, Id.StockHauer);
+            Factory.AddToGroup("Wire Stock", Id.StockKrig, Id.StockAK47CW, Id.StockXM4, Id.StockFara, Id.StockMilano, Id.StockSGCW, Id.StockStoner, 
+                Id.StockRPK);
+            Factory.AddToGroup("Marathon Stock", Id.StockQBZ, Id.StockC58, Id.StockFFAR, Id.StockGroza, Id.StockMilano, Id.StockPPSh, Id.StockSGCW, 
+                Id.StockHauer, Id.StockM60);
             Factory.AddToGroup("Collapsed Stock", Id.StockMP9CW);
 
-            Factory.AddToGroup("Duster Stock", Id.StockKrig, Id.StockAK47CW, Id.StockXM4, Id.StockFara, Id.StockC58, Id.StockMilano, Id.StockPPSh, Id.StockMP9CW, Id.StockSGCW);
-            Factory.AddToGroup("Duster Pad", Id.StockGroza, Id.StockFFAR, Id.StockQBZ, Id.StockHauer);
+            Factory.AddToGroup("Duster Stock", Id.StockKrig, Id.StockAK47CW, Id.StockXM4, Id.StockFara, Id.StockC58, Id.StockMilano, Id.StockPPSh, 
+                Id.StockMP9CW, Id.StockSGCW, Id.StockM60, Id.StockRPK);
+            Factory.AddToGroup("Duster Pad", Id.StockGroza, Id.StockFFAR, Id.StockQBZ, Id.StockHauer, Id.StockStoner);
 
-            Factory.AddToGroup("No Stock", Id.StockAK47CW, Id.StockFara, Id.StockKrig, Id.StockMP9CW, Id.StockSGCW, Id.StockHauer);
+            Factory.AddToGroup("No Stock", Id.StockAK47CW, Id.StockFara, Id.StockKrig, Id.StockMP9CW, Id.StockSGCW, Id.StockHauer, Id.StockM60, 
+                Id.StockStoner, Id.StockRPK);
             Factory.AddToGroup("CQB Stock", Id.StockC58, Id.StockPPSh);
             Factory.AddToGroup("CQB Pad", Id.StockQBZ, Id.StockFFAR, Id.StockGroza);
             Factory.AddToGroup("Buffer Tube", Id.StockXM4);
 
-            Factory.AddToGroup("SAS Combat Stock", Id.StockKrig, Id.StockXM4,Id.StockQBZ, Id.StockC58, Id.StockFFAR, Id.StockMilano, Id.StockMP9CW, Id.StockSGCW, Id.StockHauer);
-            Factory.AddToGroup("Raider Pad", Id.StockXM4);
-            Factory.AddToGroup("Raider Stock", Id.StockQBZ, Id.StockFara, Id.StockC58, Id.StockKrig, Id.StockFFAR, Id.StockMilano, Id.StockPPSh, Id.StockMP9CW);
+            Factory.AddToGroup("SAS Combat Stock", Id.StockKrig, Id.StockXM4,Id.StockQBZ, Id.StockC58, Id.StockFFAR, Id.StockMilano, Id.StockMP9CW, 
+                Id.StockSGCW, Id.StockHauer, Id.StockM60, Id.StockStoner);
+            Factory.AddToGroup("Raider Pad", Id.StockXM4, Id.StockStoner);
+            Factory.AddToGroup("Raider Stock", Id.StockQBZ, Id.StockFara, Id.StockC58, Id.StockKrig, Id.StockFFAR, Id.StockMilano, Id.StockPPSh,
+                Id.StockMP9CW, Id.StockM60);
 
-            Factory.AddToGroup("Spetsnaz PKM Stock", Id.StockAK47CW, Id.StockGroza, Id.StockPPSh);
-            Factory.AddToGroup("KGB Skeletal Stock", Id.StockAK47CW, Id.StockFara);
+            Factory.AddToGroup("Spetsnaz PKM Stock", Id.StockAK47CW, Id.StockGroza, Id.StockPPSh, Id.StockRPK);
+            Factory.AddToGroup("KGB Skeletal Stock", Id.StockAK47CW, Id.StockFara, Id.StockRPK);
             Factory.AddToGroup("KGB Pad", Id.StockGroza);
             
         }

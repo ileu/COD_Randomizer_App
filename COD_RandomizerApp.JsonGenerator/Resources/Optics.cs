@@ -37,21 +37,23 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("POS-M3 Thermal Scope", Id.OpticAn94);
             Factory.AddToGroup("Dragunov Scope", Id.OpticVal);
 
-            Factory.AddToGroup("Millstop Reflex", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW);
-            Factory.AddToGroup("Visiontech 2x", Id.OpticWest, Id.OpticEast, Id.OpticMPCW);
-            Factory.AddToGroup("Kobra Red Dot", Id.OpticWest, Id.OpticEast, Id.OpticMPCW);
-            Factory.AddToGroup("Quickdot LED", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW);
-            Factory.AddToGroup("Axial Arms 3x", Id.OpticWest, Id.OpticEast, Id.OpticMPCW);
-            Factory.AddToGroup("Sillix Holoscout", Id.OpticWest, Id.OpticEast, Id.OpticMPCW);
+            Factory.AddToGroup("Millstop Reflex", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW, Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("Visiontech 2x", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("Kobra Red Dot", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("Quickdot LED", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW, Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("Axial Arms 3x", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("Sillix Holoscout", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG);
             Factory.AddToGroup("Microflex LED", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW);
-            Factory.AddToGroup("Hawksmoor", Id.OpticWest, Id.OpticEast, Id.OpticMPCW);
-            Factory.AddToGroup("Royal & Kross 4x", Id.OpticWest, Id.OpticEast);
-            Factory.AddToGroup("SUSAT Multizoom", Id.OpticWest, Id.OpticEast, Id.OpticMPCW);
+            Factory.AddToGroup("Hawksmoor", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("Royal & Kross 4x", Id.OpticWest, Id.OpticEast, Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("SUSAT Multizoom", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG);
             Factory.AddToGroup("Diamondback Reflex", Id.OpticWest, Id.OpticEast, Id.OpticMPCW);
             Factory.AddToGroup("SnapPoint", Id.OpticMPCW);
             Factory.AddToGroup("Fastpoint Reflex", Id.OpticMPCW);
-            Factory.AddToGroup("AN/PVS-4 Thermal", Id.OpticWest);
-            Factory.AddToGroup("Noch Sova Thermal", Id.OpticEast);
+            Factory.AddToGroup("AN/PVS-4 Thermal", Id.OpticWest, Id.OpticWestLMG);
+            Factory.AddToGroup("Noch Sova Thermal", Id.OpticEast, Id.OpticEastLMG);
+            Factory.AddToGroup("Hangman RF", Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("Vulture Custom Zoom", Id.OpticWestLMG, Id.OpticEastLMG);
 
 
 
