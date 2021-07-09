@@ -16,46 +16,71 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Singuard Arms 16.6\" SOCOM", Id.BarrelKilo);
             Factory.AddToGroup("Singuard Arms 19.8\" Prowler", Id.BarrelKilo);
             Factory.AddToGroup("Singuard Arms Whisper", Id.BarrelKilo);
+
             Factory.AddToGroup("Oden Factory 810mm", Id.BarrelOden);
             Factory.AddToGroup("Oden Factory 730mm", Id.BarrelOden);
             Factory.AddToGroup("Oden Factory 420mm", Id.BarrelOden);
+
             Factory.AddToGroup("FFS 11.5 Commando", Id.BarrelM4A1);
             Factory.AddToGroup("Stock M16 Grenadier", Id.BarrelM4A1);
             Factory.AddToGroup("FFS 14.5 Tac Lite", Id.BarrelM4A1);
             Factory.AddToGroup("Corvus Custom Marksman", Id.BarrelM4A1);
             Factory.AddToGroup("FFS 12.4 Predator", Id.BarrelM4A1);
+
             Factory.AddToGroup("Tempus Mini", Id.BarrelM13);
             Factory.AddToGroup("Tempus Cyclone", Id.BarrelM13);
+
             Factory.AddToGroup("18.0\" Ultralight", Id.BarrelFAL);
             Factory.AddToGroup("XRK Marksman", Id.BarrelFAL);
             Factory.AddToGroup("13.0\" OSW Para", Id.BarrelFAL);
+
             Factory.AddToGroup("FORGE TAC 17.2\" LB", Id.BarrelScar);
             Factory.AddToGroup("FORGE TAC 20.0\" LB", Id.BarrelScar);
-            Factory.AddToGroup("FORGE TAC CQC Pro", Id.BarrelScar);
+            Factory.AddToGroup("FORGE TAC CQC Pro", Id.BarrelScar)
+                ;
             Factory.AddToGroup("FR 15.9\" Commando", Id.BarrelFR556);
             Factory.AddToGroup("FR 24.4\" Sniper", Id.BarrelFR556);
             Factory.AddToGroup("TAC FORGE Ultralight", Id.BarrelFR556);
+
             Factory.AddToGroup("Spetsnaz Elite", Id.BarrelAK47MW);
             Factory.AddToGroup("23.0\" RPK Barrel", Id.BarrelAK47MW);
             Factory.AddToGroup("8.1\" Compact Barrel", Id.BarrelAK47MW);
             Factory.AddToGroup("23.0\" Romanian", Id.BarrelAK47MW);
+
             Factory.AddToGroup("FTAC 13.5\" Compact", Id.BarrelRam7);
             Factory.AddToGroup("FORGE TAC Eclipse", Id.BarrelRam7);
             Factory.AddToGroup("FSS Ranger", Id.BarrelRam7);
+
             Factory.AddToGroup("ZLR Drifter A-08", Id.BarrelGrau);
             Factory.AddToGroup("Tempus 26.4\" Archangel", Id.BarrelGrau);
             Factory.AddToGroup("XRK CZEN mk2", Id.BarrelGrau);
             Factory.AddToGroup("FSS 20.8\" Nexus", Id.BarrelGrau);
             Factory.AddToGroup("FSS 11.8\" Squall", Id.BarrelGrau);
             Factory.AddToGroup("FSS 8.3\" Intruder", Id.BarrelAmax);
+
             Factory.AddToGroup("XRK Zodiac S440", Id.BarrelAmax);
             Factory.AddToGroup("FSS 11.8\" Squall", Id.BarrelAmax);
+
             Factory.AddToGroup("AN-94 Factory 330mm", Id.BarrelAn94);
             Factory.AddToGroup("AN-94 Factory X-438mm", Id.BarrelAn94);
             Factory.AddToGroup("VLK AN-94 Sila", Id.BarrelAn94);
+
             Factory.AddToGroup("VLK 105mm Sova", Id.BarrelVal);
             Factory.AddToGroup("Stovl SOF", Id.BarrelVal);
             Factory.AddToGroup("VLK 200mm Osa", Id.BarrelVal);
+
+            Factory.AddToGroup("FTAC 225mm Dominator", Id.BarrelIso);
+            Factory.AddToGroup("FSS Revolution", Id.BarrelIso);
+            Factory.AddToGroup("ISO 140mm CQB", Id.BarrelIso);
+            Factory.AddToGroup("FSS Nightshade", Id.BarrelIso);
+
+            Factory.AddToGroup("407mm Extended Barrel", Id.BarrelAug);
+            Factory.AddToGroup("407mm Lightweight", Id.BarrelAug);
+            Factory.AddToGroup("622mm Long Barrel", Id.BarrelAug);
+
+            Factory.AddToGroup("300mm Poly Barrel", Id.BarrelStriker);
+            Factory.AddToGroup("400mm Stainless Steel	", Id.BarrelStriker);
+            Factory.AddToGroup("150mm Stainless Steel", Id.BarrelStriker);
 
             // ********* Cold War *********
 

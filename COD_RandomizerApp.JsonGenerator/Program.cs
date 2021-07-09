@@ -21,7 +21,7 @@ namespace COD_Randomizer_App.JsonGenerator
             string filepath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\COD_Randomizer_App\\Resources\\TestJson.json";
             var testContent = File.ReadAllText(filepath);
 
-            Weapon tes_weapon = Factory.CreateWeapon("Test", WeaponDictionaries.m4a1);
+            Weapon tes_weapon = Factory.CreateWeapon("Test", WeaponDictionaries.striker);
 
             var test = JsonConvert.SerializeObject(tes_weapon, Formatting.Indented);
 

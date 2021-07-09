@@ -17,7 +17,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("100 Round Drums", Id.MagazinKilo);
 
             Factory.AddToGroup("25 Round Mags", Id.MagazinOden, Id.MagazinScar);
-            Factory.AddToGroup("30 Round Mags", Id.MagazinOden, Id.MagazinFAL, Id.MagazinScar, Id.MagazinVal);
+            Factory.AddToGroup("30 Round Mags", Id.MagazinOden, Id.MagazinFAL, Id.MagazinScar, Id.MagazinVal, Id.MagazinIso);
 
             Factory.AddToGroup("24 Round Mags", Id.MagazinFAL);
 
@@ -30,11 +30,17 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("40 Round Mags", Id.MagazinAK47MW);
             Factory.AddToGroup("5.45x39mm 30-Round Mags	", Id.MagazinAK47MW);
             Factory.AddToGroup("75 Round Drum Mags", Id.MagazinAK47MW);
+            Factory.AddToGroup("50 Round Drums", Id.MagazinIso);
 
-            Factory.AddToGroup("45 Round Mags", Id.MagazinAmax, Id.MagazinAn94);
+            Factory.AddToGroup("45 Round Mags", Id.MagazinAmax, Id.MagazinAn94, Id.MagazinStriker);
             Factory.AddToGroup("M67 10-R Mags", Id.MagazinAmax);
 
             Factory.AddToGroup("SPP 10-R Mags", Id.MagazinVal);
+            Factory.AddToGroup(".45 Hollow Point 12-R Mags", Id.MagazinStriker);
+
+            Factory.AddToGroup("32 Round Mags", Id.MagazinAug);
+            Factory.AddToGroup("5.56 NATO 30-Round Mags", Id.MagazinAug);
+            Factory.AddToGroup("5.56 NATO 60-Round Drums", Id.MagazinAug);
 
             Factory.AddToGroup("45 Rnd", Id.MagazinWest, Id.MagazinEast, Id.MagazinAkBO, Id.MagazinLC10);
             Factory.AddToGroup("38 Rnd", Id.MagazinFFAR);

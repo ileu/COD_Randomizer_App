@@ -12,16 +12,16 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("FMJ", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
-            Factory.AddToGroup("Heavy Hitter", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
-            Factory.AddToGroup("Recon", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
-            Factory.AddToGroup("Frangible - Wounding", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
-            Factory.AddToGroup("Mo' Money", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
-            Factory.AddToGroup("Fully Loaded", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
-            Factory.AddToGroup("Sleight of Hand", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
-            Factory.AddToGroup("Fast Melee", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
-            Factory.AddToGroup("Burst", Id.PerksMW);
-            Factory.AddToGroup("Frangible - Disabling", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst);
+            Factory.AddToGroup("FMJ", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
+            Factory.AddToGroup("Heavy Hitter", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
+            Factory.AddToGroup("Recon", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
+            Factory.AddToGroup("Frangible - Wounding", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
+            Factory.AddToGroup("Mo' Money", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
+            Factory.AddToGroup("Fully Loaded", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
+            Factory.AddToGroup("Sleight of Hand", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
+            Factory.AddToGroup("Fast Melee", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
+            Factory.AddToGroup("Burst", Id.PerksMW, Id.PerksMP);
+            Factory.AddToGroup("Frangible - Disabling", Id.PerksMW, Id.PerksScar, Id.PerksNoBurst, Id.PerksMPNoBurst, Id.PerksMP);
             Factory.AddToGroup("Presence of Mind", Id.PerksMW, Id.PerksNoBurst);
         }
     }

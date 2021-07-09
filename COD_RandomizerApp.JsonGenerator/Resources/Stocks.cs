@@ -12,7 +12,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("FORGE TAC Ultralight", Id.StockKilo, Id.StockAK47MW, Id.StockAn94);
+            Factory.AddToGroup("FORGE TAC Ultralight", Id.StockKilo, Id.StockAK47MW, Id.StockAn94, Id.StockIso);
             Factory.AddToGroup("Singuard Arms Sniper Pro", Id.StockKilo);
             Factory.AddToGroup("No Stock", Id.StockKilo, Id.StockM4A1, Id.StockM13, Id.StockFAL, Id.StockAK47MW, Id.StockGrau, Id.StockAmax);
             Factory.AddToGroup("FSS Close Quarters Stock", Id.StockKilo, Id.StockFAL, Id.StockScar, Id.StockAK47MW, Id.StockAmax, Id.StockAn94);
@@ -25,7 +25,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Singuard Arms Invader", Id.StockM4A1);
             Factory.AddToGroup("Forge TAC CQS", Id.StockM4A1);
 
-            Factory.AddToGroup("Forge TAC Stalker", Id.StockM13, Id.StockFAL);
+            Factory.AddToGroup("Forge TAC Stalker", Id.StockM13, Id.StockFAL, Id.StockIso);
             Factory.AddToGroup("FSS Close Quarters Stock", Id.StockM13);
             Factory.AddToGroup("M13 Skeleton Stock", Id.StockM13);
 
@@ -60,6 +60,18 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("FSS Intl. Gen 4 GRU	", Id.StockVal);
             Factory.AddToGroup("Stovl 6P30 Skelet", Id.StockVal);
             Factory.AddToGroup("VLK Strelok", Id.StockVal);
+
+            Factory.AddToGroup("FTAC Vagrant", Id.StockIso);
+            Factory.AddToGroup("ISO Collapsible", Id.StockIso);
+
+            Factory.AddToGroup("FTAC Ultralight Hollow", Id.StockAug);
+            Factory.AddToGroup("FORGE TAC CQB Comb", Id.StockAug);
+            Factory.AddToGroup("FSS Heavy Stock Pro", Id.StockAug);
+
+            Factory.AddToGroup("FSS Guardian", Id.StockStriker);
+            Factory.AddToGroup("FTAC Precision Fixed Stock", Id.StockStriker);
+            Factory.AddToGroup("XRK Gen III Survivalist Series", Id.StockStriker);
+
 
 
             Factory.AddToGroup("Tactical Stock", Id.StockKrig,Id.StockXM4, Id.StockQBZ, Id.StockFara, Id.StockAK47CW, Id.StockC58, Id.StockFFAR,
