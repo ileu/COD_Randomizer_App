@@ -12,10 +12,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("FORGE TAC Ultralight", Id.StockKilo, Id.StockAK47MW, Id.StockAn94, Id.StockIso);
+            Factory.AddToGroup("FORGE TAC Ultralight", Id.StockKilo, Id.StockAK47MW, Id.StockAn94, Id.StockIso, Id.StockMP7, Id.StockMP5MW, Id.StockUzi);
             Factory.AddToGroup("Singuard Arms Sniper Pro", Id.StockKilo);
-            Factory.AddToGroup("No Stock", Id.StockKilo, Id.StockM4A1, Id.StockM13, Id.StockFAL, Id.StockAK47MW, Id.StockGrau, Id.StockAmax);
-            Factory.AddToGroup("FSS Close Quarters Stock", Id.StockKilo, Id.StockFAL, Id.StockScar, Id.StockAK47MW, Id.StockAmax, Id.StockAn94);
+            Factory.AddToGroup("No Stock", Id.StockKilo, Id.StockM4A1, Id.StockM13, Id.StockFAL, Id.StockAK47MW, Id.StockGrau, Id.StockAmax, Id.StockFennec, Id.StockPP19, Id.StockMP7, Id.StockUzi);
+            Factory.AddToGroup("FSS Close Quarters Stock", Id.StockKilo, Id.StockFAL, Id.StockScar, Id.StockAK47MW, Id.StockAmax, Id.StockAn94, Id.StockPP19, Id.StockMP7, Id.StockMP5MW, Id.StockUzi);
 
             Factory.AddToGroup("FORGE TAC Ballast Pack", Id.StockOden);
             Factory.AddToGroup("Oden Ultralight Hollow", Id.StockOden);
@@ -23,9 +23,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 
             Factory.AddToGroup("M-16 Stock", Id.StockM4A1);
             Factory.AddToGroup("Singuard Arms Invader", Id.StockM4A1);
-            Factory.AddToGroup("Forge TAC CQS", Id.StockM4A1);
+            Factory.AddToGroup("Forge TAC CQS", Id.StockM4A1, Id.StockFennec);
 
-            Factory.AddToGroup("Forge TAC Stalker", Id.StockM13, Id.StockFAL, Id.StockIso);
+            Factory.AddToGroup("Forge TAC Stalker", Id.StockM13, Id.StockFAL, Id.StockIso, Id.StockMP7);
             Factory.AddToGroup("FSS Close Quarters Stock", Id.StockM13);
             Factory.AddToGroup("M13 Skeleton Stock", Id.StockM13);
 
@@ -65,12 +65,24 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("ISO Collapsible", Id.StockIso);
 
             Factory.AddToGroup("FTAC Ultralight Hollow", Id.StockAug);
-            Factory.AddToGroup("FORGE TAC CQB Comb", Id.StockAug);
-            Factory.AddToGroup("FSS Heavy Stock Pro", Id.StockAug);
+            Factory.AddToGroup("FORGE TAC CQB Comb", Id.StockAug, Id.StockP90);
+            Factory.AddToGroup("FSS Heavy Stock Pro", Id.StockAug, Id.StockP90);
 
             Factory.AddToGroup("FSS Guardian", Id.StockStriker);
             Factory.AddToGroup("FTAC Precision Fixed Stock", Id.StockStriker);
             Factory.AddToGroup("XRK Gen III Survivalist Series", Id.StockStriker);
+
+            Factory.AddToGroup("FTAC C6 Carbine Pro", Id.StockFennec);
+            Factory.AddToGroup("ZLR Blade", Id.StockFennec);
+
+            Factory.AddToGroup("Factory Aluminum Stock", Id.StockPP19);
+            Factory.AddToGroup("Corvus Skeleton Stock", Id.StockPP19);
+
+            Factory.AddToGroup("Fly Trap", Id.StockP90);
+            Factory.AddToGroup("Standard-Issue Wood Stock", Id.StockUzi);
+
+            Factory.AddToGroup("Classic Straight-line Stock", Id.StockMP5MW);
+            Factory.AddToGroup("FTAC Collapsible", Id.StockMP5MW);
 
 
 

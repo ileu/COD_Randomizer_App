@@ -82,6 +82,30 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("400mm Stainless Steel	", Id.BarrelStriker);
             Factory.AddToGroup("150mm Stainless Steel", Id.BarrelStriker);
 
+            Factory.AddToGroup("ZLR 16\" Apex", Id.BarrelFennec);
+            Factory.AddToGroup("ZLR 18\" Deadfall", Id.BarrelFennec);
+
+            Factory.AddToGroup("8.7\" Steel", Id.BarrelPP19);
+            Factory.AddToGroup("8.7\" Polygonal", Id.BarrelPP19);
+            Factory.AddToGroup("8.7\" Aluminum", Id.BarrelPP19);
+
+            Factory.AddToGroup("FSS Strike", Id.BarrelMP7);
+            Factory.AddToGroup("FSS Recon", Id.BarrelMP7);
+            Factory.AddToGroup("FSS SWAT", Id.BarrelMP7);
+
+            Factory.AddToGroup("FORGE TAC Retribution", Id.BarrelP90);
+            Factory.AddToGroup("FSS 10.6\" Pro", Id.BarrelP90);
+
+            Factory.AddToGroup("FSS Light", Id.BarrelMP5MW);
+            Factory.AddToGroup("Monolithic Integral Suppressor", Id.BarrelMP5MW);
+            Factory.AddToGroup("FSS Mini", Id.BarrelMP5MW);
+            Factory.AddToGroup("Subsonic Integral Suppressor", Id.BarrelMP5MW);
+
+            Factory.AddToGroup("13.1\" First Responder", Id.BarrelUzi);
+            Factory.AddToGroup("8.5\" Factory Mini", Id.BarrelUzi);
+            Factory.AddToGroup("16.5\" Factory Carbine", Id.BarrelUzi);
+            Factory.AddToGroup("FSS Carbine Pro", Id.BarrelUzi);
+
             // ********* Cold War *********
 
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);

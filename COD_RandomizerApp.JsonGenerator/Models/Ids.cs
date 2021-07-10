@@ -44,6 +44,12 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         23 - Iso
         24 - Aug MW
         25 - Striker
+        26 - Fennec
+        27 - PP19 Bizon
+        28 - MP7
+        29 - P90
+        30 - MP5 MW
+        31 - Uzi
 
          */
 
@@ -58,6 +64,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MuzzleAmax = 520,
         MuzzleAn94 = 521,
         MuzzleAug = 524,
+        MuzzleFennec = 525,
         MuzzleWest556 = 550,
         MuzzleEast762 = 551,
         MuzzleEast556 = 552,
@@ -85,7 +92,13 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         BarrelVal = 122,
         BarrelIso = 123,
         BarrelAug = 124,
-        BarrelStriker = 125, 
+        BarrelStriker = 125,
+        BarrelFennec = 126,
+        BarrelPP19 = 127,
+        BarrelMP7 = 128,
+        BarrelP90 = 129,
+        BarrelMP5MW = 130,
+        BarrelUzi = 131,
         BarrelXM4 = 150,
         BarrelAk47 = 151,
         BarrelKrig = 152,
@@ -124,6 +137,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         OpticVal = 622,
         OpticAug = 624,
         OpticStriker = 625,
+        OpticFennec = 626,
+        OpticP90 = 629,
         OpticWest = 650,
         OpticEast = 651,
         OpticMPCW = 652,
@@ -147,6 +162,12 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         StockIso = 1023,
         StockAug = 1024,
         StockStriker = 1025,
+        StockFennec = 1026,
+        StockPP19 = 1027,
+        StockMP7 = 1028,
+        StockP90 = 1029,
+        StockMP5MW = 1030,
+        StockUzi = 1031,
         StockKrig = 1050,
         StockAK47CW = 1051,
         StockXM4 = 1052,
@@ -191,6 +212,10 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MagazinIso = 423,
         MagazinAug = 424,
         MagazinStriker = 425,
+        MagazinFennec = 426,
+        MagazinPP19 = 427,
+        MagazinMP5MW = 430,
+        MagazinUzi = 431,
         MagazinWest = 450,
         MagazinEast = 451,
         MagazinWestSmall = 452,
