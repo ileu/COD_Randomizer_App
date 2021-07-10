@@ -27,26 +27,38 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("AN-94 Sonic Brake", Id.MuzzleAn94);
 
             Factory.AddToGroup("Muzzle Brake 5.56", Id.MuzzleWest556, Id.MuzzleEast556);
-            Factory.AddToGroup("Flashguard 5.56", Id.MuzzleWest556, Id.MuzzleEast556);
+            Factory.AddToGroup("Flash Guard 5.56", Id.MuzzleWest556, Id.MuzzleEast556);
 
             Factory.AddToGroup("Muzzle Brake 7.62", Id.MuzzleEast762, Id.MuzzleWest762);
-            Factory.AddToGroup("Flashguard 7.62", Id.MuzzleEast762, Id.MuzzleWest762);
+            Factory.AddToGroup("Flash Guard 7.62", Id.MuzzleEast762, Id.MuzzleWest762);
 
             Factory.AddToGroup("Muzzle Brake 9", Id.MuzzleEast9, Id.MuzzleWest9);
-            Factory.AddToGroup("Flashguard 9", Id.MuzzleEast9, Id.MuzzleWest9);
+            Factory.AddToGroup("Flash Guard 9", Id.MuzzleEast9, Id.MuzzleWest9);
 
             Factory.AddToGroup("Muzzle Brake .45 APC", Id.MuzzleEast45, Id.MuzzleWest45);
-            Factory.AddToGroup("Flashguard .45 APC", Id.MuzzleEast45, Id.MuzzleWest45);
+            Factory.AddToGroup("Flash Guard .45 APC", Id.MuzzleEast45, Id.MuzzleWest45);
 
             Factory.AddToGroup("Muzzle Brake 5.45", Id.MuzzleEast545);
-            Factory.AddToGroup("Flashguard 5.45", Id.MuzzleEast545);
+            Factory.AddToGroup("Flash Guard 5.45", Id.MuzzleEast545);
+            
+            Factory.AddToGroup("Muzzle Brake 4.73", Id.MuzzleWest473);
+            Factory.AddToGroup("Flash Guard 4.73", Id.MuzzleWest473);
+
+            Factory.AddToGroup("Stabilizer .308", Id.MuzzleWest308);
+            Factory.AddToGroup("Flash Hider .308", Id.MuzzleWest308);
 
             Factory.AddToGroup("Suppressor", Id.MuzzleWest556, Id.MuzzleEast762, Id.MuzzleEast556, Id.MuzzleWest762);
             Factory.AddToGroup("Sound Suppressor", Id.MuzzleEast9, Id.MuzzleWest9, Id.MuzzleEast45, Id.MuzzleWest45, Id.MuzzleEast545, Id.MuzzleStreetsweeper, Id.MuzzleGallo);
+            Factory.AddToGroup("Silencer", Id.MuzzleWest473);
+            Factory.AddToGroup("Sound Moderator", Id.MuzzleWest308);
 
-            Factory.AddToGroup("Infantry Compensator", Id.MuzzleWest556, Id.MuzzleWest762, Id.MuzzleWest9, Id.MuzzleWest45);
-            Factory.AddToGroup("SOCOM Eliminator", Id.MuzzleWest556, Id.MuzzleWest762, Id.MuzzleWest9, Id.MuzzleWest45);
-            Factory.AddToGroup("Agency Suppressor", Id.MuzzleWest556, Id.MuzzleWest762, Id.MuzzleWest9, Id.MuzzleWest45);
+            Factory.AddToGroup("Infantry Compensator", Id.MuzzleWest556, Id.MuzzleWest762, Id.MuzzleWest9, Id.MuzzleWest45, Id.MuzzleWest473, Id.MuzzleWest308);
+
+            Factory.AddToGroup("SOCOM Eliminator", Id.MuzzleWest556, Id.MuzzleWest762, Id.MuzzleWest9, Id.MuzzleWest45, Id.MuzzleWest473);
+            Factory.AddToGroup("Agency Suppressor", Id.MuzzleWest556, Id.MuzzleWest762, Id.MuzzleWest9, Id.MuzzleWest45, Id.MuzzleWest473);
+
+            Factory.AddToGroup("Task Force Shroud", Id.MuzzleWest308);
+            Factory.AddToGroup("Wrapped Suppressor", Id.MuzzleWest308);
 
             Factory.AddToGroup("Spetsnaz Compensator", Id.MuzzleEast762, Id.MuzzleEast556, Id.MuzzleEast9, Id.MuzzleEast45, Id.MuzzleEast545);
             Factory.AddToGroup("KGB Eliminator", Id.MuzzleEast762, Id.MuzzleEast556, Id.MuzzleEast9, Id.MuzzleEast45, Id.MuzzleEast545);

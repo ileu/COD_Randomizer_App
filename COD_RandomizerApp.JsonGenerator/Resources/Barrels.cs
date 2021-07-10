@@ -244,6 +244,104 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("13.4\" SOR Cut Down", Id.BarrelMG82);
             Factory.AddToGroup("17.1\" Match Grade", Id.BarrelMG82);
             Factory.AddToGroup("16.4\" Task Force", Id.BarrelMG82);
+
+            Factory.AddToGroup("7.8\" Extended", Id.BarrelDiamatti);
+            Factory.AddToGroup("6.5\" Cavalry Lancer", Id.BarrelDiamatti);
+            Factory.AddToGroup("7.2\" Reinforced Heavy", Id.BarrelDiamatti);
+            Factory.AddToGroup("7.8\" Chrome Lined", Id.BarrelDiamatti);
+            Factory.AddToGroup("6.5\" Tac Ops", Id.BarrelDiamatti);
+            Factory.AddToGroup("7.2\" Task Force", Id.BarrelDiamatti);
+
+            Factory.AddToGroup("6.1\" Extended", Id.BarrelAMP);
+            Factory.AddToGroup("5.9\" Cavalry Lancer", Id.BarrelAMP);
+            Factory.AddToGroup("6.1\" Reinforced Heavy", Id.BarrelAMP);
+            Factory.AddToGroup("6.8\" Chrome Lined", Id.BarrelAMP);
+            Factory.AddToGroup("6.4\" Takedown", Id.BarrelAMP);
+            Factory.AddToGroup("6.4\" Task Force", Id.BarrelAMP);
+
+            Factory.AddToGroup("7.2\" Extended", Id.BarrelMagnumCW);
+            Factory.AddToGroup("5.9\" Cavalry Lancer", Id.BarrelMagnumCW);
+            Factory.AddToGroup("6.4\" Reinforced Heavy", Id.BarrelMagnumCW);
+            Factory.AddToGroup("7.5\" Chrome Lined", Id.BarrelMagnumCW);
+            Factory.AddToGroup("4.7\" Tight Snub", Id.BarrelMagnumCW);
+            Factory.AddToGroup("7.2\" Task Force", Id.BarrelMagnumCW);
+
+            Factory.AddToGroup("6.83\" Extended", Id.Barrel1911CW);
+            Factory.AddToGroup("5.42\" Cavalry Lancer", Id.Barrel1911CW);
+            Factory.AddToGroup("6.45\" Reinforced Heavy", Id.Barrel1911CW);
+            Factory.AddToGroup("7.12\" Chrome Lined", Id.Barrel1911CW);
+            Factory.AddToGroup("5.63\" Tac Ops", Id.Barrel1911CW);
+            Factory.AddToGroup("6.53\" Task Force", Id.Barrel1911CW);
+
+            Factory.AddToGroup("17\" Rapid Fire", Id.BarrelDMR14);
+            Factory.AddToGroup("17.1\" Cavalry Lancer", Id.BarrelDMR14);
+            Factory.AddToGroup("17.1\" Strike Team", Id.BarrelDMR14);
+            Factory.AddToGroup("16.3\" Titanium", Id.BarrelDMR14);
+            Factory.AddToGroup("20.8\" Match Grade", Id.BarrelDMR14);
+            Factory.AddToGroup("20.8\" Task Force", Id.BarrelDMR14);
+
+            Factory.AddToGroup("16.4\" Rapid Fire", Id.BarrelType63);
+            Factory.AddToGroup("18.3\" Cavalry Lancer", Id.BarrelType63);
+            Factory.AddToGroup("18.3\" Strike Team", Id.BarrelType63);
+            Factory.AddToGroup("16.4\" Titanium", Id.BarrelType63);
+            Factory.AddToGroup("21.5\" Match Grade", Id.BarrelType63);
+            Factory.AddToGroup("21.5\" Task Force", Id.BarrelType63);
+
+            Factory.AddToGroup("16.3\" Rapid Fire", Id.BarrelM16);
+            Factory.AddToGroup("15.9\" Cavalry Lancer", Id.BarrelM16);
+            Factory.AddToGroup("15.9\" Strike Team", Id.BarrelM16);
+            Factory.AddToGroup("16.3\" Titanium", Id.BarrelM16);
+            Factory.AddToGroup("20.5\" Match Grade", Id.BarrelM16);
+            Factory.AddToGroup("20.5\" Task Force", Id.BarrelM16);
+
+            Factory.AddToGroup("18\" Rapid Fire", Id.BarrelAugCW);
+            Factory.AddToGroup("17.9\" Cavalry Lancer", Id.BarrelAugCW);
+            Factory.AddToGroup("18.2\" Strike Team", Id.BarrelAugCW);
+            Factory.AddToGroup("17\" Titanium", Id.BarrelAugCW);
+            Factory.AddToGroup("19.6\" Match Grade", Id.BarrelAugCW);
+            Factory.AddToGroup("19.8\" Task Force", Id.BarrelAugCW);
+
+            Factory.AddToGroup("19.4\" Rapid Fire", Id.BarrelCarv);
+            Factory.AddToGroup("22.3\" Cavalry Lancer", Id.BarrelCarv);
+            Factory.AddToGroup("20.8\" Strike Team", Id.BarrelCarv);
+            Factory.AddToGroup("18.9\" Titanium", Id.BarrelCarv);
+            Factory.AddToGroup("23.6\" Match Grade", Id.BarrelCarv);
+            Factory.AddToGroup("22.5\" Task Force", Id.BarrelCarv);
+
+            Factory.AddToGroup("28.2\" Extended", Id.BarrelTundra);
+            Factory.AddToGroup("26.5\" Cavalry Lancer", Id.BarrelTundra);
+            Factory.AddToGroup("25.8\" Rapid Fire", Id.BarrelTundra);
+            Factory.AddToGroup("29.1\" Combat Recon", Id.BarrelTundra);
+            Factory.AddToGroup("26.5\" Hammer Forged", Id.BarrelTundra);
+            Factory.AddToGroup("28.2\" Tiger Team", Id.BarrelTundra);
+
+            Factory.AddToGroup("25\" Extended", Id.BarrelPelington);
+            Factory.AddToGroup("23.3\" Cavalry Lancer", Id.BarrelPelington);
+            Factory.AddToGroup("25\" Reinforced Heavy", Id.BarrelPelington);
+            Factory.AddToGroup("27.2\" Combat Recon", Id.BarrelPelington);
+            Factory.AddToGroup("21.7\" Ultralight", Id.BarrelPelington);
+            Factory.AddToGroup("26.5\" Tiger Team", Id.BarrelPelington);
+
+            Factory.AddToGroup("41.9\" Extended", Id.BarrelZRG);
+            Factory.AddToGroup("40.1\" Cavalry Lancer", Id.BarrelZRG);
+            Factory.AddToGroup("39.3\" Rapid Fire", Id.BarrelZRG);
+            Factory.AddToGroup("43.9\" Combat Recon", Id.BarrelZRG);
+            Factory.AddToGroup("37.9\" Ultralight", Id.BarrelZRG);
+            Factory.AddToGroup("42.7\" SIGMA Special", Id.BarrelZRG);
+
+            Factory.AddToGroup("24.9\" Extended", Id.BarrelZRG);
+            Factory.AddToGroup("23.6\" Cavalry Lancer", Id.BarrelZRG);
+            Factory.AddToGroup("23.6\" Rapid Fire", Id.BarrelZRG);
+            Factory.AddToGroup("24.9\" Combat Recon", Id.BarrelZRG);
+            Factory.AddToGroup("21.4\" Ultralight", Id.BarrelZRG);
+            Factory.AddToGroup("24.9\" Tiger Team", Id.BarrelZRG);
+
+            Factory.AddToGroup("22.2\" Extended", Id.BarrelM82);
+            Factory.AddToGroup("21.8\" Cavalry Lancer", Id.BarrelM82);
+            Factory.AddToGroup("20.6\" Rapid Fire", Id.BarrelM82);
+            Factory.AddToGroup("22.6\" Combat Recon", Id.BarrelM82);
+            Factory.AddToGroup("19.5\" Ultralight", Id.BarrelM82);
+            Factory.AddToGroup("22.6\" Tiger Team", Id.BarrelM82);
         }
     }
 }

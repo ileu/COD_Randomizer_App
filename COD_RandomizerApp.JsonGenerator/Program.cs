@@ -32,10 +32,18 @@ namespace COD_Randomizer_App.JsonGenerator
             }
             */
 
-            //File.WriteAllText(filepath, test);
-            
+            string filestring = "";
 
-            Console.WriteLine(tes_weapon.Display());
+            foreach (KeyValuePair<string, Dictionary<string, Id>> key in WeaponDictionaries.TestWeaponsCW)
+            {
+                filestring += Factory.CreateWeapon(key.Key, key.Value).Display();
+            }
+
+            //File.WriteAllText(filepath, test);
+
+            File.WriteAllText("C:/Users/ueli/Desktop/TestFile.txt", filestring);
+
+            //Console.WriteLine(tes_weapon.Display());
             Console.WriteLine(Factory.PrintGroup());
             Console.ReadLine();
         }
