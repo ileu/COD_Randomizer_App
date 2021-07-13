@@ -8,14 +8,15 @@ using System.Threading.Tasks;
 
 namespace COD_Randomizer_App.JsonGenerator.Resources
 {
+    //Pumps also here
     public static class Stocks
     {
         public static void Create()
         {
-            Factory.AddToGroup("FORGE TAC Ultralight", Id.StockKilo, Id.StockAK47MW, Id.StockAn94, Id.StockIso, Id.StockMP7, Id.StockMP5MW, Id.StockUzi);
+            Factory.AddToGroup("FORGE TAC Ultralight", Id.StockKilo, Id.StockVlk, Id.StockOrigin, Id.StockAK47MW, Id.StockAn94, Id.StockIso, Id.StockMP7, Id.StockMP5MW, Id.StockUzi, Id.StockModel680);
             Factory.AddToGroup("Singuard Arms Sniper Pro", Id.StockKilo);
-            Factory.AddToGroup("No Stock", Id.StockKilo, Id.StockM4A1, Id.StockM13, Id.StockFAL, Id.StockAK47MW, Id.StockGrau, Id.StockAmax, Id.StockFennec, Id.StockPP19, Id.StockMP7, Id.StockUzi);
-            Factory.AddToGroup("FSS Close Quarters Stock", Id.StockKilo, Id.StockFAL, Id.StockScar, Id.StockAK47MW, Id.StockAmax, Id.StockAn94, Id.StockPP19, Id.StockMP7, Id.StockMP5MW, Id.StockUzi);
+            Factory.AddToGroup("No Stock", Id.StockKilo, Id.StockM4A1, Id.StockVlk, Id.StockOrigin, Id.StockM13, Id.StockFAL, Id.StockAK47MW, Id.StockGrau, Id.StockAmax, Id.StockFennec, Id.StockPP19, Id.StockMP7, Id.StockUzi, Id.StockModel680);
+            Factory.AddToGroup("FSS Close Quarters Stock", Id.StockKilo, Id.StockFAL, Id.StockScar, Id.StockAK47MW, Id.StockAmax, Id.StockAn94, Id.StockM13, Id.StockVlk, Id.StockPP19, Id.StockMP7, Id.StockMP5MW, Id.StockUzi);
 
             Factory.AddToGroup("FORGE TAC Ballast Pack", Id.StockOden);
             Factory.AddToGroup("Oden Ultralight Hollow", Id.StockOden);
@@ -26,11 +27,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Forge TAC CQS", Id.StockM4A1, Id.StockFennec);
 
             Factory.AddToGroup("Forge TAC Stalker", Id.StockM13, Id.StockFAL, Id.StockIso, Id.StockMP7);
-            Factory.AddToGroup("FSS Close Quarters Stock", Id.StockM13);
             Factory.AddToGroup("M13 Skeleton Stock", Id.StockM13);
 
             Factory.AddToGroup("Factory 18\" Aluminum", Id.StockFAL);
-            Factory.AddToGroup("FTAC Hunter", Id.StockScar, Id.StockAmax);
+            Factory.AddToGroup("FTAC Hunter", Id.StockScar, Id.StockAmax, Id.StockModel680, Id.StockOrigin, Id.StockVlk);
             Factory.AddToGroup("FTAC Collapsible Stock", Id.StockScar);
             Factory.AddToGroup("XRK Obelisk Pro", Id.StockScar);
 
@@ -83,6 +83,30 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 
             Factory.AddToGroup("Classic Straight-line Stock", Id.StockMP5MW);
             Factory.AddToGroup("FTAC Collapsible", Id.StockMP5MW);
+
+            Factory.AddToGroup("FTAC Stalker-12", Id.StockModel680);
+            Factory.AddToGroup("Lockwood Precision Series", Id.StockModel680);
+
+            Factory.AddToGroup("ZLR Tsunami", Id.StockJak);
+            Factory.AddToGroup("JAK Rabbit Ultralight", Id.StockJak);
+            Factory.AddToGroup("FSS Power Wrap", Id.StockJak);
+
+            Factory.AddToGroup("FORGE TAC Dart", Id.StockOrigin);
+
+            Factory.AddToGroup("Tempus Sport", Id.Stock725);
+            Factory.AddToGroup("Cronen Equilibrium	", Id.Stock725);
+            Factory.AddToGroup("Cronen Pro Light", Id.Stock725);
+            Factory.AddToGroup("Sawed-off Stock", Id.Stock725);
+
+            Factory.AddToGroup("FSS R9-0 Bulldog", Id.PumpR9);
+            Factory.AddToGroup("FTAC Ultralight Pump", Id.PumpR9);
+            Factory.AddToGroup("FTAC Close Quarters Pro", Id.PumpR9);
+
+            Factory.AddToGroup("XRK Race Grip", Id.PumpVlk);
+            Factory.AddToGroup("VLK Prime Pump Grip", Id.PumpVlk);
+            Factory.AddToGroup("XRK ReliaGrip", Id.PumpVlk);
+
+            
 
 
 

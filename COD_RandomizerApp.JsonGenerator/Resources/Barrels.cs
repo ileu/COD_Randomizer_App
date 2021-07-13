@@ -106,6 +106,33 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("16.5\" Factory Carbine", Id.BarrelUzi);
             Factory.AddToGroup("FSS Carbine Pro", Id.BarrelUzi);
 
+            Factory.AddToGroup("XRK 18.0\" Liberator", Id.BarrelModel680);
+            Factory.AddToGroup("XRK 14.0\" SWAT", Id.BarrelModel680);
+            Factory.AddToGroup("XRK 30\" Sport", Id.BarrelModel680);
+
+            Factory.AddToGroup("ZLR J-2800 Influx", Id.BarrelJak);
+            Factory.AddToGroup("JAK Urban King", Id.BarrelJak);
+            Factory.AddToGroup("ZLR J-3600 Torrent", Id.BarrelJak);
+
+            Factory.AddToGroup("FORGE TAC Precision", Id.BarrelOrigin);
+            Factory.AddToGroup("FORGE TAC Wideshot", Id.BarrelOrigin);
+            Factory.AddToGroup("FORGE TAC Impaler", Id.BarrelOrigin);
+
+            Factory.AddToGroup("FORGE TAC Sentry", Id.BarrelR9);
+            Factory.AddToGroup("FORGE TAC Gemini", Id.BarrelR9);
+
+            Factory.AddToGroup("VLK Czar", Id.BarrelVlk);
+            Factory.AddToGroup("6\" Revolt", Id.BarrelVlk);
+            Factory.AddToGroup("16\" Warlord", Id.BarrelVlk);
+
+            Factory.AddToGroup("Tempus Smooth Bore", Id.Barrel725);
+            Factory.AddToGroup("Sawed-off Barrel", Id.Barrel725);
+            Factory.AddToGroup("Tempus 32\" Competition", Id.Barrel725);
+
+            Factory.AddToGroup("18.2\" Compact Barrel", Id.BarrelPKM);
+            Factory.AddToGroup("26.9\" Extended Barrel", Id.BarrelPKM);
+            Factory.AddToGroup("25.9\" Heavy Barrel", Id.BarrelPKM);
+
             // ********* Cold War *********
 
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);

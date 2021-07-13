@@ -21,6 +21,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         10 - Stock
         11 - Trigger Action
         12 - Underbarrel
+        13 - Guard
 
         The other two digits are there to enumerate the different groups
         
@@ -28,6 +29,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         smaller tahn 50: MW weapon attachements
         01 - standard (Assault)
         02 - standard MP
+        03 - standard Shotgun
+        04 - standard LMG
         10 - Kilo specific
         11 - Oden specific
         12 - M4A1 specific
@@ -50,6 +53,13 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         29 - P90
         30 - MP5 MW
         31 - Uzi
+        32 - Model 680
+        33 - Jak-12
+        34 - Origin 12
+        35 - R9-0
+        36 - VLK
+        37 - 725
+        38 - PKM
 
          */
 
@@ -63,8 +73,10 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MuzzleAK47MW = 517,
         MuzzleAmax = 520,
         MuzzleAn94 = 521,
-        MuzzleAug = 524,
+        MuzzleCQBBreacher = 524,
         MuzzleFennec = 525,
+        MuzzleModel680 = 532,
+        MuzzleOrigin = 534,
         MuzzleWest556 = 550,
         MuzzleEast762 = 551,
         MuzzleEast556 = 552,
@@ -104,6 +116,13 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         BarrelP90 = 129,
         BarrelMP5MW = 130,
         BarrelUzi = 131,
+        BarrelModel680 = 132,
+        BarrelJak = 133,
+        BarrelOrigin = 134,
+        BarrelR9 = 135,
+        BarrelVlk = 136,
+        Barrel725 = 137,
+        BarrelPKM = 138, 
         BarrelXM4 = 150,
         BarrelAk47 = 151,
         BarrelKrig = 152,
@@ -148,6 +167,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
 
         OpticMW = 601,
         OpticMP = 602,
+        OpticShotgun = 603,
         OpticOden = 611,
         OpticM4A1 = 612,
         OpticAK47MW = 617,
@@ -158,6 +178,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         OpticStriker = 625,
         OpticFennec = 626,
         OpticP90 = 629,
+        Optic725 = 637, 
+        OpticPKM = 638, 
         OpticWest = 650,
         OpticEast = 651,
         OpticMPCW = 652,
@@ -189,6 +211,11 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         StockP90 = 1029,
         StockMP5MW = 1030,
         StockUzi = 1031,
+        StockModel680 = 1032,
+        StockJak = 1033,
+        StockOrigin = 1034,
+        StockVlk = 1036,
+        Stock725 = 1037,
         StockKrig = 1050,
         StockAK47CW = 1051,
         StockXM4 = 1052,
@@ -222,11 +249,17 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         UnderbarrelRam7 = 1218,
         UnderbarrelGrau = 1219,
         UnderbarrelVal = 1222,
+        UnderbarrelModel680 = 1232,
+        UnderbarrelOrigin = 1234,
+        UnderbarrelR9 = 1235,
+        UnderbarrelPKM = 1238,
         UnderbarrelWest = 1250,
         UnderbarrelEast = 1251,
         UnderbarrelEastMP = 1252,
         UnderbarrelWestMP = 1253,
         UnderbarrelWestSN = 1254,
+
+        Guard725 = 1337, 
 
         MagazinKilo = 410,
         MagazinOden = 411,
@@ -247,6 +280,13 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MagazinPP19 = 427,
         MagazinMP5MW = 430,
         MagazinUzi = 431,
+        MagazinModel680 = 432,
+        MagazinJak = 433,
+        MagazinOrigin = 434,
+        MagazinR9 = 435,
+        MagazinVlk = 436,
+        Magazin725 = 437, 
+        MagazinPKM = 438, 
         MagazinWest = 450,
         MagazinEast = 451,
         MagazinWestSmall = 452,
@@ -292,11 +332,15 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         RearGripEast = 951,
         RearGripM16 = 952,
 
+        PumpR9 = 835,
+        PumpVlk = 836,
+
         PerksMW = 701,
         PerksMP = 702,
         PerksMPNoBurst = 710,
         PerksScar = 715,
         PerksNoBurst = 716,
+        PerksModel680 = 732,
 
     }
 }

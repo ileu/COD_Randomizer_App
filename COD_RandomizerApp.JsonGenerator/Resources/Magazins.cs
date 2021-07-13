@@ -47,6 +47,31 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("10mm Auto 30-Round Mags", Id.MagazinMP5MW);
             Factory.AddToGroup(".41 AE 32-Round Mags", Id.MagazinUzi);
 
+            Factory.AddToGroup("Tube Extension", Id.MagazinModel680, Id.MagazinR9);
+            Factory.AddToGroup("Slug Rounds", Id.MagazinModel680, Id.MagazinR9);
+            Factory.AddToGroup("Dragon's Breath 6-R Mags", Id.MagazinModel680);
+            Factory.AddToGroup("12 Gauge 6-R Mags", Id.MagazinModel680);
+            Factory.AddToGroup("Dragon's Breath Rounds", Id.MagazinModel680);
+            Factory.AddToGroup("Slug 6-R Mags", Id.MagazinModel680);
+
+            Factory.AddToGroup("20 Round Drum Mags", Id.MagazinJak);
+            Factory.AddToGroup("8 Round Slug Mags", Id.MagazinJak, Id.MagazinOrigin, Id.MagazinVlk);
+            Factory.AddToGroup("8-R Dragon's Breath", Id.MagazinJak);
+            Factory.AddToGroup("8 Round FRAG-12 Mags", Id.MagazinJak);
+            Factory.AddToGroup("32 Round Drum Mags", Id.MagazinJak);
+
+            Factory.AddToGroup("12 Round Mags", Id.MagazinOrigin, Id.MagazinVlk);
+            Factory.AddToGroup("25 Round Drum Mags", Id.MagazinOrigin);
+
+            Factory.AddToGroup("Dragon's Breath Rounds", Id.MagazinR9, Id.MagazinVlk);
+
+            Factory.AddToGroup("4 Round Mags", Id.MagazinVlk);
+
+            Factory.AddToGroup("Slug Rounds", Id.Magazin725);
+
+            Factory.AddToGroup("150 Round Belt", Id.MagazinPKM);
+            Factory.AddToGroup("200 Round Belt", Id.MagazinPKM);
+
             //**********Cold War******************
 
             Factory.AddToGroup("45 Rnd", Id.MagazinWest, Id.MagazinEast, Id.MagazinAkBO, Id.MagazinLC10);

@@ -32,18 +32,19 @@ namespace COD_Randomizer_App.JsonGenerator
             }
             */
 
+            /*
             string filestring = "";
 
             foreach (KeyValuePair<string, Dictionary<string, Id>> key in WeaponDictionaries.TestWeaponsCW)
             {
                 filestring += Factory.CreateWeapon(key.Key, key.Value).Display();
             }
-
+            */
             //File.WriteAllText(filepath, test);
 
-            File.WriteAllText("C:/Users/ueli/Desktop/TestFile.txt", filestring);
+            //File.WriteAllText("C:/Users/ueli/Desktop/TestFile.txt", filestring);
 
-            //Console.WriteLine(tes_weapon.Display());
+            Console.WriteLine(tes_weapon.Display());
             Console.WriteLine(Factory.PrintGroup());
             Console.ReadLine();
         }

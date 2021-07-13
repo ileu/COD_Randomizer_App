@@ -10,6 +10,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 {
     public static class RearGrips
     {
+        //contains Guards
         public static void Create()
         {
             Factory.AddToGroup("Granulated Grip Tape", Id.RearGripStandard);
@@ -31,6 +32,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("FTAC 60 Series Polymer", Id.RearGripStriker);
             Factory.AddToGroup("FTAC G-5 EXO", Id.RearGripStriker);
             Factory.AddToGroup("FTAC 60 Series Rubber", Id.RearGripStriker);
+
+            Factory.AddToGroup("FORGE TAC Steady Grip", Id.Guard725);
+            Factory.AddToGroup("FORGE TAC Commander", Id.Guard725);
+            Factory.AddToGroup("Tempus SlimGrip", Id.Guard725);
 
             Factory.AddToGroup("Speed Tape", Id.RearGripWest, Id.RearGripEast);
             Factory.AddToGroup("Dropshot Wrap", Id.RearGripWest, Id.RearGripEast);
