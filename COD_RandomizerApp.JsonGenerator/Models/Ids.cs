@@ -137,7 +137,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         BarrelKSP = 161,
         BarrelAk74u = 162,
         BarrelPPSh = 163,
-        BarrelMP9CW = 164,
+        BarrelMP5CW = 164,
         BarrelMac = 165,
         BarrelStreetsweeper = 166,
         BarrelGallo = 167,
@@ -341,6 +341,8 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         PerksScar = 715,
         PerksNoBurst = 716,
         PerksModel680 = 732,
-
+        BarrelOTs9 = 1338,
+        StockOTs9 = 1339,
+        MagazinOTs9 = 1340,
     }
 }

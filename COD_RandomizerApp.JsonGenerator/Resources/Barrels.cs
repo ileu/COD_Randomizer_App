@@ -233,12 +233,12 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("14.9\" Rifled", Id.BarrelPPSh);
             Factory.AddToGroup("15.7\" Task Force", Id.BarrelPPSh);
 
-            Factory.AddToGroup("9.5\" Extended", Id.BarrelMP9CW);
-            Factory.AddToGroup("10.1\" Cavalry Lancer", Id.BarrelMP9CW);
-            Factory.AddToGroup("9.5\" Reinforced Heavy", Id.BarrelMP9CW);
-            Factory.AddToGroup("9.5\" Ranger", Id.BarrelMP9CW);
-            Factory.AddToGroup("9.1\" Rifled", Id.BarrelMP9CW);
-            Factory.AddToGroup("9.5\" Task Force", Id.BarrelMP9CW);
+            Factory.AddToGroup("9.5\" Extended", Id.BarrelMP5CW);
+            Factory.AddToGroup("10.1\" Cavalry Lancer", Id.BarrelMP5CW);
+            Factory.AddToGroup("9.5\" Reinforced Heavy", Id.BarrelMP5CW);
+            Factory.AddToGroup("9.5\" Ranger", Id.BarrelMP5CW);
+            Factory.AddToGroup("9.1\" Rifled", Id.BarrelMP5CW);
+            Factory.AddToGroup("9.5\" Task Force", Id.BarrelMP5CW);
 
             Factory.AddToGroup("5.3\" Extended", Id.BarrelMac);
             Factory.AddToGroup("6.5\" Cavalry Lancer", Id.BarrelMac);
@@ -246,6 +246,13 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("5.3\" Ranger", Id.BarrelMac);
             Factory.AddToGroup("6.5\" Rifled", Id.BarrelMac);
             Factory.AddToGroup("5.9\" Task Force", Id.BarrelMac);
+
+            Factory.AddToGroup("6.6\" Extended", Id.BarrelOTs9);
+            Factory.AddToGroup("5.8\" Cavalry Lancer", Id.BarrelOTs9);
+            Factory.AddToGroup("7.5\" VDV Reinforced", Id.BarrelOTs9);
+            Factory.AddToGroup("7.1\" Liberator", Id.BarrelOTs9);
+            Factory.AddToGroup("7.5\" Rifled", Id.BarrelOTs9);
+            Factory.AddToGroup("8.1\" Task Force", Id.BarrelOTs9);
 
             Factory.AddToGroup("13.7\" Extended", Id.BarrelStreetsweeper);
             Factory.AddToGroup("14.6\" Cavalry Lancer", Id.BarrelStreetsweeper);
@@ -393,6 +400,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("22.6\" Combat Recon", Id.BarrelM82);
             Factory.AddToGroup("19.5\" Ultralight", Id.BarrelM82);
             Factory.AddToGroup("22.6\" Tiger Team", Id.BarrelM82);
+
         }
     }
 }
