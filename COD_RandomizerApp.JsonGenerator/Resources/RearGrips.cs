@@ -1,10 +1,4 @@
-﻿using COD_Randomizer_App.JsonGenerator.Models;
-using COD_Randomizer_App.JsonGenerator.Factories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using COD_Randomizer_App.JsonGenerator.Factories;
 
 namespace COD_Randomizer_App.JsonGenerator.Resources
 {
@@ -37,15 +31,19 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("FORGE TAC Commander", Id.Guard725);
             Factory.AddToGroup("Tempus SlimGrip", Id.Guard725);
 
-            Factory.AddToGroup("Speed Tape", Id.RearGripWest, Id.RearGripEast);
-            Factory.AddToGroup("Dropshot Wrap", Id.RearGripWest, Id.RearGripEast);
-            Factory.AddToGroup("Field Tape", Id.RearGripWest, Id.RearGripEast);
-            Factory.AddToGroup("SASR Jungle Grip", Id.RearGripWest);
-            Factory.AddToGroup("Serpent Wrap", Id.RearGripWest, Id.RearGripEast);
-            Factory.AddToGroup("Airborne Elastic Wrap", Id.RearGripWest);
+            Factory.AddToGroup("Speed Tape", Id.RearGripWestSpeTSerW, Id.RearGripWestSpeTSerG, Id.RearGripEastSpeTSerW, Id.RearGripEastSpeTSerG);
+            Factory.AddToGroup("Speed Grip", Id.RearGripWestSpeGSerG, Id.RearGripEastSpeGSerG);
+            Factory.AddToGroup("Dropshot Wrap", Id.RearGripWestSpeTSerW, Id.RearGripEastSpeTSerW, Id.RearGripWestSpeTSerG, Id.RearGripEastSpeTSerG, 
+                Id.RearGripWestSpeGSerG, Id.RearGripEastSpeGSerG);
+            Factory.AddToGroup("Field Tape", Id.RearGripWestSpeTSerW, Id.RearGripEastSpeTSerW, Id.RearGripWestSpeTSerG, Id.RearGripEastSpeTSerG, 
+                Id.RearGripWestSpeGSerG, Id.RearGripEastSpeGSerG);
+            Factory.AddToGroup("SASR Jungle Grip", Id.RearGripWestSpeTSerW, Id.RearGripWestSpeTSerG, Id.RearGripWestSpeGSerG);
+            Factory.AddToGroup("Serpent Wrap", Id.RearGripWestSpeTSerW, Id.RearGripEastSpeTSerW);
+            Factory.AddToGroup("Serpent Grip", Id.RearGripWestSpeTSerG, Id.RearGripEastSpeTSerG, Id.RearGripWestSpeGSerG, Id.RearGripEastSpeGSerG);
+            Factory.AddToGroup("Airborne Elastic Wrap", Id.RearGripWestSpeTSerW, Id.RearGripWestSpeTSerG, Id.RearGripWestSpeGSerG);
 
-            Factory.AddToGroup("Spetsnaz Field Grip", Id.RearGripEast);
-            Factory.AddToGroup("GRU Elastic Wrap", Id.RearGripEast);
+            Factory.AddToGroup("Spetsnaz Field Grip", Id.RearGripEastSpeTSerW, Id.RearGripEastSpeTSerG, Id.RearGripEastSpeGSerG);
+            Factory.AddToGroup("GRU Elastic Wrap", Id.RearGripEastSpeTSerW, Id.RearGripEastSpeTSerG, Id.RearGripEastSpeGSerG);
 
         }
     }

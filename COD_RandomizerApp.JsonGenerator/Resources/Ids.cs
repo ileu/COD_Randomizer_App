@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace COD_Randomizer_App.JsonGenerator.Models
+﻿namespace COD_Randomizer_App.JsonGenerator.Resources
 {
     /*
          
@@ -160,6 +156,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         BarrelZRG = 184,
         BarrelSwiss = 185,
         BarrelM82 = 186,
+        BarrelOTs9 = 187,
 
         LaserMW = 301,
         LaserWest = 350,
@@ -241,6 +238,7 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         StockPelington = 1072,
         StockZRG = 1073,
         StockSwiss = 1074,
+        StockOTs9 = 1075,
 
         UnderbarrelAssault = 1201,
         UnderbarrelMP = 1202,
@@ -322,15 +320,19 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         MagazinTundra = 482,
         MagazinPelington = 483,
         MagazinZRG = 484,
+        MagazinOTs9 = 485,
 
         RearGripStandard = 901,
         RearGripGrau = 919,
         RearGripAmax = 920,
         RearGripIso = 923,
         RearGripStriker = 925,
-        RearGripWest = 950,
-        RearGripEast = 951,
-        RearGripM16 = 952,
+        RearGripWestSpeTSerW = 950,
+        RearGripEastSpeTSerW = 951,
+        RearGripWestSpeTSerG = 952,
+        RearGripEastSpeTSerG = 953,
+        RearGripWestSpeGSerG = 954,
+        RearGripEastSpeGSerG = 955,
 
         PumpR9 = 835,
         PumpVlk = 836,
@@ -341,8 +343,5 @@ namespace COD_Randomizer_App.JsonGenerator.Models
         PerksScar = 715,
         PerksNoBurst = 716,
         PerksModel680 = 732,
-        BarrelOTs9 = 1338,
-        StockOTs9 = 1339,
-        MagazinOTs9 = 1340,
     }
 }

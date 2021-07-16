@@ -1,31 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Text;
+
+using Newtonsoft.Json;
 
 namespace COD_Randomizer_App.Models
 {
     public class Weapon : Unit<Slot>
     {
+        public List<Slot> Slots { get => units; }
 
-        public List<Slot> Slots { get => units; set => units = value; }
+        public string WeaponClass { get; set; } = "";
 
-        public bool Primary { get; set; }
-
-        public Weapon(string name) : base(name) { }
-
-        public void AddSlot(string name, int id)
+        public Weapon(string name) : base(name)
         {
-            units.Add(new Slot(name, id));
+
+        } 
+
+        public bool AddSlot(Slot slot)
+        {
+            try
+            {
+                Slots.Add(slot);
+                return true;
+            }
+            catch (NullReferenceException e)
+            {
+                Debug.WriteLine(e);
+                return false;
+            }
         }
 
-        public void AddSlot(string name, AttachGroup id)
+        public bool AddSlot(List<Slot> slots)
         {
-            units.Add(new Slot(name, id));
-        }
-
-        public override string ToString()
-        {
-            return name;
+            foreach (Slot slot in slots)
+            {
+                bool check = AddSlot(slot);
+                if (!check)
+                    return false;
+            }
+            return true;
         }
 
         public string Display()
@@ -34,7 +50,7 @@ namespace COD_Randomizer_App.Models
             output += " Slots:\n";
             foreach (Slot slot in Slots)
             {
-                output += "  " + slot.Name + ": ";
+                output += "  " + slot.Name + ":\n";
                 if (slot.Attachements == null)
                 {
                     output += "null\n";
@@ -42,11 +58,72 @@ namespace COD_Randomizer_App.Models
                 }
                 foreach (Attachment attachement in slot.Attachements)
                 {
-                    output += attachement.Name + ", ";
+                    output += "      " + attachement.Name + "\n";
                 }
             }
 
             return output;
         }
+
+        public override List<Slot> GetRandom(int n = 1)
+        {
+            var draw_slots = base.GetRandom(n);
+
+            var slots = new List<Slot>();
+
+            foreach (Slot slot in draw_slots)
+            {
+                var temp = new Slot(slot.Name);
+
+                temp.Attachements.Add(slot.GetRandom().FirstOrDefault());
+                slots.Add(temp);
+            }
+
+            return slots;
+        }
+
+        public override string ToString()
+        {
+            return WeaponClass + ": " + Name;
+        }
+
+        public override bool Equals(object obj) => this.Equals(obj as Weapon);
+
+        public bool Equals(Weapon wep)
+        {
+            if (wep is null)
+            {
+                return false;
+            }
+
+            if (Object.ReferenceEquals(this, wep))
+            {
+                return true;
+            }
+
+            if (this.GetType() != wep.GetType())
+            {
+                return false;
+            }
+
+            return this.Name == wep.Name;
+        }
+
+        public static bool operator ==(Weapon lhs, Weapon rhs)
+        {
+            if (lhs is null)
+            {
+                if (rhs is null)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            return lhs.Equals(rhs);
+        }
+
+        public static bool operator !=(Weapon lhs, Weapon rhs) => !(lhs == rhs);
     }
 }

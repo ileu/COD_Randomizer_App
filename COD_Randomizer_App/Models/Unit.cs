@@ -1,5 +1,4 @@
-﻿using COD_Randomizer_App.Helpers;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,14 +6,12 @@ using System.Linq;
 namespace COD_Randomizer_App.Models
 {
     public abstract class BaseUnit
-    { 
+    {
         protected string name;
         public string Name { get => name; }
 
-        protected bool visible  = true;
-        public bool Visible { get => visible; }
-
-        protected Random rng;
+        protected bool visible = true;
+        public bool Visible { get => visible; set => visible = value; }
 
         public BaseUnit(string name)
         {
@@ -26,12 +23,17 @@ namespace COD_Randomizer_App.Models
             visible = !visible;
         }
 
-        public abstract override string ToString();
+        public override string ToString()
+        {
+            return name;
+        }
     }
 
     public abstract class Unit<T> : BaseUnit where T : BaseUnit
     {
         protected List<T> units;
+
+        protected Random rng;
 
         public Unit(string name) : base(name)
         {
@@ -44,10 +46,10 @@ namespace COD_Randomizer_App.Models
             units.Add(unit);
         }
 
-        public List<T> GetRandom(int n = 1)
+        public virtual List<T> GetRandom(int n = 1)
         {
             if (n < 1)
-                throw new ArgumentException("Bisch du dumm oder so?", "GetRandom Draws n is smaller than 1");
+                throw new ArgumentException("Bisch du dumm oder so?", "GetRandom Draws: n is smaller than 1");
 
             List<T> draw = units.Where(unit => unit.Visible).ToList();
             T lot;
