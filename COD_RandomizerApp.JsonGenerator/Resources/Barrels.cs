@@ -387,12 +387,12 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("37.9\" Ultralight", Id.BarrelZRG);
             Factory.AddToGroup("42.7\" SIGMA Special", Id.BarrelZRG);
 
-            Factory.AddToGroup("24.9\" Extended", Id.BarrelZRG);
-            Factory.AddToGroup("23.6\" Cavalry Lancer", Id.BarrelZRG);
-            Factory.AddToGroup("23.6\" Rapid Fire", Id.BarrelZRG);
-            Factory.AddToGroup("24.9\" Combat Recon", Id.BarrelZRG);
-            Factory.AddToGroup("21.4\" Ultralight", Id.BarrelZRG);
-            Factory.AddToGroup("24.9\" Tiger Team", Id.BarrelZRG);
+            Factory.AddToGroup("24.9\" Extended", Id.BarrelSwiss);
+            Factory.AddToGroup("23.6\" Cavalry Lancer", Id.BarrelSwiss);
+            Factory.AddToGroup("23.6\" Rapid Fire", Id.BarrelSwiss);
+            Factory.AddToGroup("24.9\" Combat Recon", Id.BarrelSwiss);
+            Factory.AddToGroup("21.4\" Ultralight", Id.BarrelSwiss);
+            Factory.AddToGroup("24.9\" Tiger Team", Id.BarrelSwiss);
 
             Factory.AddToGroup("22.2\" Extended", Id.BarrelM82);
             Factory.AddToGroup("21.8\" Cavalry Lancer", Id.BarrelM82);
