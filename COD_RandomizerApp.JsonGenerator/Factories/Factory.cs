@@ -1,5 +1,5 @@
 ﻿using COD_Randomizer_App.JsonGenerator.Resources;
-using COD_Randomizer_App.JsonGenerator.Models;
+using COD_Randomizer_App.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -86,6 +86,15 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
             return weapon;
         }
 
+        public static Weapon CreateWeapon(string name, string weaponClass, Dictionary<string, Id> dic = null)
+        {
+            var weapon = CreateWeapon(name, dic);
+
+            weapon.WeaponClass = weaponClass;
+
+            return weapon;
+        }
+
         public static Slot CreateSlot(string name, Id id)
         {
             Slot slot = new Slot(name)
@@ -94,6 +103,20 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
             };
 
             return slot;
+        }
+
+        public static Perk CreatePerk(string name)
+        {
+            Perk perk = new Perk(name);
+
+            return perk;
+        }
+
+        public static Grenade CreateGrenade(string name)
+        {
+            Grenade grenade = new Grenade(name);
+
+            return grenade;
         }
 
         public static void AddToGroup(string name, Id id)

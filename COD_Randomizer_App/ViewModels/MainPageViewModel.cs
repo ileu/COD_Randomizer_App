@@ -4,8 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Input;
-using COD_Randomizer_App.Helpers;
 using COD_Randomizer_App.Models;
+using COD_Randomizer_App.Services;
 using MvvmHelpers;
 using Newtonsoft.Json;
 using Xamarin.Forms;
@@ -107,24 +107,22 @@ namespace COD_Randomizer_App.ViewModels
 
             #region TestZone
 
-            AttachementFactory.AddAttachmentToGroup("THISE ATTACHEMENT", 999);
+            var testLoadut = LocalDataService.MotherLoadout.GetRandomLoadout();
 
-            Weapon test = WeaponFactory.CreateWeapon("THISE WEAPON", new Dictionary<string, int>() { { "THISE SLOT", 999 } });
+            //string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.json");
+            //string testText = JsonConvert.SerializeObject(test, Formatting.Indented);
+            //File.WriteAllText(fileName, testText);
 
-            string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.json");
-            string testText = JsonConvert.SerializeObject(test, Formatting.Indented);
-            File.WriteAllText(fileName, testText);
+            //Weapon testCopy = JsonLoaderExample();
 
-            Weapon testCopy = JsonLoaderExample();
+            //var assembly = IntrospectionExtensions.GetTypeInfo(typeof(MainPageViewModel)).Assembly;
+            //Stream stream = assembly.GetManifestResourceStream("COD_Randomizer_App.Resources.TestFile.txt");
 
-            var assembly = IntrospectionExtensions.GetTypeInfo(typeof(MainPageViewModel)).Assembly;
-            Stream stream = assembly.GetManifestResourceStream("COD_Randomizer_App.Resources.TestFile.txt");
-
-            string text = "";
-            using (var reader = new StreamReader(stream))
-            {
-                text = reader.ReadToEnd();
-            }
+            //string text = "";
+            //using (var reader = new StreamReader(stream))
+            //{
+            //    text = reader.ReadToEnd();
+            //}
 
             #endregion
         }

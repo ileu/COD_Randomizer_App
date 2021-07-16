@@ -1,6 +1,6 @@
 ﻿using COD_Randomizer_App.JsonGenerator.Factories;
 using COD_Randomizer_App.JsonGenerator.Resources;
-using COD_Randomizer_App.JsonGenerator.Models;
+using COD_Randomizer_App.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,8 +23,6 @@ namespace COD_Randomizer_App.JsonGenerator
 
             Weapon tes_weapon = Factory.CreateWeapon("Test", WeaponDictionaries.striker);
 
-            var test = JsonConvert.SerializeObject(tes_weapon, Formatting.Indented);
-
             /*
             foreach(KeyValuePair<string, Dictionary<string, int>> key in WeaponDictionaries.sturmgewehr_dict)
             {
@@ -32,20 +30,48 @@ namespace COD_Randomizer_App.JsonGenerator
             }
             */
 
-            /*
-            string filestring = "";
+            //foreach (KeyValuePair<string, Dictionary<string, Id>> key in WeaponDictionaries.Primary_WepCW)
+            //{
+            //    MotherLoadout.Primaries.Add(Factory.CreateWeapon(key.Key, key.Value));
+            //}
 
-            foreach (KeyValuePair<string, Dictionary<string, Id>> key in WeaponDictionaries.TestWeaponsCW)
-            {
-                filestring += Factory.CreateWeapon(key.Key, key.Value).Display();
-            }
-            */
+            //foreach (KeyValuePair<string, Dictionary<string, Id>> key in WeaponDictionaries.Secondary_WepCW)
+            //{
+            //    MotherLoadout.Secondaries.Add(Factory.CreateWeapon(key.Key, key.Value));
+            //}
+
+            //foreach (string perk in WeaponDictionaries.perk1_list)
+            //{
+            //    MotherLoadout.Perks1.Add(Factory.CreatePerk(perk));
+            //}
+
+            //foreach (string perk in WeaponDictionaries.perk2_list)
+            //{
+            //    MotherLoadout.Perks2.Add(Factory.CreatePerk(perk));
+            //}
+
+            //foreach (string perk in WeaponDictionaries.perk2_list)
+            //{
+            //    MotherLoadout.Perks3.Add(Factory.CreatePerk(perk));
+            //}
+
+            //foreach (string gren in WeaponDictionaries.prim_gren)
+            //{
+            //    MotherLoadout.Lethals.Add(Factory.CreateGrenade(gren));
+            //}
+
+            //foreach (string gren in WeaponDictionaries.sec_gren)
+            //{
+            //    MotherLoadout.Tacticals.Add(Factory.CreateGrenade(gren));
+            //}
+
+            //var test = JsonConvert.SerializeObject(MotherLoadout, Formatting.Indented);
+
             //File.WriteAllText(filepath, test);
-
-            //File.WriteAllText("C:/Users/ueli/Desktop/TestFile.txt", filestring);
 
             Console.WriteLine(tes_weapon.Display());
             Console.WriteLine(Factory.PrintGroup());
+            Console.WriteLine(MotherLoadout.Display());
             Console.ReadLine();
         }
     }
