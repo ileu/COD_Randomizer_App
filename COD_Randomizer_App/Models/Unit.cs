@@ -27,6 +27,50 @@ namespace COD_Randomizer_App.Models
         {
             return name;
         }
+
+        public override bool Equals(object obj) => this.Equals(obj as BaseUnit);
+
+        public bool Equals(BaseUnit unit)
+        {
+            if (unit is null)
+            {
+                return false;
+            }
+
+            if (Object.ReferenceEquals(this, unit))
+            {
+                return true;
+            }
+
+            if (this.GetType() != unit.GetType())
+            {
+                return false;
+            }
+
+            return this.Name == unit.Name;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public static bool operator ==(BaseUnit lhs, BaseUnit rhs)
+        {
+            if (lhs is null)
+            {
+                if (rhs is null)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            return lhs.Equals(rhs);
+        }
+
+        public static bool operator !=(BaseUnit lhs, BaseUnit rhs) => !(lhs == rhs); 
     }
 
     public abstract class Unit<T> : BaseUnit where T : BaseUnit

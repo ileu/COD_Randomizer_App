@@ -17,7 +17,7 @@ namespace COD_Randomizer_App.Models
         public Weapon(string name) : base(name)
         {
 
-        } 
+        }
 
         public bool AddSlot(Slot slot)
         {
@@ -71,6 +71,7 @@ namespace COD_Randomizer_App.Models
 
             var slots = new List<Slot>();
 
+
             foreach (Slot slot in draw_slots)
             {
                 var temp = new Slot(slot.Name);
@@ -87,43 +88,5 @@ namespace COD_Randomizer_App.Models
             return WeaponClass + ": " + Name;
         }
 
-        public override bool Equals(object obj) => this.Equals(obj as Weapon);
-
-        public bool Equals(Weapon wep)
-        {
-            if (wep is null)
-            {
-                return false;
-            }
-
-            if (Object.ReferenceEquals(this, wep))
-            {
-                return true;
-            }
-
-            if (this.GetType() != wep.GetType())
-            {
-                return false;
-            }
-
-            return this.Name == wep.Name;
-        }
-
-        public static bool operator ==(Weapon lhs, Weapon rhs)
-        {
-            if (lhs is null)
-            {
-                if (rhs is null)
-                {
-                    return true;
-                }
-
-                return false;
-            }
-
-            return lhs.Equals(rhs);
-        }
-
-        public static bool operator !=(Weapon lhs, Weapon rhs) => !(lhs == rhs);
     }
 }

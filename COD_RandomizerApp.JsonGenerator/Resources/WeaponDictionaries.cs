@@ -50,7 +50,6 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
         public static readonly Dictionary<string, Id> uzi = new Dictionary<string, Id> { {"Muzzle", Id.MuzzleCQBBreacher}, {"Barrel", Id.BarrelUzi}, { "Laser", Id.LaserMW }, { "Optic", Id.OpticFennec },
             { "Stock", Id.StockUzi }, { "Underbarrel", Id.UnderbarrelModel680 }, { "Ammunition", Id.MagazinUzi }, { "Rear Grip", Id.RearGripStandard }, { "Perk", Id.PerksMPNoBurst } }; //MuzzleAug = MuzzleUzi, OpticFennec = OpticUzi
 
-
         public static readonly Dictionary<string, Id> model680 = new Dictionary<string, Id> { {"Muzzle", Id.MuzzleModel680}, {"Barrel", Id.BarrelModel680}, { "Laser", Id.LaserMW }, { "Optic", Id.OpticShotgun },
             { "Stock", Id.StockModel680 }, { "Underbarrel", Id.UnderbarrelMP }, { "Ammunition", Id.MagazinModel680 }, { "Perk", Id.PerksModel680 } };
         public static readonly Dictionary<string, Id> jak = new Dictionary<string, Id> { {"Muzzle", Id.MuzzleModel680}, {"Barrel", Id.BarrelJak}, { "Laser", Id.LaserMW }, { "Optic", Id.OpticShotgun },

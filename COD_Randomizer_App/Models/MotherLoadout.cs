@@ -21,7 +21,7 @@ namespace COD_Randomizer_App.Models
 
         private readonly Random rnd = new();
 
-        public Loadout GetRandomLoadout()
+        public Loadout GetRandomLoadout(int n = 5)
         {
             int perk1 = rnd.Next(Perks1.Count);
             int perk2 = rnd.Next(Perks2.Count);
@@ -64,9 +64,9 @@ namespace COD_Randomizer_App.Models
 
 
             Weapon prim = new Weapon(prim_draw.Name);
-            prim.AddSlot(prim_draw.GetRandom(5));
+            prim.AddSlot(prim_draw.GetRandom(n));
             Weapon sec = new Weapon(sec_draw.Name);
-            sec.AddSlot(sec_draw.GetRandom(5));
+            sec.AddSlot(sec_draw.GetRandom(n));
 
             loadout.Primary = prim;
             loadout.Secondary = sec;
