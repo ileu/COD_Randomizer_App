@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace COD_Randomizer_App.JsonGenerator.Models
+﻿namespace COD_Randomizer_App.JsonGenerator.Resources
 {
     /*
          

@@ -1,7 +1,4 @@
-﻿using COD_Randomizer_App.JsonGenerator.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace COD_Randomizer_App.JsonGenerator.Resources
 {
@@ -52,7 +49,6 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             { "Stock", Id.StockMP5MW }, { "Underbarrel", Id.UnderbarrelMP }, { "Ammunition", Id.MagazinMP5MW }, { "Rear Grip", Id.RearGripStandard }, { "Perk", Id.PerksMP } }; // OpticFennec = MP5 MW
         public static readonly Dictionary<string, Id> uzi = new Dictionary<string, Id> { {"Muzzle", Id.MuzzleCQBBreacher}, {"Barrel", Id.BarrelUzi}, { "Laser", Id.LaserMW }, { "Optic", Id.OpticFennec },
             { "Stock", Id.StockUzi }, { "Underbarrel", Id.UnderbarrelModel680 }, { "Ammunition", Id.MagazinUzi }, { "Rear Grip", Id.RearGripStandard }, { "Perk", Id.PerksMPNoBurst } }; //MuzzleAug = MuzzleUzi, OpticFennec = OpticUzi
-
 
         public static readonly Dictionary<string, Id> model680 = new Dictionary<string, Id> { {"Muzzle", Id.MuzzleModel680}, {"Barrel", Id.BarrelModel680}, { "Laser", Id.LaserMW }, { "Optic", Id.OpticShotgun },
             { "Stock", Id.StockModel680 }, { "Underbarrel", Id.UnderbarrelMP }, { "Ammunition", Id.MagazinModel680 }, { "Perk", Id.PerksModel680 } };
@@ -158,10 +154,13 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             { "Stock", Id.StockHGCW }, { "Ammunition", Id.Magazin1911CW }, { "Rear Grip", Id.RearGripWestSpeTSerG } };
 
 
-        public static readonly Dictionary<string, Dictionary<string, Id>> TestWeaponsCW = new Dictionary<string, Dictionary<string, Id>> { { nameof(xm4), xm4 },{ nameof(ak47CW), ak47CW },{ nameof(krig), krig },{ nameof(ffar), ffar },{ nameof(fara), fara },{ nameof(qbz), qbz },{ nameof(groza), groza },
+        public static readonly Dictionary<string, Dictionary<string, Id>> Primary_WepCW = new Dictionary<string, Dictionary<string, Id>> { { nameof(xm4), xm4 },{ nameof(ak47CW), ak47CW },{ nameof(krig), krig },{ nameof(ffar), ffar },{ nameof(fara), fara },{ nameof(qbz), qbz },{ nameof(groza), groza },
             { nameof(c58), c58 },{ nameof(mac), mac },{ nameof(milano), milano },{ nameof(lc10), lc10 },{ nameof(ksp), ksp },{ nameof(ak74u), ak74u },{ nameof(ppsh), ppsh },{ nameof(mp5CW), mp5CW },{ nameof(bullfrog), bullfrog },{ nameof(strassenfeger), strassenfeger },{ nameof(gallo), gallo } ,
             { nameof(hauer), hauer },{ nameof(m60), m60 },{ nameof(stoner), stoner },{ nameof(rpd), rpd },{ nameof(mg82), mg82 },{ nameof(dmr14), dmr14 },{ nameof(type63), type63 },{ nameof(m16), m16 },{ nameof(augCW), augCW },{ nameof(carv), carv },{ nameof(tundra), tundra },
-            { nameof(pelington), pelington },{ nameof(zrg), zrg },{ nameof(swiss), swiss },{ nameof(m82), m82 }, { nameof(diamatti), diamatti },{ nameof(amp_63), amp_63 },{ nameof(magnumCW), magnumCW },{ nameof(m1911CW), m1911CW } };
+            { nameof(pelington), pelington },{ nameof(zrg), zrg },{ nameof(swiss), swiss },{ nameof(m82), m82 } };
+
+        public static readonly Dictionary<string, Dictionary<string, Id>> Secondary_WepCW = new Dictionary<string, Dictionary<string, Id>> { { nameof(diamatti), diamatti }, { nameof(amp_63), amp_63 }, { nameof(magnumCW), magnumCW }, { nameof(m1911CW), m1911CW } };
+
         #endregion
         // BO waffen \/
 
@@ -280,7 +279,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
        */
 
         public static readonly List<string> werfer_dict = new List<string> { "RPG-7 MW", "PILA", "JOKR", "Strela-P", "RPG-7 CW", "Cigma 2", "M79", "Melee", "Ballistic Knife", "R1 Shadowhunter", "Nail Gun" };
-        public static readonly List<string> primary_weapons = new List<string> { "Assault Rifle", "SMG", "Shotgun", "LMG", "Tactical Rifle", "Marksman Rifle", "Sniper" };
+        public static readonly List<string> primary_weapons = new List<string> { "Assault Rifle", "SMG", "Shotgun", "LMG", "Tactical Rifle", "Marksman Rifle", "Sniper Rifle" };
         public static readonly List<string> secondary_weapons = new List<string> { "Handgun", "Launcher" };
         public static readonly List<string> perk1_list = new List<string> { "Double Time", "E.O.D.", "Scavenger", "Cold-Blooded", "Kill Chain", "Quick Fix" };
         public static readonly List<string> perk2_list = new List<string> { "Restock", "Hardline", "Overkill", "High Alert", "Ghost", "Pointman" };

@@ -51,14 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factories\Factory.cs" />
-    <Compile Include="Models\Attachment.cs" />
-    <Compile Include="Models\Ids.cs" />
-    <Compile Include="Models\Grenade.cs" />
-    <Compile Include="Models\MotherLoadout.cs" />
-    <Compile Include="Models\Perk.cs" />
-    <Compile Include="Models\Slot.cs" />
-    <Compile Include="Models\Unit.cs" />
-    <Compile Include="Models\Weapon.cs" />
+    <Compile Include="Resources\Ids.cs" />
     <Compile Include="Resources\Magazins.cs" />
     <Compile Include="Resources\Barrels.cs" />
     <Compile Include="Resources\Muzzles.cs" />
@@ -76,6 +69,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\COD_Randomizer_App\COD_Randomizer_App.csproj">
+      <Project>{46f3cea7-6c61-4451-a797-3b3638dba4cc}</Project>
+      <Name>COD_Randomizer_App</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

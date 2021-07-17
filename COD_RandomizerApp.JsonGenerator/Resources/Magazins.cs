@@ -1,10 +1,4 @@
-﻿using COD_Randomizer_App.JsonGenerator.Models;
-using COD_Randomizer_App.JsonGenerator.Factories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using COD_Randomizer_App.JsonGenerator.Factories;
 
 namespace COD_Randomizer_App.JsonGenerator.Resources
 {
@@ -92,7 +86,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("45 Rnd Drum", Id.MagazinWestDrum, Id.MagazinEastDrum, Id.MagazinC58, Id.MagazinMilano, Id.MagazinAugCW);
             Factory.AddToGroup("40 Rnd Drum", Id.MagazinAk74u, Id.MagazinMP9CW);
             Factory.AddToGroup("55 Rnd Drum", Id.MagazinPPSh);
-            Factory.AddToGroup("15 RND Tube", Id.MagazinStreetsweeper);
+            Factory.AddToGroup("15 Rnd Tube", Id.MagazinStreetsweeper);
             Factory.AddToGroup("9 Rnd Tube", Id.MagazinGallo);
             Factory.AddToGroup("7 Rnd Tube", Id.MagazinHauer);
 
@@ -146,7 +140,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("STANAG 40 Rnd", Id.MagazinDMR14);
             Factory.AddToGroup("STANAG 9 Rnd", Id.MagazinTundra, Id.MagazinPelington);
             Factory.AddToGroup("STANAG 7 Rnd", Id.MagazinZRG);
-            Factory.AddToGroup("STANAG 18 RND", Id.MagazinStreetsweeper);
+            Factory.AddToGroup("STANAG 18 Rnd", Id.MagazinStreetsweeper);
             Factory.AddToGroup("STANAG 12 Rnd Tube", Id.MagazinGallo);
             Factory.AddToGroup("STANAG 9 Rnd Tube", Id.MagazinHauer);
             Factory.AddToGroup("STANAG 60 Rnd Drum", Id.MagazinWestDrum);
