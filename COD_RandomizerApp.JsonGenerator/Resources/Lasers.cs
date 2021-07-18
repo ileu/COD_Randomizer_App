@@ -8,7 +8,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
         {
             Factory.AddToGroup("1mW Laser", Id.LaserMW);
             Factory.AddToGroup("5mW Laser", Id.LaserMW);
-            Factory.AddToGroup("Tac Laser", Id.LaserMW);
+            Factory.AddToGroup("Tac Laser", Id.LaserMW, Id.LaserTacOnly);
 
             Factory.AddToGroup("Steady Aim Laser", Id.LaserWest, Id.LaserEast);
             Factory.AddToGroup("Mounted Flashlight", Id.LaserWest, Id.LaserEast);

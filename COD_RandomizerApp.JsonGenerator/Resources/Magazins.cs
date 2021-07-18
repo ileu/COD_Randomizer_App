@@ -7,11 +7,11 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
         public static void Create()
         {
             Factory.AddToGroup("50 Round Mags", Id.MagazinKilo, Id.MagazinM4A1, Id.MagazinM13, Id.MagazinFR556, Id.MagazinRam7, Id.MagazinUzi);
-            Factory.AddToGroup("60 Round Mags", Id.MagazinKilo, Id.MagazinM4A1, Id.MagazinM13, Id.MagazinFR556);
+            Factory.AddToGroup("60 Round Mags", Id.MagazinKilo, Id.MagazinM4A1, Id.MagazinM13, Id.MagazinFR556, Id.MagazinBruen);
             Factory.AddToGroup("100 Round Drums", Id.MagazinKilo);
 
             Factory.AddToGroup("25 Round Mags", Id.MagazinOden, Id.MagazinScar);
-            Factory.AddToGroup("30 Round Mags", Id.MagazinOden, Id.MagazinFAL, Id.MagazinScar, Id.MagazinVal, Id.MagazinIso);
+            Factory.AddToGroup("30 Round Mags", Id.MagazinOden, Id.MagazinFAL, Id.MagazinScar, Id.MagazinVal, Id.MagazinIso, Id.MagazinHolger);
 
             Factory.AddToGroup("24 Round Mags", Id.MagazinFAL);
 
@@ -64,7 +64,17 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Slug Rounds", Id.Magazin725);
 
             Factory.AddToGroup("150 Round Belt", Id.MagazinPKM);
-            Factory.AddToGroup("200 Round Belt", Id.MagazinPKM);
+            Factory.AddToGroup("200 Round Belt", Id.MagazinPKM, Id.MagazinBruen);
+
+            Factory.AddToGroup("5.56 NATO 100-Round Belts", Id.MagazinFinn);
+            Factory.AddToGroup("5.56 CT 75-Round Belts", Id.MagazinFinn);
+            Factory.AddToGroup("5.56 CT 100-Round Belts", Id.MagazinFinn);
+
+            Factory.AddToGroup("120 Round Belt", Id.MagazinM91);
+            Factory.AddToGroup("150 Round HEI Belt", Id.MagazinM91);
+
+            Factory.AddToGroup("75 Round Belt", Id.MagazinMG34);
+            Factory.AddToGroup("100 Round Belt", Id.MagazinMG34);
 
             //**********Cold War******************
 

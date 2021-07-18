@@ -127,6 +127,33 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("26.9\" Extended Barrel", Id.BarrelPKM);
             Factory.AddToGroup("25.9\" Heavy Barrel", Id.BarrelPKM);
 
+            Factory.AddToGroup("SA87 18.2\" Factory", Id.BarrelSA87);
+            Factory.AddToGroup("SA87 25.4\" Factory", Id.BarrelSA87);
+            Factory.AddToGroup("SA87 12.4\" Factory", Id.BarrelSA87);
+
+            Factory.AddToGroup("XRK Pro Twist", Id.BarrelFinn);
+            Factory.AddToGroup("Factory Adverse", Id.BarrelFinn);
+            Factory.AddToGroup("XRK LongShot Advantage", Id.BarrelFinn);
+            Factory.AddToGroup("XRK Pro Twist Adverse", Id.BarrelFinn);
+            Factory.AddToGroup("FTAC VC-8 Harrier", Id.BarrelFinn);
+            Factory.AddToGroup("XRK LongShot Adverse", Id.BarrelFinn);
+            Factory.AddToGroup("FTAC VC-8 Harrier Adverse", Id.BarrelFinn);
+
+            Factory.AddToGroup("M91 Special Forces", Id.BarrelM91);
+            Factory.AddToGroup("M91 Infantry", Id.BarrelM91);
+            Factory.AddToGroup("M91 Heavy", Id.BarrelM91);
+
+            Factory.AddToGroup("FSS Brute", Id.BarrelMG34);
+            Factory.AddToGroup("FSS Stubby", Id.BarrelMG34);
+            Factory.AddToGroup("FSS Elite", Id.BarrelMG34);
+
+            Factory.AddToGroup("XRK Ultralight", Id.BarrelHolger);
+            Factory.AddToGroup("FTAC 8.98\" Spitfire", Id.BarrelHolger);
+
+            Factory.AddToGroup("XRK Horizon 23.0\"", Id.BarrelBruen);
+            Factory.AddToGroup("XRK Summit 26.8\"", Id.BarrelBruen);
+            Factory.AddToGroup("Bruen 18.0\" Para", Id.BarrelBruen);
+
             // ********* Cold War *********
 
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);
