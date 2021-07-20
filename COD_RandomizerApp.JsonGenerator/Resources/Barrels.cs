@@ -154,6 +154,18 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("XRK Summit 26.8\"", Id.BarrelBruen);
             Factory.AddToGroup("Bruen 18.0\" Para", Id.BarrelBruen);
 
+            Factory.AddToGroup("FSS 18.0\" Factory", Id.BarrelMk2);
+            Factory.AddToGroup("FSS 20.0\" Factory", Id.BarrelMk2);
+            Factory.AddToGroup("FSS 24.0\" Factory", Id.BarrelMk2);
+
+            Factory.AddToGroup("FORGE TAC Precision 20.0\"", Id.BarrelEbr);
+            Factory.AddToGroup("FORGE TAC Elite", Id.BarrelEbr);
+            Factory.AddToGroup("FORGE TAC Precision 22.0\"", Id.BarrelEbr);
+
+            Factory.AddToGroup("FTAC Landmark", Id.BarrelSks);
+            Factory.AddToGroup("16\" FSS Para", Id.BarrelSks);
+            Factory.AddToGroup("22\" FSS M59/66", Id.BarrelSks);
+
             // ********* Cold War *********
 
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);

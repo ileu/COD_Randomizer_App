@@ -90,7 +90,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Tempus Sport", Id.Stock725);
             Factory.AddToGroup("Cronen Equilibrium	", Id.Stock725);
             Factory.AddToGroup("Cronen Pro Light", Id.Stock725);
-            Factory.AddToGroup("Sawed-off Stock", Id.Stock725);
+            Factory.AddToGroup("Sawed-off Stock", Id.Stock725, Id.StockSks);
 
             Factory.AddToGroup("XRK SA87 Heavy Stock Pro", Id.StockSA87);
             Factory.AddToGroup("SA87 Ultralight Hollow", Id.StockSA87);
@@ -114,6 +114,19 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("XRK Axis", Id.StockHolger);
 
             Factory.AddToGroup("Skeleton Stock", Id.StockBruen);
+
+            Factory.AddToGroup("Cartridge Sleeve", Id.StockMk2);
+            Factory.AddToGroup("FSS MK2 Sport Comb", Id.StockMk2);
+            Factory.AddToGroup("FSS MK2 Precision Comb", Id.StockMk2);
+            Factory.AddToGroup("MK2 Ultralight Hollow", Id.StockMk2);
+
+            Factory.AddToGroup("FTAC Precision Comb", Id.StockEbr);
+            Factory.AddToGroup("FSS Raider Chassis Pro", Id.StockEbr);
+            Factory.AddToGroup("FTAC Lightweight Stock", Id.StockEbr);
+            Factory.AddToGroup("FSS Raider Chassis Elite", Id.StockEbr);
+
+            Factory.AddToGroup("SKS Rifle Stock", Id.StockSks);
+            Factory.AddToGroup("FTAC Hunter-Scout", Id.StockSks);
 
             
 

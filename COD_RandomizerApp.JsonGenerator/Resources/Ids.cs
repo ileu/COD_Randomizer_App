@@ -27,6 +27,7 @@
         02 - standard MP
         03 - standard Shotgun
         04 - standard LMG
+        05 - standard dmr
         10 - Kilo specific
         11 - Oden specific
         12 - M4A1 specific
@@ -62,6 +63,9 @@
         42 - MG34
         43 - Holger
         44 - Bruen
+        45 - MK2
+        46 - EBR
+        47 - SKS
 
          */
 
@@ -104,6 +108,9 @@
         BarrelMG34 = 142,
         BarrelHolger = 143,
         BarrelBruen = 144,
+        BarrelMk2 = 145,
+        BarrelEbr = 146,
+        BarrelSks = 147,
         BarrelXM4 = 150,
         BarrelAk47 = 151,
         BarrelKrig = 152,
@@ -181,6 +188,8 @@
         MagazinMG34 = 442,
         MagazinHolger = 443,
         MagazinBruen = 444,
+        MagazinEbr = 446,
+        MagazinSks = 447,
         MagazinWest = 450,
         MagazinEast = 451,
         MagazinWestSmall = 452,
@@ -251,6 +260,7 @@
         OpticMP = 602,
         OpticShotgun = 603,
         OpticLMG = 604,
+        OpticDMR = 605,
         OpticOden = 611,
         OpticM4A1 = 612,
         OpticAK47MW = 617,
@@ -265,6 +275,7 @@
         OpticFinn = 640,
         OpticM91 = 641,
         OpticHolger = 643,
+        OpticSks = 647,
         OpticWest = 650,
         OpticEast = 651,
         OpticMPCW = 652,
@@ -276,6 +287,7 @@
 
         PerksMW = 701,
         PerksMP = 702,
+        PerksDMR = 706,
         PerksMPNoBurst = 710,
         PerksScar = 715,
         PerksNoBurst = 716,
@@ -330,6 +342,9 @@
         StockM91 = 1041,
         StockHolger = 1043,
         StockBruen = 1044,
+        StockMk2 = 1045,
+        StockEbr = 1046,
+        StockSks = 1047,
         StockKrig = 1050,
         StockAK47CW = 1051,
         StockXM4 = 1052,
