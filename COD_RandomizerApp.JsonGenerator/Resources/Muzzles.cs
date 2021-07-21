@@ -6,14 +6,14 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
-            Factory.AddToGroup("Flash Guard", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleCQBBreacher, Id.MuzzleFennec);
-            Factory.AddToGroup("Tactical Suppressor", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleFennec, Id.MuzzleCQBBreacher);
+            Factory.AddToGroup("Flash Guard", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleCQBBreacher, Id.MuzzleFennec, Id.MuzzleMagnumMW, Id.MuzzlePistolMW, Id.MuzzleRenetti);
+            Factory.AddToGroup("Tactical Suppressor", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleFennec, Id.MuzzleCQBBreacher, Id.MuzzlePistolMW, Id.MuzzleRenetti);
             Factory.AddToGroup("Breacher Device", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin);
-            Factory.AddToGroup("Muzzle Brake", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleCQBBreacher, Id.MuzzleFennec);
-            Factory.AddToGroup("Lightweight Suppressor", Id.MuzzleStandard, Id.MuzzleOrigin, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleCQBBreacher);
+            Factory.AddToGroup("Muzzle Brake", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleCQBBreacher, Id.MuzzleFennec, Id.MuzzleMagnumMW, Id.MuzzlePistolMW, Id.MuzzleRenetti);
+            Factory.AddToGroup("Lightweight Suppressor", Id.MuzzleStandard, Id.MuzzleOrigin, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleCQBBreacher, Id.MuzzlePistolMW, Id.MuzzleRenetti, Id.MuzzleRenetti);
 
-            Factory.AddToGroup("Compensator", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleFennec, Id.MuzzleFennec, Id.MuzzleCQBBreacher);
-            Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleCQBBreacher);
+            Factory.AddToGroup("Compensator", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleFennec, Id.MuzzleFennec, Id.MuzzleCQBBreacher, Id.MuzzleMagnumMW, Id.MuzzlePistolMW);
+            Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleCQBBreacher, Id.MuzzlePistolMW, Id.MuzzleRenetti);
             Factory.AddToGroup("CQB Breacher Device", Id.MuzzleOden, Id.MuzzleCQBBreacher, Id.MuzzleFennec);
             Factory.AddToGroup("Collosus Suppressor", Id.MuzzleOden);
 
@@ -24,6 +24,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("AN-94 Sonic Brake", Id.MuzzleAn94);
 
             Factory.AddToGroup("ZLR Sabre", Id.MuzzleFennec);
+
+            Factory.AddToGroup("Oil Can Suppressor", Id.MuzzlePistolMW, Id.MuzzleRenetti);
+
+            Factory.AddToGroup("Desperado Pro Compensator", Id.MuzzleRenetti);
 
             Factory.AddToGroup("Muzzle Brake 5.56", Id.MuzzleWest556, Id.MuzzleEast556);
             Factory.AddToGroup("Flash Guard 5.56", Id.MuzzleWest556, Id.MuzzleEast556);

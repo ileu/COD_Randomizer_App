@@ -128,9 +128,12 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("SKS Rifle Stock", Id.StockSks);
             Factory.AddToGroup("FTAC Hunter-Scout", Id.StockSks);
 
-            
+            Factory.AddToGroup("PP-Skelet", Id.StockSykov);
+            Factory.AddToGroup("PP-Karabin", Id.StockSykov);
 
-            
+            Factory.AddToGroup("FTAC SATUS CS-3", Id.StockRenetti);
+            Factory.AddToGroup("FTAC G-X", Id.StockRenetti);
+            Factory.AddToGroup("FTAC SATUS CS-X", Id.StockRenetti);
 
 
 

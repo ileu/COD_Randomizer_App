@@ -59,6 +59,7 @@
     <Compile Include="Resources\Perks.cs" />
     <Compile Include="Resources\RearGrips.cs" />
     <Compile Include="Resources\Stocks.cs" />
+    <Compile Include="Resources\TriggerAction.cs" />
     <Compile Include="Resources\Underbarrel.cs" />
     <Compile Include="Resources\WeaponDictionaries.cs" />
     <Compile Include="Program.cs" />

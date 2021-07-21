@@ -41,6 +41,7 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
             Muzzles.Create();
             Perks.Create();
             Underbarrel.Create();
+            TriggerAction.Create();
             RearGrips.Create();
             Stocks.Create();
         }

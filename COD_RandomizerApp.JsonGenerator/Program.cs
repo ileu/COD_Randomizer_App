@@ -21,7 +21,7 @@ namespace COD_Randomizer_App.JsonGenerator
             string filepath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\COD_Randomizer_App\\Resources\\TestJson.json";
             var testContent = File.ReadAllText(filepath);
 
-            Weapon tes_weapon = Factory.CreateWeapon("Test", WeaponDictionaries.striker);
+            Weapon tes_weapon = Factory.CreateWeapon("Test", WeaponDictionaries.mw_1911);
 
             /*
             foreach(KeyValuePair<string, Dictionary<string, int>> key in WeaponDictionaries.sturmgewehr_dict)
@@ -72,8 +72,8 @@ namespace COD_Randomizer_App.JsonGenerator
             //File.WriteAllText("C:/Users/ueli/Desktop/TestFile.txt", filestring);
 
             Console.WriteLine(tes_weapon.Display());
-            Console.WriteLine(Factory.PrintGroup());
-            Console.WriteLine(MotherLoadout.Display());
+            //Console.WriteLine(Factory.PrintGroup());
+            //Console.WriteLine(MotherLoadout.Display());
             Console.ReadLine();
         }
     }

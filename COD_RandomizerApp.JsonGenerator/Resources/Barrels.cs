@@ -166,6 +166,34 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("16\" FSS Para", Id.BarrelSks);
             Factory.AddToGroup("22\" FSS M59/66", Id.BarrelSks);
 
+            Factory.AddToGroup(".357 Snub Nose", Id.BarrelMagnumMW);
+            Factory.AddToGroup("Silverfield Ordnance .357", Id.BarrelMagnumMW);
+            Factory.AddToGroup(".357 Long", Id.BarrelMagnumMW);
+
+            Factory.AddToGroup("SSB 105mm", Id.BarrelSykov);
+            Factory.AddToGroup("SSL 308mm", Id.BarrelSykov);
+            Factory.AddToGroup("Sorokin 140mm Auto", Id.BarrelSykov);
+
+            Factory.AddToGroup("Mk1 Competition", Id.BarrelRenetti);
+            Factory.AddToGroup("Mk1 Extended", Id.BarrelRenetti);
+            Factory.AddToGroup("Mk3 Burst Mod", Id.BarrelRenetti);
+
+            Factory.AddToGroup("XRK L Super", Id.BarrelM19);
+            Factory.AddToGroup("XRK V Extended", Id.BarrelM19);
+            Factory.AddToGroup("A9-16 Lightweight", Id.BarrelM19);
+
+            Factory.AddToGroup("FORGE TAC Extended", Id.BarrelDeagle);
+            Factory.AddToGroup("FORGE TAC Enforcer", Id.BarrelDeagle);
+
+            Factory.AddToGroup(".45 Compact", Id.Barrel1911MW);
+            Factory.AddToGroup(".45 Match Grade", Id.Barrel1911MW);
+            Factory.AddToGroup("1911 Stalker", Id.Barrel1911MW);
+
+            Factory.AddToGroup("Singuard Arms Featherweight", Id.BarrelX16);
+            Factory.AddToGroup("Vanguard Elite", Id.BarrelX16);
+            Factory.AddToGroup("Singuard Arms Advantage", Id.BarrelX16);
+
+
             // ********* Cold War *********
 
             Factory.AddToGroup("11.8\" Extended", Id.BarrelXM4);

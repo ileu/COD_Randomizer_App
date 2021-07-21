@@ -27,7 +27,6 @@
         02 - standard MP
         03 - standard Shotgun
         04 - standard LMG
-        05 - standard dmr
         10 - Kilo specific
         11 - Oden specific
         12 - M4A1 specific
@@ -66,13 +65,20 @@
         45 - MK2
         46 - EBR
         47 - SKS
+        
+        92 - Magnum
+        93 - Sykov
+        94 - Renetti
+        95 - M19
+        96 - Deagle
+        97 - 1911
+        98 - x16
+        99 - Pistol
 
          */
 
     public enum Id
     {
-
-        
         BarrelKilo = 110,
         BarrelOden = 111,
         BarrelM4A1 = 112,
@@ -149,6 +155,13 @@
         BarrelSwiss = 185,
         BarrelM82 = 186,
         BarrelOTs9 = 187,
+        BarrelX16 = 198,
+        Barrel1911MW = 197,
+        BarrelDeagle = 196,
+        BarrelM19 = 195,
+        BarrelRenetti = 194,
+        BarrelSykov = 193,
+        BarrelMagnumMW = 192, 
 
         Guard725 = 237,
 
@@ -213,7 +226,7 @@
         MagazinStoner = 470,
         MagazinRPK = 471,
         MagazinMG82 = 472,
-        MagazinRenetti = 473,
+        Magazin1911CW = 473,
         MagazinDiamatti = 474,
         MagazinAMP = 475,
         MagazinMagnumCW = 476,
@@ -221,11 +234,17 @@
         MagazinDMR14 = 478,
         MagazinType63 = 479,
         MagazinAugCW = 480,
-        Magazin1911CW = 481,
+        MagazinZRG = 481,
         MagazinTundra = 482,
         MagazinPelington = 483,
-        MagazinZRG = 484,
-        MagazinOTs9 = 485,
+        MagazinOTs9 = 484,
+        MagazinX16 = 498,
+        Magazin1911MW = 497,
+        MagazinDeagle = 496,
+        MagazinM19 = 495,
+        MagazinRenetti = 494,
+        MagazinSykov = 493,
+        MagazinMagnumMW = 492,  
 
         MuzzleStandard = 501,
         MuzzleOden = 511,
@@ -254,13 +273,15 @@
         MuzzleWest20 = 563,
         MuzzleEast75 = 564,
         MuzzleWest50 = 565,
-
+        MuzzlePistolMW = 1299,
+        MuzzleRenetti = 1294,
+        MuzzleMagnumMW = 1292, 
 
         OpticMW = 601,
         OpticMP = 602,
         OpticShotgun = 603,
         OpticLMG = 604,
-        OpticDMR = 605,
+        
         OpticOden = 611,
         OpticM4A1 = 612,
         OpticAK47MW = 617,
@@ -275,6 +296,8 @@
         OpticFinn = 640,
         OpticM91 = 641,
         OpticHolger = 643,
+        OpticMk2 = 645,
+        OpticEbr = 646,
         OpticSks = 647,
         OpticWest = 650,
         OpticEast = 651,
@@ -284,6 +307,11 @@
         OpticEastLMG = 655,
         OpticHGCW = 656,
         OpticWestSN = 657,
+        OpticPistolMW = 699,
+        OpticDeagle = 696,
+        OpticRenetti = 694,
+        OpticSykov = 693,
+        OpticMagnumMW = 692, 
 
         PerksMW = 701,
         PerksMP = 702,
@@ -292,10 +320,10 @@
         PerksScar = 715,
         PerksNoBurst = 716,
         PerksModel680 = 732,
+        PerksPistol = 799,
 
         PumpR9 = 835,
         PumpVlk = 836,
-
 
         RearGripStandard = 901,
         RearGripGrau = 919,
@@ -308,7 +336,10 @@
         RearGripEastSpeTSerG = 953,
         RearGripWestSpeGSerG = 954,
         RearGripEastSpeGSerG = 955,
-
+        RearGripX16 = 998,
+        RearGripRenetti = 994,
+        RearGripSykov = 993,
+        RearGripMagnumMW = 992,   
 
         StockKilo = 1010,
         StockOden = 1011,
@@ -371,6 +402,11 @@
         StockZRG = 1073,
         StockSwiss = 1074,
         StockOTs9 = 1075,
+        StockRenetti = 1094,
+        StockSykov = 1093,
+
+        TriggerActionPistol = 1199, 
+        TriggerActionSykov = 1193,
 
         UnderbarrelAssault = 1201,
         UnderbarrelMP = 1202,
@@ -390,10 +426,5 @@
         UnderbarrelWestMP = 1253,
         UnderbarrelWestSN = 1254,
 
-        
-
-        
-        
-        
     }
 }

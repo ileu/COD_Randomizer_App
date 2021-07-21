@@ -7,9 +7,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
         //contains Guards
         public static void Create()
         {
-            Factory.AddToGroup("Granulated Grip Tape", Id.RearGripStandard);
-            Factory.AddToGroup("Rubberized Grip Tape", Id.RearGripStandard);
-            Factory.AddToGroup("Stippled Grip Tape", Id.RearGripStandard);
+            Factory.AddToGroup("Granulated Grip Tape", Id.RearGripStandard, Id.RearGripMagnumMW, Id.RearGripX16);
+            Factory.AddToGroup("Rubberized Grip Tape", Id.RearGripStandard, Id.RearGripMagnumMW, Id.RearGripX16);
+            Factory.AddToGroup("Stippled Grip Tape", Id.RearGripStandard, Id.RearGripMagnumMW, Id.RearGripX16);
 
             Factory.AddToGroup("XRK Void II", Id.RearGripGrau);
             Factory.AddToGroup("Cronen Sniper Elite", Id.RearGripGrau);
@@ -26,6 +26,18 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("FTAC 60 Series Polymer", Id.RearGripStriker);
             Factory.AddToGroup("FTAC G-5 EXO", Id.RearGripStriker);
             Factory.AddToGroup("FTAC 60 Series Rubber", Id.RearGripStriker);
+
+            Factory.AddToGroup("Lockwood .357 Custom Stock", Id.RearGripMagnumMW);
+            Factory.AddToGroup("FSS Raider Stock", Id.RearGripMagnumMW);
+
+            Factory.AddToGroup("VLk Spetznaz", Id.RearGripSykov);
+            Factory.AddToGroup("VLK Prizrak", Id.RearGripSykov);
+            Factory.AddToGroup("VLK Elita", Id.RearGripSykov);
+
+            Factory.AddToGroup("XRK Pro Grip", Id.RearGripRenetti);
+            Factory.AddToGroup("XRK Speed Grip", Id.RearGripRenetti);
+
+            Factory.AddToGroup("X16 Stock", Id.RearGripX16);
 
             Factory.AddToGroup("FORGE TAC Steady Grip", Id.Guard725);
             Factory.AddToGroup("FORGE TAC Commander", Id.Guard725);
