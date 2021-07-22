@@ -166,6 +166,21 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("16\" FSS Para", Id.BarrelSks);
             Factory.AddToGroup("22\" FSS M59/66", Id.BarrelSks);
 
+            Factory.AddToGroup("FTAC Seven Straight", Id.BarrelRytec);
+            Factory.AddToGroup("FTAC 448 Dictator", Id.BarrelRytec);
+            Factory.AddToGroup("XRK Harbinger", Id.BarrelRytec);
+
+            Factory.AddToGroup("26.9\" HDR Pro", Id.BarrelHDR);
+            Factory.AddToGroup("26.0\" Bull Barrel", Id.BarrelHDR);
+            Factory.AddToGroup("17.2\" Bull Barrel", Id.BarrelHDR);
+
+            Factory.AddToGroup("Singuard Arms Pro", Id.BarrelAx50);
+            Factory.AddToGroup("17.0\" Factory Barrel", Id.BarrelAx50);
+            Factory.AddToGroup("32.0\" Factory Barrel", Id.BarrelAx50);
+
+            Factory.AddToGroup("510mm Compact Barrel", Id.BarrelDragunov);
+            Factory.AddToGroup("660mm Extended Barrel", Id.BarrelDragunov);
+
             Factory.AddToGroup(".357 Snub Nose", Id.BarrelMagnumMW);
             Factory.AddToGroup("Silverfield Ordnance .357", Id.BarrelMagnumMW);
             Factory.AddToGroup(".357 Long", Id.BarrelMagnumMW);

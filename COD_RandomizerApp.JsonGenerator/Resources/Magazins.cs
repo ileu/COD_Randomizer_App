@@ -77,8 +77,16 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("100 Round Belt", Id.MagazinMG34);
 
             Factory.AddToGroup("15 Round Mags", Id.MagazinEbr);
-            Factory.AddToGroup("20 Round Mags", Id.MagazinEbr);
+            Factory.AddToGroup("20 Round Mags", Id.MagazinEbr, Id.MagazinDragunov);
             Factory.AddToGroup("10 Round Mags", Id.MagazinSks);
+
+            Factory.AddToGroup("25x59mm Explosive 5-R mag", Id.MagazinRytec);
+            Factory.AddToGroup("25x59mm Thermite 5-R mag", Id.MagazinRytec);
+
+            Factory.AddToGroup("7 Round Mags", Id.MagazinHDR);
+            Factory.AddToGroup("9 Round Mags", Id.MagazinHDR);
+
+            Factory.AddToGroup("15 Round Mags", Id.MagazinDragunov);
 
             Factory.AddToGroup("Snake Shot", Id.MagazinMagnumMW);
 

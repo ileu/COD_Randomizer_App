@@ -29,6 +29,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 
             Factory.AddToGroup("Desperado Pro Compensator", Id.MuzzleRenetti);
 
+            Factory.AddToGroup("XRK Tank Brake", Id.MuzzleRytec);
+            Factory.AddToGroup("Rytec AMR Suppressor", Id.MuzzleRytec);
+
             Factory.AddToGroup("Muzzle Brake 5.56", Id.MuzzleWest556, Id.MuzzleEast556);
             Factory.AddToGroup("Flash Guard 5.56", Id.MuzzleWest556, Id.MuzzleEast556);
 

@@ -35,6 +35,8 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("GP25 40mm Flash", Id.UnderbarrelAK47MW);
             Factory.AddToGroup("GP25 40mm Recon", Id.UnderbarrelAK47MW);
 
+            Factory.AddToGroup("Bipod", Id.UnderbarrelBipodMW);
+
             Factory.AddToGroup("Front Grip", Id.UnderbarrelWestSN);
             Factory.AddToGroup("Foregrip", Id.UnderbarrelWest, Id.UnderbarrelEast, Id.UnderbarrelEastMP, Id.UnderbarrelWestMP);
             Factory.AddToGroup("Infiltrator Grip", Id.UnderbarrelWest, Id.UnderbarrelEast, Id.UnderbarrelWestSN);

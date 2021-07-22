@@ -27,6 +27,8 @@
         02 - standard MP
         03 - standard Shotgun
         04 - standard LMG
+        08 - Bipod underbarrelonly
+        09 - sniper opticsc
         10 - Kilo specific
         11 - Oden specific
         12 - M4A1 specific
@@ -66,6 +68,10 @@
         46 - EBR
         47 - SKS
         
+        88 - Rytec
+        89 - HDR
+        90 - AX-50
+        91 - Dragunov
         92 - Magnum
         93 - Sykov
         94 - Renetti
@@ -161,7 +167,11 @@
         BarrelM19 = 195,
         BarrelRenetti = 194,
         BarrelSykov = 193,
-        BarrelMagnumMW = 192, 
+        BarrelMagnumMW = 192,
+        BarrelRytec = 188, 
+        BarrelHDR = 189,
+        BarrelAx50 = 190, 
+        BarrelDragunov = 191,
 
         Guard725 = 237,
 
@@ -244,7 +254,10 @@
         MagazinM19 = 495,
         MagazinRenetti = 494,
         MagazinSykov = 493,
-        MagazinMagnumMW = 492,  
+        MagazinMagnumMW = 492,
+        MagazinRytec = 488, 
+        MagazinHDR = 489, 
+        MagazinDragunov = 491,
 
         MuzzleStandard = 501,
         MuzzleOden = 511,
@@ -273,15 +286,16 @@
         MuzzleWest20 = 563,
         MuzzleEast75 = 564,
         MuzzleWest50 = 565,
-        MuzzlePistolMW = 1299,
-        MuzzleRenetti = 1294,
-        MuzzleMagnumMW = 1292, 
+        MuzzlePistolMW = 599,
+        MuzzleRenetti = 594,
+        MuzzleMagnumMW = 592,
+        MuzzleRytec = 588,
 
         OpticMW = 601,
         OpticMP = 602,
         OpticShotgun = 603,
         OpticLMG = 604,
-        
+        OpticSniperMW = 609,
         OpticOden = 611,
         OpticM4A1 = 612,
         OpticAK47MW = 617,
@@ -311,7 +325,7 @@
         OpticDeagle = 696,
         OpticRenetti = 694,
         OpticSykov = 693,
-        OpticMagnumMW = 692, 
+        OpticMagnumMW = 692,
 
         PerksMW = 701,
         PerksMP = 702,
@@ -404,6 +418,10 @@
         StockOTs9 = 1075,
         StockRenetti = 1094,
         StockSykov = 1093,
+        StockRytec = 1088, 
+        StockHDR = 1089, 
+        StockAx50 = 1090, 
+        StockDragunov = 1091,
 
         TriggerActionPistol = 1199, 
         TriggerActionSykov = 1193,
@@ -411,6 +429,7 @@
         UnderbarrelAssault = 1201,
         UnderbarrelMP = 1202,
         UnderbarrelLMG = 1204,
+        UnderbarrelBipodMW = 1208,
         UnderbarrelScar = 1215,
         UnderbarrelAK47MW = 1217,
         UnderbarrelRam7 = 1218,
@@ -425,6 +444,6 @@
         UnderbarrelEastMP = 1252,
         UnderbarrelWestMP = 1253,
         UnderbarrelWestSN = 1254,
-
+        
     }
 }
