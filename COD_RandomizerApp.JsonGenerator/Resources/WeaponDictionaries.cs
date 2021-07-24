@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace COD_Randomizer_App.JsonGenerator.Resources
 {
@@ -329,6 +330,8 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
        public static readonly Dictionary<string, Dictionary<string, Id>> sniper_dict = new Dictionary<string, Dictionary<string, Id>> { { "Rytec AMR", rytec }, { "HDR", hdr }, { "AX-50", ax50 }, { "Dragunov", dragunov }, { "LW3 - Tundra", tundra }, { "Pelington 703", pelington }, { "ZRG 20mm", zrg }, { "Swiss K31", swiss }, { "M82", m82 } };
        public static readonly Dictionary<string, Dictionary<string, Id>> pistole_dict = new Dictionary<string, Dictionary<string, Id>> { { "X16", x16 }, { "1911 MW", mw_1911 }, { ".357", magnum }, { ".50 GS", deagle }, { "M19", m19 }, { "Renetti", renetti }, { "Sykov", sykov }, { "1911 Cold War", M1911CW }, { "Magnum Cold War", magnumCW }, { "Diamatti", diamatti }, { "AMP63", amp_63 } };
        */
+
+        public static readonly Dictionary<string, (Dictionary<string, Id>, int)> pistole_dict = new Dictionary<string, (Dictionary<string, Id>, int)> { { "X16", (x16, 98) }, { "1911 MW", (mw_1911, 97) }, { ".357", (magnum, 92) }, { ".50 GS", (deagle, 96) }, { "M19", (m19, 95) }, { "Renetti", (renetti, 94) }, { "Sykov", (sykov, 93) }, { "1911 Cold War", (m1911CW, 76) }, { "Magnum Cold War", (magnumCW, 75) }, { "Diamatti", (diamatti, 73) }, { "AMP63", (amp_63, 74) } };
 
         public static readonly List<string> werfer_dict = new List<string> { "RPG-7 MW", "PILA", "JOKR", "Strela-P", "RPG-7 CW", "Cigma 2", "M79", "Melee", "Ballistic Knife", "R1 Shadowhunter", "Nail Gun" };
         public static readonly List<string> primary_weapons = new List<string> { "Assault Rifle", "SMG", "Shotgun", "LMG", "Tactical Rifle", "Marksman Rifle", "Sniper Rifle" };
