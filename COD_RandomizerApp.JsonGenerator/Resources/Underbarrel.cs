@@ -18,7 +18,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("M203 40mm Incendiary", Id.UnderbarrelAssault, Id.UnderbarrelScar, Id.UnderbarrelRam7, Id.UnderbarrelGrau);
             Factory.AddToGroup("Operator Foregrip", Id.UnderbarrelAssault, Id.UnderbarrelMP, Id.UnderbarrelLMG, Id.UnderbarrelPKM, Id.UnderbarrelR9, Id.UnderbarrelModel680, Id.UnderbarrelScar, Id.UnderbarrelAK47MW, Id.UnderbarrelRam7, Id.UnderbarrelGrau, Id.UnderbarrelVal);
             Factory.AddToGroup("Ranger Foregrip", Id.UnderbarrelAssault, Id.UnderbarrelMP, Id.UnderbarrelLMG, Id.UnderbarrelR9, Id.UnderbarrelAK47MW, Id.UnderbarrelRam7, Id.UnderbarrelGrau, Id.UnderbarrelVal);
-            Factory.AddToGroup("Bipod", Id.UnderbarrelAssault, Id.UnderbarrelLMG, Id.UnderbarrelPKM, Id.UnderbarrelAK47MW, Id.UnderbarrelVal);
+            Factory.AddToGroup("Bipod", Id.UnderbarrelAssault, Id.UnderbarrelLMG, Id.UnderbarrelPKM, Id.UnderbarrelAK47MW, Id.UnderbarrelVal, Id.UnderbarrelBipodMW);
 
             Factory.AddToGroup("Bipod Foregrip", Id.UnderbarrelScar);
             Factory.AddToGroup("Cronen Shark II", Id.UnderbarrelGrau, Id.UnderbarrelVal);
@@ -35,7 +35,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("GP25 40mm Flash", Id.UnderbarrelAK47MW);
             Factory.AddToGroup("GP25 40mm Recon", Id.UnderbarrelAK47MW);
 
-            Factory.AddToGroup("Bipod", Id.UnderbarrelBipodMW);
+            Factory.AddToGroup("FTAC Speed Grip", Id.UnderbarrelCrossbow);
+            Factory.AddToGroup("XRK Precision Grip", Id.UnderbarrelCrossbow);
+            Factory.AddToGroup("XRK Talon", Id.UnderbarrelCrossbow);
+
 
             Factory.AddToGroup("Front Grip", Id.UnderbarrelWestSN);
             Factory.AddToGroup("Foregrip", Id.UnderbarrelWest, Id.UnderbarrelEast, Id.UnderbarrelEastMP, Id.UnderbarrelWestMP);

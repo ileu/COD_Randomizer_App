@@ -4,7 +4,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 {
     public static class RearGrips
     {
-        //contains Guards
+        //contains Guards and Bolt Assembly
         public static void Create()
         {
             Factory.AddToGroup("Granulated Grip Tape", Id.RearGripStandard, Id.RearGripMagnumMW, Id.RearGripX16);
@@ -26,6 +26,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("FTAC 60 Series Polymer", Id.RearGripStriker);
             Factory.AddToGroup("FTAC G-5 EXO", Id.RearGripStriker);
             Factory.AddToGroup("FTAC 60 Series Rubber", Id.RearGripStriker);
+
+            Factory.AddToGroup("Sloan KR-800 DeadEye", Id.BoltSPR);
+            Factory.AddToGroup("Sloan KR-600 Feather", Id.BoltSPR);
 
             Factory.AddToGroup("Lockwood .357 Custom Stock", Id.RearGripMagnumMW);
             Factory.AddToGroup("FSS Raider Stock", Id.RearGripMagnumMW);

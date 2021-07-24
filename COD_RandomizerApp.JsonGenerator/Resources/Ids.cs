@@ -17,6 +17,8 @@
         10 - Stock
         11 - Trigger Action
         12 - Underbarrel
+        13 - Bolt Assembly
+        14 - Crossbow Stuff
         
 
         The other two digits are there to enumerate the different groups
@@ -67,6 +69,8 @@
         45 - MK2
         46 - EBR
         47 - SKS
+        48 - SPR
+        49 - Kar
         
         88 - Rytec
         89 - HDR
@@ -123,6 +127,8 @@
         BarrelMk2 = 145,
         BarrelEbr = 146,
         BarrelSks = 147,
+        BarrelSPR = 148,
+        BarrelKar = 149,
         BarrelXM4 = 150,
         BarrelAk47 = 151,
         BarrelKrig = 152,
@@ -213,6 +219,7 @@
         MagazinBruen = 444,
         MagazinEbr = 446,
         MagazinSks = 447,
+        MagazinSPR = 448,
         MagazinWest = 450,
         MagazinEast = 451,
         MagazinWestSmall = 452,
@@ -313,6 +320,8 @@
         OpticMk2 = 645,
         OpticEbr = 646,
         OpticSks = 647,
+        OpticSPR = 648,
+        OpticKar = 649,
         OpticWest = 650,
         OpticEast = 651,
         OpticMPCW = 652,
@@ -390,6 +399,8 @@
         StockMk2 = 1045,
         StockEbr = 1046,
         StockSks = 1047,
+        StockSPR = 1048,
+        StockKar = 1049,
         StockKrig = 1050,
         StockAK47CW = 1051,
         StockXM4 = 1052,
@@ -444,6 +455,17 @@
         UnderbarrelEastMP = 1252,
         UnderbarrelWestMP = 1253,
         UnderbarrelWestSN = 1254,
+
+        BoltSPR = 1348,
+
+        Cable = 1400,
+        Arms = 1401,
+        BoltCrossbow = 1402,
+        OpticCrossbow = 1403,
+        StockCrossbow = 1404, 
+        UnderbarrelCrossbow = 1405, 
+        PerksCrossbow = 1407
+        
         
     }
 }

@@ -128,6 +128,19 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("SKS Rifle Stock", Id.StockSks);
             Factory.AddToGroup("FTAC Hunter-Scout", Id.StockSks);
 
+            Factory.AddToGroup("XRK SP-TAC 208 Ultimate", Id.StockSPR);
+            Factory.AddToGroup("FSS Virtuoso Pro", Id.StockSPR);
+            Factory.AddToGroup("XRK SP-LITE 208 Blitz", Id.StockSPR);
+            Factory.AddToGroup("ZLR SP-R Overseer", Id.StockSPR);
+
+            Factory.AddToGroup("STVOL Precision Comb", Id.StockKar);
+            Factory.AddToGroup("Hollow Stock Mod", Id.StockKar);
+            Factory.AddToGroup("FTAC Sport Comb", Id.StockKar);
+
+            Factory.AddToGroup("FORGE TAC Apex", Id.StockCrossbow);
+            Factory.AddToGroup("FORGE TAC Dart CB", Id.StockCrossbow);
+            Factory.AddToGroup("FORGE TAC SpeedTrak", Id.StockCrossbow);
+
             Factory.AddToGroup("XRK Mastadon", Id.StockRytec);
             Factory.AddToGroup("FTAC Trekker", Id.StockRytec);
             Factory.AddToGroup("STOVL Tac-Wrap", Id.StockRytec);

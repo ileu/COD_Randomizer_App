@@ -166,6 +166,15 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("16\" FSS Para", Id.BarrelSks);
             Factory.AddToGroup("22\" FSS M59/66", Id.BarrelSks);
 
+            Factory.AddToGroup("ZLR VeraTwist 9.6", Id.BarrelSPR);
+            Factory.AddToGroup("ZLR Asp", Id.BarrelSPR);
+            Factory.AddToGroup("SP-R 26\"", Id.BarrelSPR);
+            Factory.AddToGroup("XRK 208 Dragoon", Id.BarrelSPR);
+
+            Factory.AddToGroup("Singuard Custom 25.Z\"", Id.BarrelKar);
+            Factory.AddToGroup("Singuard Custom 21.2\"", Id.BarrelKar);
+            Factory.AddToGroup("Singuard Custom 27.6\"", Id.BarrelKar);
+
             Factory.AddToGroup("FTAC Seven Straight", Id.BarrelRytec);
             Factory.AddToGroup("FTAC 448 Dictator", Id.BarrelRytec);
             Factory.AddToGroup("XRK Harbinger", Id.BarrelRytec);
