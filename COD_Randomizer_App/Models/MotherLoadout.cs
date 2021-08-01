@@ -64,9 +64,14 @@ namespace COD_Randomizer_App.Models
 
 
             Weapon prim = new Weapon(prim_draw.Name);
-            prim.AddSlot(prim_draw.GetRandom(n));
+            prim.WeaponClass = prim_draw.WeaponClass;
+            prim.AddSlot(prim_draw.GetRandomSlots(n));
+            prim.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
+
             Weapon sec = new Weapon(sec_draw.Name);
-            sec.AddSlot(sec_draw.GetRandom(n));
+            sec.WeaponClass = sec_draw.WeaponClass;
+            sec.AddSlot(sec_draw.GetRandomSlots(n));
+            sec.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
 
             loadout.Primary = prim;
             loadout.Secondary = sec;

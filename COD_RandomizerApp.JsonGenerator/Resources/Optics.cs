@@ -53,14 +53,14 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Lockwood Pistol Scope", Id.OpticMagnumMW);
             Factory.AddToGroup("XRK 4.0x Pistol Scope", Id.OpticRenetti);
 
-            Factory.AddToGroup("Millstop Reflex", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticWestSN);
+            Factory.AddToGroup("Millstop Reflex", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticWestSN, Id.OpticR1);
             Factory.AddToGroup("Visiontech 2x", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticWestSN);
             Factory.AddToGroup("Kobra Red Dot", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticWestSN);
-            Factory.AddToGroup("Quickdot LED", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticHGCW);
+            Factory.AddToGroup("Quickdot LED", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticHGCW, Id.OpticR1);
             Factory.AddToGroup("Axial Arms 3x", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticWestSN);
             Factory.AddToGroup("Sillix Holoscout", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticWestSN);
-            Factory.AddToGroup("Microflex LED", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW, Id.OpticHGCW);
-            Factory.AddToGroup("Hawksmoor", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG);
+            Factory.AddToGroup("Microflex LED", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticSGCW, Id.OpticHGCW, Id.OpticR1);
+            Factory.AddToGroup("Hawksmoor", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticR1);
             Factory.AddToGroup("Royal & Kross 4x", Id.OpticWest, Id.OpticEast, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticWestSN);
             Factory.AddToGroup("SUSAT Multizoom", Id.OpticWest, Id.OpticEast, Id.OpticMPCW, Id.OpticWestLMG, Id.OpticEastLMG, Id.OpticWestSN);
             Factory.AddToGroup("Diamondback Reflex", Id.OpticWest, Id.OpticEast, Id.OpticMPCW);

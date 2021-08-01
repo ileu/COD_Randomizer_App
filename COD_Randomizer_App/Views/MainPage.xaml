@@ -18,20 +18,19 @@
                        Padding="15,10"
                        CornerRadius="15">
                     <StackLayout Spacing="0">
-                        <Label Text="Weapon 1:"
+                        <Label Text="Primary:"
                                FontSize="Small"
                                HorizontalOptions="Start"
-                               Margin="0,0"/>
-                        <Label Text="{Binding Slot1_weapon}"
+                               Margin="0,0" />
+                        <Label Text="{Binding Loadout.Primary}"
                                FontSize="Large"
                                HorizontalOptions="Start"
                                Margin="0,0,0,0" />
-                        <FlexLayout Wrap="Wrap"
-                                    JustifyContent="Start"
-                                    BindableLayout.ItemsSource="{Binding Slot1_att}"
-                                    VerticalOptions="FillAndExpand"
-                                    Margin="0,0,0,0"
-                                    Grid.Row="0">
+                        <StackLayout BindableLayout.ItemsSource="{Binding Loadout.Primary.Slots}"
+                                     Spacing="1"
+                                     VerticalOptions="FillAndExpand"
+                                     Margin="0,0,0,0"
+                                     Grid.Row="0">
                             <BindableLayout.ItemTemplate>
                                 <DataTemplate>
                                     <Label Text="{Binding .}"
@@ -40,7 +39,7 @@
                                            FontSize="Medium" />
                                 </DataTemplate>
                             </BindableLayout.ItemTemplate>
-                        </FlexLayout>
+                        </StackLayout>
                     </StackLayout>
                 </Frame>
 
@@ -48,17 +47,16 @@
                        Padding="15,10"
                        CornerRadius="15">
                     <StackLayout Spacing="0">
-                        <Label Text="Weapon 2:"
+                        <Label Text="Secondary:"
                                FontSize="Small"
                                HorizontalOptions="Start" />
-                        <Label Text="{Binding Slot2_weapon}"
+                        <Label Text="{Binding Loadout.Secondary}"
                                FontSize="Large"
-                               HorizontalOptions="Start"/>
-                        <FlexLayout Wrap="Wrap"
-                                    JustifyContent="Start"
-                                    BindableLayout.ItemsSource="{Binding Slot1_att}"
-                                    VerticalOptions="FillAndExpand"
-                                    Margin="0,0,0,0">
+                               HorizontalOptions="Start" />
+                        <StackLayout BindableLayout.ItemsSource="{Binding Loadout.Secondary.Slots}"
+                                     Spacing="1"
+                                     VerticalOptions="FillAndExpand"
+                                     Margin="0,0,0,0">
                             <BindableLayout.ItemTemplate>
                                 <DataTemplate>
                                     <Label Text="{Binding .}"
@@ -67,7 +65,7 @@
                                            FontSize="Medium" />
                                 </DataTemplate>
                             </BindableLayout.ItemTemplate>
-                        </FlexLayout>
+                        </StackLayout>
                     </StackLayout>
                 </Frame>
 
@@ -75,13 +73,13 @@
                        Padding="15,10"
                        CornerRadius="15">
                     <StackLayout>
-                        <Label Text="{Binding Perk1}"
+                        <Label Text="{Binding Loadout.Perk1}"
                                FontSize="Large"
                                HorizontalOptions="Start" />
-                        <Label Text="{Binding Perk2}"
+                        <Label Text="{Binding Loadout.Perk2}"
                                FontSize="Large"
                                HorizontalOptions="Start" />
-                        <Label Text="{Binding Perk3}"
+                        <Label Text="{Binding Loadout.Perk3}"
                                FontSize="Large"
                                HorizontalOptions="Start" />
                     </StackLayout>
@@ -91,7 +89,7 @@
                        Padding="15,10"
                        CornerRadius="15"
                        Grid.Row="3">
-                    <Label Text="{Binding Gren1}"
+                    <Label Text="{Binding Loadout.Lethal}"
                            FontSize="Large"
                            HorizontalOptions="Start" />
                 </Frame>
@@ -100,7 +98,7 @@
                        Padding="15,10"
                        CornerRadius="15"
                        Grid.Row="4">
-                    <Label Text="{Binding Gren2}"
+                    <Label Text="{Binding Loadout.Tactical}"
                            FontSize="Large"
                            HorizontalOptions="Start" />
                 </Frame>
@@ -114,7 +112,8 @@
                 FontSize="Large"
                 FontAttributes="Bold"
                 Grid.Row="2"
-                TextColor="Black" />
+                TextColor="Black"
+                BackgroundColor="#909090"/>
     </Grid>
 
 </ContentPage>

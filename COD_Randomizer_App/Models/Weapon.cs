@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-
-using Newtonsoft.Json;
 
 namespace COD_Randomizer_App.Models
 {
@@ -44,6 +40,32 @@ namespace COD_Randomizer_App.Models
             return true;
         }
 
+        public List<Slot> GetRandomSlots(int n = 1)
+        {
+            if (n == 0 || Slots.Count == 0)
+            {
+                return new List<Slot>();
+            }
+
+            var slots = new List<Slot>();
+
+            do
+            {
+                var lot = base.GetRandom();
+                if (!slots.Contains(lot))
+                {
+                    var temp = new Slot(lot.Name, lot.Id);
+
+                    temp.AddAttachment(lot.GetRandomAttachment());
+
+                    slots.Add(temp);
+                }
+
+            } while (slots.Count < n);
+
+            return slots;
+        }
+
         public string Display()
         {
             string output = "Weapon: " + name + "\n";
@@ -51,12 +73,12 @@ namespace COD_Randomizer_App.Models
             foreach (Slot slot in Slots)
             {
                 output += "  " + slot.Name + ":\n";
-                if (slot.Attachements == null)
+                if (slot.Attachments == null)
                 {
                     output += "null\n";
                     continue;
                 }
-                foreach (Attachment attachement in slot.Attachements)
+                foreach (Attachment attachement in slot.Attachments)
                 {
                     output += "      " + attachement.Name + "\n";
                 }
@@ -65,27 +87,9 @@ namespace COD_Randomizer_App.Models
             return output;
         }
 
-        public override List<Slot> GetRandom(int n = 1)
-        {
-            var draw_slots = base.GetRandom(n);
-
-            var slots = new List<Slot>();
-
-
-            foreach (Slot slot in draw_slots)
-            {
-                var temp = new Slot(slot.Name);
-
-                temp.Attachements.Add(slot.GetRandom().FirstOrDefault());
-                slots.Add(temp);
-            }
-
-            return slots;
-        }
-
         public override string ToString()
         {
-            return WeaponClass + ": " + Name;
+            return string.IsNullOrWhiteSpace(WeaponClass) ? Name : WeaponClass + ": " + Name;
         }
 
     }

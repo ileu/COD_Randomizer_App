@@ -2,6 +2,7 @@
 using COD_Randomizer_App.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace COD_Randomizer_App.JsonGenerator.Factories
@@ -64,23 +65,26 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
 
         public static List<Attachment> GetAttachmentGroup(Id id)
         {
-            if (Groups.TryGetValue(id, out List<Attachment> output))
-                return output;
-            else
-                return null;
+            return Groups.TryGetValue(id, out List <Attachment> output) ? output : new List<Attachment>();
         }
 
         public static Weapon CreateWeapon(string name, Dictionary<string, Id> dic = null)
         {
             Weapon weapon = new Weapon(name);
 
-            if (dic != null)
+            if (dic == null)
+            {
+                Slot slot = CreateSlot("No Attachments available", 0);
+
+                weapon.AddSlot(slot);
+            }
+            else
             {
                 foreach (KeyValuePair<string, Id> entry in dic)
                 {
                     Slot slot = CreateSlot(entry.Key, entry.Value);
 
-                    weapon.Slots.Add(slot);
+                    weapon.AddSlot(slot);
                 }
             }
 
@@ -89,7 +93,7 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
 
         public static Weapon CreateWeapon(string name, string weaponClass, Dictionary<string, Id> dic = null)
         {
-            var weapon = CreateWeapon(name, dic);
+            Weapon weapon = CreateWeapon(name, dic);
 
             weapon.WeaponClass = weaponClass;
 
@@ -98,10 +102,9 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
 
         public static Slot CreateSlot(string name, Id id)
         {
-            Slot slot = new Slot(name)
-            {
-                Attachements = GetAttachmentGroup(id)
-            };
+            Slot slot = new Slot(name, (int)id);
+
+            slot.AddAttachment(GetAttachmentGroup(id));
 
             return slot;
         }
@@ -126,10 +129,14 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
             if (Groups.ContainsKey(id))
             {
                 if (Groups[id].FindIndex(item => item.Name == name) < 0)
+                {
                     Groups[id].Add(attachment);
+                }
             }
             else
+            {
                 Groups.Add(id, new List<Attachment>() { attachment });
+            }
         }
 
         public static void AddToGroup(string name, List<Id> ids)

@@ -90,23 +90,11 @@ namespace COD_Randomizer_App.Models
             units.Add(unit);
         }
 
-        public virtual List<T> GetRandom(int n = 1)
+        protected virtual T GetRandom()
         {
-            if (n < 1)
-                throw new ArgumentException("Bisch du dumm oder so?", "GetRandom Draws: n is smaller than 1");
-
             List<T> draw = units.Where(unit => unit.Visible).ToList();
-            T lot;
-            List<T> selection = new List<T>();
 
-            do
-            {
-                lot = units.ElementAt(rng.Next(units.Count));
-                if (!selection.Contains(lot))
-                    selection.Add(lot);
-            } while (selection.Count < n);
-
-            return selection;
+            return draw.Count == 0 ? default : draw.ElementAt(rng.Next(draw.Count));
         }
     }
 }
