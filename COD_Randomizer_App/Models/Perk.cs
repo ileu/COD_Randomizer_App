@@ -6,9 +6,16 @@ namespace COD_Randomizer_App.Models
 {
     public class Perk : BaseUnit
     {
-        public Perk(string name):base(name)
+        public string PerkType { get; set; }
+
+        public Perk(string name) : base(name)
         {
 
+        }
+
+        public override string ToString()
+        {
+            return string.IsNullOrWhiteSpace(PerkType) ? Name : PerkType + ": " + Name;
         }
     }
 }

@@ -6,8 +6,6 @@ namespace COD_Randomizer_App.Models
     {
         public List<Attachment> Attachments { get => units; set => units = value; }
 
-        public int Id { get; private set; }
-
         public Slot(string name, int id) : base(name)
         {
             Id = id;

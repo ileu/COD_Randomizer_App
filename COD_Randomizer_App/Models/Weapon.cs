@@ -10,6 +10,8 @@ namespace COD_Randomizer_App.Models
 
         public string WeaponClass { get; set; } = "";
 
+        public string Game { get; set; }
+
         public Weapon(string name) : base(name)
         {
 
@@ -42,25 +44,29 @@ namespace COD_Randomizer_App.Models
 
         public List<Slot> GetRandomSlots(int n = 1)
         {
-            if (n == 0 || Slots.Count == 0)
+            if (Slots == null || n == 0)
             {
                 return new List<Slot>();
             }
 
-            var slots = new List<Slot>();
+            if (n > Slots.Count)
+            {
+                n = Slots.Count;
+            }
+
+            List<Slot> slots = new List<Slot>();
 
             do
             {
-                var lot = base.GetRandom();
+                Slot lot = base.GetRandom();
                 if (!slots.Contains(lot))
                 {
-                    var temp = new Slot(lot.Name, lot.Id);
+                    Slot temp = new Slot(lot.Name, lot.Id);
 
                     temp.AddAttachment(lot.GetRandomAttachment());
 
                     slots.Add(temp);
                 }
-
             } while (slots.Count < n);
 
             return slots;

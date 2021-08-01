@@ -29,7 +29,7 @@
         10 - Underbarrel / TriggerAction / Pump Grip
         12 - Magazin
         14 - Rear Grip / Guard / Bolt Assembly
-        16 - Perk
+        15 - Perk
         
 
         The other two digits are there to enumerate the different groups
@@ -465,14 +465,14 @@
 
         BoltSPR = 1448,
 
-        PerksMW = 1601,
-        PerksMP = 1602,
-        PerksDMR = 1606,
-        PerksMPNoBurst = 1610,
-        PerksScar = 1615,
-        PerksNoBurst = 1616,
-        PerksModel680 = 1632,
-        PerksPistol = 1699,
+        PerksMW = 1501,
+        PerksMP = 1502,
+        PerksDMR = 1506,
+        PerksMPNoBurst = 1510,
+        PerksScar = 1515,
+        PerksNoBurst = 1516,
+        PerksModel680 = 1532,
+        PerksPistol = 1599,
 
         Cable = 1800,
         Arms = 1801,

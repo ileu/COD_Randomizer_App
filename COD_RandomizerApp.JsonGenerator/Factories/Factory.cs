@@ -109,16 +109,20 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
             return slot;
         }
 
-        public static Perk CreatePerk(string name)
+        public static Perk CreatePerk(string name, string perkType)
         {
             Perk perk = new Perk(name);
+
+            perk.PerkType = perkType;
 
             return perk;
         }
 
-        public static Grenade CreateGrenade(string name)
+        public static Grenade CreateGrenade(string name, string grenType)
         {
             Grenade grenade = new Grenade(name);
+
+            grenade.GrenadeType = grenType;
 
             return grenade;
         }
@@ -126,6 +130,9 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
         public static void AddToGroup(string name, Id id)
         {
             Attachment attachment = new Attachment(name);
+
+            attachment.SetId((int)id);
+            
             if (Groups.ContainsKey(id))
             {
                 if (Groups[id].FindIndex(item => item.Name == name) < 0)

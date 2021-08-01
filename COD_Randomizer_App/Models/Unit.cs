@@ -8,14 +8,21 @@ namespace COD_Randomizer_App.Models
     public abstract class BaseUnit
     {
         protected string name;
-        public string Name { get => name; }
+        public string Name => name;
 
         protected bool visible = true;
         public bool Visible { get => visible; set => visible = value; }
 
+        public int Id { get; protected set; }
+
         public BaseUnit(string name)
         {
             this.name = name;
+        }
+
+        public void SetId(int id)
+        {
+            Id = id;
         }
 
         public void ChangeVisibiliy()

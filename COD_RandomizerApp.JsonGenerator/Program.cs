@@ -71,33 +71,33 @@ namespace COD_Randomizer_App.JsonGenerator
 
             foreach (string perk in WeaponDictionaries.perk1_list)
             {
-                MotherLoadout.Perks1.Add(Factory.CreatePerk(perk));
+                MotherLoadout.Perks1.Add(Factory.CreatePerk(perk, "Perk 1"));
             }
 
             foreach (string perk in WeaponDictionaries.perk2_list)
             {
-                MotherLoadout.Perks2.Add(Factory.CreatePerk(perk));
+                MotherLoadout.Perks2.Add(Factory.CreatePerk(perk, "Perk 2"));
             }
 
             foreach (string perk in WeaponDictionaries.perk2_list)
             {
-                MotherLoadout.Perks3.Add(Factory.CreatePerk(perk));
+                MotherLoadout.Perks3.Add(Factory.CreatePerk(perk, "Perk 3"));
             }
 
             foreach (string gren in WeaponDictionaries.prim_gren)
             {
-                MotherLoadout.Lethals.Add(Factory.CreateGrenade(gren));
+                MotherLoadout.Lethals.Add(Factory.CreateGrenade(gren, "Lethal"));
             }
 
             foreach (string gren in WeaponDictionaries.sec_gren)
             {
-                MotherLoadout.Tacticals.Add(Factory.CreateGrenade(gren));
+                MotherLoadout.Tacticals.Add(Factory.CreateGrenade(gren, "Tactical"));
             }
             #endregion
 
-            var file = JsonConvert.SerializeObject(MotherLoadout, Formatting.Indented);
+            //var file = JsonConvert.SerializeObject(MotherLoadout, Formatting.Indented);
 
-            File.WriteAllText(filepath, file);
+            //File.WriteAllText(filepath, file);
 
             Console.WriteLine(tes_weapon.Display());
             //Console.WriteLine(Factory.PrintGroup());
