@@ -79,6 +79,39 @@ namespace COD_Randomizer_App.Models
             return loadout;
         }
 
+        public Loadout GetEmptyLoadout()
+        {
+            Loadout loadout = new()
+            {
+                Perk1 = new Perk("")
+                {
+                    PerkType = "Perk 1"
+                },
+                Perk2 = new Perk("")
+                {
+                    PerkType = "Perk 2"
+                },
+                Perk3 = new Perk("")
+                {
+                    PerkType = "Perk 3"
+                },
+
+                Lethal = new Grenade("")
+                {
+                    GrenadeType = "Lethal"
+                },
+                Tactical = new Grenade("")
+                {
+                    GrenadeType = "Tactical"
+                },
+
+                Primary = new Weapon(""),
+                Secondary = new Weapon("")
+            };
+
+            return loadout;
+        }
+
         public string EncodeLoadout()
         {
             throw new NotImplementedException();

@@ -21,6 +21,8 @@ namespace COD_Randomizer_App.ViewModels
         public MainPageViewModel()
         {
             GenerateCommand = new Command(OnGenerate);
+
+            Loadout = LocalDataService.MotherLoadout.GetEmptyLoadout();
         }
 
         private void OnGenerate()
