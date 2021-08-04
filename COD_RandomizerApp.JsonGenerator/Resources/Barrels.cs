@@ -7,6 +7,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
+            // Contains Crossbow arms
             Factory.AddToGroup("Singuard Arms 16.6\" SOCOM", Id.BarrelKilo);
             Factory.AddToGroup("Singuard Arms 19.8\" Prowler", Id.BarrelKilo);
             Factory.AddToGroup("Singuard Arms Whisper", Id.BarrelKilo);
@@ -15,11 +16,11 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Oden Factory 730mm", Id.BarrelOden);
             Factory.AddToGroup("Oden Factory 420mm", Id.BarrelOden);
 
-            Factory.AddToGroup("FFS 11.5 Commando", Id.BarrelM4A1);
+            Factory.AddToGroup("FFS 11.5\" Commando", Id.BarrelM4A1);
             Factory.AddToGroup("Stock M16 Grenadier", Id.BarrelM4A1);
-            Factory.AddToGroup("FFS 14.5 Tac Lite", Id.BarrelM4A1);
+            Factory.AddToGroup("FFS 14.5\" Tac Lite", Id.BarrelM4A1);
             Factory.AddToGroup("Corvus Custom Marksman", Id.BarrelM4A1);
-            Factory.AddToGroup("FFS 12.4 Predator", Id.BarrelM4A1);
+            Factory.AddToGroup("FFS 12.4\" Predator", Id.BarrelM4A1);
 
             Factory.AddToGroup("Tempus Mini", Id.BarrelM13);
             Factory.AddToGroup("Tempus Cyclone", Id.BarrelM13);
@@ -216,6 +217,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Singuard Arms Featherweight", Id.BarrelX16);
             Factory.AddToGroup("Vanguard Elite", Id.BarrelX16);
             Factory.AddToGroup("Singuard Arms Advantage", Id.BarrelX16);
+
+            Factory.AddToGroup("XRK Thunder 200 Lb", Id.Arms);
+            Factory.AddToGroup("XRK Quill 100 Lb", Id.Arms);
+            Factory.AddToGroup("XRK Carbon Elite", Id.Arms);
 
 
             // ********* Cold War *********

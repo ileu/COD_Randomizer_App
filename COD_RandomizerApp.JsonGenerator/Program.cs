@@ -79,7 +79,7 @@ namespace COD_Randomizer_App.JsonGenerator
                 MotherLoadout.Perks2.Add(Factory.CreatePerk(perk, "Perk 2"));
             }
 
-            foreach (string perk in WeaponDictionaries.perk2_list)
+            foreach (string perk in WeaponDictionaries.perk3_list)
             {
                 MotherLoadout.Perks3.Add(Factory.CreatePerk(perk, "Perk 3"));
             }

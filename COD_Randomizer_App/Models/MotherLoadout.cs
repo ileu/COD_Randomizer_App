@@ -21,14 +21,18 @@ namespace COD_Randomizer_App.Models
 
         private readonly Random rnd = new();
 
-        public Loadout GetRandomLoadout(int n = 5)
+        public Loadout GetRandomLoadout(int n = 5, int pOverkill = 3)
         {
             int perk1 = rnd.Next(Perks1.Count);
-            int perk2 = rnd.Next(Perks2.Count);
+            int perk2 = rnd.Next(Perks2.Count + pOverkill);
             int perk3 = rnd.Next(Perks3.Count);
 
             int lethal = rnd.Next(Lethals.Count);
             int tactical = rnd.Next(Tacticals.Count);
+
+            if (perk2 > Perks2.Count - 1)
+                perk2 = 2;
+                
 
             Loadout loadout = new Loadout
             {
@@ -59,6 +63,66 @@ namespace COD_Randomizer_App.Models
                 secondary = rnd.Next(Secondaries.Count);
                 sec_draw = Secondaries[secondary];
             }
+
+            prim_draw = Primaries[primary];
+
+
+            Weapon prim = new Weapon(prim_draw.Name);
+            prim.WeaponClass = prim_draw.WeaponClass;
+            prim.AddSlot(prim_draw.GetRandomSlots(n));
+            prim.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
+
+            Weapon sec = new Weapon(sec_draw.Name);
+            sec.WeaponClass = sec_draw.WeaponClass;
+            sec.AddSlot(sec_draw.GetRandomSlots(n));
+            sec.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
+
+            loadout.Primary = prim;
+            loadout.Secondary = sec;
+
+            return loadout;
+        }
+
+
+        /// <summary>
+        /// Get a specific loadout
+        /// </summary>
+        /// <param name="weaponpos"></param>  
+        /// <param name="n"></param> number of Attachements
+        /// <returns></returns>
+        public Loadout GetSpecificLoadout(int weaponpos, int n = 5)
+        {
+            int perk1 = rnd.Next(Perks1.Count);
+            int perk2 = rnd.Next(Perks2.Count);
+            int perk3 = rnd.Next(Perks3.Count);
+
+            int lethal = rnd.Next(Lethals.Count);
+            int tactical = rnd.Next(Tacticals.Count);
+
+            if (perk2 > Perks2.Count)
+                perk2 = 2;
+
+
+            Loadout loadout = new Loadout
+            {
+                Perk1 = Perks1[perk1],
+                Perk2 = Perks2[perk2],
+                Perk3 = Perks3[perk3],
+
+                Lethal = Lethals[lethal],
+                Tactical = Tacticals[tactical]
+            };
+            Weapon prim_draw;
+            Weapon sec_draw;
+
+            int primary = rnd.Next(Primaries.Count);
+
+            int secondary;
+
+            
+            secondary = rnd.Next(Secondaries.Count);
+            sec_draw = Secondaries[weaponpos];
+            
 
             prim_draw = Primaries[primary];
 

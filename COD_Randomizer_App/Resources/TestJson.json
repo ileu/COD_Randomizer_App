@@ -2380,7 +2380,7 @@
               "Id": 11
             },
             {
-              "Name": "Collosus Suppressor",
+              "Name": "Colossus Suppressor",
               "Visible": true,
               "Id": 11
             }
@@ -7119,7 +7119,7 @@
         {
           "Attachments": [
             {
-              "Name": "FFS 11.5 Commando",
+              "Name": "FFS 11.5\" Commando",
               "Visible": true,
               "Id": 212
             },
@@ -7129,7 +7129,7 @@
               "Id": 212
             },
             {
-              "Name": "FFS 14.5 Tac Lite",
+              "Name": "FFS 14.5\" Tac Lite",
               "Visible": true,
               "Id": 212
             },
@@ -7139,7 +7139,7 @@
               "Id": 212
             },
             {
-              "Name": "FFS 12.4 Predator",
+              "Name": "FFS 12.4\" Predator",
               "Visible": true,
               "Id": 212
             }
@@ -23317,16 +23317,58 @@
     {
       "Slots": [
         {
-          "Attachments": [],
+          "Attachments": [
+            {
+              "Name": "16-Strand Cable",
+              "Visible": true,
+              "Id": 89
+            },
+            {
+              "Name": "28-Strand Cable",
+              "Visible": true,
+              "Id": 89
+            }
+          ],
           "Name": "Cable",
           "Visible": true,
-          "Id": 1800
+          "Id": 89
         },
         {
-          "Attachments": [],
+          "Attachments": [
+            {
+              "Name": ".357 Snub Nose",
+              "Visible": true,
+              "Id": 292
+            },
+            {
+              "Name": "Silverfield Ordnance .357",
+              "Visible": true,
+              "Id": 292
+            },
+            {
+              "Name": ".357 Long",
+              "Visible": true,
+              "Id": 292
+            },
+            {
+              "Name": "XRK Thunder 200 Lb",
+              "Visible": true,
+              "Id": 292
+            },
+            {
+              "Name": "XRK Quill 100 Lb",
+              "Visible": true,
+              "Id": 292
+            },
+            {
+              "Name": "XRK Carbon Elite",
+              "Visible": true,
+              "Id": 292
+            }
+          ],
           "Name": "Arms",
           "Visible": true,
-          "Id": 1801
+          "Id": 292
         },
         {
           "Attachments": [
@@ -23345,137 +23387,158 @@
             {
               "Name": "Aim-Op Reflex Sight",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "APX5 Holographic Sight",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Corp Combat Holo Sight",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Cronen C480 Pro Optic",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Cronen LP945 Mini Reflex",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Operator Reflex Sight",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "G.I Mini Reflex",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "VLK 3.0x Optic",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Viper Reflex Sight",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Solozero NVG Enhanced",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Monocle Reflex Sight",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Merc Thermal Optic",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "PBX Holo 7 Sight",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "Solozero Optics Mini Reflex",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "XRK MidTrak 4.0x Scope",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             },
             {
               "Name": "XRK Rangemaster VZ",
               "Visible": true,
-              "Id": 1803
+              "Id": 697
             }
           ],
           "Name": "Optic",
           "Visible": true,
-          "Id": 1803
+          "Id": 697
         },
         {
           "Attachments": [
             {
               "Name": "FORGE TAC Apex",
               "Visible": true,
-              "Id": 1804
+              "Id": 892
             },
             {
               "Name": "FORGE TAC Dart CB",
               "Visible": true,
-              "Id": 1804
+              "Id": 892
             },
             {
               "Name": "FORGE TAC SpeedTrak",
               "Visible": true,
-              "Id": 1804
+              "Id": 892
             }
           ],
           "Name": "Stock",
           "Visible": true,
-          "Id": 1804
+          "Id": 892
         },
         {
           "Attachments": [
             {
               "Name": "FTAC Speed Grip",
               "Visible": true,
-              "Id": 1805
+              "Id": 1099
             },
             {
               "Name": "XRK Precision Grip",
               "Visible": true,
-              "Id": 1805
+              "Id": 1099
             },
             {
               "Name": "XRK Talon",
               "Visible": true,
-              "Id": 1805
+              "Id": 1099
             }
           ],
           "Name": "Underbarrel",
           "Visible": true,
-          "Id": 1805
+          "Id": 1099
         },
         {
-          "Attachments": [],
+          "Attachments": [
+            {
+              "Name": "Snake Shot",
+              "Visible": true,
+              "Id": 1292
+            },
+            {
+              "Name": "FTAC Fury 20\" Bolts",
+              "Visible": true,
+              "Id": 1292
+            },
+            {
+              "Name": "FTAC Venom 20\" Bolts",
+              "Visible": true,
+              "Id": 1292
+            },
+            {
+              "Name": "FTAC Backburn 20\" Bolts",
+              "Visible": true,
+              "Id": 1292
+            }
+          ],
           "Name": "Bolt",
           "Visible": true,
-          "Id": 1802
+          "Id": 1292
         },
         {
           "Attachments": [
@@ -27068,6 +27131,21 @@
               "Name": ".357 Long",
               "Visible": true,
               "Id": 292
+            },
+            {
+              "Name": "XRK Thunder 200 Lb",
+              "Visible": true,
+              "Id": 292
+            },
+            {
+              "Name": "XRK Quill 100 Lb",
+              "Visible": true,
+              "Id": 292
+            },
+            {
+              "Name": "XRK Carbon Elite",
+              "Visible": true,
+              "Id": 292
             }
           ],
           "Name": "Barrel",
@@ -27194,6 +27272,21 @@
           "Attachments": [
             {
               "Name": "Snake Shot",
+              "Visible": true,
+              "Id": 1292
+            },
+            {
+              "Name": "FTAC Fury 20\" Bolts",
+              "Visible": true,
+              "Id": 1292
+            },
+            {
+              "Name": "FTAC Venom 20\" Bolts",
+              "Visible": true,
+              "Id": 1292
+            },
+            {
+              "Name": "FTAC Backburn 20\" Bolts",
               "Visible": true,
               "Id": 1292
             }
@@ -29564,37 +29657,37 @@
   "Perks3": [
     {
       "PerkType": "Perk 3",
-      "Name": "Restock",
+      "Name": "Tune Up",
       "Visible": true,
       "Id": 0
     },
     {
       "PerkType": "Perk 3",
-      "Name": "Hardline",
+      "Name": "Amped",
       "Visible": true,
       "Id": 0
     },
     {
       "PerkType": "Perk 3",
-      "Name": "Overkill",
+      "Name": "Shrapnel",
       "Visible": true,
       "Id": 0
     },
     {
       "PerkType": "Perk 3",
-      "Name": "High Alert",
+      "Name": "Battle Hardened",
       "Visible": true,
       "Id": 0
     },
     {
       "PerkType": "Perk 3",
-      "Name": "Ghost",
+      "Name": "Spotter",
       "Visible": true,
       "Id": 0
     },
     {
       "PerkType": "Perk 3",
-      "Name": "Pointman",
+      "Name": "Tracker",
       "Visible": true,
       "Id": 0
     }

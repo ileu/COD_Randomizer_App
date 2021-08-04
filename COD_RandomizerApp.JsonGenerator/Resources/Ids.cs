@@ -132,6 +132,7 @@
         MuzzleRenetti = 94,
         MuzzleMagnumMW = 92,
         MuzzleRytec = 88,
+        Cable = 89,
 
         BarrelKilo = 210,
         BarrelOden = 211,
@@ -222,6 +223,7 @@
         BarrelHDR = 289,
         BarrelAx50 = 290,
         BarrelDragunov = 291,
+        Arms = 292,
 
         LaserMW = 401,
         LaserTacOnly = 402,
@@ -261,11 +263,12 @@
         OpticHGCW = 656,
         OpticWestSN = 657,
         OpticR1 = 658,
-        OpticPistolMW = 699,
-        OpticDeagle = 696,
-        OpticRenetti = 694,
-        OpticSykov = 693,
         OpticMagnumMW = 692,
+        OpticSykov = 693,
+        OpticRenetti = 694,
+        OpticDeagle = 696,
+        OpticCrossbow = 697,
+        OpticPistolMW = 699,
 
 
         StockKilo = 810,
@@ -337,6 +340,7 @@
         StockHDR = 889,
         StockAx50 = 890,
         StockDragunov = 891,
+        StockCrossbow = 892,
 
         PumpR9 = 835,
 
@@ -359,6 +363,7 @@
         UnderbarrelEastMP = 1052,
         UnderbarrelWestMP = 1053,
         UnderbarrelWestSN = 1054,
+        UnderbarrelCrossbow = 1099,
 
         PumpVlk = 1036,
 
@@ -444,6 +449,7 @@
         MagazinRytec = 1288,
         MagazinHDR = 1289,
         MagazinDragunov = 1291,
+        BoltCrossbow = 1292,
 
         RearGripStandard = 1401,
         RearGripGrau = 1419,
@@ -472,14 +478,8 @@
         PerksScar = 1515,
         PerksNoBurst = 1516,
         PerksModel680 = 1532,
+        PerksCrossbow = 1598,
         PerksPistol = 1599,
-
-        Cable = 1800,
-        Arms = 1801,
-        BoltCrossbow = 1802,
-        OpticCrossbow = 1803,
-        StockCrossbow = 1804,
-        UnderbarrelCrossbow = 1805,
-        PerksCrossbow = 1807,
+        
     }
 }

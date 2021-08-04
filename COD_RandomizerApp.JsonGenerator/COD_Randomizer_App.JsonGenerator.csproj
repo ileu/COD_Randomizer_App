@@ -51,7 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factories\Factory.cs" />
-    <Compile Include="Resources\CrossbowStuff.cs" />
     <Compile Include="Resources\Ids.cs" />
     <Compile Include="Resources\Magazins.cs" />
     <Compile Include="Resources\Barrels.cs" />

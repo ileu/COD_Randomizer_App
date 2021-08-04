@@ -6,6 +6,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
+            //contains Crossbow Bolts
             Factory.AddToGroup("50 Round Mags", Id.MagazinKilo, Id.MagazinM4A1, Id.MagazinM13, Id.MagazinFR556, Id.MagazinRam7, Id.MagazinUzi);
             Factory.AddToGroup("60 Round Mags", Id.MagazinKilo, Id.MagazinM4A1, Id.MagazinM13, Id.MagazinFR556, Id.MagazinBruen);
             Factory.AddToGroup("100 Round Drums", Id.MagazinKilo);
@@ -108,6 +109,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 
             Factory.AddToGroup("17 Round Mags", Id.MagazinX16);
             Factory.AddToGroup("26 Round Mags", Id.MagazinX16);
+
+            Factory.AddToGroup("FTAC Fury 20\" Bolts", Id.BoltCrossbow);
+            Factory.AddToGroup("FTAC Venom 20\" Bolts", Id.BoltCrossbow);
+            Factory.AddToGroup("FTAC Backburn 20\" Bolts", Id.BoltCrossbow);
 
 
             //**********Cold War******************

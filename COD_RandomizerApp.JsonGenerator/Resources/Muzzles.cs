@@ -6,6 +6,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
     {
         public static void Create()
         {
+            // contains Crossbow cables
             Factory.AddToGroup("Flash Guard", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleCQBBreacher, Id.MuzzleFennec, Id.MuzzleMagnumMW, Id.MuzzlePistolMW, Id.MuzzleRenetti);
             Factory.AddToGroup("Tactical Suppressor", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleFennec, Id.MuzzleCQBBreacher, Id.MuzzlePistolMW, Id.MuzzleRenetti);
             Factory.AddToGroup("Breacher Device", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin);
@@ -15,7 +16,7 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Compensator", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleFennec, Id.MuzzleFennec, Id.MuzzleCQBBreacher, Id.MuzzleMagnumMW, Id.MuzzlePistolMW);
             Factory.AddToGroup("Monolithic Suppressor", Id.MuzzleStandard, Id.MuzzleModel680, Id.MuzzleOrigin, Id.MuzzleOden, Id.MuzzleFAL, Id.MuzzleFR556, Id.MuzzleAK47MW, Id.MuzzleAmax, Id.MuzzleAn94, Id.MuzzleCQBBreacher, Id.MuzzlePistolMW, Id.MuzzleRenetti);
             Factory.AddToGroup("CQB Breacher Device", Id.MuzzleOden, Id.MuzzleCQBBreacher, Id.MuzzleFennec);
-            Factory.AddToGroup("Collosus Suppressor", Id.MuzzleOden);
+            Factory.AddToGroup("Colossus Suppressor", Id.MuzzleOden);
 
             Factory.AddToGroup("Choke", Id.MuzzleModel680, Id.MuzzleOrigin);
             Factory.AddToGroup("FORGE TAC Marauder", Id.MuzzleModel680);
@@ -31,6 +32,9 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
 
             Factory.AddToGroup("XRK Tank Brake", Id.MuzzleRytec);
             Factory.AddToGroup("Rytec AMR Suppressor", Id.MuzzleRytec);
+
+            Factory.AddToGroup("16-Strand Cable", Id.Cable);
+            Factory.AddToGroup("28-Strand Cable", Id.Cable);
 
             Factory.AddToGroup("Muzzle Brake 5.56", Id.MuzzleWest556, Id.MuzzleEast556);
             Factory.AddToGroup("Flash Guard 5.56", Id.MuzzleWest556, Id.MuzzleEast556);
