@@ -101,6 +101,12 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("16.5\" Factory Carbine", Id.BarrelUzi);
             Factory.AddToGroup("FSS Carbine Pro", Id.BarrelUzi);
 
+            Factory.AddToGroup("CX-38E", Id.BarrelCX9);
+            Factory.AddToGroup("CX-23S", Id.BarrelCX9);
+            Factory.AddToGroup("CX-23", Id.BarrelCX9);
+            Factory.AddToGroup("CX-38", Id.BarrelCX9);
+            Factory.AddToGroup("CX-38S", Id.BarrelCX9);
+
             Factory.AddToGroup("XRK 18.0\" Liberator", Id.BarrelModel680);
             Factory.AddToGroup("XRK 14.0\" SWAT", Id.BarrelModel680);
             Factory.AddToGroup("XRK 30\" Sport", Id.BarrelModel680);

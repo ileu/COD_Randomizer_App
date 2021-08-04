@@ -480,6 +480,9 @@
         PerksModel680 = 1532,
         PerksCrossbow = 1598,
         PerksPistol = 1599,
-        
+
+        BarrelCX9 = 1808,
+        StockCX9 = 1809,
+        MagazinCX9 = 1810,
     }
 }

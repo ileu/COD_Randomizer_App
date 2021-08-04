@@ -58,6 +58,10 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("FTAC Vagrant", Id.StockIso);
             Factory.AddToGroup("ISO Collapsible", Id.StockIso);
 
+            Factory.AddToGroup("CX-MM", Id.StockCX9);
+            Factory.AddToGroup("CX-FA", Id.StockCX9);
+            Factory.AddToGroup("CX-FR", Id.StockCX9);
+
             Factory.AddToGroup("FTAC Ultralight Hollow", Id.StockAug);
             Factory.AddToGroup("FORGE TAC CQB Comb", Id.StockAug, Id.StockP90, Id.StockSA87);
             Factory.AddToGroup("FSS Heavy Stock Pro", Id.StockAug, Id.StockP90);
