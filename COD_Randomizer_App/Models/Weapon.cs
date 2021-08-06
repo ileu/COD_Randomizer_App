@@ -103,49 +103,58 @@ namespace COD_Randomizer_App.Models
         /// <summary>
         /// Checks for attachment conflicts
         /// </summary>
-        /// <param name="att"> Slot which will be added if valid</param> 
+        /// <param name="slot"> Slot which will be added if valid</param> 
         /// <param name="slots">already existing slots</param>
         /// <returns>returns true if new attachment combination is valid</returns>
-        private bool CheckValidity(Slot att, List<Slot> slots)
+        private bool CheckValidity(Slot slot, List<Slot> slots)
         {
+            if (slot == null)
+            {
+                return false;
+            }
+            
+            Attachment attachment = slot.Attachments.FirstOrDefault();
 
-            Attachment a = att.Attachments.FirstOrDefault();
+            if (slot.Attachments.FirstOrDefault()?.Name == null)
+            {
+                return false;
+            }
 
             #region Akimbo/ Dual Wield
             if (WeaponClass == "Handgun")
             {
-                if (a != null && (a.Name == "Akimbo" || a.Name == "Dual Wield"))
+                if (attachment.Name == "Akimbo" || attachment.Name == "Dual Wield")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        if (slot.Name.Contains("Optic") || slot.Name.Contains("Stock"))
+                        if (s.Name.Contains("Optic") || s.Name.Contains("Stock"))
                             return false;
                     }
                 }
-                else if (att.Name == "Optic" || att.Name == "Stock")
+                else if (slot.Name == "Optic" || slot.Name == "Stock")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        Attachment temp = slot.Attachments.FirstOrDefault();
+                        Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name == "Akimbo" || temp.Name == "Dual Wield")
                             return false;
 
                     }
                 }
 
-                if (a.Name == "FTAC G-X" || a.Name == "FTAC SATUS CS-X")
+                if (attachment.Name == "FTAC G-X" || attachment.Name == "FTAC SATUS CS-X")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        if (slot.Name.Contains("Laser"))
+                        if (s.Name.Contains("Laser"))
                             return false;
                     }
                 }
-                else if (att.Name.Contains("Laser"))
+                else if (slot.Name.Contains("Laser"))
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        Attachment temp = slot.Attachments.FirstOrDefault();
+                        Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name == "FTAC G-X" || temp.Name == "FTAC SATUS CS-X")
                             return false;
                     }
@@ -158,38 +167,38 @@ namespace COD_Randomizer_App.Models
             else if (WeaponClass == "Assault Rifle")
             {
                 #region Kilo, M13, M4A1
-                if (a != null && (a.Name == "Singuard Arms Whisper" || a.Name == "FFS 12.4\" Predator" || a.Name == "Tempus Cyclone"))
+                if (attachment.Name == "Singuard Arms Whisper" || attachment.Name == "FFS 12.4\" Predator" || attachment.Name == "Tempus Cyclone")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        if (slot.Name.Contains("Muzzle"))
+                        if (s.Name.Contains("Muzzle"))
                             return false;
                     }
                 }
-                else if (att.Name == "Muzzle")
+                else if (slot.Name == "Muzzle")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        Attachment temp = slot.Attachments.FirstOrDefault();
+                        Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name == "Singuard Arms Whisper" || temp.Name == "FFS 12.4\" Predator" || temp.Name == "Tempus Cyclone")
                             return false;
 
                     }
                 }
 
-                if (a.Name == "ZLR Drifter A-08")
+                if (attachment.Name == "ZLR Drifter A-08")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        if (slot.Name.Contains("Underbarrel"))
+                        if (s.Name.Contains("Underbarrel"))
                         return false;
                     }
                 }
-                else if (att.Name.Contains("Underbarrel"))
+                else if (slot.Name.Contains("Underbarrel"))
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        Attachment temp = slot.Attachments.FirstOrDefault();
+                        Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name == "ZLR Drifter A-08")
                             return false;
 
@@ -204,19 +213,19 @@ namespace COD_Randomizer_App.Models
             else if (WeaponClass == "MP")
             {
                 #region MP 5 MW, Fennec, Iso 
-                if (a != null && (a.Name == "Monolithic Integral Suppressor" || a.Name == "Subsonic Integral Suppressor" || a.Name == "ZLR 18\" Deadfall" || a.Name == "FSS Nightshade"))
+                if (attachment.Name == "Monolithic Integral Suppressor" || attachment.Name == "Subsonic Integral Suppressor" || attachment.Name == "ZLR 18\" Deadfall" || attachment.Name == "FSS Nightshade")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        if (slot.Name.Contains("Muzzle"))
+                        if (s.Name.Contains("Muzzle"))
                             return false;
                     }
                 }
-                else if (att.Name == "Muzzle")
+                else if (slot.Name == "Muzzle")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        Attachment temp = slot.Attachments.FirstOrDefault();
+                        Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name == "Monolithic Integral Suppressor" || temp.Name == "Subsonic Integral Suppressor" || temp.Name == "ZLR 18\" Deadfall" || temp.Name == "FSS Nightshade")
                             return false;
 
@@ -230,19 +239,19 @@ namespace COD_Randomizer_App.Models
             else if (WeaponClass == "LMG")
             {
                 #region Chainsaw
-                if (a != null && a.Name == "XRK ChainSAW")
+                if (attachment.Name == "XRK ChainSAW")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        if (slot.Name.Contains("Optic"))
+                        if (s.Name.Contains("Optic"))
                             return false;
                     }
                 }
-                else if (att.Name == "Optic")
+                else if (slot.Name == "Optic")
                 {
-                    foreach (Slot slot in slots)
+                    foreach (Slot s in slots)
                     {
-                        Attachment temp = slot.Attachments.FirstOrDefault();
+                        Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name == "XRK ChainSAW")
                             return false;
 
@@ -253,6 +262,39 @@ namespace COD_Randomizer_App.Models
 
             }
             #endregion
+
+            return true;
+        }
+
+        /// <summary>
+        /// Checks if the given slot name and given attachment name
+        /// are on the weapon. 
+        /// </summary>
+        /// <param name="slot"> slot which is to be added </param>
+        /// <param name="slots"> already added slots </param>
+        /// <param name="blockedSlots"> slots which are incompatbile with attachments </param>
+        /// <param name="blockedAttachment"> attachment which are incompatible which slots </param>
+        /// <returns> false if it contains both, true if only one </returns>
+        private bool Check(Slot slot, List<Slot> slots, string[] blockedSlots, string[] blockedAttachment)
+        {
+            if (blockedAttachment.Contains(slot.Attachments.FirstOrDefault()?.Name))
+            {
+                foreach (Slot s in slots)
+                {
+                    if (blockedSlots.Contains(slot.Name))
+                        return false;
+                }
+            }
+            else if (slot.Attachments.FirstOrDefault()?.Name == "Optic" || slot.Attachments.FirstOrDefault()?.Name == "Stock")
+            {
+                foreach (Slot s in slots)
+                {
+                    Attachment temp = slot.Attachments.FirstOrDefault();
+                    if (temp.Name == "Akimbo" || temp.Name == "Dual Wield")
+                        return false;
+
+                }
+            }
 
             return true;
         }

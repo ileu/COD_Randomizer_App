@@ -32,7 +32,6 @@ namespace COD_Randomizer_App.Models
 
             if (perk2 > Perks2.Count - 1)
                 perk2 = 2;
-                
 
             Loadout loadout = new Loadout
             {
@@ -43,12 +42,11 @@ namespace COD_Randomizer_App.Models
                 Lethal = Lethals[lethal],
                 Tactical = Tacticals[tactical]
             };
-            Weapon prim_draw;
-            Weapon sec_draw;
 
             int primary = rnd.Next(Primaries.Count);
-
             int secondary;
+
+            Weapon sec;
 
             if (loadout.Perk2.Name == "Overkill")
             {
@@ -56,71 +54,49 @@ namespace COD_Randomizer_App.Models
                 {
                     secondary = rnd.Next(Primaries.Count);
                 } while (primary == secondary);
-                sec_draw = Primaries[secondary];
+                sec = GetWeapon(secondary, Primaries, n);
             }
             else
             {
                 secondary = rnd.Next(Secondaries.Count);
-                sec_draw = Secondaries[secondary];
+                sec = GetWeapon(secondary, Secondaries, n);
             }
 
-            prim_draw = Primaries[primary];
 
-
-            Weapon prim = new Weapon(prim_draw.Name);
-            prim.WeaponClass = prim_draw.WeaponClass;
-            prim.AddSlot(prim_draw.GetRandomSlots(n));
-            prim.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
-
-            Weapon sec = new Weapon(sec_draw.Name);
-            sec.WeaponClass = sec_draw.WeaponClass;
-            sec.AddSlot(sec_draw.GetRandomSlots(n));
-            sec.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
-
-            loadout.Primary = prim;
+            loadout.Primary = GetWeapon(primary, Primaries, n);
             loadout.Secondary = sec;
 
             return loadout;
         }
 
-
         /// <summary>
-        /// Get a specific loadout
+        /// Gets a specific Loadout
         /// </summary>
-        /// <param name="weaponpos"></param>  
-        /// <param name="n"></param> number of Attachements
-        /// <returns></returns>
-        public Loadout GetSpecificLoadout(int primpos = -1, int secpos = -1, int n = 5)
+        /// <param name="primpos"> index of primary weapon </param>
+        /// <param name="secpos"> index of secondary weapon </param>
+        /// <param name="isSecondary"> if force overkill or not</param>
+        /// <param name="n"> number of Attachements </param> 
+        /// <returns> Loadout </returns>
+        public Loadout GetSpecificLoadout(int primpos = -1, int secpos = -1, bool isOverkill = true, int n = 5)
         {
-            Loadout loadout = new()
+            return new Loadout()
             {
                 Perk1 = Perks1[rnd.Next(Perks1.Count)],
-                Perk2 = Perks2[rnd.Next(Perks2.Count)],
+                Perk2 = Perks2[rnd.Next(isOverkill ? 2 : Perks2.Count)],
                 Perk3 = Perks3[rnd.Next(Perks3.Count)],
 
                 Lethal = Lethals[rnd.Next(Lethals.Count)],
-                Tactical = Tacticals[rnd.Next(Tacticals.Count)]
+                Tactical = Tacticals[rnd.Next(Tacticals.Count)],
+
+                Primary = GetWeapon(primpos <= -1 ? rnd.Next(Primaries.Count) : primpos, Primaries, n),
+                Secondary = GetWeapon(secpos <= -1 ? rnd.Next(Primaries.Count) : secpos, isOverkill ? Primaries : Secondaries, n),
             };
-
-            Weapon prim_draw = Primaries[primpos == -1 ? rnd.Next(Primaries.Count) : primpos];
-            Weapon sec_draw = Secondaries[secpos == -1 ? rnd.Next(Primaries.Count) : secpos];
-
-            Weapon prim = new Weapon(prim_draw.Name);
-            prim.WeaponClass = prim_draw.WeaponClass;
-            prim.AddSlot(prim_draw.GetRandomSlots(n));
-            prim.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
-
-            Weapon sec = new Weapon(sec_draw.Name);
-            sec.WeaponClass = sec_draw.WeaponClass;
-            sec.AddSlot(sec_draw.GetRandomSlots(n));
-            sec.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
-
-            loadout.Primary = prim;
-            loadout.Secondary = sec;
-
-            return loadout;
         }
 
+        /// <summary>
+        /// Gets an empty Loadout
+        /// </summary>
+        /// <returns> Empty Loadout</returns>
         public Loadout GetEmptyLoadout()
         {
             Loadout loadout = new()
@@ -154,7 +130,7 @@ namespace COD_Randomizer_App.Models
             return loadout;
         }
 
-        public string EncodeLoadout()
+        public string EncodeLoadout(Loadout loadout)
         {
             throw new NotImplementedException();
         }
@@ -176,6 +152,18 @@ namespace COD_Randomizer_App.Models
 
             output += "Lethals: " + Lethals.Count + "\n";
             output += "Tacticals: " + Tacticals.Count + "\n";
+
+            return output;
+        }
+
+        private Weapon GetWeapon(int index, List<Weapon> weapons, int n = 1)
+        {
+            Weapon wep = weapons.ElementAtOrDefault(index);
+
+            Weapon output = new Weapon(wep.Name);
+            output.WeaponClass = wep.WeaponClass;
+            output.AddSlot(wep.GetRandomSlots(n));
+            output.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
 
             return output;
         }

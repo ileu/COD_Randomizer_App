@@ -77,7 +77,7 @@ namespace COD_Randomizer_App.Models
             return lhs.Equals(rhs);
         }
 
-        public static bool operator !=(BaseUnit lhs, BaseUnit rhs) => !(lhs == rhs); 
+        public static bool operator !=(BaseUnit lhs, BaseUnit rhs) => !(lhs == rhs);
     }
 
     public abstract class Unit<T> : BaseUnit where T : BaseUnit
@@ -99,9 +99,10 @@ namespace COD_Randomizer_App.Models
 
         protected virtual T GetRandom()
         {
-            List<T> draw = units.Where(unit => unit.Visible).ToList();
+            IEnumerable<T> draw = units.Where(unit => unit.Visible);
 
-            return draw.Count == 0 ? default : draw.ElementAt(rng.Next(draw.Count));
+            return draw.Count() == 0 ? default : draw.ElementAt(rng.Next(draw.Count()));
         }
+
     }
 }
