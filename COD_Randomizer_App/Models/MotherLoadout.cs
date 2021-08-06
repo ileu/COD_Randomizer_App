@@ -90,42 +90,20 @@ namespace COD_Randomizer_App.Models
         /// <param name="weaponpos"></param>  
         /// <param name="n"></param> number of Attachements
         /// <returns></returns>
-        public Loadout GetSpecificLoadout(int weaponpos, int n = 5)
+        public Loadout GetSpecificLoadout(int primpos = -1, int secpos = -1, int n = 5)
         {
-            int perk1 = rnd.Next(Perks1.Count);
-            int perk2 = rnd.Next(Perks2.Count);
-            int perk3 = rnd.Next(Perks3.Count);
-
-            int lethal = rnd.Next(Lethals.Count);
-            int tactical = rnd.Next(Tacticals.Count);
-
-            if (perk2 > Perks2.Count)
-                perk2 = 2;
-
-
-            Loadout loadout = new Loadout
+            Loadout loadout = new()
             {
-                Perk1 = Perks1[perk1],
-                Perk2 = Perks2[perk2],
-                Perk3 = Perks3[perk3],
+                Perk1 = Perks1[rnd.Next(Perks1.Count)],
+                Perk2 = Perks2[rnd.Next(Perks2.Count)],
+                Perk3 = Perks3[rnd.Next(Perks3.Count)],
 
-                Lethal = Lethals[lethal],
-                Tactical = Tacticals[tactical]
+                Lethal = Lethals[rnd.Next(Lethals.Count)],
+                Tactical = Tacticals[rnd.Next(Tacticals.Count)]
             };
-            Weapon prim_draw;
-            Weapon sec_draw;
 
-            int primary = rnd.Next(Primaries.Count);
-
-            int secondary;
-
-            
-            secondary = rnd.Next(Secondaries.Count);
-            sec_draw = Secondaries[weaponpos];
-            
-
-            prim_draw = Primaries[primary];
-
+            Weapon prim_draw = Primaries[primpos == -1 ? rnd.Next(Primaries.Count) : primpos];
+            Weapon sec_draw = Secondaries[secpos == -1 ? rnd.Next(Primaries.Count) : secpos];
 
             Weapon prim = new Weapon(prim_draw.Name);
             prim.WeaponClass = prim_draw.WeaponClass;
