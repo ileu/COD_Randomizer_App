@@ -119,13 +119,13 @@ namespace COD_Randomizer_App.Models
 
             if (attachment == null)
             {
-                return true;
+                return false;
             }
 
             #region Akimbo/ Dual Wield
             if (WeaponClass == "Handgun")
             {
-                if (attachment.Name == "Akimbo" || attachment.Name == "Dual Wield")
+                if (attachment.Name is "Akimbo" or "Dual Wield")
                 {
                     foreach (Slot s in slots)
                     {
@@ -133,18 +133,18 @@ namespace COD_Randomizer_App.Models
                             return false;
                     }
                 }
-                else if (slot.Name == "Optic" || slot.Name == "Stock")
+                else if (slot.Name is "Optic" or "Stock")
                 {
                     foreach (Slot s in slots)
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
-                        if (temp.Name == "Akimbo" || temp.Name == "Dual Wield")
+                        if (temp.Name is "Akimbo" or "Dual Wield")
                             return false;
 
                     }
                 }
 
-                if (attachment.Name == "FTAC G-X" || attachment.Name == "FTAC SATUS CS-X")
+                if (attachment.Name is "FTAC G-X" or "FTAC SATUS CS-X")
                 {
                     foreach (Slot s in slots)
                     {
@@ -157,7 +157,7 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
-                        if (temp.Name == "FTAC G-X" || temp.Name == "FTAC SATUS CS-X")
+                        if (temp.Name is "FTAC G-X" or "FTAC SATUS CS-X")
                             return false;
                     }
                 }
@@ -169,7 +169,7 @@ namespace COD_Randomizer_App.Models
             else if (WeaponClass == "Assault Rifle")
             {
                 #region Kilo, M13, M4A1
-                if (attachment.Name == "Singuard Arms Whisper" || attachment.Name == "FFS 12.4\" Predator" || attachment.Name == "Tempus Cyclone")
+                if (attachment.Name is "Singuard Arms Whisper" or "FFS 12.4\" Predator" or "Tempus Cyclone")
                 {
                     foreach (Slot s in slots)
                     {
@@ -182,7 +182,7 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
-                        if (temp.Name == "Singuard Arms Whisper" || temp.Name == "FFS 12.4\" Predator" || temp.Name == "Tempus Cyclone")
+                        if (temp.Name is "Singuard Arms Whisper" or "FFS 12.4\" Predator" or "Tempus Cyclone")
                             return false;
 
                     }
@@ -212,10 +212,10 @@ namespace COD_Randomizer_App.Models
 
             #region MP
 
-            else if (WeaponClass == "MP")
+            else if (WeaponClass == "SMG")
             {
                 #region MP 5 MW, Fennec, Iso 
-                if (attachment.Name == "Monolithic Integral Suppressor" || attachment.Name == "Subsonic Integral Suppressor" || attachment.Name == "ZLR 18\" Deadfall" || attachment.Name == "FSS Nightshade")
+                if (attachment.Name is "Monolithic Integral Suppressor" or "Subsonic Integral Suppressor" or "ZLR 18\" Deadfall" or "FSS Nightshade")
                 {
                     foreach (Slot s in slots)
                     {
@@ -228,7 +228,46 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
-                        if (temp.Name == "Monolithic Integral Suppressor" || temp.Name == "Subsonic Integral Suppressor" || temp.Name == "ZLR 18\" Deadfall" || temp.Name == "FSS Nightshade")
+                        if (temp.Name is "Monolithic Integral Suppressor" or "Subsonic Integral Suppressor" or "ZLR 18\" Deadfall" or "FSS Nightshade")
+                            return false;
+
+                    }
+                }
+                #endregion
+
+                #region CS-9
+                if (attachment.Name is "CX-38S" or "CX-23S")
+                {
+                    foreach (Slot s in slots)
+                    {
+                        if (s.Name.Contains("Muzzle"))
+                            return false;
+                    }
+                }
+                else if (slot.Name is "Muzzle")
+                {
+                    foreach (Slot s in slots)
+                    {
+                        Attachment temp = s.Attachments.FirstOrDefault();
+                        if (temp.Name is "CX-38S" or "CX-23S")
+                            return false;
+
+                    }
+                }
+                if (attachment.Name is "CX-23")
+                {
+                    foreach (Slot s in slots)
+                    {
+                        if (s.Name.Contains("Underbarrel"))
+                            return false;
+                    }
+                }
+                else if (slot.Name is "Underbarrel")
+                {
+                    foreach (Slot s in slots)
+                    {
+                        Attachment temp = s.Attachments.FirstOrDefault();
+                        if (temp.Name is "CX-23")
                             return false;
 
                     }
@@ -287,12 +326,12 @@ namespace COD_Randomizer_App.Models
                         return false;
                 }
             }
-            else if (slot.Attachments.FirstOrDefault()?.Name == "Optic" || slot.Attachments.FirstOrDefault()?.Name == "Stock")
+            else if (slot.Attachments.FirstOrDefault()?.Name is "Optic" or "Stock")
             {
                 foreach (Slot s in slots)
                 {
                     Attachment temp = slot.Attachments.FirstOrDefault();
-                    if (temp.Name == "Akimbo" || temp.Name == "Dual Wield")
+                    if (temp.Name is "Akimbo" or "Dual Wield")
                         return false;
 
                 }
