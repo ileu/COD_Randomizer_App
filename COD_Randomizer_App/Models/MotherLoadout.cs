@@ -165,10 +165,14 @@ namespace COD_Randomizer_App.Models
         {
             Weapon wep = weapons.ElementAtOrDefault(index) ?? new Weapon("");
 
+            if (wep == null)
+            {
+                return null;
+            }
+
             Weapon output = new Weapon(wep.Name);
             output.WeaponClass = wep.WeaponClass;
             output.AddSlot(wep.GetRandomSlots(n));
-            output.Slots.Sort((x, y) => x.Id.CompareTo(y.Id));
 
             return output;
         }

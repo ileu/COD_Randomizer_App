@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -7,7 +8,10 @@ namespace COD_Randomizer_App.Models
 {
     public class Weapon : Unit<Slot>
     {
-        public List<Slot> Slots { get => units; }
+        public List<Slot> Slots => units;
+
+        [JsonIgnore]
+        public List<Slot> RandomSlots => GetRandomSlots();
 
         public string WeaponClass { get; set; } = "";
 
@@ -38,7 +42,9 @@ namespace COD_Randomizer_App.Models
             {
                 bool check = AddSlot(slot);
                 if (!check)
+                {
                     return false;
+                }
             }
             return true;
         }
@@ -73,6 +79,7 @@ namespace COD_Randomizer_App.Models
                 }
             } while (slots.Count < n);
 
+            slots.Sort((x, y) => x.Id.CompareTo(y.Id));
             return slots;
         }
 
@@ -130,17 +137,20 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Optic") || s.Name.Contains("Stock"))
+                        {
                             return false;
+                        }
                     }
                 }
-                else if (slot.Name is "Optic" or "Stock")
+                else if (slot.Name == "Optic" || slot.Name == "Stock")
                 {
                     foreach (Slot s in slots)
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name is "Akimbo" or "Dual Wield")
+                        {
                             return false;
-
+                        }
                     }
                 }
 
@@ -149,7 +159,9 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Laser"))
+                        {
                             return false;
+                        }
                     }
                 }
                 else if (slot.Name.Contains("Laser"))
@@ -158,7 +170,9 @@ namespace COD_Randomizer_App.Models
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name is "FTAC G-X" or "FTAC SATUS CS-X")
+                        {
                             return false;
+                        }
                     }
                 }
             }
@@ -174,7 +188,9 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Muzzle"))
+                        {
                             return false;
+                        }
                     }
                 }
                 else if (slot.Name == "Muzzle")
@@ -183,8 +199,9 @@ namespace COD_Randomizer_App.Models
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name is "Singuard Arms Whisper" or "FFS 12.4\" Predator" or "Tempus Cyclone")
+                        {
                             return false;
-
+                        }
                     }
                 }
 
@@ -193,7 +210,9 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Underbarrel"))
+                        {
                             return false;
+                        }
                     }
                 }
                 else if (slot.Name.Contains("Underbarrel"))
@@ -202,8 +221,9 @@ namespace COD_Randomizer_App.Models
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name == "ZLR Drifter A-08")
+                        {
                             return false;
-
+                        }
                     }
                 }
                 #endregion
@@ -220,7 +240,9 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Muzzle"))
+                        {
                             return false;
+                        }
                     }
                 }
                 else if (slot.Name == "Muzzle")
@@ -229,8 +251,9 @@ namespace COD_Randomizer_App.Models
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name is "Monolithic Integral Suppressor" or "Subsonic Integral Suppressor" or "ZLR 18\" Deadfall" or "FSS Nightshade")
+                        {
                             return false;
-
+                        }
                     }
                 }
                 #endregion
@@ -241,7 +264,9 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Muzzle"))
+                        {
                             return false;
+                        }
                     }
                 }
                 else if (slot.Name is "Muzzle")
@@ -250,8 +275,9 @@ namespace COD_Randomizer_App.Models
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name is "CX-38S" or "CX-23S")
+                        {
                             return false;
-
+                        }
                     }
                 }
                 if (attachment.Name is "CX-23")
@@ -259,7 +285,9 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Underbarrel"))
+                        {
                             return false;
+                        }
                     }
                 }
                 else if (slot.Name is "Underbarrel")
@@ -268,8 +296,9 @@ namespace COD_Randomizer_App.Models
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name is "CX-23")
+                        {
                             return false;
-
+                        }
                     }
                 }
                 #endregion
@@ -285,7 +314,9 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Optic"))
+                        {
                             return false;
+                        }
                     }
                 }
                 else if (slot.Name == "Optic")
@@ -294,8 +325,9 @@ namespace COD_Randomizer_App.Models
                     {
                         Attachment temp = s.Attachments.FirstOrDefault();
                         if (temp.Name == "XRK ChainSAW")
+                        {
                             return false;
-
+                        }
                     }
                 }
                 #endregion
@@ -308,8 +340,8 @@ namespace COD_Randomizer_App.Models
         }
 
         /// <summary>
-        /// Checks if the given slot name and given attachment name
-        /// are on the weapon. 
+        /// Checks if the given slot is compatible with the list of slots,
+        /// given the blocked parameters.
         /// </summary>
         /// <param name="slot"> slot which is to be added </param>
         /// <param name="slots"> already added slots </param>
@@ -318,23 +350,16 @@ namespace COD_Randomizer_App.Models
         /// <returns> false if it contains both, true if only one </returns>
         private bool Check(Slot slot, List<Slot> slots, string[] blockedSlots, string[] blockedAttachment)
         {
-            if (blockedAttachment.Contains(slot.Attachments.FirstOrDefault()?.Name))
-            {
-                foreach (Slot s in slots)
-                {
-                    if (blockedSlots.Contains(slot.Name))
-                        return false;
-                }
-            }
-            else if (slot.Attachments.FirstOrDefault()?.Name is "Optic" or "Stock")
-            {
-                foreach (Slot s in slots)
-                {
-                    Attachment temp = slot.Attachments.FirstOrDefault();
-                    if (temp.Name is "Akimbo" or "Dual Wield")
-                        return false;
 
-                }
+            Attachment attachment = slot.Attachments.FirstOrDefault();
+
+            if (blockedAttachment.Contains(attachment?.Name))
+            {
+                return !slots.Any(slot => blockedSlots.Contains(slot.Name));
+            }
+            else if (blockedSlots.Contains(slot.Name))
+            {
+                return !slots.Any(slot => blockedAttachment.Contains(slot.Attachments.FirstOrDefault().Name));
             }
 
             return true;

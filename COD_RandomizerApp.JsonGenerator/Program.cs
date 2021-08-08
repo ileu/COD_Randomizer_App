@@ -4,26 +4,23 @@ using COD_Randomizer_App.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace COD_Randomizer_App.JsonGenerator
 {
-    class Program
+    internal class Program
     {
         private static readonly bool GENERATE = false;
         private static readonly bool WRITE = false;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MotherLoadout MotherLoadout = new MotherLoadout();
             string filepath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\COD_Randomizer_App\\Resources\\TestJson.json";
 
             Weapon tes_weapon = Factory.CreateWeapon("Test", WeaponDictionaries.hdr);
             Console.WriteLine(tes_weapon.Display());
+
 
             #region Json Generation
             if (GENERATE)
