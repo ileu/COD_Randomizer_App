@@ -31,7 +31,9 @@ namespace COD_Randomizer_App.Models
             int tactical = rnd.Next(Tacticals.Count);
 
             if (perk2 > Perks2.Count - 1)
+            {
                 perk2 = 2;
+            }
 
             Loadout loadout = new Loadout
             {
@@ -127,6 +129,9 @@ namespace COD_Randomizer_App.Models
                 Secondary = new Weapon("")
             };
 
+            loadout.Primary.AddSlot(new Slot("", 0));
+            loadout.Secondary.AddSlot(new Slot("", 0));
+
             return loadout;
         }
 
@@ -158,7 +163,7 @@ namespace COD_Randomizer_App.Models
 
         private Weapon GetWeapon(int index, List<Weapon> weapons, int n = 1)
         {
-            Weapon wep = weapons.ElementAtOrDefault(index);
+            Weapon wep = weapons.ElementAtOrDefault(index) ?? new Weapon("");
 
             Weapon output = new Weapon(wep.Name);
             output.WeaponClass = wep.WeaponClass;

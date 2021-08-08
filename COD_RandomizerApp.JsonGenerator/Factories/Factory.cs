@@ -65,7 +65,7 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
 
         public static List<Attachment> GetAttachmentGroup(Id id)
         {
-            return Groups.TryGetValue(id, out List <Attachment> output) ? output : new List<Attachment>();
+            return Groups.TryGetValue(id, out List<Attachment> output) ? output : new List<Attachment>();
         }
 
         public static Weapon CreateWeapon(string name, Dictionary<string, Id> dic = null)
@@ -74,18 +74,14 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
 
             if (dic == null)
             {
-                Slot slot = CreateSlot("No Attachments available", 0);
+                return weapon;
+            }
+
+            foreach (KeyValuePair<string, Id> entry in dic)
+            {
+                Slot slot = CreateSlot(entry.Key, entry.Value);
 
                 weapon.AddSlot(slot);
-            }
-            else
-            {
-                foreach (KeyValuePair<string, Id> entry in dic)
-                {
-                    Slot slot = CreateSlot(entry.Key, entry.Value);
-
-                    weapon.AddSlot(slot);
-                }
             }
 
             return weapon;
@@ -132,7 +128,7 @@ namespace COD_Randomizer_App.JsonGenerator.Factories
             Attachment attachment = new Attachment(name);
 
             attachment.SetId((int)id);
-            
+
             if (Groups.ContainsKey(id))
             {
                 if (Groups[id].FindIndex(item => item.Name == name) < 0)

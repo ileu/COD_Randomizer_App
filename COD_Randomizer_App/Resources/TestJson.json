@@ -13874,17 +13874,362 @@
       "Id": 0
     },
     {
+      "Slots": [],
+      "WeaponClass": "SMG",
+      "Game": null,
+      "Name": "Nail Gun",
+      "Visible": true,
+      "Id": 0
+    },
+    {
       "Slots": [
         {
-          "Attachments": [],
-          "Name": "No Attachments available",
+          "Attachments": [
+            {
+              "Name": "Flash Guard",
+              "Visible": true,
+              "Id": 1
+            },
+            {
+              "Name": "Tactical Suppressor",
+              "Visible": true,
+              "Id": 1
+            },
+            {
+              "Name": "Breacher Device",
+              "Visible": true,
+              "Id": 1
+            },
+            {
+              "Name": "Muzzle Brake",
+              "Visible": true,
+              "Id": 1
+            },
+            {
+              "Name": "Lightweight Suppressor",
+              "Visible": true,
+              "Id": 1
+            },
+            {
+              "Name": "Compensator",
+              "Visible": true,
+              "Id": 1
+            },
+            {
+              "Name": "Monolithic Suppressor",
+              "Visible": true,
+              "Id": 1
+            }
+          ],
+          "Name": "Muzzle",
           "Visible": true,
-          "Id": 0
+          "Id": 1
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "CX-38E",
+              "Visible": true,
+              "Id": 1808
+            },
+            {
+              "Name": "CX-23S",
+              "Visible": true,
+              "Id": 1808
+            },
+            {
+              "Name": "CX-23",
+              "Visible": true,
+              "Id": 1808
+            },
+            {
+              "Name": "CX-38",
+              "Visible": true,
+              "Id": 1808
+            },
+            {
+              "Name": "CX-38S",
+              "Visible": true,
+              "Id": 1808
+            }
+          ],
+          "Name": "Barrel",
+          "Visible": true,
+          "Id": 1808
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "1mW Laser",
+              "Visible": true,
+              "Id": 401
+            },
+            {
+              "Name": "5mW Laser",
+              "Visible": true,
+              "Id": 401
+            },
+            {
+              "Name": "Tac Laser",
+              "Visible": true,
+              "Id": 401
+            }
+          ],
+          "Name": "Laser",
+          "Visible": true,
+          "Id": 401
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Aim-Op Reflex Sight",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "APX5 Holographic Sight",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Corp Combat Holo Sight",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Cronen C480 Pro Optic",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Cronen LP945 Mini Reflex",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Operator Reflex Sight",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "G.I Mini Reflex",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Scout Combat Optic",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "VLK 3.0x Optic",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Viper Reflex Sight",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Solozero NVG Enhanced",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Monocle Reflex Sight",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Merc Thermal Optic",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "PBX Holo 7 Sight",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Thermal Hybrid",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Solozero Optics Mini Reflex",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Integral Hybrid",
+              "Visible": true,
+              "Id": 626
+            },
+            {
+              "Name": "Canted Hybrid",
+              "Visible": true,
+              "Id": 626
+            }
+          ],
+          "Name": "Optic",
+          "Visible": true,
+          "Id": 626
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "CX-MM",
+              "Visible": true,
+              "Id": 1809
+            },
+            {
+              "Name": "CX-FA",
+              "Visible": true,
+              "Id": 1809
+            },
+            {
+              "Name": "CX-FR",
+              "Visible": true,
+              "Id": 1809
+            }
+          ],
+          "Name": "Stock",
+          "Visible": true,
+          "Id": 1809
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Commando Foregrip",
+              "Visible": true,
+              "Id": 1002
+            },
+            {
+              "Name": "Merc Foregrip",
+              "Visible": true,
+              "Id": 1002
+            },
+            {
+              "Name": "Tactical Foregrip",
+              "Visible": true,
+              "Id": 1002
+            },
+            {
+              "Name": "Operator Foregrip",
+              "Visible": true,
+              "Id": 1002
+            },
+            {
+              "Name": "Ranger Foregrip",
+              "Visible": true,
+              "Id": 1002
+            }
+          ],
+          "Name": "Underbarrel",
+          "Visible": true,
+          "Id": 1002
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "30 Round Mags",
+              "Visible": true,
+              "Id": 1810
+            },
+            {
+              "Name": "9mm Hollow Point 12-R Mags",
+              "Visible": true,
+              "Id": 1810
+            },
+            {
+              "Name": "50 Round Drums",
+              "Visible": true,
+              "Id": 1810
+            }
+          ],
+          "Name": "Ammunition",
+          "Visible": true,
+          "Id": 1810
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Granulated Grip Tape",
+              "Visible": true,
+              "Id": 1401
+            },
+            {
+              "Name": "Rubberized Grip Tape",
+              "Visible": true,
+              "Id": 1401
+            },
+            {
+              "Name": "Stippled Grip Tape",
+              "Visible": true,
+              "Id": 1401
+            }
+          ],
+          "Name": "Rear Grip",
+          "Visible": true,
+          "Id": 1401
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "FMJ",
+              "Visible": true,
+              "Id": 1510
+            },
+            {
+              "Name": "Heavy Hitter",
+              "Visible": true,
+              "Id": 1510
+            },
+            {
+              "Name": "Recon",
+              "Visible": true,
+              "Id": 1510
+            },
+            {
+              "Name": "Frangible - Wounding",
+              "Visible": true,
+              "Id": 1510
+            },
+            {
+              "Name": "Mo' Money",
+              "Visible": true,
+              "Id": 1510
+            },
+            {
+              "Name": "Fully Loaded",
+              "Visible": true,
+              "Id": 1510
+            },
+            {
+              "Name": "Sleight of Hand",
+              "Visible": true,
+              "Id": 1510
+            },
+            {
+              "Name": "Fast Melee",
+              "Visible": true,
+              "Id": 1510
+            },
+            {
+              "Name": "Frangible - Disabling",
+              "Visible": true,
+              "Id": 1510
+            }
+          ],
+          "Name": "Perk",
+          "Visible": true,
+          "Id": 1510
         }
       ],
       "WeaponClass": "SMG",
       "Game": null,
-      "Name": "Nail Gun",
+      "Name": "CX-9",
       "Visible": true,
       "Id": 0
     },
@@ -29373,14 +29718,7 @@
       "Id": 0
     },
     {
-      "Slots": [
-        {
-          "Attachments": [],
-          "Name": "No Attachments available",
-          "Visible": true,
-          "Id": 0
-        }
-      ],
+      "Slots": [],
       "WeaponClass": "Launcher",
       "Game": null,
       "Name": "RPG-7 MW",
@@ -29388,14 +29726,7 @@
       "Id": 0
     },
     {
-      "Slots": [
-        {
-          "Attachments": [],
-          "Name": "No Attachments available",
-          "Visible": true,
-          "Id": 0
-        }
-      ],
+      "Slots": [],
       "WeaponClass": "Launcher",
       "Game": null,
       "Name": "PILA",
@@ -29403,14 +29734,7 @@
       "Id": 0
     },
     {
-      "Slots": [
-        {
-          "Attachments": [],
-          "Name": "No Attachments available",
-          "Visible": true,
-          "Id": 0
-        }
-      ],
+      "Slots": [],
       "WeaponClass": "Launcher",
       "Game": null,
       "Name": "JOKR",
@@ -29418,14 +29742,7 @@
       "Id": 0
     },
     {
-      "Slots": [
-        {
-          "Attachments": [],
-          "Name": "No Attachments available",
-          "Visible": true,
-          "Id": 0
-        }
-      ],
+      "Slots": [],
       "WeaponClass": "Launcher",
       "Game": null,
       "Name": "Strela-P",
@@ -29433,14 +29750,7 @@
       "Id": 0
     },
     {
-      "Slots": [
-        {
-          "Attachments": [],
-          "Name": "No Attachments available",
-          "Visible": true,
-          "Id": 0
-        }
-      ],
+      "Slots": [],
       "WeaponClass": "Launcher",
       "Game": null,
       "Name": "RPG-7 CW",
@@ -29448,14 +29758,7 @@
       "Id": 0
     },
     {
-      "Slots": [
-        {
-          "Attachments": [],
-          "Name": "No Attachments available",
-          "Visible": true,
-          "Id": 0
-        }
-      ],
+      "Slots": [],
       "WeaponClass": "Launcher",
       "Game": null,
       "Name": "Cigma 2",
@@ -29463,14 +29766,7 @@
       "Id": 0
     },
     {
-      "Slots": [
-        {
-          "Attachments": [],
-          "Name": "No Attachments available",
-          "Visible": true,
-          "Id": 0
-        }
-      ],
+      "Slots": [],
       "WeaponClass": "Launcher",
       "Game": null,
       "Name": "M79",

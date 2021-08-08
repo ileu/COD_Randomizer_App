@@ -4,7 +4,7 @@ namespace COD_Randomizer_App.Models
 {
     public class Slot : Unit<Attachment>
     {
-        public List<Attachment> Attachments { get => units; set => units = value; }
+        public List<Attachment> Attachments { get => units; private set => units = value; }
 
         public Slot(string name, int id) : base(name)
         {
@@ -36,7 +36,7 @@ namespace COD_Randomizer_App.Models
 
         public override string ToString()
         {
-            string output = base.ToString() + ": ";
+            string output = base.ToString();
 
             if (Attachments == null)
             {
@@ -45,7 +45,7 @@ namespace COD_Randomizer_App.Models
 
             foreach (Attachment attachment in Attachments)
             {
-                output += attachment;
+                output += ": " + attachment;
             }
 
             return output;

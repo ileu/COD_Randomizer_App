@@ -39,6 +39,12 @@
                                            FontSize="Medium" />
                                 </DataTemplate>
                             </BindableLayout.ItemTemplate>
+                            <BindableLayout.EmptyView>
+                                <Label Text="No Attachments availible and Gurke"
+                                       Padding="0,0,6,0"
+                                       Margin="0"
+                                       FontSize="Medium" />
+                            </BindableLayout.EmptyView>
                         </StackLayout>
                     </StackLayout>
                 </Frame>
@@ -65,6 +71,12 @@
                                            FontSize="Medium" />
                                 </DataTemplate>
                             </BindableLayout.ItemTemplate>
+                            <BindableLayout.EmptyView>
+                                <Label Text="No Attachments availible"
+                                       Padding="0,0,6,0"
+                                       Margin="0"
+                                       FontSize="Medium" />
+                            </BindableLayout.EmptyView>
                         </StackLayout>
                     </StackLayout>
                 </Frame>

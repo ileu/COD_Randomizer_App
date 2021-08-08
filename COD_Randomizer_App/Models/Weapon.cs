@@ -45,14 +45,14 @@ namespace COD_Randomizer_App.Models
 
         public List<Slot> GetRandomSlots(int n = 1)
         {
-            if (Slots == null || n == 0)
-            {
-                return new List<Slot>();
-            }
-
             if (n > Slots.Count)
             {
                 n = Slots.Count;
+            }
+
+            if (Slots == null || n == 0)
+            {
+                return new List<Slot>();
             }
 
             List<Slot> slots = new List<Slot>();
@@ -66,10 +66,12 @@ namespace COD_Randomizer_App.Models
 
                     temp.AddAttachment(lot.GetRandomAttachment());
 
-                   if (CheckValidity(temp, slots))
+                    if (CheckValidity(temp, slots))
+                    {
                         slots.Add(temp);
+                    }
                 }
-            } while (slots.Count < n );
+            } while (slots.Count < n);
 
             return slots;
         }
@@ -112,12 +114,12 @@ namespace COD_Randomizer_App.Models
             {
                 return false;
             }
-            
+
             Attachment attachment = slot.Attachments.FirstOrDefault();
 
-            if (slot.Attachments.FirstOrDefault()?.Name == null)
+            if (attachment == null)
             {
-                return false;
+                return true;
             }
 
             #region Akimbo/ Dual Wield
@@ -191,7 +193,7 @@ namespace COD_Randomizer_App.Models
                     foreach (Slot s in slots)
                     {
                         if (s.Name.Contains("Underbarrel"))
-                        return false;
+                            return false;
                     }
                 }
                 else if (slot.Name.Contains("Underbarrel"))
