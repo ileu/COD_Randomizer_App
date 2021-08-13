@@ -484,5 +484,13 @@
         BarrelCX9 = 1808,
         StockCX9 = 1809,
         MagazinCX9 = 1810,
+        MuzzleTec9 = 1811,
+        BarrelTec9 = 1812,
+        MagazinTec9 = 1813,
+        OpticTec9 = 1814,
+        StockTec9 = 1815,
+        MuzzleWest280 = 1816,
+        BarrelEM2 = 1817,
+        MagazinEM2 = 1818,
     }
 }

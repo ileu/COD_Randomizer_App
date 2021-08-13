@@ -286,6 +286,13 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("21.2\" Ranger", Id.BarrelFFAR);
             Factory.AddToGroup("20.3\" Takedown", Id.BarrelFFAR);
             Factory.AddToGroup("19.5\" Task Force", Id.BarrelFFAR); 
+
+            Factory.AddToGroup("23.5\" Ultralight", Id.BarrelEM2);
+            Factory.AddToGroup("22.9\" Cavalry Lancer", Id.BarrelEM2);
+            Factory.AddToGroup("25.1\" Reinforced Heavy", Id.BarrelEM2);
+            Factory.AddToGroup("27.4\" Ranger", Id.BarrelEM2);
+            Factory.AddToGroup("26.3\" Takedown", Id.BarrelEM2);
+            Factory.AddToGroup("25.8\" Task Force", Id.BarrelEM2); 
             
             Factory.AddToGroup("7.1\" Extended", Id.BarrelBullfrog);
             Factory.AddToGroup("7\" Cavalry Lancer", Id.BarrelBullfrog);
@@ -349,6 +356,13 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("7.1\" Liberator", Id.BarrelOTs9);
             Factory.AddToGroup("7.5\" Rifled", Id.BarrelOTs9);
             Factory.AddToGroup("8.1\" Task Force", Id.BarrelOTs9);
+
+            Factory.AddToGroup("5.8\" Extended", Id.BarrelTec9);
+            Factory.AddToGroup("5.4\" Cavalry Lancer", Id.BarrelTec9);
+            Factory.AddToGroup("7.3\" Reinforced Heavy", Id.BarrelTec9);
+            Factory.AddToGroup("6.7\" Ranger", Id.BarrelTec9);
+            Factory.AddToGroup("7.7\" Rifled", Id.BarrelTec9);
+            Factory.AddToGroup("4.9\" Task Force", Id.BarrelTec9);
 
             Factory.AddToGroup("13.7\" Extended", Id.BarrelStreetsweeper);
             Factory.AddToGroup("14.6\" Cavalry Lancer", Id.BarrelStreetsweeper);

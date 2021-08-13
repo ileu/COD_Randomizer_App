@@ -125,11 +125,13 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("65 Rnd", Id.MagazinBullfrog);
             Factory.AddToGroup("42 Rnd", Id.MagazinKSP);
             Factory.AddToGroup("43 Rnd", Id.MagazinMac);
+            Factory.AddToGroup("36 Rnd", Id.MagazinTec9);
             Factory.AddToGroup("45 Rnd", Id.MagazinM16);
+            Factory.AddToGroup("40 Rnd", Id.MagazinEM2);
             Factory.AddToGroup("120 Rnd", Id.MagazinM60, Id.MagazinStoner, Id.MagazinRPK);
             Factory.AddToGroup("125 Rnd", Id.MagazinMG82);
             Factory.AddToGroup("24 Rnd", Id.MagazinDiamatti);
-            Factory.AddToGroup("20 Rnd", Id.MagazinAMP);
+            Factory.AddToGroup("25 Rnd", Id.MagazinAMP);
             Factory.AddToGroup("9 Rnd", Id.MagazinMagnumCW);
             Factory.AddToGroup("7 Rnd", Id.MagazinTundra, Id.MagazinPelington);
             Factory.AddToGroup("12 Rnd", Id.Magazin1911CW);
@@ -143,11 +145,11 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("7 Rnd Tube", Id.MagazinHauer);
 
             Factory.AddToGroup("Jungle-Style Mags", Id.MagazinWest, Id.MagazinWestDrum, Id.MagazinFFAR, Id.MagazinC58, Id.MagazinMP9CW,
-                Id.MagazinDMR14, Id.MagazinM16, Id.MagazinAugCW);
+                Id.MagazinDMR14, Id.MagazinM16, Id.MagazinAugCW, Id.MagazinEM2);
             Factory.AddToGroup("Taped Mags", Id.MagazinEast, Id.MagazinAkBO, Id.MagazinEastDrum, Id.MagazinAk74u, Id.MagazinType63);
             Factory.AddToGroup("Fast Mag", Id.MagazinBullfrog, Id.MagazinMilano, Id.MagazinLC10, Id.MagazinKSP, Id.MagazinMac, 
                 Id.MagazinPPSh, Id.MagazinM60, Id.MagazinStoner, Id.MagazinRPK, Id.MagazinMG82, Id.MagazinDiamatti, Id.MagazinAMP, 
-                Id.MagazinMagnumCW, Id.Magazin1911CW, Id.MagazinTundra, Id.MagazinZRG, Id.MagazinOTs9);
+                Id.MagazinMagnumCW, Id.Magazin1911CW, Id.MagazinTundra, Id.MagazinZRG, Id.MagazinOTs9, Id.MagazinTec9);
             Factory.AddToGroup("Fast Loader", Id.MagazinPelington);
 
             Factory.AddToGroup("45 Rnd Speed Mag", Id.MagazinWest, Id.MagazinEast, Id.MagazinWestDrum, Id.MagazinAkBO, 
@@ -159,10 +161,11 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("43 Rnd Speed Mag", Id.MagazinMac);
             Factory.AddToGroup("45 Rnd Speed Mag", Id.MagazinM16, Id.MagazinAugCW);
             Factory.AddToGroup("24 Rnd Speed Mag", Id.MagazinDiamatti);
-            Factory.AddToGroup("20 Rnd Speed Mag", Id.MagazinAMP);
             Factory.AddToGroup("30 Rnd Speed Mag", Id.MagazinDMR14);
+            Factory.AddToGroup("35 Rnd Speed Mag", Id.MagazinEM2);
+            Factory.AddToGroup("36 Rnd Speed Mag", Id.MagazinTec9);
             Factory.AddToGroup("38 Rnd Speed Mag", Id.MagazinType63);
-            Factory.AddToGroup("25 Rnd Speed Mag", Id.MagazinOTs9);
+            Factory.AddToGroup("25 Rnd Speed Mag", Id.MagazinOTs9, Id.MagazinAMP);
             Factory.AddToGroup("9 Rnd Speed Mag", Id.MagazinMagnumCW);
             Factory.AddToGroup("12 Rnd Speed Mag", Id.Magazin1911CW);
             Factory.AddToGroup("120 Rnd Speed Mag", Id.MagazinM60, Id.MagazinStoner, Id.MagazinRPK);
@@ -180,13 +183,12 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("Spetsnaz 50 Rnd Drum", Id.MagazinAk74u);
             Factory.AddToGroup("Spetsnaz 71 Rnd Drum", Id.MagazinPPSh);
             Factory.AddToGroup("STANAG 60 Rnd", Id.MagazinWest, Id.MagazinM16);
-            Factory.AddToGroup("STANAG 50 Rnd", Id.MagazinFFAR);
+            Factory.AddToGroup("STANAG 50 Rnd", Id.MagazinFFAR, Id.MagazinEM2);
             Factory.AddToGroup("STANAG 55 Rnd", Id.MagazinC58, Id.MagazinLC10);
             Factory.AddToGroup("STANAG 85 Rnd", Id.MagazinBullfrog);
-            Factory.AddToGroup("STANAG 48 Rnd", Id.MagazinKSP);
+            Factory.AddToGroup("STANAG 48 Rnd", Id.MagazinKSP, Id.MagazinTec9);
             Factory.AddToGroup("STANAG 150 Rnd", Id.MagazinM60, Id.MagazinMG82);
-            Factory.AddToGroup("STANAG 30 Rnd", Id.MagazinDiamatti);
-            Factory.AddToGroup("STANAG 25 Rnd", Id.MagazinAMP);
+            Factory.AddToGroup("STANAG 30 Rnd", Id.MagazinDiamatti, Id.MagazinAMP);
             Factory.AddToGroup("STANAG 12 Rnd", Id.MagazinMagnumCW);
             Factory.AddToGroup("STANAG 14 Rnd", Id.Magazin1911CW);
             Factory.AddToGroup("STANAG 40 Rnd", Id.MagazinDMR14);
@@ -202,21 +204,21 @@ namespace COD_Randomizer_App.JsonGenerator.Resources
             Factory.AddToGroup("STANAG 54 Rnd Drum", Id.MagazinAugCW);
 
             Factory.AddToGroup("SAS Mag Clamp", Id.MagazinWest, Id.MagazinWestDrum, Id.MagazinFFAR, Id.MagazinC58, Id.MagazinMP9CW,
-                Id.MagazinDMR14, Id.MagazinM16, Id.MagazinAugCW);
+                Id.MagazinDMR14, Id.MagazinM16, Id.MagazinAugCW, Id.MagazinEM2);
             Factory.AddToGroup("GRU Mag Clamp", Id.MagazinEast, Id.MagazinEastDrum, Id.MagazinAkBO, Id.MagazinAk74u, Id.MagazinType63);
             Factory.AddToGroup("Vandal Speed Loader", Id.MagazinBullfrog, Id.MagazinMilano, Id.MagazinLC10, Id.MagazinKSP, 
                 Id.MagazinMac, Id.MagazinPPSh, Id.MagazinM60, Id.MagazinStoner, Id.MagazinRPK, Id.MagazinMG82, Id.MagazinDiamatti,
                 Id.MagazinAMP, Id.MagazinMagnumCW, Id.Magazin1911CW, Id.MagazinTundra, Id.MagazinPelington, Id.MagazinZRG, 
-                Id.MagazinOTs9);
+                Id.MagazinOTs9, Id.MagazinTec9);
 
             Factory.AddToGroup("Salvo 60 Rnd Fast Mag", Id.MagazinWest, Id.MagazinWestDrum, Id.MagazinM16);
             Factory.AddToGroup("Salvo 50 Rnd Fast Mag", Id.MagazinFFAR, Id.MagazinMP9CW);
             Factory.AddToGroup("Salvo 55 Rnd Fast Mag", Id.MagazinC58, Id.MagazinMilano);
             Factory.AddToGroup("Salvo 52 Rnd Fast Mag", Id.MagazinLC10);
             Factory.AddToGroup("Salvo 53 Rnd Fast Mag", Id.MagazinMac);
-            Factory.AddToGroup("Salvo 48 Rnd Fast Mag", Id.MagazinKSP);
-            Factory.AddToGroup("Salvo 30 Rnd Fast Mag", Id.MagazinDiamatti);
-            Factory.AddToGroup("Salvo 23 Rnd Fast Mag", Id.MagazinAMP);
+            Factory.AddToGroup("Salvo 48 Rnd Fast Mag", Id.MagazinKSP, Id.MagazinTec9);
+            Factory.AddToGroup("Salvo 45 Rnd Fast Mag", Id.MagazinEM2);
+            Factory.AddToGroup("Salvo 30 Rnd Fast Mag", Id.MagazinDiamatti, Id.MagazinAMP);
             Factory.AddToGroup("Salvo 14 Rnd Fast Mag", Id.Magazin1911CW);
             Factory.AddToGroup("Salvo 54 Rnd Fast Mag", Id.MagazinAugCW);
             Factory.AddToGroup("Salvo 150 Rnd Fast Mag", Id.MagazinM60, Id.MagazinStoner, Id.MagazinMG82);
