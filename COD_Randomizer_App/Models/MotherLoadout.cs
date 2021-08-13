@@ -32,7 +32,7 @@ namespace COD_Randomizer_App.Models
 
             if (perk2 > Perks2.Count - 1)
             {
-                perk2 = 2;
+                perk2 = Perks2.FindIndex(p => p.Name == "Overkill");
             }
 
             Loadout loadout = new Loadout
