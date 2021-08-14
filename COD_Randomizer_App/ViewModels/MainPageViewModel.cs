@@ -46,6 +46,7 @@ namespace COD_Randomizer_App.ViewModels
         }
 
         private List<string> slot1_att = new List<string> { "\n" };
+
         public List<string> Slot1_att
         {
             get => slot1_att;
@@ -169,6 +170,7 @@ namespace COD_Randomizer_App.ViewModels
             KeyValuePair<string, Dictionary<string, int>> weapon2 = Get_Weapon(weapon_class2);
 
             Slot1_weapon = weapon_class1 + ": " + weapon1.Key;
+            
             Slot1_att = Get_Att(weapon1.Value);
 
             Slot2_weapon = weapon_class2 + ": " + weapon2.Key;
