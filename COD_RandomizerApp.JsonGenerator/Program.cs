@@ -10,8 +10,8 @@ namespace COD_Randomizer_App.JsonGenerator
 {
     internal class Program
     {
-        private static readonly bool GENERATE = false;
-        private static readonly bool WRITE = false;
+        private static readonly bool GENERATE = true;
+        private static readonly bool WRITE = true;
 
         private static void Main(string[] args)
         {

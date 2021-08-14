@@ -7834,6 +7834,341 @@
         {
           "Attachments": [
             {
+              "Name": "Muzzle Brake .280",
+              "Visible": true,
+              "Id": 1816
+            },
+            {
+              "Name": "Flash Guard .280",
+              "Visible": true,
+              "Id": 1816
+            },
+            {
+              "Name": "Suppressor",
+              "Visible": true,
+              "Id": 1816
+            },
+            {
+              "Name": "Infantry Compensator",
+              "Visible": true,
+              "Id": 1816
+            },
+            {
+              "Name": "SOCOM Eliminator",
+              "Visible": true,
+              "Id": 1816
+            },
+            {
+              "Name": "Agency Suppressor",
+              "Visible": true,
+              "Id": 1816
+            }
+          ],
+          "Name": "Muzzle",
+          "Visible": true,
+          "Id": 1816
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "23.5\" Ultralight",
+              "Visible": true,
+              "Id": 1817
+            },
+            {
+              "Name": "22.9\" Cavalry Lancer",
+              "Visible": true,
+              "Id": 1817
+            },
+            {
+              "Name": "25.1\" Reinforced Heavy",
+              "Visible": true,
+              "Id": 1817
+            },
+            {
+              "Name": "27.4\" Ranger",
+              "Visible": true,
+              "Id": 1817
+            },
+            {
+              "Name": "26.3\" Takedown",
+              "Visible": true,
+              "Id": 1817
+            },
+            {
+              "Name": "25.8\" Task Force",
+              "Visible": true,
+              "Id": 1817
+            }
+          ],
+          "Name": "Barrel",
+          "Visible": true,
+          "Id": 1817
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Steady Aim Laser",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "Mounted Flashlight",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "SOF Target Designator",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "SWAT 5mW Laser Sight",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "Tiger Team Spotlight",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "Ember Sighting Point",
+              "Visible": true,
+              "Id": 450
+            }
+          ],
+          "Name": "Laser",
+          "Visible": true,
+          "Id": 450
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Millstop Reflex",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Visiontech 2x",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Kobra Red Dot",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Quickdot LED",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Axial Arms 3x",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Sillix Holoscout",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Microflex LED",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Hawksmoor",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Royal & Kross 4x",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "SUSAT Multizoom",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "Diamondback Reflex",
+              "Visible": true,
+              "Id": 650
+            },
+            {
+              "Name": "AN/PVS-4 Thermal",
+              "Visible": true,
+              "Id": 650
+            }
+          ],
+          "Name": "Optic",
+          "Visible": true,
+          "Id": 650
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Tactical Stock",
+              "Visible": true,
+              "Id": 857
+            },
+            {
+              "Name": "Marathon Stock",
+              "Visible": true,
+              "Id": 857
+            },
+            {
+              "Name": "Duster Pad",
+              "Visible": true,
+              "Id": 857
+            },
+            {
+              "Name": "CQB Pad",
+              "Visible": true,
+              "Id": 857
+            },
+            {
+              "Name": "SAS Combat Stock",
+              "Visible": true,
+              "Id": 857
+            },
+            {
+              "Name": "Raider Stock",
+              "Visible": true,
+              "Id": 857
+            }
+          ],
+          "Name": "Stock",
+          "Visible": true,
+          "Id": 857
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Foregrip",
+              "Visible": true,
+              "Id": 1050
+            },
+            {
+              "Name": "Infiltrator Grip",
+              "Visible": true,
+              "Id": 1050
+            },
+            {
+              "Name": "Bruiser Grip",
+              "Visible": true,
+              "Id": 1050
+            },
+            {
+              "Name": "Field Agent Grip",
+              "Visible": true,
+              "Id": 1050
+            },
+            {
+              "Name": "Patrol Grip",
+              "Visible": true,
+              "Id": 1050
+            },
+            {
+              "Name": "SFOD Speedgrip",
+              "Visible": true,
+              "Id": 1050
+            }
+          ],
+          "Name": "Underbarrel",
+          "Visible": true,
+          "Id": 1050
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "40 Rnd",
+              "Visible": true,
+              "Id": 1818
+            },
+            {
+              "Name": "Jungle-Style Mags",
+              "Visible": true,
+              "Id": 1818
+            },
+            {
+              "Name": "35 Rnd Speed Mag",
+              "Visible": true,
+              "Id": 1818
+            },
+            {
+              "Name": "STANAG 50 Rnd",
+              "Visible": true,
+              "Id": 1818
+            },
+            {
+              "Name": "SAS Mag Clamp",
+              "Visible": true,
+              "Id": 1818
+            },
+            {
+              "Name": "Salvo 45 Rnd Fast Mag",
+              "Visible": true,
+              "Id": 1818
+            }
+          ],
+          "Name": "Ammunition",
+          "Visible": true,
+          "Id": 1818
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Speed Tape",
+              "Visible": true,
+              "Id": 1450
+            },
+            {
+              "Name": "Dropshot Wrap",
+              "Visible": true,
+              "Id": 1450
+            },
+            {
+              "Name": "Field Tape",
+              "Visible": true,
+              "Id": 1450
+            },
+            {
+              "Name": "SASR Jungle Grip",
+              "Visible": true,
+              "Id": 1450
+            },
+            {
+              "Name": "Serpent Wrap",
+              "Visible": true,
+              "Id": 1450
+            },
+            {
+              "Name": "Airborne Elastic Wrap",
+              "Visible": true,
+              "Id": 1450
+            }
+          ],
+          "Name": "Rear Grip",
+          "Visible": true,
+          "Id": 1450
+        }
+      ],
+      "WeaponClass": "Assault Rifle",
+      "Game": null,
+      "Name": "EM2",
+      "Visible": true,
+      "Id": 0
+    },
+    {
+      "Slots": [
+        {
+          "Attachments": [
+            {
               "Name": "Muzzle Brake 9",
               "Visible": true,
               "Id": 55
@@ -14230,6 +14565,341 @@
       "WeaponClass": "SMG",
       "Game": null,
       "Name": "CX-9",
+      "Visible": true,
+      "Id": 0
+    },
+    {
+      "Slots": [
+        {
+          "Attachments": [
+            {
+              "Name": "Muzzle Brake 9",
+              "Visible": true,
+              "Id": 1811
+            },
+            {
+              "Name": "Flash Guard 9",
+              "Visible": true,
+              "Id": 1811
+            },
+            {
+              "Name": "Burst Fire Repeater",
+              "Visible": true,
+              "Id": 1811
+            },
+            {
+              "Name": "Infantry Compensator",
+              "Visible": true,
+              "Id": 1811
+            },
+            {
+              "Name": "SOCOM Eliminator",
+              "Visible": true,
+              "Id": 1811
+            },
+            {
+              "Name": "Full Auto Repeater",
+              "Visible": true,
+              "Id": 1811
+            }
+          ],
+          "Name": "Muzzle",
+          "Visible": true,
+          "Id": 1811
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "5.8\" Extended",
+              "Visible": true,
+              "Id": 1812
+            },
+            {
+              "Name": "5.4\" Cavalry Lancer",
+              "Visible": true,
+              "Id": 1812
+            },
+            {
+              "Name": "7.3\" Reinforced Heavy",
+              "Visible": true,
+              "Id": 1812
+            },
+            {
+              "Name": "6.7\" Ranger",
+              "Visible": true,
+              "Id": 1812
+            },
+            {
+              "Name": "7.7\" Rifled",
+              "Visible": true,
+              "Id": 1812
+            },
+            {
+              "Name": "4.9\" Task Force",
+              "Visible": true,
+              "Id": 1812
+            }
+          ],
+          "Name": "Barrel",
+          "Visible": true,
+          "Id": 1812
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Steady Aim Laser",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "Mounted Flashlight",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "SOF Target Designator",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "SWAT 5mW Laser Sight",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "Tiger Team Spotlight",
+              "Visible": true,
+              "Id": 450
+            },
+            {
+              "Name": "Ember Sighting Point",
+              "Visible": true,
+              "Id": 450
+            }
+          ],
+          "Name": "Laser",
+          "Visible": true,
+          "Id": 450
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Millstop Reflex",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Visiontech 2x",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Kobra Red Dot",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Quickdot LED",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Axial Arms 3x",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Sillix Holoscout",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Microflex LED",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Hawksmoor",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Diamondback Reflex",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "SnapPoint",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "Fastpoint Reflex",
+              "Visible": true,
+              "Id": 1814
+            },
+            {
+              "Name": "AN/PVS-4 Thermal",
+              "Visible": true,
+              "Id": 1814
+            }
+          ],
+          "Name": "Optic",
+          "Visible": true,
+          "Id": 1814
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Tactical Stock",
+              "Visible": true,
+              "Id": 1815
+            },
+            {
+              "Name": "Wire Stock",
+              "Visible": true,
+              "Id": 1815
+            },
+            {
+              "Name": "Duster Stock",
+              "Visible": true,
+              "Id": 1815
+            },
+            {
+              "Name": "No Stock",
+              "Visible": true,
+              "Id": 1815
+            },
+            {
+              "Name": "SAS Combat Stock",
+              "Visible": true,
+              "Id": 1815
+            },
+            {
+              "Name": "Raider Stock",
+              "Visible": true,
+              "Id": 1815
+            }
+          ],
+          "Name": "Stock",
+          "Visible": true,
+          "Id": 1815
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Foregrip",
+              "Visible": true,
+              "Id": 1053
+            },
+            {
+              "Name": "Bruiser Grip",
+              "Visible": true,
+              "Id": 1053
+            },
+            {
+              "Name": "Red Cell Foregrip",
+              "Visible": true,
+              "Id": 1053
+            },
+            {
+              "Name": "Field Agent Grip",
+              "Visible": true,
+              "Id": 1053
+            },
+            {
+              "Name": "Patrol Grip",
+              "Visible": true,
+              "Id": 1053
+            },
+            {
+              "Name": "SFOD Speedgrip",
+              "Visible": true,
+              "Id": 1053
+            }
+          ],
+          "Name": "Underbarrel",
+          "Visible": true,
+          "Id": 1053
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "36 Rnd",
+              "Visible": true,
+              "Id": 1813
+            },
+            {
+              "Name": "Fast Mag",
+              "Visible": true,
+              "Id": 1813
+            },
+            {
+              "Name": "36 Rnd Speed Mag",
+              "Visible": true,
+              "Id": 1813
+            },
+            {
+              "Name": "STANAG 48 Rnd",
+              "Visible": true,
+              "Id": 1813
+            },
+            {
+              "Name": "Vandal Speed Loader",
+              "Visible": true,
+              "Id": 1813
+            },
+            {
+              "Name": "Salvo 48 Rnd Fast Mag",
+              "Visible": true,
+              "Id": 1813
+            }
+          ],
+          "Name": "Ammunition",
+          "Visible": true,
+          "Id": 1813
+        },
+        {
+          "Attachments": [
+            {
+              "Name": "Speed Tape",
+              "Visible": true,
+              "Id": 1451
+            },
+            {
+              "Name": "Dropshot Wrap",
+              "Visible": true,
+              "Id": 1451
+            },
+            {
+              "Name": "Field Tape",
+              "Visible": true,
+              "Id": 1451
+            },
+            {
+              "Name": "Serpent Wrap",
+              "Visible": true,
+              "Id": 1451
+            },
+            {
+              "Name": "Spetsnaz Field Grip",
+              "Visible": true,
+              "Id": 1451
+            },
+            {
+              "Name": "GRU Elastic Wrap",
+              "Visible": true,
+              "Id": 1451
+            }
+          ],
+          "Name": "Rear Grip",
+          "Visible": true,
+          "Id": 1451
+        }
+      ],
+      "WeaponClass": "SMG",
+      "Game": null,
+      "Name": "TEC-9",
       "Visible": true,
       "Id": 0
     },
@@ -29639,7 +30309,7 @@
         {
           "Attachments": [
             {
-              "Name": "20 Rnd",
+              "Name": "25 Rnd",
               "Visible": true,
               "Id": 1275
             },
@@ -29649,12 +30319,12 @@
               "Id": 1275
             },
             {
-              "Name": "20 Rnd Speed Mag",
+              "Name": "25 Rnd Speed Mag",
               "Visible": true,
               "Id": 1275
             },
             {
-              "Name": "STANAG 25 Rnd",
+              "Name": "STANAG 30 Rnd",
               "Visible": true,
               "Id": 1275
             },
@@ -29664,7 +30334,7 @@
               "Id": 1275
             },
             {
-              "Name": "Salvo 23 Rnd Fast Mag",
+              "Name": "Salvo 30 Rnd Fast Mag",
               "Visible": true,
               "Id": 1275
             }
@@ -29927,6 +30597,12 @@
     },
     {
       "PerkType": "Perk 2",
+      "Name": "Tempered",
+      "Visible": true,
+      "Id": 0
+    },
+    {
+      "PerkType": "Perk 2",
       "Name": "Overkill",
       "Visible": true,
       "Id": 0
@@ -29960,6 +30636,12 @@
     {
       "PerkType": "Perk 3",
       "Name": "Amped",
+      "Visible": true,
+      "Id": 0
+    },
+    {
+      "PerkType": "Perk 3",
+      "Name": "Combat Scout",
       "Visible": true,
       "Id": 0
     },
