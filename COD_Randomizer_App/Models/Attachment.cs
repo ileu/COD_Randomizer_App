@@ -4,10 +4,11 @@ using System.Text;
 
 namespace COD_Randomizer_App.Models
 {
-    public class LoadoutModel
+    public class Attachment : BaseUnit
     {
-        public string Name;
+        public Attachment(string name) : base(name)
+        {
 
-        public Weapon PrimaryWeapon;
+        }
     }
 }

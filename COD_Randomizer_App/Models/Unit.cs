@@ -1,5 +1,4 @@
-﻿using COD_Randomizer_App.Helpers;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,18 +6,23 @@ using System.Linq;
 namespace COD_Randomizer_App.Models
 {
     public abstract class BaseUnit
-    { 
+    {
         protected string name;
-        public string Name { get => name; }
+        public string Name => name;
 
-        protected bool visible  = true;
-        public bool Visible { get => visible; }
+        protected bool visible = true;
+        public bool Visible { get => visible; set => visible = value; }
 
-        protected Random rng;
+        public int Id { get; protected set; }
 
         public BaseUnit(string name)
         {
-            name = name;
+            this.name = name;
+        }
+
+        public void SetId(int id)
+        {
+            Id = id;
         }
 
         public void ChangeVisibiliy()
@@ -26,12 +30,61 @@ namespace COD_Randomizer_App.Models
             visible = !visible;
         }
 
-        public abstract override string ToString();
+        public override string ToString()
+        {
+            return name;
+        }
+
+        public override bool Equals(object obj) => this.Equals(obj as BaseUnit);
+
+        public bool Equals(BaseUnit unit)
+        {
+            if (unit is null)
+            {
+                return false;
+            }
+
+            if (Object.ReferenceEquals(this, unit))
+            {
+                return true;
+            }
+
+            if (this.GetType() != unit.GetType())
+            {
+                return false;
+            }
+
+            return this.Name == unit.Name;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public static bool operator ==(BaseUnit lhs, BaseUnit rhs)
+        {
+            if (lhs is null)
+            {
+                if (rhs is null)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            return lhs.Equals(rhs);
+        }
+
+        public static bool operator !=(BaseUnit lhs, BaseUnit rhs) => !(lhs == rhs);
     }
 
     public abstract class Unit<T> : BaseUnit where T : BaseUnit
     {
         protected List<T> units;
+
+        protected Random rng;
 
         public Unit(string name) : base(name)
         {
@@ -44,105 +97,12 @@ namespace COD_Randomizer_App.Models
             units.Add(unit);
         }
 
-        public List<T> GetRandom(int n = 1)
+        protected virtual T GetRandom()
         {
-            if (n < 1)
-                throw new ArgumentException("Bisch du dumm oder so?", "GetRandom Draws n is smaller than 1");
+            IEnumerable<T> draw = units.Where(unit => unit.Visible);
 
-            List<T> draw = units.Where(unit => unit.Visible).ToList();
-            T lot;
-            List<T> selection = new List<T>();
-
-            do
-            {
-                lot = units.ElementAt(rng.Next(units.Count));
-                if (!selection.Contains(lot))
-                    selection.Add(lot);
-            } while (selection.Count < n);
-
-            return selection;
-        }
-    }
-
-    public class WeaponClass : Unit<Weapon>
-    {
-        public WeaponClass(string name) : base(name)
-        {
-
+            return draw.Count() == 0 ? default : draw.ElementAt(rng.Next(draw.Count()));
         }
 
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Weapon : Unit<Slot>
-    {
-
-        public List<Slot> Slots { get => units; set => units = value; }
-
-        public bool Primary { get; set; }
-
-        public Weapon(string name) : base(name) { }
-
-        public void AddSlot(string name, int id)
-        {
-            units.Add(new Slot(name, id));
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Slot : Unit<Attachement>
-    {
-        public List<Attachement> Attachements { get => units; set => units = value; }
-        
-        [JsonConstructor]
-        public Slot(string name) : base(name)
-        {
-
-        }
-
-        public Slot(string name, int id) : base(name)
-        {
-            Attachements = AttachementFactory.GetAttachmentGroup(id);
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Attachement : BaseUnit
-    {
-        public Attachement(string name) : base(name)
-        {
-
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class Grenade : BaseUnit
-    {
-        public bool Primary { get; set; }
-
-        public Grenade(string name, bool primary) : base(name)
-        {
-            Primary = primary;
-        }
-
-        public override string ToString()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
