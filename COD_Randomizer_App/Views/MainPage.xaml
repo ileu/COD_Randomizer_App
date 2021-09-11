@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:COD_Randomizer_App.ViewModels"
-             x:Class="COD_Randomizer_App.Views.MainPage"
-             BackgroundColor="#202020">
+             x:Class="COD_Randomizer_App.Views.MainPage">
     <ContentPage.BindingContext>
         <viewmodels:MainPageViewModel />
     </ContentPage.BindingContext>
@@ -49,7 +48,7 @@
                     </StackLayout>
                 </Frame>
 
-                <Frame Margin="10,10,10,0"
+                <Frame Margin="10,5,10,0"
                        Padding="15,10"
                        CornerRadius="15">
                     <StackLayout Spacing="0">
@@ -124,9 +123,7 @@
                 Margin="10,5"
                 FontSize="Large"
                 FontAttributes="Bold"
-                Grid.Row="2"
-                TextColor="Black"
-                BackgroundColor="#909090"/>
+                Grid.Row="2"/>
     </Grid>
 
 </ContentPage>

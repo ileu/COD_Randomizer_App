@@ -1,8 +1,5 @@
-﻿using System;
-using COD_Randomizer_App.Services;
-using COD_Randomizer_App.Views;
+﻿using COD_Randomizer_App.Services;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace COD_Randomizer_App
 {
@@ -12,7 +9,7 @@ namespace COD_Randomizer_App
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()
