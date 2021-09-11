@@ -7836,74 +7836,74 @@
             {
               "Name": "Muzzle Brake .280",
               "Visible": true,
-              "Id": 1816
+              "Id": 66
             },
             {
               "Name": "Flash Guard .280",
               "Visible": true,
-              "Id": 1816
+              "Id": 66
             },
             {
               "Name": "Suppressor",
               "Visible": true,
-              "Id": 1816
+              "Id": 66
             },
             {
               "Name": "Infantry Compensator",
               "Visible": true,
-              "Id": 1816
+              "Id": 66
             },
             {
               "Name": "SOCOM Eliminator",
               "Visible": true,
-              "Id": 1816
+              "Id": 66
             },
             {
               "Name": "Agency Suppressor",
               "Visible": true,
-              "Id": 1816
+              "Id": 66
             }
           ],
           "Name": "Muzzle",
           "Visible": true,
-          "Id": 1816
+          "Id": 66
         },
         {
           "Attachments": [
             {
               "Name": "23.5\" Ultralight",
               "Visible": true,
-              "Id": 1817
+              "Id": 302
             },
             {
               "Name": "22.9\" Cavalry Lancer",
               "Visible": true,
-              "Id": 1817
+              "Id": 302
             },
             {
               "Name": "25.1\" Reinforced Heavy",
               "Visible": true,
-              "Id": 1817
+              "Id": 302
             },
             {
               "Name": "27.4\" Ranger",
               "Visible": true,
-              "Id": 1817
+              "Id": 302
             },
             {
               "Name": "26.3\" Takedown",
               "Visible": true,
-              "Id": 1817
+              "Id": 302
             },
             {
               "Name": "25.8\" Task Force",
               "Visible": true,
-              "Id": 1817
+              "Id": 302
             }
           ],
           "Name": "Barrel",
           "Visible": true,
-          "Id": 1817
+          "Id": 302
         },
         {
           "Attachments": [
@@ -8088,37 +8088,37 @@
             {
               "Name": "40 Rnd",
               "Visible": true,
-              "Id": 1818
+              "Id": 1301
             },
             {
               "Name": "Jungle-Style Mags",
               "Visible": true,
-              "Id": 1818
+              "Id": 1301
             },
             {
               "Name": "35 Rnd Speed Mag",
               "Visible": true,
-              "Id": 1818
+              "Id": 1301
             },
             {
               "Name": "STANAG 50 Rnd",
               "Visible": true,
-              "Id": 1818
+              "Id": 1301
             },
             {
               "Name": "SAS Mag Clamp",
               "Visible": true,
-              "Id": 1818
+              "Id": 1301
             },
             {
               "Name": "Salvo 45 Rnd Fast Mag",
               "Visible": true,
-              "Id": 1818
+              "Id": 1301
             }
           ],
           "Name": "Ammunition",
           "Visible": true,
-          "Id": 1818
+          "Id": 1301
         },
         {
           "Attachments": [
@@ -14265,32 +14265,32 @@
             {
               "Name": "CX-38E",
               "Visible": true,
-              "Id": 1808
+              "Id": 300
             },
             {
               "Name": "CX-23S",
               "Visible": true,
-              "Id": 1808
+              "Id": 300
             },
             {
               "Name": "CX-23",
               "Visible": true,
-              "Id": 1808
+              "Id": 300
             },
             {
               "Name": "CX-38",
               "Visible": true,
-              "Id": 1808
+              "Id": 300
             },
             {
               "Name": "CX-38S",
               "Visible": true,
-              "Id": 1808
+              "Id": 300
             }
           ],
           "Name": "Barrel",
           "Visible": true,
-          "Id": 1808
+          "Id": 300
         },
         {
           "Attachments": [
@@ -14416,22 +14416,32 @@
             {
               "Name": "CX-MM",
               "Visible": true,
-              "Id": 1809
+              "Id": 893
             },
             {
               "Name": "CX-FA",
               "Visible": true,
-              "Id": 1809
+              "Id": 893
             },
             {
               "Name": "CX-FR",
               "Visible": true,
-              "Id": 1809
+              "Id": 893
+            },
+            {
+              "Name": "PP-Skelet",
+              "Visible": true,
+              "Id": 893
+            },
+            {
+              "Name": "PP-Karabin",
+              "Visible": true,
+              "Id": 893
             }
           ],
           "Name": "Stock",
           "Visible": true,
-          "Id": 1809
+          "Id": 893
         },
         {
           "Attachments": [
@@ -14470,22 +14480,22 @@
             {
               "Name": "30 Round Mags",
               "Visible": true,
-              "Id": 1810
+              "Id": 1299
             },
             {
               "Name": "9mm Hollow Point 12-R Mags",
               "Visible": true,
-              "Id": 1810
+              "Id": 1299
             },
             {
               "Name": "50 Round Drums",
               "Visible": true,
-              "Id": 1810
+              "Id": 1299
             }
           ],
           "Name": "Ammunition",
           "Visible": true,
-          "Id": 1810
+          "Id": 1299
         },
         {
           "Attachments": [
@@ -14575,74 +14585,74 @@
             {
               "Name": "Muzzle Brake 9",
               "Visible": true,
-              "Id": 1811
+              "Id": 90
             },
             {
               "Name": "Flash Guard 9",
               "Visible": true,
-              "Id": 1811
+              "Id": 90
             },
             {
               "Name": "Burst Fire Repeater",
               "Visible": true,
-              "Id": 1811
+              "Id": 90
             },
             {
               "Name": "Infantry Compensator",
               "Visible": true,
-              "Id": 1811
+              "Id": 90
             },
             {
               "Name": "SOCOM Eliminator",
               "Visible": true,
-              "Id": 1811
+              "Id": 90
             },
             {
               "Name": "Full Auto Repeater",
               "Visible": true,
-              "Id": 1811
+              "Id": 90
             }
           ],
           "Name": "Muzzle",
           "Visible": true,
-          "Id": 1811
+          "Id": 90
         },
         {
           "Attachments": [
             {
               "Name": "5.8\" Extended",
               "Visible": true,
-              "Id": 1812
+              "Id": 301
             },
             {
               "Name": "5.4\" Cavalry Lancer",
               "Visible": true,
-              "Id": 1812
+              "Id": 301
             },
             {
               "Name": "7.3\" Reinforced Heavy",
               "Visible": true,
-              "Id": 1812
+              "Id": 301
             },
             {
               "Name": "6.7\" Ranger",
               "Visible": true,
-              "Id": 1812
+              "Id": 301
             },
             {
               "Name": "7.7\" Rifled",
               "Visible": true,
-              "Id": 1812
+              "Id": 301
             },
             {
               "Name": "4.9\" Task Force",
               "Visible": true,
-              "Id": 1812
+              "Id": 301
             }
           ],
           "Name": "Barrel",
           "Visible": true,
-          "Id": 1812
+          "Id": 301
         },
         {
           "Attachments": [
@@ -14686,104 +14696,119 @@
             {
               "Name": "Millstop Reflex",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Visiontech 2x",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Kobra Red Dot",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Quickdot LED",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Axial Arms 3x",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Sillix Holoscout",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Microflex LED",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Hawksmoor",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Diamondback Reflex",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "SnapPoint",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "Fastpoint Reflex",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             },
             {
               "Name": "AN/PVS-4 Thermal",
               "Visible": true,
-              "Id": 1814
+              "Id": 638
             }
           ],
           "Name": "Optic",
           "Visible": true,
-          "Id": 1814
+          "Id": 638
         },
         {
           "Attachments": [
             {
+              "Name": "FTAC SATUS CS-3",
+              "Visible": true,
+              "Id": 894
+            },
+            {
+              "Name": "FTAC G-X",
+              "Visible": true,
+              "Id": 894
+            },
+            {
+              "Name": "FTAC SATUS CS-X",
+              "Visible": true,
+              "Id": 894
+            },
+            {
               "Name": "Tactical Stock",
               "Visible": true,
-              "Id": 1815
+              "Id": 894
             },
             {
               "Name": "Wire Stock",
               "Visible": true,
-              "Id": 1815
+              "Id": 894
             },
             {
               "Name": "Duster Stock",
               "Visible": true,
-              "Id": 1815
+              "Id": 894
             },
             {
               "Name": "No Stock",
               "Visible": true,
-              "Id": 1815
+              "Id": 894
             },
             {
               "Name": "SAS Combat Stock",
               "Visible": true,
-              "Id": 1815
+              "Id": 894
             },
             {
               "Name": "Raider Stock",
               "Visible": true,
-              "Id": 1815
+              "Id": 894
             }
           ],
           "Name": "Stock",
           "Visible": true,
-          "Id": 1815
+          "Id": 894
         },
         {
           "Attachments": [
@@ -14827,37 +14852,37 @@
             {
               "Name": "36 Rnd",
               "Visible": true,
-              "Id": 1813
+              "Id": 1300
             },
             {
               "Name": "Fast Mag",
               "Visible": true,
-              "Id": 1813
+              "Id": 1300
             },
             {
               "Name": "36 Rnd Speed Mag",
               "Visible": true,
-              "Id": 1813
+              "Id": 1300
             },
             {
               "Name": "STANAG 48 Rnd",
               "Visible": true,
-              "Id": 1813
+              "Id": 1300
             },
             {
               "Name": "Vandal Speed Loader",
               "Visible": true,
-              "Id": 1813
+              "Id": 1300
             },
             {
               "Name": "Salvo 48 Rnd Fast Mag",
               "Visible": true,
-              "Id": 1813
+              "Id": 1300
             }
           ],
           "Name": "Ammunition",
           "Visible": true,
-          "Id": 1813
+          "Id": 1300
         },
         {
           "Attachments": [
@@ -24351,39 +24376,24 @@
         {
           "Attachments": [
             {
-              "Name": ".357 Snub Nose",
-              "Visible": true,
-              "Id": 292
-            },
-            {
-              "Name": "Silverfield Ordnance .357",
-              "Visible": true,
-              "Id": 292
-            },
-            {
-              "Name": ".357 Long",
-              "Visible": true,
-              "Id": 292
-            },
-            {
               "Name": "XRK Thunder 200 Lb",
               "Visible": true,
-              "Id": 292
+              "Id": 299
             },
             {
               "Name": "XRK Quill 100 Lb",
               "Visible": true,
-              "Id": 292
+              "Id": 299
             },
             {
               "Name": "XRK Carbon Elite",
               "Visible": true,
-              "Id": 292
+              "Id": 299
             }
           ],
           "Name": "Arms",
           "Visible": true,
-          "Id": 292
+          "Id": 299
         },
         {
           "Attachments": [
@@ -28146,21 +28156,6 @@
               "Name": ".357 Long",
               "Visible": true,
               "Id": 292
-            },
-            {
-              "Name": "XRK Thunder 200 Lb",
-              "Visible": true,
-              "Id": 292
-            },
-            {
-              "Name": "XRK Quill 100 Lb",
-              "Visible": true,
-              "Id": 292
-            },
-            {
-              "Name": "XRK Carbon Elite",
-              "Visible": true,
-              "Id": 292
             }
           ],
           "Name": "Barrel",
@@ -29077,6 +29072,36 @@
               "Name": "FTAC SATUS CS-X",
               "Visible": true,
               "Id": 894
+            },
+            {
+              "Name": "Tactical Stock",
+              "Visible": true,
+              "Id": 894
+            },
+            {
+              "Name": "Wire Stock",
+              "Visible": true,
+              "Id": 894
+            },
+            {
+              "Name": "Duster Stock",
+              "Visible": true,
+              "Id": 894
+            },
+            {
+              "Name": "No Stock",
+              "Visible": true,
+              "Id": 894
+            },
+            {
+              "Name": "SAS Combat Stock",
+              "Visible": true,
+              "Id": 894
+            },
+            {
+              "Name": "Raider Stock",
+              "Visible": true,
+              "Id": 894
             }
           ],
           "Name": "Stock",
@@ -29335,6 +29360,21 @@
         },
         {
           "Attachments": [
+            {
+              "Name": "CX-MM",
+              "Visible": true,
+              "Id": 893
+            },
+            {
+              "Name": "CX-FA",
+              "Visible": true,
+              "Id": 893
+            },
+            {
+              "Name": "CX-FR",
+              "Visible": true,
+              "Id": 893
+            },
             {
               "Name": "PP-Skelet",
               "Visible": true,
