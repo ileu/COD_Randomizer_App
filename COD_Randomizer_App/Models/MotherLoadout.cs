@@ -84,14 +84,30 @@ namespace COD_Randomizer_App.Models
             return new Loadout()
             {
                 Perk1 = Perks1[rnd.Next(Perks1.Count)],
-                Perk2 = Perks2[rnd.Next(isOverkill ? 2 : Perks2.Count)],
+                Perk2 = Perks2[rnd.Next(isOverkill ? 3 : Perks2.Count)],
                 Perk3 = Perks3[rnd.Next(Perks3.Count)],
 
                 Lethal = Lethals[rnd.Next(Lethals.Count)],
                 Tactical = Tacticals[rnd.Next(Tacticals.Count)],
 
                 Primary = GetWeapon(primpos <= -1 ? rnd.Next(Primaries.Count) : primpos, Primaries, n),
-                Secondary = GetWeapon(secpos <= -1 ? rnd.Next(Primaries.Count) : secpos, isOverkill ? Primaries : Secondaries, n),
+                Secondary = GetWeapon(secpos <= -1 ? rnd.Next(isOverkill ? Primaries.Count : Secondaries.Count) : secpos, isOverkill ? Primaries : Secondaries, n),
+            };
+        }
+
+        public Loadout GetSpecificLoadout(string prim, bool isOverkill = true, int n = 5)
+        {
+            return new Loadout()
+            {
+                Perk1 = Perks1[rnd.Next(Perks1.Count)],
+                Perk2 = Perks2[rnd.Next(isOverkill ? 3 : Perks2.Count)],
+                Perk3 = Perks3[rnd.Next(Perks3.Count)],
+
+                Lethal = Lethals[rnd.Next(Lethals.Count)],
+                Tactical = Tacticals[rnd.Next(Tacticals.Count)],
+
+                Primary = GetWeapon(Primaries.FindIndex(wep => wep.Name.ToLower().Contains(prim.ToLower())), Primaries, n),
+                Secondary = GetWeapon(rnd.Next(isOverkill ? Primaries.Count : Secondaries.Count), isOverkill ? Primaries : Secondaries, n),
             };
         }
 
