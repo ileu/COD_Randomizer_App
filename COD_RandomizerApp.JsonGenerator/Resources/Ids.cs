@@ -128,11 +128,13 @@
         MuzzleWest20 = 63,
         MuzzleEast75 = 64,
         MuzzleWest50 = 65,
-        MuzzlePistolMW = 99,
+        MuzzleWest280 = 66,
         MuzzleRenetti = 94,
         MuzzleMagnumMW = 92,
         MuzzleRytec = 88,
         Cable = 89,
+        MuzzleTec9 = 90,
+        MuzzlePistolMW = 99,
 
         BarrelKilo = 210,
         BarrelOden = 211,
@@ -223,7 +225,10 @@
         BarrelHDR = 289,
         BarrelAx50 = 290,
         BarrelDragunov = 291,
-        Arms = 292,
+        Arms = 299,
+        BarrelCX9 = 300,
+        BarrelTec9 = 301,
+        BarrelEM2 = 302,
 
         LaserMW = 401,
         LaserTacOnly = 402,
@@ -246,6 +251,7 @@
         OpticFennec = 626,
         OpticP90 = 629,
         Optic725 = 637,
+        OpticTec9 = 638,
         OpticFinn = 640,
         OpticM91 = 641,
         OpticHolger = 643,
@@ -269,7 +275,6 @@
         OpticDeagle = 696,
         OpticCrossbow = 697,
         OpticPistolMW = 699,
-
 
         StockKilo = 810,
         StockOden = 811,
@@ -341,6 +346,8 @@
         StockAx50 = 890,
         StockDragunov = 891,
         StockCrossbow = 892,
+        StockCX9 = 893,
+        StockTec9 = 894,
 
         PumpR9 = 835,
 
@@ -450,6 +457,9 @@
         MagazinHDR = 1289,
         MagazinDragunov = 1291,
         BoltCrossbow = 1292,
+        MagazinCX9 = 1299,
+        MagazinTec9 = 1300,
+        MagazinEM2 = 1301,
 
         RearGripStandard = 1401,
         RearGripGrau = 1419,
@@ -481,16 +491,5 @@
         PerksCrossbow = 1598,
         PerksPistol = 1599,
 
-        BarrelCX9 = 1808,
-        StockCX9 = 1809,
-        MagazinCX9 = 1810,
-        MuzzleTec9 = 1811,
-        BarrelTec9 = 1812,
-        MagazinTec9 = 1813,
-        OpticTec9 = 1814,
-        StockTec9 = 1815,
-        MuzzleWest280 = 1816,
-        BarrelEM2 = 1817,
-        MagazinEM2 = 1818,
     }
 }
