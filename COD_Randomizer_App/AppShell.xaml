@@ -42,7 +42,7 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                        
+
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Selected">
@@ -54,7 +54,6 @@
                         </VisualStateGroup>
                     </VisualStateGroupList>
                 </Setter>
-
             </Style>
 
         </ResourceDictionary>
@@ -75,5 +74,9 @@
     <FlyoutItem Title="Settings">
         <ShellContent Route="SettingsPage"
                       ContentTemplate="{DataTemplate views:SettingsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Test">
+        <ShellContent Route="TestPage"
+                      ContentTemplate="{DataTemplate views:TestPage}" />
     </FlyoutItem>
 </Shell>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="COD_Randomizer_App.Views.TestPage">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="12"
+                  ColumnDefinitions="{OnIdiom Phone='Auto,*,Auto', Default='.05*,.9*,.05*'}">
+                <StackLayout Grid.Column="1">
+                    <Label Text="Text Cell" />
+                    <Frame>
+                        <Label Text="This shows a cell to present only text without any other controls. Maybe display different type of textsize and fonts here." />
+                    </Frame>
+                    <Label Text="Buttons in frame" />
+                    <Frame>
+                        <Grid ColumnSpacing="10"
+                              ColumnDefinitions="*,*">
+                            <Button HorizontalOptions="FillAndExpand"
+                                    Text="Butt 1" />
+                            <Button Grid.Column="1"
+                                    HorizontalOptions="FillAndExpand"
+                                    Text="Butt 2" />
+                        </Grid>
+                    </Frame>
+                    <Label Text="Free button" />
+                    <Button Text="I'm freeee" />
+                    <Label Text="Entry" />
+                    <Frame>
+                        <StackLayout Grid.ColumnSpan="2"
+                                     Orientation="Horizontal">
+                            <Label Text="Entry:"
+                                   VerticalOptions="Center" />
+                            <Entry x:Name="EntryDisplayName"
+                                   HorizontalOptions="FillAndExpand" />
+                        </StackLayout>
+                    </Frame>
+                    <Label Margin="0,12,0,0"
+                           Text="Radio" />
+                    <Frame BackgroundColor="{StaticResource SecondaryBackgroundColor}">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                                         HorizontalOptions="Center">
+                                <RadioButton Content="Opt 1"
+                                             IsChecked="True"
+                                             WidthRequest="75"
+                                             BackgroundColor="{StaticResource TertiaryBackgroundColor}"
+                                             CornerRadius="15"/>
+                                <RadioButton Content="Opt 2"
+                                             WidthRequest="75"
+                                             BackgroundColor="{StaticResource TertiaryBackgroundColor}"
+                                             CornerRadius="15"/>
+                                <RadioButton Content="Opt 3"
+                                             WidthRequest="75"
+                                             BackgroundColor="{StaticResource TertiaryBackgroundColor}"
+                                             CornerRadius="15"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Switch" />
+                    <Frame>
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Label Text="Switch:"
+                                   Grid.Column="0"/>
+                            <Switch Grid.Column="2" />
+                        </Grid>
+                    </Frame>
+                    <Label Text="Switch" />
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Slider:"/>
+                            <Slider Value="0.5"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Stepper" />
+                    <Frame>
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Label Text="Stepper:"
+                                   Grid.Column="0"/>
+                            <Stepper Grid.Column="2" />
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
