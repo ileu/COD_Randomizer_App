@@ -19,7 +19,8 @@
                 </TableSection>
                 <TableSection Title="Second Section">
                     <TextCell Text="TextCell"
-                              Detail="TextCell Detail" />
+                              Detail="TextCell Detail"
+                              />
                     <EntryCell Label="Entry Label"
                                Text="EntryCell Text" />
                     <SwitchCell Text="SwitchCell Text" />

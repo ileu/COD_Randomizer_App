@@ -37,23 +37,14 @@
                     </Frame>
                     <Label Margin="0,12,0,0"
                            Text="Radio" />
-                    <Frame BackgroundColor="{StaticResource SecondaryBackgroundColor}">
+                    <Frame>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal"
                                          HorizontalOptions="Center">
                                 <RadioButton Content="Opt 1"
-                                             IsChecked="True"
-                                             WidthRequest="75"
-                                             BackgroundColor="{StaticResource TertiaryBackgroundColor}"
-                                             CornerRadius="15"/>
-                                <RadioButton Content="Opt 2"
-                                             WidthRequest="75"
-                                             BackgroundColor="{StaticResource TertiaryBackgroundColor}"
-                                             CornerRadius="15"/>
-                                <RadioButton Content="Opt 3"
-                                             WidthRequest="75"
-                                             BackgroundColor="{StaticResource TertiaryBackgroundColor}"
-                                             CornerRadius="15"/>
+                                             IsChecked="True"/>
+                                <RadioButton Content="Opt 2" />
+                                <RadioButton Content="Opt 3" />
                             </StackLayout>
                         </StackLayout>
                     </Frame>

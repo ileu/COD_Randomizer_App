@@ -5,60 +5,8 @@
        xmlns:controls="clr-namespace:COD_Randomizer_App.Controls"
        x:Class="COD_Randomizer_App.AppShell"
        Title="Random Loadout Generator"
-       FlyoutBackgroundColor="{StaticResource BackgroundColor}"
-       FlyoutWidth="200">
+       FlyoutBackgroundColor="{StaticResource BackgroundColor}">
 
-    <Shell.Resources>
-        <ResourceDictionary>
-            <Style x:Key="BaseStyle"
-                   TargetType="Element">
-                <Setter Property="Shell.BackgroundColor"
-                        Value="{StaticResource BackgroundColor}" />
-                <Setter Property="Shell.ForegroundColor"
-                        Value="White" />
-                <Setter Property="Shell.TitleColor"
-                        Value="White" />
-                <Setter Property="Shell.NavBarHasShadow"
-                        Value="false" />
-            </Style>
-
-            <Style TargetType="FlyoutItem"
-                   BasedOn="{StaticResource BaseStyle}" />
-
-            <Style TargetType="Label"
-                   Class="FlyoutItemLabelStyle"
-                   ApplyToDerivedTypes="True">
-                <Setter Property="TextColor"
-                        Value="{StaticResource TertiaryTextColor}" />
-            </Style>
-
-            <Style TargetType="Layout"
-                   ApplyToDerivedTypes="True"
-                   Class="FlyoutItemLayoutStyle">
-                <Setter Property="HeightRequest"
-                        Value="50" />
-                <Setter Property="VisualStateManager.VisualStateGroups">
-                    <VisualStateGroupList>
-                        <VisualStateGroup x:Name="CommonStates">
-                            <VisualState x:Name="Normal">
-                                <VisualState.Setters>
-
-                                </VisualState.Setters>
-                            </VisualState>
-                            <VisualState x:Name="Selected">
-                                <VisualState.Setters>
-                                    <Setter Property="BackgroundColor"
-                                            Value="{StaticResource SecondaryBackgroundColor}" />
-                                </VisualState.Setters>
-                            </VisualState>
-                        </VisualStateGroup>
-                    </VisualStateGroupList>
-                </Setter>
-            </Style>
-
-        </ResourceDictionary>
-    </Shell.Resources>
-    
     <Shell.FlyoutHeader>
         <controls:FlyoutHeader />
     </Shell.FlyoutHeader>
