@@ -6,10 +6,13 @@
              x:DataType="vm:SettingsViewModel">
     <ContentPage.Content>
         <TableView Intent="Settings">
-            <TableRoot>
-                <TableSection Title="First Section">
+            <TableRoot TextColor="Brown">
+                <TableSection Title="First Section"
+                              TextColor="Aquamarine">
                     <TextCell Text="TextCell"
-                              Detail="TextCell Detail" />
+                              Detail="TextCell Detail" 
+                              DetailColor="Blue"
+                              TextColor="Coral"/>
                     <EntryCell Label="Entry Label"
                                Text="EntryCell Text" />
                     <SwitchCell Text="SwitchCell Text" />

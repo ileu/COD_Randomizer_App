@@ -20,11 +20,14 @@
                                     Text="Butt 1" />
                             <Button Grid.Column="1"
                                     HorizontalOptions="FillAndExpand"
-                                    Text="Butt 2" />
+                                    Text="Butt 2"
+                                    Style="{StaticResource GenerateButton}" />
                         </Grid>
                     </Frame>
                     <Label Text="Free button" />
                     <Button Text="I'm freeee" />
+                    <Button Text="I'm freeee"
+                            Style="{StaticResource GenerateButton}" />
                     <Label Text="Entry" />
                     <Frame>
                         <StackLayout Grid.ColumnSpan="2"

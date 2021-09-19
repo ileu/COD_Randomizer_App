@@ -4,7 +4,6 @@
              xmlns:local="clr-namespace:COD_Randomizer_App"
              x:Class="COD_Randomizer_App.App">
     <Application.Resources>
-        <!-- <local:AppStyles /> -->
         <ResourceDictionary Source="AppStyles.xaml" />
     </Application.Resources>
 </Application>

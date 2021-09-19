@@ -36,6 +36,13 @@
     <Color x:Key="QuaternaryTextColor">#f2efee</Color>
 
 
+    <Color x:Key="Test1">#0C0314</Color>
+    <Color x:Key="Test2">#202020</Color>
+    <Color x:Key="Test3">#351159</Color>
+    <Color x:Key="Test4">#46216b</Color>
+    <Color x:Key="Test5">#b08ed1</Color>
+
+
     <!-- BRUSHES -->
     <SolidColorBrush x:Key="DarkBrush"
                      Color="#605E5D" />
@@ -296,6 +303,8 @@
            TargetType="Button">
         <Setter Property="Margin"
                 Value="10,5" />
+        <Setter Property="BorderColor"
+                Value="Transparent" />
         <Setter Property="FontSize"
                 Value="Large" />
         <Setter Property="FontAttributes"
