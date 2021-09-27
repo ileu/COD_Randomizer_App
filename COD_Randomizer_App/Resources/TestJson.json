@@ -14416,32 +14416,22 @@
             {
               "Name": "CX-MM",
               "Visible": true,
-              "Id": 893
+              "Id": 895
             },
             {
               "Name": "CX-FA",
               "Visible": true,
-              "Id": 893
+              "Id": 895
             },
             {
               "Name": "CX-FR",
               "Visible": true,
-              "Id": 893
-            },
-            {
-              "Name": "PP-Skelet",
-              "Visible": true,
-              "Id": 893
-            },
-            {
-              "Name": "PP-Karabin",
-              "Visible": true,
-              "Id": 893
+              "Id": 895
             }
           ],
           "Name": "Stock",
           "Visible": true,
-          "Id": 893
+          "Id": 895
         },
         {
           "Attachments": [
@@ -14761,54 +14751,39 @@
         {
           "Attachments": [
             {
-              "Name": "FTAC SATUS CS-3",
-              "Visible": true,
-              "Id": 894
-            },
-            {
-              "Name": "FTAC G-X",
-              "Visible": true,
-              "Id": 894
-            },
-            {
-              "Name": "FTAC SATUS CS-X",
-              "Visible": true,
-              "Id": 894
-            },
-            {
               "Name": "Tactical Stock",
               "Visible": true,
-              "Id": 894
+              "Id": 896
             },
             {
               "Name": "Wire Stock",
               "Visible": true,
-              "Id": 894
+              "Id": 896
             },
             {
               "Name": "Duster Stock",
               "Visible": true,
-              "Id": 894
+              "Id": 896
             },
             {
               "Name": "No Stock",
               "Visible": true,
-              "Id": 894
+              "Id": 896
             },
             {
               "Name": "SAS Combat Stock",
               "Visible": true,
-              "Id": 894
+              "Id": 896
             },
             {
               "Name": "Raider Stock",
               "Visible": true,
-              "Id": 894
+              "Id": 896
             }
           ],
           "Name": "Stock",
           "Visible": true,
-          "Id": 894
+          "Id": 896
         },
         {
           "Attachments": [
@@ -24541,29 +24516,24 @@
         {
           "Attachments": [
             {
-              "Name": "Snake Shot",
-              "Visible": true,
-              "Id": 1292
-            },
-            {
               "Name": "FTAC Fury 20\" Bolts",
               "Visible": true,
-              "Id": 1292
+              "Id": 1302
             },
             {
               "Name": "FTAC Venom 20\" Bolts",
               "Visible": true,
-              "Id": 1292
+              "Id": 1302
             },
             {
               "Name": "FTAC Backburn 20\" Bolts",
               "Visible": true,
-              "Id": 1292
+              "Id": 1302
             }
           ],
           "Name": "Bolt",
           "Visible": true,
-          "Id": 1292
+          "Id": 1302
         },
         {
           "Attachments": [
@@ -28284,21 +28254,6 @@
               "Name": "Snake Shot",
               "Visible": true,
               "Id": 1292
-            },
-            {
-              "Name": "FTAC Fury 20\" Bolts",
-              "Visible": true,
-              "Id": 1292
-            },
-            {
-              "Name": "FTAC Venom 20\" Bolts",
-              "Visible": true,
-              "Id": 1292
-            },
-            {
-              "Name": "FTAC Backburn 20\" Bolts",
-              "Visible": true,
-              "Id": 1292
             }
           ],
           "Name": "Ammunition",
@@ -29072,36 +29027,6 @@
               "Name": "FTAC SATUS CS-X",
               "Visible": true,
               "Id": 894
-            },
-            {
-              "Name": "Tactical Stock",
-              "Visible": true,
-              "Id": 894
-            },
-            {
-              "Name": "Wire Stock",
-              "Visible": true,
-              "Id": 894
-            },
-            {
-              "Name": "Duster Stock",
-              "Visible": true,
-              "Id": 894
-            },
-            {
-              "Name": "No Stock",
-              "Visible": true,
-              "Id": 894
-            },
-            {
-              "Name": "SAS Combat Stock",
-              "Visible": true,
-              "Id": 894
-            },
-            {
-              "Name": "Raider Stock",
-              "Visible": true,
-              "Id": 894
             }
           ],
           "Name": "Stock",
@@ -29360,21 +29285,6 @@
         },
         {
           "Attachments": [
-            {
-              "Name": "CX-MM",
-              "Visible": true,
-              "Id": 893
-            },
-            {
-              "Name": "CX-FA",
-              "Visible": true,
-              "Id": 893
-            },
-            {
-              "Name": "CX-FR",
-              "Visible": true,
-              "Id": 893
-            },
             {
               "Name": "PP-Skelet",
               "Visible": true,

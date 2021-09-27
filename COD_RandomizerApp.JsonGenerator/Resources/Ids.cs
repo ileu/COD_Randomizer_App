@@ -346,8 +346,8 @@
         StockAx50 = 890,
         StockDragunov = 891,
         StockCrossbow = 892,
-        StockCX9 = 893,
-        StockTec9 = 894,
+        StockCX9 = 895,
+        StockTec9 = 896,
 
         PumpR9 = 835,
 
@@ -456,10 +456,10 @@
         MagazinRytec = 1288,
         MagazinHDR = 1289,
         MagazinDragunov = 1291,
-        BoltCrossbow = 1292,
         MagazinCX9 = 1299,
         MagazinTec9 = 1300,
         MagazinEM2 = 1301,
+        BoltCrossbow = 1302,
 
         RearGripStandard = 1401,
         RearGripGrau = 1419,
